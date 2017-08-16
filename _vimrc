@@ -5,6 +5,9 @@ behave mswin
 nnoremap ; :
 nnoremap : ;
 
+verbose map <C-a>
+nunmap <C-a>
+
 color torte
 
 :set nu
