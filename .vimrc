@@ -1,6 +1,16 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+set nu
+
+nnoremap ; :
+nnoremap : ; 
+
+:set backupdir=~/.vim/tmp
+:set directory=~/.vim/tmp
+:set undodir=~/.vim/tmp
+                           
+
 let g:user_emmet_leader_key=','
 
 " set the runtime path to include Vundle and initialize
@@ -48,8 +58,3 @@ Plugin 'mattn/emmet-vim'
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
 "
-
-set number
-
-nmap ; :
-
