@@ -16,7 +16,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'Raimond/delimitMate.vim'
+Plugin 'Raimondi/delimitMate.vim'
 
 Plugin 'Valloric/YouCompleteMe'
 
