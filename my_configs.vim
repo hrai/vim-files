@@ -1,13 +1,12 @@
 set nocompatible
-filetype plugin indent on 
 
 set nu
 
 nnoremap ; :
 
-set backupdir=~/.vim/tmp
-set directory=~/.vim/tmp
-set undodir=~/.vim/tmp
+set backupdir=~/.vim_runtime/temp_dirs/undodir
+set directory=~/.vim_runtime/temp_dirs/undodir
+set undodir=~/.vim_runtime/temp_dirs/undodir
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
