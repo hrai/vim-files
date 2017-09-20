@@ -1,12 +1,20 @@
-set nocompatible
-
 set nu
 
-nnoremap ; :
+"show whitespace
+syntax on
+set syntax=whitespace
 
-set backupdir=~/.vim_runtime/temp_dirs/undodir
-set directory=~/.vim_runtime/temp_dirs/undodir
-set undodir=~/.vim_runtime/temp_dirs/undodir
+"Yanking to clipboard
+noremap <C-Y> "+y
+"Putting from clipboard
+noremap <C-P> "+p
+
+nnoremap ; :
+"nnoremap : ;
+
+set backupdir=~/.vim/tmp
+set directory=~/.vim/tmp
+set undodir=~/.vim/tmp
 
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -16,7 +24,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'Raimondi/delimitMate.vim'
+Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'Valloric/YouCompleteMe'
 
