@@ -9,8 +9,10 @@ noremap <C-Y> "+y
 "Putting from clipboard
 noremap <C-P> "+p
 
-nnoremap ; :
+"nnoremap ; :
 "nnoremap : ;
+"Map space to colon for easy access to run commands
+nnoremap <space> :
 
 set backupdir=~/.vim_runtime/temp_dirs/undodir
 set directory=~/.vim_runtime/temp_dirs/undodir
