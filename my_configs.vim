@@ -9,8 +9,6 @@ noremap <C-Y> "+y
 "Putting from clipboard
 noremap <C-P> "+p
 
-"nnoremap ; :
-"nnoremap : ;
 "Map space to colon for easy access to run commands
 nnoremap <space> :
 
@@ -29,6 +27,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'ntpeters/vim-better-whitespace'
 
 call vundle#end()
 
