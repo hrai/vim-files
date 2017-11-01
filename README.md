@@ -3,7 +3,7 @@ Forked from https://github.com/amix/vimrc
 ## How to install the Awesome version?
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
 
-	git clone --depth=1 https://github.com/vim-files/vimrc.git ~/.vim_runtime
+	git clone --depth=1 git://github.com/hrai/vim-files.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 I also recommend using [the Hack font](http://sourcefoundry.org/hack/) (it's a free and awesome font designed for source code). The Awesome vimrc is already setup to try to use it.
@@ -13,7 +13,7 @@ The basic version is just one file and no plugins. Just copy [basic.vim](https:/
 
 The basic version is useful to install on remote servers where you don't need many plugins, and you don't do many edits.
 
-	git clone --depth=1 git://github.com/vim-files/vimrc.git ~/.vim_runtime
+	git clone --depth=1 git://github.com/hrai/vim-files.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_basic_vimrc.sh
 
 
