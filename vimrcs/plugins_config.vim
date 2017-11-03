@@ -45,6 +45,9 @@ nmap <c-n> <Plug>yankstack_substitute_newer_paste
 """"""""""""""""""""""""""""""
 let g:ctrlp_working_path_mode = 0
 
+" Unmapping ctrlp's default mapping
+let g:ctrlp_map = ''
+
 map <leader>j :CtrlP<cr>
 
 let g:ctrlp_max_height = 20
