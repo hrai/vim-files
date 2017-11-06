@@ -51,6 +51,8 @@ Plugin 'tpope/vim-sleuth'
 
 Plugin 'easymotion/vim-easymotion'
 
+Plugin 'dkarter/bullets.vim'
+
 call vundle#end()
 
 let g:EclimCompletionMethod = 'omnifunc'
