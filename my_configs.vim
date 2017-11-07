@@ -55,6 +55,17 @@ Plugin 'dkarter/bullets.vim'
 
 call vundle#end()
 
+"Plugin Settings
+
+"Bullets.vim
+let g:bullets_enabled_file_types = [
+    \ 'markdown',
+    \ 'text',
+    \ 'gitcommit',
+    \ 'scratch',
+    \ 'notes'
+    \]
+
 let g:EclimCompletionMethod = 'omnifunc'
 set omnifunc=syntaxcomplete#Complete
 
