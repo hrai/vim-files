@@ -53,6 +53,8 @@ Plugin 'easymotion/vim-easymotion'
 
 Plugin 'dkarter/bullets.vim'
 
+Plugin 'pangloss/vim-javascript'
+
 call vundle#end()
 
 "Plugin Settings
