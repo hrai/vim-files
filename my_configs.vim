@@ -9,6 +9,11 @@ let g:indentLine_color_term = 239
 " GVim
 let g:indentLine_color_gui = '#562365'
 
+"Setting colourscheme
+set background=dark
+colorscheme solarized
+
+
 "----------------------------------------
 
 "Match pattern while typing search pattern
