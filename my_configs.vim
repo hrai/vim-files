@@ -60,6 +60,8 @@ Plugin 'dkarter/bullets.vim'
 
 Plugin 'pangloss/vim-javascript'
 
+Plugin 'bkad/CamelCaseMotion'
+
 call vundle#end()
 
 "Plugin Settings
@@ -73,6 +75,10 @@ let g:bullets_enabled_file_types = [
     \ 'notes'
     \]
 
+
+"CamelCaseMotion.vim
+call camelcasemotion#CreateMotionMappings('<leader>')
+
+
 let g:EclimCompletionMethod = 'omnifunc'
 set omnifunc=syntaxcomplete#Complete
-
