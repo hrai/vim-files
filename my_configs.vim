@@ -79,7 +79,7 @@ let g:bullets_enabled_file_types = [
 
 
 "CamelCaseMotion.vim
-call camelcasemotion#CreateMotionMappings('<leader>')
+"call camelcasemotion#CreateMotionMappings('<leader>') - //TODO - Map to another key
 
 
 let g:EclimCompletionMethod = 'omnifunc'
