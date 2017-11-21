@@ -10,7 +10,6 @@ let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#562365'
 
 "Setting colourscheme
-set background=dark
 colorscheme solarized
 
 
