@@ -62,6 +62,8 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'bkad/CamelCaseMotion'
 
+Plugin 'OrangeT/vim-csharp'
+
 call vundle#end()
 
 "Plugin Settings
