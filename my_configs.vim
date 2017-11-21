@@ -63,6 +63,8 @@ Plugin 'bkad/CamelCaseMotion'
 
 Plugin 'OrangeT/vim-csharp'
 
+Plugin 'Valloric/vim-operator-highlight'
+
 call vundle#end()
 
 "Plugin Settings
@@ -79,6 +81,11 @@ let g:bullets_enabled_file_types = [
 
 "CamelCaseMotion.vim
 "call camelcasemotion#CreateMotionMappings('<leader>') - //TODO - Map to another key
+
+
+"vim-operator-hightlight
+"Setting the colour of the highlighter to yellow
+let g:ophigh_color_gui = "#c4cc00"
 
 
 let g:EclimCompletionMethod = 'omnifunc'
