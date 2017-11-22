@@ -10,6 +10,8 @@ let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#562365'
 
 "Setting colourscheme
+"Enable this for console application
+let g:solarized_termcolors=256
 colorscheme solarized
 
 
