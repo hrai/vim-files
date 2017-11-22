@@ -92,3 +92,8 @@ let g:ophigh_color_gui = "#c4cc00"
 
 let g:EclimCompletionMethod = 'omnifunc'
 set omnifunc=syntaxcomplete#Complete
+
+"Loading syntax files
+au BufRead,BufNewFile *.cs set filetype=cs
+au BufRead,BufNewFile *.aspx set filetype=aspx
+au BufRead,BufNewFile *.cshtml set filetype=cshtml
