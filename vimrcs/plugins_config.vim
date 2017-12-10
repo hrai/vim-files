@@ -172,3 +172,30 @@ nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Bullets.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:bullets_enabled_file_types = [
+    \ 'markdown',
+    \ 'text',
+    \ 'gitcommit',
+    \ 'scratch',
+    \ 'notes'
+    \]
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => CamelCaseMotion.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call camelcasemotion#CreateMotionMappings('n')
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-operator-hightlight
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Setting the colour of the highlighter to yellow
+let g:ophigh_color_gui = "#c4cc00"
