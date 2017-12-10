@@ -67,6 +67,8 @@ Plugin 'OrangeT/vim-csharp'
 
 Plugin 'Valloric/vim-operator-highlight'
 
+Plugin 'groenewege/vim-less'
+
 call vundle#end()
 
 "Plugin Settings
