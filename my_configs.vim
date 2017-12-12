@@ -77,3 +77,12 @@ call vundle#end()
 
 let g:EclimCompletionMethod = 'omnifunc'
 set omnifunc=syntaxcomplete#Complete
+
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => CamelCaseMotion.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call camelcasemotion#CreateMotionMappings('n')
+
