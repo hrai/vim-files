@@ -189,12 +189,6 @@ let g:bullets_enabled_file_types = [
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => CamelCaseMotion.vim
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call camelcasemotion#CreateMotionMappings('n')
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-operator-hightlight
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Setting the colour of the highlighter to yellow
