@@ -2,14 +2,13 @@ set nu
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-"IndentLine plugin
-" Vim
-let g:indentLine_color_term = 239
 
 " GVim
 let g:indentLine_color_gui = '#562365'
 
-"Setting colourscheme
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => colourscheme settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Enable this for console application
 let g:solarized_termcolors=256
 colorscheme solarized
@@ -32,13 +31,19 @@ nnoremap <leader>q :q<CR>
 "Map space to colon for easy access to run commands
 nnoremap <space> :
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Default directory settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set backupdir=~/.vim_runtime/temp_dirs/undodir
 set directory=~/.vim_runtime/temp_dirs/undodir
 set undodir=~/.vim_runtime/temp_dirs/undodir
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vundle plugins
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set rtp+=~/.vim/bundle/Vundle.vim
 
-"Vundle plugins
 call vundle#begin()
 
 " let Vundle manage Vundle, required
@@ -66,6 +71,12 @@ Plugin 'bkad/CamelCaseMotion'
 
 Plugin 'OrangeT/vim-csharp'
 
+Plugin 'OmniSharp/omnisharp-vim'
+
+Plugin 'OmniSharp/omnisharp-server'
+
+Plugin 'tpope/vim-dispatch'
+
 Plugin 'Valloric/vim-operator-highlight'
 
 Plugin 'groenewege/vim-less'
@@ -73,8 +84,10 @@ Plugin 'groenewege/vim-less'
 call vundle#end()
 
 
-"Plugin Settings
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:EclimCompletionMethod = 'omnifunc'
 set omnifunc=syntaxcomplete#Complete
 
@@ -86,3 +99,9 @@ set omnifunc=syntaxcomplete#Complete
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call camelcasemotion#CreateMotionMappings('n')
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Fold settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set fdm=indent
+set foldlevelstart=20
