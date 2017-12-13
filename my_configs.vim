@@ -84,14 +84,11 @@ Plugin 'groenewege/vim-less'
 call vundle#end()
 
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:EclimCompletionMethod = 'omnifunc'
 set omnifunc=syntaxcomplete#Complete
-
-
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -105,3 +102,13 @@ call camelcasemotion#CreateMotionMappings('n')
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set fdm=indent
 set foldlevelstart=20
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Omnisharp settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:OmniSharp_server_type = 'roslyn'
+let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
+let g:OmniSharp_prefer_global_sln = 1  
+let g:OmniSharp_timeout = 10 
+
