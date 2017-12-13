@@ -193,3 +193,14 @@ let g:bullets_enabled_file_types = [
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Setting the colour of the highlighter to yellow
 let g:ophigh_color_gui = "#c4cc00"
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => indentLine settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim
+let g:indentLine_color_term = 239
+
+" GVim
+let g:indentLine_color_gui = '#562365'
