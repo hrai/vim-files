@@ -80,6 +80,8 @@ Plugin 'Valloric/vim-operator-highlight'
 
 Plugin 'groenewege/vim-less'
 
+Plugin 'artur-shaik/vim-javacomplete2'
+
 call vundle#end()
 
 
