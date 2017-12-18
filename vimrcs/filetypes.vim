@@ -1,3 +1,5 @@
+
+
 """"""""""""""""""""""""""""""
 " => C Sharp section
 """"""""""""""""""""""""""""""
@@ -6,6 +8,7 @@
 au BufRead,BufNewFile *.cs set filetype=cs
 au BufRead,BufNewFile *.aspx set filetype=aspx
 au BufRead,BufNewFile *.cshtml set filetype=cshtml
+au BufNewFile,BufRead *.notes set filetype=notes
 
 
 """"""""""""""""""""""""""""""
@@ -46,8 +49,6 @@ endif
 
 
 """"""""""""""""""""""""""""""
-" => Twig section
+" => Removing the trailing whitespaces from selected file types
 """"""""""""""""""""""""""""""
-autocmd BufRead *.twig set syntax=html filetype=html
-
-"Loading syntax files
+autocmd FileType java,cs,notes,vim autocmd BufWritePre <buffer> %s/\s\+$//e
