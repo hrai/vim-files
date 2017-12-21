@@ -48,8 +48,3 @@ if exists('$TMUX')
     endif
 endif
 
-
-""""""""""""""""""""""""""""""
-" => Removing the trailing whitespaces from selected file types
-""""""""""""""""""""""""""""""
-autocmd FileType java,cs,notes,vim,html autocmd BufWritePre <buffer> %s/\s\+$//e
