@@ -299,8 +299,12 @@ fun! CleanExtraSpaces()
     call setreg('/', old_query)
 endfun
 
+
+""""""""""""""""""""""""""""""
+" => Removing the trailing whitespaces from selected file types
+""""""""""""""""""""""""""""""
 if has("autocmd")
-    autocmd BufWritePre *.txt,*.js,*.java,*.phtml,*.cs,*.css :call CleanExtraSpaces()
+    autocmd BufWritePre *.txt,*.js,*.java,*.phtml,*.cs,*.css,*.notes :call CleanExtraSpaces()
 endif
 
 
