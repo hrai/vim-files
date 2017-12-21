@@ -8,6 +8,7 @@
 au BufRead,BufNewFile *.cs set filetype=cs
 au BufRead,BufNewFile *.aspx set filetype=aspx
 au BufRead,BufNewFile *.cshtml set filetype=cshtml
+au BufRead,BufNewFile *.phtml set filetype=html
 au BufNewFile,BufRead *.notes set filetype=notes
 
 
@@ -51,4 +52,4 @@ endif
 """"""""""""""""""""""""""""""
 " => Removing the trailing whitespaces from selected file types
 """"""""""""""""""""""""""""""
-autocmd FileType java,cs,notes,vim autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType java,cs,notes,vim,html autocmd BufWritePre <buffer> %s/\s\+$//e
