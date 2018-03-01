@@ -300,12 +300,19 @@ fun! CleanExtraSpaces()
 endfun
 
 
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Removing the trailing whitespaces from selected file types
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("autocmd")
     autocmd BufWritePre *.txt,*.js,*.java,*.phtml,*.cs,*.css,*.notes :call CleanExtraSpaces()
 endif
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Add linebreak without entering insert mode
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <F8> o<Esc>
+nmap <F9> O<Esc>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
