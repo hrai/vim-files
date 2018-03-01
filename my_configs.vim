@@ -68,12 +68,6 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'bkad/CamelCaseMotion'
 
-Plugin 'OrangeT/vim-csharp'
-
-Plugin 'OmniSharp/omnisharp-vim'
-
-Plugin 'OmniSharp/omnisharp-server'
-
 Plugin 'tpope/vim-dispatch'
 
 Plugin 'Valloric/vim-operator-highlight'
@@ -81,6 +75,12 @@ Plugin 'Valloric/vim-operator-highlight'
 Plugin 'groenewege/vim-less'
 
 Plugin 'artur-shaik/vim-javacomplete2'
+
+"Plugin 'OrangeT/vim-csharp'
+
+"Plugin 'OmniSharp/omnisharp-vim'
+
+"Plugin 'OmniSharp/omnisharp-server'
 
 call vundle#end()
 
@@ -108,8 +108,8 @@ set foldlevelstart=20
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Omnisharp settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:OmniSharp_server_type = 'roslyn'
-let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
-let g:OmniSharp_prefer_global_sln = 1  
-let g:OmniSharp_timeout = 10 
+"let g:OmniSharp_server_type = 'roslyn'
+"let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
+"let g:OmniSharp_prefer_global_sln = 1  
+"let g:OmniSharp_timeout = 10 
 
