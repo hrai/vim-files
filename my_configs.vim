@@ -66,7 +66,7 @@ Plugin 'dkarter/bullets.vim'
 
 Plugin 'pangloss/vim-javascript'
 
-"Plugin 'bkad/CamelCaseMotion'
+Plugin 'bkad/CamelCaseMotion'
 
 Plugin 'tpope/vim-dispatch'
 
@@ -95,7 +95,7 @@ set omnifunc=syntaxcomplete#Complete
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => CamelCaseMotion.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"call camelcasemotion#CreateMotionMappings('n')
+call camelcasemotion#CreateMotionMappings('n')
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
