@@ -134,7 +134,10 @@ vnoremap <silent> <leader>r :call VisualSelection('replace', '')<CR>
 "   <leader>p
 "
 map <leader>cc :botright cope<cr>
+
+" Copies current buffer into a new tab
 map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
+
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
 
