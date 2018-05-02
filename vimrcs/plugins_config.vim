@@ -207,3 +207,11 @@ imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 " To remove all unused imports with F7:
 nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-auto-save settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:auto_save = 1 " enable auto save on startup
+let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
+
