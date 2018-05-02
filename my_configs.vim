@@ -76,6 +76,8 @@ Plugin 'groenewege/vim-less'
 
 Plugin 'artur-shaik/vim-javacomplete2'
 
+Plugin 'vim-scripts/vim-auto-save'
+
 "Plugin 'OrangeT/vim-csharp'
 
 "Plugin 'OmniSharp/omnisharp-vim'
