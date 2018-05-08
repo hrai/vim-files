@@ -18,8 +18,9 @@ colorscheme solarized
 "Match pattern while typing search pattern
 set incsearch
 
-"Yanking to clipboard
-noremap <C-Y> "+y
+
+noremap <C-Y> "+y   "Yanking to clipboard
+nnoremap <F6> gg"+yG  "Yanking the file contents to clipboard
 "Putting from clipboard
 noremap <C-P> "+p
 
@@ -29,6 +30,7 @@ nnoremap <leader>q :q<CR>
 
 "Map space to colon for easy access to run commands
 nnoremap <space> :
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Default directory settings
