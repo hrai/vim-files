@@ -21,8 +21,11 @@ set incsearch
 
 noremap <C-Y> "+y   "Yanking to clipboard
 nnoremap <F6> gg"+yG  "Yanking the file contents to clipboard
+
 "Putting from clipboard
 noremap <C-P> "+p
+imap <C-V> <C-O>"+p
+
 
 "Closing/saving files
 nnoremap <leader>x :x<CR>
