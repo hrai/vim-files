@@ -18,9 +18,10 @@ colorscheme solarized
 "Match pattern while typing search pattern
 set incsearch
 
-
-noremap <C-Y> "+y   "Yanking to clipboard
-nnoremap <F6> gg"+yG  "Yanking the file contents to clipboard
+"Yanking to clipboard
+nnoremap <C-Y> "+y
+"Yanking the file contents to clipboard
+nnoremap <F6> gg"+yG
 
 "Putting from clipboard
 noremap <C-P> "+p
