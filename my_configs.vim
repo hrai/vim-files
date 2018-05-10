@@ -4,20 +4,14 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nu
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => colourscheme settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Enable this for console application
-let g:solarized_termcolors=256
-colorscheme solarized
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""
-
 "Match pattern while typing search pattern
 set incsearch
 
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => keyboard mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Yanking to clipboard
 vnoremap <C-Y> "+y
 "Yanking the file contents to clipboard
@@ -27,13 +21,24 @@ nnoremap <F6> gg"+yG
 noremap <C-P> "+p
 imap <C-V> <C-O>h<C-O>"+p<C-O>l
 
-
 "Closing/saving files
 nnoremap <leader>x :x<CR>
 nnoremap <leader>q :q<CR>
 
 "Map space to colon for easy access to run commands
 nnoremap <space> :
+
+"Opening folder explorer in Windows
+noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => colourscheme settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Enable this for console application
+let g:solarized_termcolors=256
+colorscheme solarized
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
