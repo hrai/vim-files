@@ -19,13 +19,13 @@ colorscheme solarized
 set incsearch
 
 "Yanking to clipboard
-nnoremap <C-Y> "+y
+vnoremap <C-Y> "+y
 "Yanking the file contents to clipboard
 nnoremap <F6> gg"+yG
 
 "Putting from clipboard
 noremap <C-P> "+p
-imap <C-V> <C-O>"+p
+imap <C-V> <C-O>h<C-O>"+p<C-O>l
 
 
 "Closing/saving files
