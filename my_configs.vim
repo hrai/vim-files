@@ -31,6 +31,8 @@ nnoremap <space> :
 "Opening folder explorer in Windows
 noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
 
+"Select all
+nnoremap <C-A> ggVG
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
