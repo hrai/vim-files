@@ -86,7 +86,6 @@ Remove all clutter and focus only on the essential. Similar to iA Writer or Writ
 
 ## Included modes
 
-* [vim-coffee-script](https://github.com/kchmck/vim-coffee-script)
 * [vim-less](https://github.com/groenewege/vim-less)
 * [vim-bundle-mako](https://github.com/sophacles/vim-bundle-mako)
 * [vim-markdown](https://github.com/tpope/vim-markdown)
@@ -102,11 +101,7 @@ After you have installed the setup, you can create **~/.vim_runtime/my_configs.v
 	map <leader>ct :cd ~/Desktop/Todoist/todoist<cr>
 	map <leader>cw :cd ~/Desktop/Wedoist/wedoist<cr> 
 
-You can also install your plugins, for instance, via pathogen you can install [vim-rails](https://github.com/tpope/vim-rails):
-
-	cd ~/.vim_runtime
-	git clone git://github.com/tpope/vim-rails.git sources_non_forked/vim-rails
-
+You can also install your plugins, for instance, via Vundle
 
 ## Key Mappings
 
