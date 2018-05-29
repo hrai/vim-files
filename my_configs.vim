@@ -19,7 +19,7 @@ nnoremap <F6> gg"+yG
 
 "Putting from clipboard
 noremap <C-P> "+p
-imap <C-V> <C-O>h<C-O>"+p<C-O>l
+imap <C-V> <C-R>*
 
 "Closing/saving files
 nnoremap <leader>x :x<CR>
