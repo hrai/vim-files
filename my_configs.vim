@@ -63,8 +63,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'jiangmiao/auto-pairs'
 
-Plugin 'Valloric/YouCompleteMe'
-
 Plugin 'ntpeters/vim-better-whitespace'
 
 Plugin 'Yggdroot/indentLine'
@@ -91,11 +89,16 @@ Plugin 'artur-shaik/vim-javacomplete2'
 
 Plugin 'vim-scripts/vim-auto-save'
 
+Plugin 'tpope/vim-abolish'
+
 "Plugin 'OrangeT/vim-csharp'
 
 "Plugin 'OmniSharp/omnisharp-vim'
 
 "Plugin 'OmniSharp/omnisharp-server'
+
+" Plugin 'Valloric/YouCompleteMe'
+
 
 call vundle#end()
 
