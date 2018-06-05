@@ -15,6 +15,9 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry' > ~/.vimrc
 
+# Removing Vundle
+rm -rf ~/.vim/bundle/Vundle.vim
+
 # Cloning Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
