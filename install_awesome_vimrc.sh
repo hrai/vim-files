@@ -15,7 +15,7 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry' > ~/.vimrc
 
-" Cloning Vundle
+# Cloning Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
