@@ -1,4 +1,3 @@
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -13,23 +12,24 @@ set incsearch
 " => keyboard mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Yanking to clipboard
-vnoremap <C-Y> "+y
+vnoremap <C-C> "+y
 "Yanking the file contents to clipboard
 nnoremap <F6> gg"+yG
 
 "Putting from clipboard
 noremap <C-P> "+p
-imap <C-V> <C-R>*
+inoremap <C-V> <C-R>*
 
 "Closing/saving files
 nnoremap <leader>x :x<CR>
 nnoremap <leader>q :q<CR>
 
+"Opening folder explorer in Windows
+noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
+
 "Map space to colon for easy access to run commands
 nnoremap <space> :
 
-"Opening folder explorer in Windows
-noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
 
 "Select all
 nnoremap <C-A> ggVG
