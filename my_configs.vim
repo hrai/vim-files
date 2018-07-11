@@ -2,6 +2,7 @@
 " => General settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nu
+set nocompatible
 
 "Match pattern while typing search pattern
 set incsearch
