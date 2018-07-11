@@ -90,6 +90,8 @@ Plugin 'tpope/vim-commentary'
 
 Plugin 'terryma/vim-expand-region'
 
+Plugin 'terryma/vim-multiple-cursors'
+
 Plugin 'Valloric/vim-operator-highlight'
 
 Plugin 'groenewege/vim-less'
@@ -101,6 +103,10 @@ Plugin 'vim-scripts/vim-auto-save'
 Plugin 'tpope/vim-abolish'
 
 Plugin 'tpope/vim-fugitive'
+
+Plugin 'tpope/vim-surround'
+
+Plugin 'maxbrunsfeld/vim-yankstack'
 
 Plugin 'itchyny/lightline.vim'
 
