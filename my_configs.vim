@@ -84,6 +84,12 @@ Plugin 'bkad/CamelCaseMotion'
 
 Plugin 'tpope/vim-dispatch'
 
+Plugin 'tpope/vim-repeat'
+
+Plugin 'tpope/vim-commentary'
+
+Plugin 'terryma/vim-expand-region'
+
 Plugin 'Valloric/vim-operator-highlight'
 
 Plugin 'groenewege/vim-less'
