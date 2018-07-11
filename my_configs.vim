@@ -97,6 +97,11 @@ Plugin 'tpope/vim-abolish'
 Plugin 'itchyny/lightline.vim'
 
 Plugin 'mileszs/ack.vim'
+
+Plugin 'kien/ctrlp.vim'
+
+Plugin 'scrooloose/nerdtree'
+
 "Plugin 'OrangeT/vim-csharp'
 
 "Plugin 'OmniSharp/omnisharp-vim'
