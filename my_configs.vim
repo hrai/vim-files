@@ -70,8 +70,6 @@ Plugin 'ntpeters/vim-better-whitespace'
 
 Plugin 'Yggdroot/indentLine'
 
-Plugin 'tpope/vim-fugitive'
-
 Plugin 'tpope/vim-sleuth'
 
 Plugin 'easymotion/vim-easymotion'
