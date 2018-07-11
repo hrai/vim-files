@@ -128,6 +128,8 @@ Plugin 'jlanzarotta/bufexplorer'
 
 Plugin 'vim-syntastic/syntastic'
 
+Plugin 'amix/open_file_under_cursor.vim'
+
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
