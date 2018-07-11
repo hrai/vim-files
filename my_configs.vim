@@ -120,6 +120,12 @@ Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'airblade/vim-gitgutter'
 
+Plugin 'vim-scripts/mru.vim'
+
+Plugin 'junegunn/goyo.vim'
+
+Plugin 'jlanzarotta/bufexplorer'
+
 "Plugin 'OrangeT/vim-csharp'
 
 "Plugin 'OmniSharp/omnisharp-vim'
