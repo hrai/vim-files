@@ -126,6 +126,9 @@ Plugin 'junegunn/goyo.vim'
 
 Plugin 'jlanzarotta/bufexplorer'
 
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
 "Plugin 'OrangeT/vim-csharp'
 
 "Plugin 'OmniSharp/omnisharp-vim'
