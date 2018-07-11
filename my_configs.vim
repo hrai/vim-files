@@ -10,52 +10,6 @@ set incsearch
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => keyboard mappings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Yanking to clipboard
-vnoremap <C-C> "+y
-"Yanking the file contents to clipboard
-nnoremap <F6> gg"+yG
-
-"Putting from clipboard
-noremap <C-P> "+p
-inoremap <C-V> <C-R>*
-
-"Closing/saving files
-nnoremap <leader>x :x<CR>
-nnoremap <leader>q :q<CR>
-
-"Opening folder explorer in Windows
-noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
-
-"Map space to colon for easy access to run commands
-nnoremap <space> :
-
-
-"Select all
-nnoremap <C-A> ggVG
-
-"Repeat last Ex mode command
-nmap ; @:
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => colourscheme settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Enable this for console application
-let g:solarized_termcolors=256
-colorscheme solarized
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Default directory settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set backupdir=~/.vim_runtime/temp_dirs/undodir
-set directory=~/.vim_runtime/temp_dirs/undodir
-set undodir=~/.vim_runtime/temp_dirs/undodir
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vundle plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -172,4 +126,50 @@ set foldlevelstart=20
 "let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
 "let g:OmniSharp_prefer_global_sln = 1  
 "let g:OmniSharp_timeout = 10 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => keyboard mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Yanking to clipboard
+vnoremap <C-C> "+y
+"Yanking the file contents to clipboard
+nnoremap <F6> gg"+yG
+
+"Putting from clipboard
+noremap <C-P> "+p
+inoremap <C-V> <C-R>*
+
+"Closing/saving files
+nnoremap <leader>x :x<CR>
+nnoremap <leader>q :q<CR>
+
+"Opening folder explorer in Windows
+noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
+
+"Map space to colon for easy access to run commands
+nnoremap <space> :
+
+
+"Select all
+nnoremap <C-A> ggVG
+
+"Repeat last Ex mode command
+nmap ; @:
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => colourscheme settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Enable this for console application
+let g:solarized_termcolors=256
+colorscheme solarized
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Default directory settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set backupdir=~/.vim_runtime/temp_dirs/undodir
+set directory=~/.vim_runtime/temp_dirs/undodir
+set undodir=~/.vim_runtime/temp_dirs/undodir
+
 
