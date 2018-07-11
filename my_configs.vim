@@ -100,6 +100,8 @@ Plugin 'vim-scripts/vim-auto-save'
 
 Plugin 'tpope/vim-abolish'
 
+Plugin 'tpope/vim-fugitive'
+
 Plugin 'itchyny/lightline.vim'
 
 Plugin 'mileszs/ack.vim'
@@ -107,6 +109,10 @@ Plugin 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
 
 Plugin 'scrooloose/nerdtree'
+
+Plugin 'altercation/vim-colors-solarized'
+
+Plugin 'airblade/vim-gitgutter'
 
 "Plugin 'OrangeT/vim-csharp'
 
