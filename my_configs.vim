@@ -154,7 +154,10 @@ nnoremap <space> :
 nnoremap <C-A> ggVG
 
 "Repeat last Ex mode command
-nmap ; @:
+"nmap ; @:
+
+"Open vim in fullscreen mode (Use ~x on an English Windows version or ~n for French.)
+au GUIEnter * simalt ~x
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
