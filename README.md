@@ -1,5 +1,7 @@
 Forked from https://github.com/amix/vimrc
 
+If you have a pre-existing .vim_runtime folder, just run ~/.vim_runtime/refresh_and_install_vimrcs.sh to remove the whole folder and get everything from github.
+
 ## How to install the Awesome version?
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
 
