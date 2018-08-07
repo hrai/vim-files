@@ -304,7 +304,7 @@ endfun
 " => Removing the trailing whitespaces from selected file types
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("autocmd")
-    autocmd BufWritePre *.txt,*.js,*.java,*.phtml,*.cs,*.css,*.notes :call CleanExtraSpaces()
+    autocmd BufWritePre *.txt,*.js,*.java,*.*html,*.cs,*.css,*.notes,*.sql :call CleanExtraSpaces()
 endif
 
 
