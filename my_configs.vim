@@ -159,6 +159,9 @@ nmap \ @:
 "Open vim in fullscreen mode (Use ~x on an English Windows version or ~n for French.)
 au GUIEnter * simalt ~x
 
+"Font settings
+set guifont=Consolas:h11
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => colourscheme settings
