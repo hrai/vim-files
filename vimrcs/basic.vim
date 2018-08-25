@@ -168,6 +168,16 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
+"GUI Font settings
+if has("gui_running")
+  if has("gui_gtk1")
+    set guifont=Inconsolata\ 11
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h13
+  elseif has("gui_win31")
+    set guifont=Consolas:h10:cANSI
+  endif
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
