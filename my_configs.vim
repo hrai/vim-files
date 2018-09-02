@@ -85,6 +85,9 @@ Plugin 'amix/open_file_under_cursor.vim'
 
 Plugin 'w0rp/ale'
 
+Plugin 'godlygeek/tabular'
+
+
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
