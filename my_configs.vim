@@ -120,8 +120,8 @@ call camelcasemotion#CreateMotionMappings('n')
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fold settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set fdm=indent
-set foldlevelstart=20
+"set fdm=indent
+"set foldlevelstart=20
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
