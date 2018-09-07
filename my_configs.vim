@@ -89,6 +89,8 @@ Plugin 'godlygeek/tabular'
 
 Plugin 'ervandew/supertab'
 
+Plugin 'elzr/vim-json'
+
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
