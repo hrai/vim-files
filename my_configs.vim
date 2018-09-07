@@ -87,6 +87,7 @@ Plugin 'w0rp/ale'
 
 Plugin 'godlygeek/tabular'
 
+Plugin 'ervandew/supertab'
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
