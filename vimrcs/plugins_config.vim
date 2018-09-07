@@ -214,3 +214,8 @@ imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 let g:auto_save = 1 " enable auto save on startup
 let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim ale settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ale_completion_enabled = 1
