@@ -91,6 +91,8 @@ Plugin 'ervandew/supertab'
 
 Plugin 'elzr/vim-json'
 
+Plugin 'mildred/vim-bufmru'
+
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
@@ -110,10 +112,6 @@ call vundle#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:EclimCompletionMethod = 'omnifunc'
-set omnifunc=syntaxcomplete#Complete
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => CamelCaseMotion.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

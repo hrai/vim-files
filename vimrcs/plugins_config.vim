@@ -178,3 +178,13 @@ let g:ale_completion_enabled = 1
 
 let b:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using :ALEFix
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => BufMRU settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Alt-B or Alt-Shift-B to navigate buffers in insert mode
+imap <A-B> <C-O>:BufMRUPrev<CR>
+imap <A-b> <C-O>:BufMRUNext<CR>
+
+" Tab and Shift-Tab in normal mode to navigate buffers
+map <Tab> :BufMRUNext<CR>
+map <S-Tab> :BufMRUPrev<CR>
