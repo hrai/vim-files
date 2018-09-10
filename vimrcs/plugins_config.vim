@@ -175,3 +175,6 @@ let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 " => vim ale settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_completion_enabled = 1
+
+let b:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using :ALEFix
+
