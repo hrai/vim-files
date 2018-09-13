@@ -93,6 +93,8 @@ Plugin 'elzr/vim-json'
 
 Plugin 'mildred/vim-bufmru'
 
+Plugin 'ludovicchabant/vim-gutentags'
+
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
@@ -107,7 +109,6 @@ Plugin 'garbas/vim-snipmate'
 
 
 call vundle#end()
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Settings
@@ -130,8 +131,8 @@ call camelcasemotion#CreateMotionMappings('n')
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "let g:OmniSharp_server_type = 'roslyn'
 "let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
-"let g:OmniSharp_prefer_global_sln = 1  
-"let g:OmniSharp_timeout = 10 
+"let g:OmniSharp_prefer_global_sln = 1
+"let g:OmniSharp_timeout = 10
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => keyboard mappings
@@ -174,10 +175,7 @@ colorscheme solarized
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Default directory settings
+" => ctags/universal tags settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set backupdir=~/.vim_runtime/temp_dirs/undodir
-set directory=~/.vim_runtime/temp_dirs/undodir
-set undodir=~/.vim_runtime/temp_dirs/undodir
-
+set tags=./tags,tags;$HOME
 
