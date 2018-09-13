@@ -156,6 +156,7 @@ noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
 "Map space to colon for easy access to run commands
 nnoremap <space> :
 
+noremap <F12> <C-]>
 
 "Select all
 nnoremap <C-A> ggVG
