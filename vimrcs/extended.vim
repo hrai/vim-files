@@ -16,6 +16,12 @@ set guioptions-=L
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Changes working directory to always be
+"       the same as the file you are editing
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufEnter * silent! lcd %:p:h
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>e :e! ~/.vim_runtime/my_configs.vim<cr>
