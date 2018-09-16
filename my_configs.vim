@@ -95,6 +95,8 @@ Plugin 'mildred/vim-bufmru'
 
 Plugin 'ludovicchabant/vim-gutentags'
 
+Plugin 'svermeulen/vim-easyclip'
+
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
