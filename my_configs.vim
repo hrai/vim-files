@@ -148,6 +148,9 @@ nnoremap <F6> gg"+yG
 noremap <C-P> "+p
 inoremap <C-V> <C-R>*
 
+"Copying the word under cursor to clipboard
+nnoremap <C-C> viw"+y*
+
 "Closing/saving files
 nnoremap <leader>x :x<CR>
 nnoremap <leader>q :q<CR>
@@ -158,6 +161,7 @@ noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
 "Map space to colon for easy access to run commands
 nnoremap <space> :
 
+"Map go to declaration for ctags
 noremap <F12> <C-]>
 
 "Select all
