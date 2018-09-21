@@ -25,3 +25,4 @@ endfunc
 command! OpenGitBash call OpenGitBash()
 command! OpenGitExtensions call OpenGitExtensions()
 command! OpenGitExtensionsCommit call OpenGitExtensionsCommit()
+command! Gec call OpenGitExtensionsCommit()
