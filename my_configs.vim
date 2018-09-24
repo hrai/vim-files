@@ -165,6 +165,10 @@ noremap <F12> <C-]>
 "Select all
 nnoremap <C-A> ggVG
 
+"Indentation
+nnoremap > >>
+nnoremap < <<
+
 "Repeat last Ex mode command
 nmap \ @:
 
