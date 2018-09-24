@@ -91,8 +91,6 @@ Plugin 'ervandew/supertab'
 
 Plugin 'elzr/vim-json'
 
-Plugin 'mildred/vim-bufmru'
-
 Plugin 'ludovicchabant/vim-gutentags'
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -168,6 +166,10 @@ nnoremap <C-A> ggVG
 "Indentation
 nnoremap > >>
 nnoremap < <<
+
+"Buffer switching
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 
 "Repeat last Ex mode command
 nmap \ @:
