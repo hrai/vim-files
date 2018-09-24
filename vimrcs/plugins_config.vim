@@ -205,15 +205,9 @@ let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ale_completion_enabled = 1
 
-let b:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using :ALEFix
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => BufMRU settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Alt-B or Alt-Shift-B to navigate buffers in insert mode
-imap <A-B> <C-O>:BufMRUPrev<CR>
-imap <A-b> <C-O>:BufMRUNext<CR>
+let g:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using :ALEFix
 
 " Tab and Shift-Tab in normal mode to navigate buffers
-map <Tab> :BufMRUNext<CR>
-map <S-Tab> :BufMRUPrev<CR>
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+

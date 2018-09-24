@@ -167,10 +167,6 @@ nnoremap <C-A> ggVG
 nnoremap > >>
 nnoremap < <<
 
-"Buffer switching
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
-
 "Repeat last Ex mode command
 nmap \ @:
 
