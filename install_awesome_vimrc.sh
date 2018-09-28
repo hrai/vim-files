@@ -9,10 +9,17 @@ source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
 source ~/.vim_runtime/vimrcs/plugins_config.vim
 source ~/.vim_runtime/vimrcs/extended.vim
-source ~/.vim_runtime/vimrcs/python_functions.vim
 
 try
 source ~/.vim_runtime/my_configs.vim
+
+if !has('python3')
+	echo ('Please install python 3.5')
+	finish
+else
+	source ~/.vim_runtime/vimrcs/python_functions.vim
+endif
+
 catch
 endtry' > ~/.vimrc
 
