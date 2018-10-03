@@ -154,7 +154,7 @@ noremap <C-P> "+p
 inoremap <C-V> <C-R>*
 
 "Copying the word under cursor to clipboard
-nnoremap <C-C> viw"+y*
+nnoremap <C-C> viw"+y
 
 "Closing/saving files
 nnoremap <leader>x :x<CR>
