@@ -5,8 +5,16 @@ If you have a pre-existing .vim_runtime folder, just run ~/.vim_runtime/refresh_
 ## How to install the Awesome version?
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following from your terminal:
 
+For HTTPS:
 	rm -rf ~/.vim_runtime
 	git clone https://github.com/hrai/vim-files.git ~/.vim_runtime
+	sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+OR
+
+For SSH:
+	rm -rf ~/.vim_runtime
+	git clone git@github.com:hrai/vim-files.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 I also recommend using [the Hack font](http://sourcefoundry.org/hack/) (it's a free and awesome font designed for source code). The Awesome vimrc is already setup to try to use it.
