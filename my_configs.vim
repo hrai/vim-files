@@ -93,6 +93,8 @@ Plugin 'elzr/vim-json'
 
 Plugin 'ludovicchabant/vim-gutentags'
 
+Plugin 'schickling/vim-bufonly'
+
 " Track the engine.
 Plugin 'SirVer/ultisnips'
 
@@ -203,4 +205,3 @@ set tags=./tags,tags;$HOME
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-

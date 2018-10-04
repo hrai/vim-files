@@ -208,3 +208,9 @@ let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 let g:ale_completion_enabled = 1
 
 let g:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using :ALEFix
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-bufonly settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <leader>bo :Bufonly<cr>
