@@ -19,7 +19,7 @@ let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
-map <leader>o :BufExplorer<cr>
+map <leader>be :BufExplorer<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -206,8 +206,3 @@ let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 let g:ale_completion_enabled = 1
 
 let g:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using :ALEFix
-
-" Tab and Shift-Tab in normal mode to navigate buffers
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
-

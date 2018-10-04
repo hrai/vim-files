@@ -68,6 +68,10 @@ command W w !sudo tee % > /dev/null
 " disable folding of sections like JS functions
 set nofoldenable
 
+" Tab and Shift-Tab in normal mode to navigate buffers
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
