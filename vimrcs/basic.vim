@@ -284,6 +284,9 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
+" Switch to home directory
+map <leader>ch :cd ~<cr>
+
 " Specify the behavior when switching between buffers
 try
   set switchbuf=useopen,usetab,newtab
