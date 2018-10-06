@@ -101,6 +101,8 @@ Plugin 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
 
+Plugin 'Ben201310/online-thesaurus-vim'
+
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
@@ -159,8 +161,8 @@ inoremap <C-V> <C-R>*
 nnoremap <C-C> viw"+y
 
 "Closing/saving files
-nnoremap <leader>x :x<CR>
-nnoremap <leader>q :q<CR>
+nnoremap <leader>x :x!<CR>
+nnoremap <leader>q :q!<CR>
 
 "Opening folder explorer in Windows
 noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
