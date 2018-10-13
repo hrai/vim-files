@@ -110,6 +110,8 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 
+Plugin 'christoomey/vim-tmux-navigator'
+
 "Plugin 'OrangeT/vim-csharp'
 
 "Plugin 'OmniSharp/omnisharp-vim'

@@ -348,7 +348,7 @@ map <leader>ss setlocal spell!<cr>
 map <leader>sn ]s
 map <leader>sp [s
 map <leader>sa zg
-map <leader>sf 1z=<cr> "select the first option
+map <leader>sf 1za<cr> "select the first option
 map <leader>sl z=
 
 
