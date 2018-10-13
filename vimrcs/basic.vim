@@ -289,7 +289,7 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 " Switch to home directory
 map <leader>ch :cd ~<cr>
 
-nmap <leader>r set relativenumber!
+nmap <leader>r :setlocal relativenumber!<cr>
 
 " Specify the behavior when switching between buffers
 try
