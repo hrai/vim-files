@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/sh
 
 echo 'How do you want to clone the repo? SSH or HTTPS? (s/h)'
@@ -20,3 +21,19 @@ fi
 echo 'Installing awesome_vimrc...'
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 echo 'Finished installing awesome_vimrc...'
+
+=======
+#!/bin/sh
+
+echo "Removing .vim_runtime folder..."
+# rm -rf ~/.vim_runtime
+echo "Finished removing .vim_runtime folder..."
+
+echo "Do you want to use SSH (y/n)?"
+read user_response
+
+if ["$user_response" = "y"]
+then
+    echo "Cloning vim-files.git via SSH..."
+fi
+>>>>>>> Added Notes Config To Capitalise The First Letter Of The Word
