@@ -289,6 +289,8 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 " Switch to home directory
 map <leader>ch :cd ~<cr>
 
+nmap <leader>r set relativenumber!
+
 " Specify the behavior when switching between buffers
 try
   set switchbuf=useopen,usetab,newtab
