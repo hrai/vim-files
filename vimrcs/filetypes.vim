@@ -31,6 +31,23 @@ au BufNewFile,BufRead *.notes set filetype=notes
 
 
 """"""""""""""""""""""""""""""
+" => notes section
+""""""""""""""""""""""""""""""
+
+autocmd FileType notes call LoadNotesConfig()
+
+" automatically uppercase the first letter of the sentence
+function! LoadNotesConfig()
+	for char in split('abcdefghijklmnopqrstuvwxyz', '\zs')
+		exe printf("inoremap <expr> <buffer> %s search('[.!?]\\_s\\+\\%%#', 'bcnw') ? '%s' : '%s'", char, toupper(char), char)
+	endfor
+
+	for char in split('ABCDEFGHIJKLMNOPQRSTUVWXYZ', '\zs')
+		exe printf("inoremap <expr> <buffer> %s search('[.!?]\\_s\\+\\%%#', 'bcnW') ? '%s' : '%s'", char, tolower(char), char)
+	endfor
+endfunction
+
+""""""""""""""""""""""""""""""
 " => JavaScript section
 """""""""""""""""""""""""""""""
 " au FileType javascript call JavaScriptFold()
@@ -40,10 +57,10 @@ au FileType javascript setl nocindent
 au FileType javascript imap <c-t> $log();<esc>hi
 au FileType javascript imap <c-a> alert();<esc>hi
 
-au FileType javascript inoremap <buffer> $r return 
+au FileType javascript inoremap <buffer> $r return
 au FileType javascript inoremap <buffer> $f //--- PH<esc>FP2xi
 
-function! JavaScriptFold() 
+function! JavaScriptFold()
     setl foldmethod=syntax
     setl foldlevelstart=1
     syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
@@ -58,11 +75,11 @@ endfunction
 """"""""""""""""""""""""""""""
 " => Shell section
 """"""""""""""""""""""""""""""
-if exists('$TMUX') 
+if exists('$TMUX')
     if has('nvim')
         set termguicolors
     else
-        set term=screen-256color 
+        set term=screen-256color
     endif
 endif
 
