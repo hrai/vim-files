@@ -66,7 +66,9 @@ nmap <leader>w :w!<cr>
 " command W w !sudo tee % > /dev/null
 
 " disable folding of sections like JS functions
-set nofoldenable
+set foldmethod=manual       " manual fold
+set foldnestmax=3           " deepest fold is 3 levels
+set nofoldenable            " don't fold by default
 
 " Tab and Shift-Tab in normal mode to navigate buffers
 nnoremap <Tab> :bnext<CR>
