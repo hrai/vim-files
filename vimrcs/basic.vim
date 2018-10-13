@@ -63,7 +63,7 @@ nmap <leader>w :w!<cr>
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null
+" command W w !sudo tee % > /dev/null
 
 " disable folding of sections like JS functions
 set nofoldenable
@@ -338,13 +338,13 @@ nnoremap <F9> O<Esc>
 " => Spell checking
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
+map <leader>ss setlocal spell!<cr>
 
 " Shortcuts using <leader>
 map <leader>sn ]s
 map <leader>sp [s
 map <leader>sa zg
-map <leader>sf 1z=
+map <leader>sf 1z= "select the first option
 map <leader>sl z=
 
 

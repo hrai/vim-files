@@ -19,7 +19,7 @@ endif
 
 
 """"""""""""""""""""""""""""""
-" => C Sharp section
+" => File types section
 """"""""""""""""""""""""""""""
 
 "Loading syntax files
@@ -34,6 +34,7 @@ au BufNewFile,BufRead *.notes set filetype=notes
 " => notes section
 """"""""""""""""""""""""""""""
 
+autocmd FileType notes :setlocal spell
 autocmd FileType notes call LoadNotesConfig()
 
 " automatically uppercase the first letter of the sentence
