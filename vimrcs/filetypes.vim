@@ -40,13 +40,14 @@ autocmd FileType notes call LoadNotesConfig()
 " automatically uppercase the first letter of the sentence
 function! LoadNotesConfig()
 	for char in split('abcdefghijklmnopqrstuvwxyz', '\zs')
-		exe printf("inoremap <expr> <buffer> %s search('[.!?]\\_s\\+\\%%#', 'bcnw') ? '%s' : '%s'", char, toupper(char), char)
+		exe printf("inoremap <expr> <buffer> %s search('[-.!?]\\_s\\+\\%%#', 'bcnw') ? '%s' : '%s'", char, toupper(char), char)
 	endfor
 
 	for char in split('ABCDEFGHIJKLMNOPQRSTUVWXYZ', '\zs')
-		exe printf("inoremap <expr> <buffer> %s search('[.!?]\\_s\\+\\%%#', 'bcnW') ? '%s' : '%s'", char, tolower(char), char)
+		exe printf("inoremap <expr> <buffer> %s search('[-.!?]\\_s\\+\\%%#', 'bcnW') ? '%s' : '%s'", char, tolower(char), char)
 	endfor
 endfunction
+
 
 """"""""""""""""""""""""""""""
 " => JavaScript section
