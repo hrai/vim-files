@@ -1,3 +1,8 @@
+" Load vim-plug
+if empty(glob("~/.vim/autoload/plug.vim"))
+    execute 'curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -10,121 +15,121 @@ set incsearch
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle plugins
+" => vim-plug plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set rtp+=~/.vim/bundle/Vundle.vim
 
-call vundle#begin()
+" Specify a directory for plugins (x)Avoid using standard Vim directory names like 'plugin')
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Make sure you use single quotes
+Plug 'junegunn/vim-easy-align'
 
-Plugin 'jiangmiao/auto-pairs'
+Plug 'VundleVim/Vundle.vim'
 
-Plugin 'ntpeters/vim-better-whitespace'
+Plug 'tomtom/enabler_vim'
 
-Plugin 'Yggdroot/indentLine'
+Plug 'jiangmiao/auto-pairs'
 
-Plugin 'tpope/vim-sleuth'
+Plug 'ntpeters/vim-better-whitespace'
 
-Plugin 'easymotion/vim-easymotion'
+Plug 'Yggdroot/indentLine'
 
-Plugin 'dkarter/bullets.vim'
+Plug 'tpope/vim-sleuth'
 
-Plugin 'pangloss/vim-javascript'
+Plug 'easymotion/vim-easymotion'
 
-Plugin 'bkad/CamelCaseMotion'
+Plug 'dkarter/bullets.vim'
 
-Plugin 'tpope/vim-dispatch'
+Plug 'pangloss/vim-javascript'
 
-Plugin 'tpope/vim-repeat'
+Plug 'bkad/CamelCaseMotion'
 
-Plugin 'tpope/vim-commentary'
+Plug 'tpope/vim-dispatch'
 
-Plugin 'terryma/vim-expand-region'
+Plug 'tpope/vim-repeat'
 
-Plugin 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-commentary'
 
-Plugin 'Valloric/vim-operator-highlight'
+Plug 'terryma/vim-expand-region'
 
-Plugin 'groenewege/vim-less'
+Plug 'terryma/vim-multiple-cursors'
 
-Plugin 'artur-shaik/vim-javacomplete2'
+Plug 'Valloric/vim-operator-highlight'
 
-Plugin 'vim-scripts/vim-auto-save'
+Plug 'groenewege/vim-less'
 
-Plugin 'tpope/vim-abolish'
+Plug 'artur-shaik/vim-javacomplete2'
 
-Plugin 'tpope/vim-fugitive'
+Plug 'vim-scripts/vim-auto-save'
 
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-abolish'
 
-Plugin 'maxbrunsfeld/vim-yankstack'
+Plug 'tpope/vim-fugitive'
 
-Plugin 'itchyny/lightline.vim'
+Plug 'tpope/vim-surround'
 
-Plugin 'mileszs/ack.vim'
+Plug 'maxbrunsfeld/vim-yankstack'
 
-Plugin 'kien/ctrlp.vim'
+Plug 'itchyny/lightline.vim'
 
-Plugin 'scrooloose/nerdtree'
+Plug 'mileszs/ack.vim'
 
-Plugin 'altercation/vim-colors-solarized'
+Plug 'kien/ctrlp.vim'
 
-Plugin 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdtree'
 
-Plugin 'vim-scripts/mru.vim'
+Plug 'altercation/vim-colors-solarized'
 
-Plugin 'junegunn/goyo.vim'
+Plug 'airblade/vim-gitgutter'
 
-Plugin 'jlanzarotta/bufexplorer'
+Plug 'vim-scripts/mru.vim'
 
-Plugin 'vim-syntastic/syntastic'
+Plug 'junegunn/goyo.vim'
 
-Plugin 'amix/open_file_under_cursor.vim'
+Plug 'jlanzarotta/bufexplorer'
 
-Plugin 'w0rp/ale'
+Plug 'vim-syntastic/syntastic'
 
-Plugin 'godlygeek/tabular'
+Plug 'amix/open_file_under_cursor.vim'
 
-Plugin 'ervandew/supertab'
+Plug 'w0rp/ale'
 
-Plugin 'elzr/vim-json'
+Plug 'godlygeek/tabular'
 
-Plugin 'ludovicchabant/vim-gutentags'
+Plug 'ervandew/supertab'
 
-Plugin 'schickling/vim-bufonly'
+Plug 'elzr/vim-json'
+
+Plug 'ludovicchabant/vim-gutentags'
+
+Plug 'schickling/vim-bufonly'
 
 " Track the engine.
-Plugin 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
 
 " Snippets are separated from the engine. Add this if you want them:
-Plugin 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 
-Plugin 'Ben201310/online-thesaurus-vim'
+Plug 'Ben201310/online-thesaurus-vim'
 
-Plugin 'vim-scripts/vis'
+Plug 'vim-scripts/vis'
 
+Plug 'christoomey/vim-tmux-navigator'
 
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
 
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+"Plug 'OrangeT/vim-csharp'
 
-Plugin 'christoomey/vim-tmux-navigator'
+"Plug 'OmniSharp/omnisharp-vim'
 
-"Plugin 'OrangeT/vim-csharp'
+"Plug 'OmniSharp/omnisharp-server'
 
-"Plugin 'OmniSharp/omnisharp-vim'
+" Plug 'Valloric/YouCompleteMe'
 
-"Plugin 'OmniSharp/omnisharp-server'
-
-" Plugin 'Valloric/YouCompleteMe'
-
-
-call vundle#end()
+" Initialize plugin system
+call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Settings
@@ -212,3 +217,7 @@ set tags=./tags,tags;$HOME
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
