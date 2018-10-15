@@ -103,6 +103,9 @@ Plugin 'honza/vim-snippets'
 
 Plugin 'Ben201310/online-thesaurus-vim'
 
+Plugin 'vim-scripts/vis'
+
+
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 

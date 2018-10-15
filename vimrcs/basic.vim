@@ -416,3 +416,11 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
+function! Gap(commit_message)
+  Gw
+  exec "Gcommit -m \"". a:commit_message. "\""
+  " Gpush
+endfunction
+
+command! -nargs=1 MyCommand call Gap(<f-args>)
