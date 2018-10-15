@@ -22,6 +22,8 @@ endif
 " => File types section
 """"""""""""""""""""""""""""""
 
+set ffs=unix,dos,mac
+
 "Loading syntax files
 au BufRead,BufNewFile *.cs set filetype=cs
 au BufRead,BufNewFile *.aspx set filetype=aspx
@@ -29,6 +31,11 @@ au BufRead,BufNewFile *.cshtml set filetype=cshtml
 au BufRead,BufNewFile *.phtml set filetype=html
 au BufNewFile,BufRead *.notes set filetype=notes
 
+au BufRead,BufNewFile *.asp setlocal ffs=dos,unix
+au BufRead,BufNewFile *.as*x setlocal ffs=dos,unix
+au BufRead,BufNewFile *.cs setlocal ffs=dos,unix
+au BufRead,BufNewFile *.csproj setlocal ffs=dos,unix
+au BufRead,BufNewFile *.sln setlocal ffs=dos,unix
 
 """"""""""""""""""""""""""""""
 " => notes section
