@@ -66,7 +66,7 @@ nmap <leader>w :w!<cr>
 " command W w !sudo tee % > /dev/null
 
 " disable folding of sections like JS functions
-set foldmethod=manual       " manual fold
+set foldmethod=indent       " manual fold
 set foldnestmax=3           " deepest fold is 3 levels
 set nofoldenable            " don't fold by default
 
