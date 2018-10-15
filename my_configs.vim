@@ -92,7 +92,7 @@ Plug 'vim-syntastic/syntastic'
 
 Plug 'amix/open_file_under_cursor.vim'
 
-Plug 'w0rp/ale'
+Plug 'w0rp/ale', { 'for': ['javascript'] }
 
 Plug 'godlygeek/tabular'
 
