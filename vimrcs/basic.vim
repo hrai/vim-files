@@ -417,10 +417,10 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
-function! Gap(commit_message)
+function! GitCommitPush(commit_message)
   Gw
   exec "Gcommit -m \"". a:commit_message. "\""
-  " Gpush
+  Gpush
 endfunction
 
-command! -nargs=1 MyCommand call Gap(<f-args>)
+command! -nargs=1 Gap call GitCommitPush(<f-args>)
