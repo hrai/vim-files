@@ -98,7 +98,7 @@ Plug 'godlygeek/tabular'
 
 Plug 'ervandew/supertab'
 
-Plug 'elzr/vim-json'
+Plug 'elzr/vim-json', { 'for': ['javascript', 'json'] }
 
 Plug 'ludovicchabant/vim-gutentags'
 
@@ -116,9 +116,9 @@ Plug 'vim-scripts/vis'
 
 Plug 'christoomey/vim-tmux-navigator'
 
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
+" Plug 'MarcWeber/vim-addon-mw-utils'
+" Plug 'tomtom/tlib_vim'
+" Plug 'garbas/vim-snipmate'
 
 "Plug 'OrangeT/vim-csharp'
 
@@ -137,14 +137,7 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => CamelCaseMotion.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call camelcasemotion#CreateMotionMappings('n')
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Fold settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"set fdm=indent
-"set foldlevelstart=20
+" call camelcasemotion#CreateMotionMappings('n')
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
