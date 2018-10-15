@@ -40,9 +40,9 @@ Plug 'easymotion/vim-easymotion'
 
 Plug 'dkarter/bullets.vim'
 
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
 
-Plug 'bkad/CamelCaseMotion'
+" Plug 'bkad/CamelCaseMotion'
 
 Plug 'tpope/vim-dispatch'
 
@@ -58,7 +58,7 @@ Plug 'Valloric/vim-operator-highlight'
 
 Plug 'groenewege/vim-less'
 
-Plug 'artur-shaik/vim-javacomplete2'
+Plug 'artur-shaik/vim-javacomplete2', { 'for': ['java'] }
 
 Plug 'vim-scripts/vim-auto-save'
 
@@ -80,7 +80,7 @@ Plug 'scrooloose/nerdtree', { 'on': ['NerdTreeToggle', 'NerdTreeFind'] }
 
 Plug 'altercation/vim-colors-solarized'
 
-Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter', { 'on': ['GitGutterToggle'] }
 
 Plug 'vim-scripts/mru.vim'
 
@@ -209,15 +209,4 @@ colorscheme solarized
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tags=./tags,tags;$HOME
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => utilsnips settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
 
