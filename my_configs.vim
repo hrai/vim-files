@@ -1,8 +1,3 @@
-" Load vim-plug
-if empty(glob("~/.vim/autoload/plug.vim"))
-    execute 'curl -fLo ~/.vim/autoload/plug.vim --create-dirs \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-endif
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -156,6 +151,7 @@ vnoremap <C-C> "+y
 "Yanking the file contents to clipboard
 nnoremap <F6> gg"+yG
 
+
 "Putting from clipboard
 noremap <C-P> "+p
 inoremap <C-V> <C-R>*
@@ -163,21 +159,21 @@ inoremap <C-V> <C-R>*
 "Copying the word under cursor to clipboard
 nnoremap <C-C> viw"+y
 
-"Closing/saving files
-nnoremap <leader>x :x!<CR>
-nnoremap <leader>q :q!<CR>
+"Select all
+nnoremap <C-A> ggVG
 
 "Opening folder explorer in Windows
 noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
+
+"Closing/saving files
+nnoremap <leader>x :x!<CR>
+nnoremap <leader>q :q!<CR>
 
 "Map space to colon for easy access to run commands
 nnoremap <space> :
 
 "Map go to declaration for ctags
 noremap <F12> <C-]>
-
-"Select all
-nnoremap <C-A> ggVG
 
 "Indentation
 nnoremap > >>
