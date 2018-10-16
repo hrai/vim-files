@@ -224,6 +224,7 @@ let g:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>bo :Bufonly<cr>
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => utilsnips settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -235,3 +236,12 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+
+""""""""""""""""""""""""""""""
+" => Drag visual section
+""""""""""""""""""""""""""""""
+vmap  <expr>  <LEFT>   DVB_Drag('left')
+vmap  <expr>  <RIGHT>  DVB_Drag('right')
+vmap  <expr>  <DOWN>   DVB_Drag('down')
+vmap  <expr>  <UP>     DVB_Drag('up')
+vmap  <expr>  D        DVB_Duplicate()
