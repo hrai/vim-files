@@ -111,6 +111,8 @@ Plug 'vim-scripts/vis'
 
 Plug 'christoomey/vim-tmux-navigator'
 
+Plug 'soulston/vim-listtrans'
+
 " Plug 'MarcWeber/vim-addon-mw-utils'
 " Plug 'tomtom/tlib_vim'
 " Plug 'garbas/vim-snipmate'
@@ -198,4 +200,9 @@ colorscheme solarized
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tags=./tags,tags;$HOME
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => listtrans settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <leader>l :call ListTrans_toggle_format()<CR>
+xmap <leader>l :call ListTrans_toggle_format('visual')<CR>
 
