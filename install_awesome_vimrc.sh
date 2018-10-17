@@ -3,7 +3,10 @@ set -e
 
 cd ~/.vim_runtime
 
-echo 'set runtimepath+=~/.vim_runtime
+echo '
+" start of the content
+set runtimepath+=~/.vim
+set runtimepath+=~/.vim_runtime
 
 source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
