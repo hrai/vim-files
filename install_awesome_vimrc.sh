@@ -24,10 +24,10 @@ endif
 catch
 endtry' > ~/.vimrc
 
-# Removing Vundle
+# Removing vim plug
 rm -rf ~/.vim/autoload/plug.vim
 
-# Cloning Vundle
+# Cloning vim plug
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
