@@ -31,11 +31,11 @@ au BufRead,BufNewFile *.cshtml set filetype=cshtml
 au BufRead,BufNewFile *.phtml set filetype=html
 au BufNewFile,BufRead *.notes set filetype=notes
 
-au BufRead,BufNewFile *.asp setlocal ffs=dos,unix
-au BufRead,BufNewFile *.as*x setlocal ffs=dos,unix
-au BufRead,BufNewFile *.cs setlocal ffs=dos,unix
-au BufRead,BufNewFile *.csproj setlocal ffs=dos,unix
-au BufRead,BufNewFile *.sln setlocal ffs=dos,unix
+" au BufRead,BufNewFile *.asp setlocal ffs=dos,unix
+" au BufRead,BufNewFile *.as*x setlocal ffs=dos,unix
+" au BufRead,BufNewFile *.cs setlocal ffs=dos,unix
+" au BufRead,BufNewFile *.csproj setlocal ffs=dos,unix
+" au BufRead,BufNewFile *.sln setlocal ffs=dos,unix
 
 """"""""""""""""""""""""""""""
 " => notes section
