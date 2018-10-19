@@ -19,8 +19,6 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 Plug 'junegunn/vim-easy-align'
 
-Plug 'VundleVim/Vundle.vim'
-
 Plug 'tomtom/enabler_vim'
 
 Plug 'jiangmiao/auto-pairs'
@@ -124,6 +122,9 @@ Plug 'soulston/vim-listtrans'
 "Plug 'OmniSharp/omnisharp-server'
 
 " Plug 'Valloric/YouCompleteMe'
+
+" Local plugins
+Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
 " Initialize plugin system
 call plug#end()
