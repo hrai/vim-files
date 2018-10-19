@@ -113,8 +113,6 @@ Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'soulston/vim-listtrans'
 
-Plug 'ivyl/vim-bling'
-
 " Plug 'MarcWeber/vim-addon-mw-utils'
 " Plug 'tomtom/tlib_vim'
 " Plug 'garbas/vim-snipmate'
