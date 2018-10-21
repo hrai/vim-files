@@ -204,10 +204,3 @@ colorscheme solarized
 " => ctags/universal tags settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tags=./tags,tags;$HOME
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => listtrans settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <leader>l :call ListTrans_toggle_format()<CR>
-xmap <leader>l :call ListTrans_toggle_format('visual')<CR>
-
