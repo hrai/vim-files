@@ -33,6 +33,8 @@ Plug 'easymotion/vim-easymotion'
 
 Plug 'dkarter/bullets.vim'
 
+Plug 'dzeban/vim-log-syntax', { 'for': ['log'] }
+
 Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
 
 " Plug 'bkad/CamelCaseMotion'
