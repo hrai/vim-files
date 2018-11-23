@@ -4,14 +4,6 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
-""""""""""""""""""""""""""""""
-" => Load pathogen paths
-""""""""""""""""""""""""""""""
-" let s:vim_runtime = expand('<sfile>:p:h')."/.."
-" call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
-" call pathogen#helptags()
-
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
 """"""""""""""""""""""""""""""
@@ -201,7 +193,7 @@ let g:bullets_enabled_file_types = [
 " => vim-operator-hightlight
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Setting the colour of the highlighter to yellow
-let g:ophigh_color_gui = "#c4cc00"
+" let g:ophigh_color_gui = "#c4cc00"
 
 
 
