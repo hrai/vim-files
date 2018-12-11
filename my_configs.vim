@@ -99,6 +99,8 @@ Plug 'ludovicchabant/vim-gutentags'
 
 Plug 'schickling/vim-bufonly'
 
+Plug 'mattn/emmet-vim'
+
 " Track the engine.
 Plug 'SirVer/ultisnips'
 
