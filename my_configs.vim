@@ -208,3 +208,5 @@ colorscheme solarized
 " => ctags/universal tags settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tags=./tags,tags;$HOME
+
+set relativenumber
