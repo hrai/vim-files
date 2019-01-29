@@ -123,13 +123,13 @@ Plug 'michaeljsmith/vim-indent-object'
 " Plug 'tomtom/tlib_vim'
 " Plug 'garbas/vim-snipmate'
 
-"Plug 'OrangeT/vim-csharp'
+Plug 'OrangeT/vim-csharp'
 
-"Plug 'OmniSharp/omnisharp-vim'
+Plug 'OmniSharp/omnisharp-vim'
 
-"Plug 'OmniSharp/omnisharp-server'
+Plug 'OmniSharp/omnisharp-server'
 
-" Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
@@ -149,10 +149,10 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Omnisharp settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"let g:OmniSharp_server_type = 'roslyn'
-"let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
-"let g:OmniSharp_prefer_global_sln = 1
-"let g:OmniSharp_timeout = 10
+let g:OmniSharp_server_type = 'roslyn'
+let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
+let g:OmniSharp_prefer_global_sln = 1
+let g:OmniSharp_timeout = 10
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => keyboard mappings
@@ -210,3 +210,5 @@ colorscheme solarized
 set tags=./tags,tags;$HOME
 
 set relativenumber
+
+
