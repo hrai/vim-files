@@ -133,6 +133,8 @@ Plug 'Valloric/YouCompleteMe'
 
 Plug 'justinmk/vim-gtfo'
 
+Plug 'tpope/vim-eunuch'
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
