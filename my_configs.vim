@@ -131,6 +131,8 @@ Plug 'OmniSharp/omnisharp-server'
 
 Plug 'Valloric/YouCompleteMe'
 
+Plug 'justinmk/vim-gtfo'
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
