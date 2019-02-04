@@ -53,7 +53,7 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
-if has("gui_running")
+if !has("gui_running")
   au FocusGained,BufEnter * :silent! !
 endif
 
