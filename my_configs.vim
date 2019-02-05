@@ -129,7 +129,7 @@ Plug 'OmniSharp/omnisharp-vim'
 
 Plug 'OmniSharp/omnisharp-server'
 
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
 
 Plug 'justinmk/vim-gtfo'
 
