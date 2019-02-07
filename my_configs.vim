@@ -117,8 +117,6 @@ Plug 'soulston/vim-listtrans'
 
 Plug 'michaeljsmith/vim-indent-object'
 
-" Plug 'vim-airline/vim-airline-themes'
-
 " Plug 'MarcWeber/vim-addon-mw-utils'
 " Plug 'tomtom/tlib_vim'
 " Plug 'garbas/vim-snipmate'
