@@ -77,7 +77,7 @@ map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
 
 " auto refresh NERDTree when folders change
-function! IsNerdTreeEnabled()
+function! IsNerdTreeTabOpen()
     return exists('t:NERDTreeBufName') && bufwinnr(t:NERDTreeBufName) != -1
 endfunction
 
