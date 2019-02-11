@@ -182,16 +182,16 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 " Added default font setting
-set guifont=Consolas:h11:cANSI
+set guifont=Consolas:h14:cANSI
 
 "GUI Font settings
 if has("gui_running")
   if has("gui_gtk1")
-    set guifont=Inconsolata\ 11
+    set guifont=Inconsolata\ 14
   elseif has("gui_macvim")
-    set guifont=Menlo\ Regular:h13
+    set guifont=Menlo\ Regular:h14
   elseif has("gui_win31")
-    set guifont=Consolas:h11:cANSI
+    set guifont=Consolas:h14:cANSI
   endif
 endif
 
