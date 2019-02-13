@@ -123,9 +123,9 @@ Plug 'michaeljsmith/vim-indent-object'
 
 Plug 'OrangeT/vim-csharp'
 
-Plug 'OmniSharp/omnisharp-vim'
+" Plug 'OmniSharp/omnisharp-vim'
 
-Plug 'OmniSharp/omnisharp-server'
+" Plug 'OmniSharp/omnisharp-server', { 'do': 'git submodule update --init --recursive && xbuild' }
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
 
@@ -151,10 +151,10 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Omnisharp settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:OmniSharp_server_type = 'roslyn'
+" let g:OmniSharp_server_type = 'roslyn'
 let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
-let g:OmniSharp_prefer_global_sln = 1
-let g:OmniSharp_timeout = 10
+" let g:OmniSharp_prefer_global_sln = 1
+" let g:OmniSharp_timeout = 10
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => keyboard mappings
