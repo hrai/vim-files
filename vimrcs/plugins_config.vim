@@ -241,6 +241,10 @@ let g:ale_completion_enabled = 1
 let g:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using :ALEFix
 
 
+let g:ale_linters = {
+    \ 'cs': ['OmniSharp']
+    \}
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-bufonly settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
