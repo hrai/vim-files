@@ -123,7 +123,7 @@ Plug 'michaeljsmith/vim-indent-object'
 
 Plug 'OrangeT/vim-csharp'
 
-" Plug 'OmniSharp/omnisharp-vim'
+Plug 'OmniSharp/omnisharp-vim'
 
 " Plug 'OmniSharp/omnisharp-server', { 'do': 'git submodule update --init --recursive && xbuild' }
 
