@@ -83,7 +83,7 @@ Plug 'junegunn/goyo.vim'
 
 Plug 'jlanzarotta/bufexplorer'
 
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
 
 Plug 'amix/open_file_under_cursor.vim'
 
