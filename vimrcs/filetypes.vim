@@ -35,6 +35,8 @@ au BufRead,BufNewFile *.cs setlocal ffs=dos,unix
 au BufRead,BufNewFile *.csproj setlocal ffs=dos,unix
 au BufRead,BufNewFile *.sln setlocal ffs=dos,unix
 
+au BufRead,BufNewFile *.sh setlocal ffs=unix,dos
+
 """"""""""""""""""""""""""""""
 " => notes section
 """"""""""""""""""""""""""""""
