@@ -249,6 +249,7 @@ let g:ale_linters = {
 " => vim-bufonly settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>bo :Bufonly<cr>
+nmap <leader>bof :Bufonly!<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
