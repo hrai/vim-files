@@ -187,7 +187,7 @@ set guifont=Hack:h14:cANSI
 "GUI Font settings
 if has("gui_running")
   if has("gui_gtk1")
-    set guifont=Inconsolata\ 14
+    set guifont=Hack\ 14
   elseif has("gui_macvim")
     set guifont=Menlo\ Regular:h14
   elseif has("gui_win31")
