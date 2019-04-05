@@ -181,18 +181,18 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
-" Added default font setting
-set guifont=Hack:h14:cANSI
-
 "GUI Font settings
 if has("gui_running")
-  if has("gui_gtk1")
-    set guifont=Hack\ 14
-  elseif has("gui_macvim")
+  if has("gui_macvim")
     set guifont=Menlo\ Regular:h14
   elseif has("gui_win31")
     set guifont=Hack:h14:cANSI
+  else
+    set guifont=Hack\ 14
   endif
+else
+  " Added default font setting for terminal
+  set guifont=Hack:h14:cANSI
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
