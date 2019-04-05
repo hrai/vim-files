@@ -182,7 +182,7 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 " Added default font setting
-set guifont=Consolas:h14:cANSI
+set guifont=Hack:h14:cANSI
 
 "GUI Font settings
 if has("gui_running")
