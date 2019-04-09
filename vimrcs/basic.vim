@@ -185,10 +185,9 @@ set ffs=unix,dos,mac
 if has("gui_running")
   if has("gui_macvim")
     set guifont=Menlo\ Regular:h14
-  elseif has("gui_win31")
-    set guifont=Hack:h14:cANSI
   else
-    set guifont=Hack\ 14
+    set guifont=Hack:h14:cANSI
+    " set guifont=Hack\ 14
   endif
 else
   " Added default font setting for terminal
