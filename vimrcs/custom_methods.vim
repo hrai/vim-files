@@ -7,3 +7,18 @@ function! GitCommitPush(commit_message)
 endfunction
 
 command! -nargs=1 Gap call GitCommitPush(<f-args>)
+
+
+function! ChangeInsideBrackets()
+	let current_char = matchstr(getline('.'), '\%' . col('.') . 'c.')
+	echo current_char
+
+	let brackets = ["[", "]", "(", ")", "{", "}"]
+	let value_found_at = index(brackets, current_char)
+
+	if(value_found_at >= 0)
+		execute "normal! ci".current_char
+	endif
+endfunction
+
+command! ChangeInsideBrackets call ChangeInsideBrackets()
