@@ -276,6 +276,16 @@ vmap  <expr>  D        DVB_Duplicate()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>gd :Gvdiff<CR>
+nnoremap <leader>gp :Gpull<CR>
+nnoremap <leader>gps :Gpush<CR>
+
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => listtrans settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <leader>l :call ListTrans_toggle_format()<CR>
