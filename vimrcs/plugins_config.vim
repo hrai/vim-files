@@ -41,7 +41,11 @@ let g:ctrlp_map = ''
 map <leader>j :CtrlP<cr>
 
 let g:ctrlp_max_height = 20
-let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+" let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\(.git|.hg|.svn|.nuget|.vim|.vscode|node_modules)$',
+  \ 'file': '\v\(.exe|.dll|tags)$',
+  \ }
 
 
 """"""""""""""""""""""""""""""
