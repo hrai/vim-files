@@ -194,8 +194,9 @@ nnoremap < <<
 nmap \ @:
 
 
-nnoremap gp :Gpull
-nnoremap gps :Gpush
+nnoremap gp :Gpull<CR>
+nnoremap gps :Gpush<CR>
+nnoremap gap :Gap
 
 "Open vim in fullscreen mode (Use ~x on an English Windows version or ~n for French.)
 au GUIEnter * simalt ~x
