@@ -193,6 +193,10 @@ nnoremap < <<
 "Repeat last Ex mode command
 nmap \ @:
 
+
+nnoremap gp :Gpull
+nnoremap gps :Gpush
+
 "Open vim in fullscreen mode (Use ~x on an English Windows version or ~n for French.)
 au GUIEnter * simalt ~x
 
