@@ -40,8 +40,8 @@ let g:ctrlp_show_hidden = 1
 let g:ctrlp_max_height = 20
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\(.git|.hg|.svn|.nuget|.vim|.vscode|node_modules)$',
-  \ 'file': '\v\(.exe|.dll|tags)$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.nuget$\|\.vim$\|\.vscode\|node_modules$',
+  \ 'file': '\.exe$\|\.dll$\|tags$'
   \ }
 
 map <leader>j :CtrlP<cr>

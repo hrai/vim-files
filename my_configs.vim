@@ -194,8 +194,16 @@ nnoremap < <<
 nmap \ @:
 
 
+nnoremap gs :Gstatus<CR>
 nnoremap gp :Gpull<CR>
 nnoremap gps :Gpush<CR>
+nnoremap gpf :Gpush --force<CR>
+nnoremap gr :Gread<CR>
+nnoremap gw :Gwrite<CR>
+nnoremap gcm :Gcommit --m
+nnoremap gca :Gwrite<CR>:Gcommit --amend<CR>
+nnoremap gbl :Gblame<CR>
+nnoremap gd :Gvdiff<CR>
 nnoremap gap :Gap
 
 "Open vim in fullscreen mode (Use ~x on an English Windows version or ~n for French.)
