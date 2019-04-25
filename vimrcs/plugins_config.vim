@@ -243,9 +243,17 @@ vmap  <expr>  D        DVB_Duplicate()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>gd :Gvdiff<CR>
-nnoremap <leader>gp :Gpull<CR>
-nnoremap <leader>gps :Gpush<CR>
+nnoremap gs :Gstatus<CR>
+nnoremap gp :Gpull<CR>
+nnoremap gps :Gpush<CR>
+nnoremap gpf :Gpush --force<CR>
+nnoremap gr :Gread<CR>
+nnoremap gw :Gwrite<CR>
+nnoremap gcm :Gcommit --m ""
+nnoremap gca :Gwrite<CR>:Gcommit --amend<CR>
+nnoremap gbl :Gblame<CR>
+nnoremap gd :Gvdiff<CR>
+nnoremap gap :Gap
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
