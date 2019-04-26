@@ -131,6 +131,8 @@ Plug 'justinmk/vim-gtfo'
 
 Plug 'tpope/vim-eunuch'
 
+Plug 'editorconfig/editorconfig-vim'
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
