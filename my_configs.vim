@@ -195,6 +195,8 @@ nnoremap < <<
 "Repeat last Ex mode command
 nmap \ @:
 
+"Delete all the content of the file/buffer
+nnoremap da :%d<CR>
 
 "Open vim in fullscreen mode (Use ~x on an English Windows version or ~n for French.)
 au GUIEnter * simalt ~x
