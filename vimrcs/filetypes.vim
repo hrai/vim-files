@@ -25,7 +25,7 @@ endif
 "Loading syntax files
 au BufRead,BufNewFile *.cs set filetype=cs
 au BufRead,BufNewFile *.aspx set filetype=aspx
-au BufRead,BufNewFile *.cshtml set filetype=cshtml
+au BufRead,BufNewFile *.cshtml set filetype=html
 au BufRead,BufNewFile *.phtml set filetype=html
 au BufNewFile,BufRead *.notes set filetype=notes
 
