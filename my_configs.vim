@@ -133,6 +133,8 @@ Plug 'tpope/vim-eunuch'
 
 Plug 'editorconfig/editorconfig-vim'
 
+Plug 'chrisbra/Colorizer'
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
