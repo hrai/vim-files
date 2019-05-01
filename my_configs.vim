@@ -137,6 +137,8 @@ Plug 'chrisbra/Colorizer'
 
 Plug 'blueyed/vim-diminactive'
 
+Plug 'dodie/vim-disapprove-deep-indentation'
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
