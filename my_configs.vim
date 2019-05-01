@@ -139,6 +139,8 @@ Plug 'blueyed/vim-diminactive'
 
 Plug 'dodie/vim-disapprove-deep-indentation'
 
+Plug 'bimlas/vim-high'
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
