@@ -135,6 +135,8 @@ Plug 'editorconfig/editorconfig-vim'
 
 Plug 'chrisbra/Colorizer'
 
+Plug 'blueyed/vim-diminactive'
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
