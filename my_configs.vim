@@ -141,6 +141,8 @@ Plug 'dodie/vim-disapprove-deep-indentation'
 
 Plug 'bimlas/vim-high'
 
+Plug 'tpope/vim-endwise'
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
@@ -224,4 +226,7 @@ set tags=./tags,tags;$HOME
 
 set relativenumber
 
+
+let g:indentLine_color_term = 3
+let g:indentLine_setColors = 0
 
