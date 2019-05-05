@@ -143,6 +143,8 @@ Plug 'bimlas/vim-high'
 
 Plug 'tpope/vim-endwise'
 
+Plug 'tpope/vim-unimpaired'
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
