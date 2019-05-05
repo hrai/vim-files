@@ -145,6 +145,8 @@ Plug 'tpope/vim-endwise'
 
 Plug 'tpope/vim-unimpaired'
 
+Plug 'ConradIrwin/vim-bracketed-paste'
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
