@@ -270,3 +270,11 @@ xmap <leader>l :call ListTrans_toggle_format('visual')<CR>
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-diff-enhanced settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("patch-8.1.0360")
+    set diffopt+=internal,algorithm:patience
+endif
