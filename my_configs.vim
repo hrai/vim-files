@@ -147,6 +147,8 @@ Plug 'tpope/vim-unimpaired'
 
 Plug 'ConradIrwin/vim-bracketed-paste'
 
+Plug 'chrisbra/vim-diff-enhanced'
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
