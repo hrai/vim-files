@@ -89,6 +89,10 @@ autocmd BufWritePost * if (IsNerdTreeTabOpen()) | NERDTreeFocus | execute 'norma
 " Automatically quit vim if NERDTree is last and only buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Enable line numbers
+let NERDTreeShowLineNumbers=1
+" make sure relative line numbers are used
+autocmd FileType nerdtree setlocal relativenumber
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => surround.vim
