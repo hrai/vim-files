@@ -101,14 +101,22 @@ autocmd FileType nerdtree setlocal relativenumber
 vmap Si S(i_<esc>f)
 au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+if has("gui_running")
+    let s:status_items=['fugitive', 'readonly', 'absolutepath', 'modified']
+else
+    let s:status_items=['fugitive', 'readonly', 'filename', 'modified']
+endif
+
+
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ 'active': {
-      \   'left': [ ['mode', 'paste'],
-      \             ['fugitive', 'readonly', 'absolutepath', 'filename', 'modified'] ],
+      \   'left': add([ ['mode', 'paste'] ], s:status_items),
       \   'right': [ [ 'lineinfo' ],
       \              ['percent'],
       \              [ 'fileformat', 'filetype' ] ]
@@ -116,9 +124,7 @@ let g:lightline = {
       \ 'component': {
       \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
       \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}',
-      \   'absolutepath': '%{!has("gui_running")}',
-      \   'filename': '%{has("gui_running")}'
+      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
       \ },
       \ 'component_visible_condition': {
       \   'readonly': '(&filetype!="help"&& &readonly)',
