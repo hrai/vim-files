@@ -1,7 +1,9 @@
 " start of the content
 
 set runtimepath+=~/.vim
-set runtimepath+=~/.vim_runtime
+set runtimepath+=~/.vim_runtime/python_functions
+set runtimepath+=~/.vim_runtime/sources_non_forked
+
 
 source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
