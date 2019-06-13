@@ -290,3 +290,10 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 if has("patch-8.1.0360")
     set diffopt+=internal,algorithm:patience
 endif
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-diff-enhanced settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ackprg = 'ag --nogroup --nocolor --column'
