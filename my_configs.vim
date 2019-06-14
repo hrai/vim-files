@@ -45,6 +45,8 @@ Plug 'tpope/vim-repeat'
 
 Plug 'tpope/vim-commentary'
 
+Plug 'tpope/vim-tbone'
+
 Plug 'terryma/vim-expand-region'
 
 Plug 'terryma/vim-multiple-cursors'
