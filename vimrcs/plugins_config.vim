@@ -91,8 +91,12 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Enable line numbers
 let NERDTreeShowLineNumbers=1
+
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
+
+" Disabling Indentline on Nerdtree as it is breaking indentation
+autocmd BufEnter NERD_tree* :LeadingSpaceDisable
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
