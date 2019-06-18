@@ -296,6 +296,7 @@ endif
 " => tagbar settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <F4> :TagbarToggle<CR>
+autocmd BufEnter *Tagbar* setlocal relativenumber
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-diff-enhanced settings
