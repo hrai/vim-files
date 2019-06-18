@@ -61,6 +61,8 @@ Plug 'tpope/vim-abolish'
 
 Plug 'tpope/vim-fugitive'
 
+Plug 'majutsushi/tagbar'
+
 Plug 'tpope/vim-surround'
 
 " Plug 'maxbrunsfeld/vim-yankstack'
