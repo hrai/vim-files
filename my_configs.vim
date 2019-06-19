@@ -156,6 +156,8 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 
 Plug 'chrisbra/vim-diff-enhanced'
 
+Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
+
 " Vim debug
 Plug 'vim-scripts/genutils', { 'for': ['vim'] }
 Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
