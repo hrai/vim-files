@@ -57,6 +57,9 @@ Plug 'groenewege/vim-less'
 
 Plug 'artur-shaik/vim-javacomplete2', { 'for': ['java'] }
 
+Plug 'vim-scripts/genutils', { 'for': ['vim'] }
+Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
+
 Plug 'vim-scripts/vim-auto-save'
 
 Plug 'tpope/vim-abolish'
@@ -153,6 +156,10 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 
 Plug 'chrisbra/vim-diff-enhanced'
 
+" Vim debug
+Plug 'vim-scripts/genutils', { 'for': ['vim'] }
+Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
+
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
@@ -179,8 +186,9 @@ let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => keyboard mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Yanking to clipboard
-vnoremap <C-C> "+y
+"Yanking to system and tmux clipboard
+vnoremap <C-C> "+y <bar> <ESC>:Tyank<CR>
+
 "Yanking the file contents to clipboard
 nnoremap <F6> gg"+yG
 
@@ -242,3 +250,5 @@ let g:indentLine_setColors = 0
 
 let g:indentLine_concealcursor=0
 let g:indentLine_setConceal = 0
+
+
