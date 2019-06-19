@@ -301,8 +301,3 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <F4> :TagbarToggle<CR>
 autocmd BufEnter *Tagbar* setlocal relativenumber
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-diff-enhanced settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ackprg = 'ag --nogroup --nocolor --column'
