@@ -159,8 +159,8 @@ Plug 'chrisbra/vim-diff-enhanced'
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
 " Vim debug
-Plug 'vim-scripts/genutils', { 'for': ['vim'] }
-Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
+Plug 'vim-scripts/genutils'
+Plug 'albfan/vim-breakpts'
 
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
