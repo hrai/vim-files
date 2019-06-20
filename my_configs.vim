@@ -62,6 +62,8 @@ Plug 'vim-scripts/vim-auto-save'
 
 Plug 'tpope/vim-abolish'
 
+Plug 'tpope/vim-markdown', { 'for': ['md'] }
+
 Plug 'tpope/vim-fugitive'
 
 Plug 'majutsushi/tagbar'
