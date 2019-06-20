@@ -10,16 +10,23 @@ command! -nargs=1 Gap call GitCommitPush(<f-args>)
 
 
 function! ChangeInsideBrackets()
-	let current_char = matchstr(getline('.'), '\%' . col('.') . 'c.')
-	echo current_char
+    let curr_line=getline('.')
+    let cursor_pos=col('.')
 
 	let brackets = ["[", "]", "(", ")", "{", "}"]
-	let value_found_at = index(brackets, current_char)
+	let str_till_cursor_pos=strpart(curr_line,0,cursor_pos)
+    let reversed_str=join(reverse(split(str_till_cursor_pos, '.\zs')), '')
 
-	if(value_found_at >= 0)
-		execute "normal! di".current_char
-		:startinsert
-	endif
+    for char in split(reversed_str, '\zs')
+        let value_found_at = index(brackets, char)
+
+        if(value_found_at >= 0)
+            execute "normal! di".char
+            :startinsert
+            break
+        endif
+    endfor
+
 endfunction
 
 command! ChangeInsideBrackets call ChangeInsideBrackets()
