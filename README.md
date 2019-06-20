@@ -86,12 +86,7 @@ Remove all clutter and focus only on the essential. Similar to iA Writer or Writ
 
 ## Included color schemes
 
-* [peaksea](https://github.com/vim-scripts/peaksea): The default
 * [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
-* [vim-irblack](https://github.com/wgibbs/vim-irblack)
-* [mayansmoke](https://github.com/vim-scripts/mayansmoke)
-* [vim-pyte](https://github.com/therubymug/vim-pyte)
-
 
 ## Included modes
 
