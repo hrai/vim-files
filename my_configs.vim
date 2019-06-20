@@ -37,8 +37,6 @@ Plug 'dzeban/vim-log-syntax', { 'for': ['log'] }
 
 Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
 
-" Plug 'bkad/CamelCaseMotion'
-
 Plug 'tpope/vim-dispatch'
 
 Plug 'tpope/vim-repeat'
@@ -128,10 +126,6 @@ Plug 'michaeljsmith/vim-indent-object'
 
 Plug 'OrangeT/vim-csharp'
 
-" Plug 'OmniSharp/omnisharp-vim'
-
-" Plug 'OmniSharp/omnisharp-server', { 'do': 'git submodule update --init --recursive && xbuild' }
-
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
 
 Plug 'justinmk/vim-gtfo'
@@ -171,19 +165,6 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => CamelCaseMotion.vim
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" call camelcasemotion#CreateMotionMappings('n')
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Omnisharp settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:OmniSharp_server_type = 'roslyn'
-let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
-" let g:OmniSharp_prefer_global_sln = 1
-" let g:OmniSharp_timeout = 10
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => colourscheme settings
