@@ -197,7 +197,8 @@ nnoremap <F6> gg"+yG
 
 "Putting from clipboard
 noremap <C-P> "+p
-inoremap <C-V> <C-R>*
+inoremap <C-P> <C-R>+<space>
+cnoremap <C-P> <C-R>+<space>
 
 "Copying the word under cursor to clipboard
 nnoremap <C-C> viw"+y
