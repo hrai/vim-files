@@ -172,9 +172,4 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => ctags/universal tags settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set tags=./tags,tags;$HOME
-
 

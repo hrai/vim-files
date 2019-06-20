@@ -294,3 +294,9 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <F4> :TagbarToggle<CR>
 autocmd BufEnter *Tagbar* setlocal relativenumber
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ctags/universal tags settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set tags=./tags,tags;$HOME
