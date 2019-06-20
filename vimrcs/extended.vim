@@ -14,6 +14,9 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 
+"Open vim in fullscreen mode (Use ~x on an English Windows version or ~n for French.)
+au GUIEnter * simalt ~x
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Changes working directory to always be
@@ -133,6 +136,50 @@ map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
 
 map <leader>n :cn<cr>
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => keyboard mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Yanking to system and tmux clipboard
+vnoremap <C-C> "+y <bar> <ESC>:Tyank<CR>
+
+"Yanking the file contents to clipboard
+nnoremap <F6> gg"+yG
+
+
+"Putting from clipboard
+noremap <C-P> "+p
+inoremap <C-P> <C-R>+<space>
+cnoremap <C-P> <C-R>+<space>
+
+"Copying the word under cursor to clipboard
+nnoremap <C-C> viw"+y
+
+"Select all
+nnoremap <C-A> ggVG
+
+"Opening folder explorer in Windows
+noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
+
+"Closing/saving files
+nnoremap <leader>x :x!<CR>
+nnoremap <leader>q :q!<CR>
+
+"Map space to colon for easy access to run commands
+nnoremap <space> :
+
+"Map go to declaration for ctags
+noremap <F12> <C-]>
+
+"Indentation
+nnoremap > >>
+nnoremap < <<
+
+"Repeat last Ex mode command
+nmap \ @:
+
+"Delete all the content of the file/buffer
+nnoremap daf :%d<CR>
 
 " add useful stuff to title bar (file name, flags, cwd)
 " based on @factorylabs
