@@ -21,8 +21,8 @@ function! ChangeInsideBrackets()
         let value_found_at = index(brackets, char)
 
         if(value_found_at >= 0)
-            execute "normal! di".char
-            :startinsert
+            execute "normal! ci".char
+            " :startinsert
             break
         endif
     endfor
