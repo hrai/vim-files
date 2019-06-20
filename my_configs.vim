@@ -122,10 +122,6 @@ Plug 'soulston/vim-listtrans'
 
 Plug 'michaeljsmith/vim-indent-object'
 
-" Plug 'MarcWeber/vim-addon-mw-utils'
-" Plug 'tomtom/tlib_vim'
-" Plug 'garbas/vim-snipmate'
-
 Plug 'OrangeT/vim-csharp'
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
