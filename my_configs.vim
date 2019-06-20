@@ -195,7 +195,7 @@ vnoremap <C-C> "+y <bar> <ESC>:Tyank<CR>
 nnoremap <F6> gg"+yG
 
 
-"Putting from clipboard
+"Pasting from clipboard
 noremap <C-P> "+p
 inoremap <C-P> <C-R>+<space>
 cnoremap <C-P> <C-R>+<space>
