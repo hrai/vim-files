@@ -177,13 +177,4 @@ colorscheme solarized
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tags=./tags,tags;$HOME
 
-set relativenumber
-
-
-" let g:indentLine_color_term = 3
-let g:indentLine_setColors = 0
-
-let g:indentLine_concealcursor=0
-let g:indentLine_setConceal = 0
-
 
