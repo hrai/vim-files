@@ -262,7 +262,7 @@ nnoremap gcm :Gcommit --m ""
 nnoremap gca :Gwrite<CR>:Gcommit --amend<CR>
 nnoremap gbl :Gblame<CR>
 nnoremap gd :Gvdiff<CR>
-nnoremap gap :Gap
+nnoremap gap :Gap<space>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
