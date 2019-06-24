@@ -168,7 +168,10 @@ call plug#end()
 " => colourscheme settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Enable this for console application
-let g:solarized_termcolors=256
+if !has("gui_running")
+	let g:solarized_termcolors=256
+endif
+
 colorscheme solarized
 
 
