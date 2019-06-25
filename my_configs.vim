@@ -53,7 +53,7 @@ Plug 'artur-shaik/vim-javacomplete2', { 'for': ['java'] }
 Plug 'vim-scripts/genutils', { 'for': ['vim'] }
 Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
 
-Plug 'vim-scripts/vim-auto-save'
+Plug '907th/vim-auto-save'
 
 Plug 'tpope/vim-abolish'
 
@@ -164,7 +164,10 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Enable this for console application
 let g:solarized_termcolors=256
+
 colorscheme solarized
+
+
 
 
 
