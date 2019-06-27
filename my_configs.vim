@@ -146,7 +146,12 @@ Plug 'elzr/vim-json', { 'for': ['javascript', 'json'] }
 
 Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
 
+" React plugins
 Plug 'mxw/vim-jsx'
+
+" Typescript plugins
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 " Vim debug
 Plug 'vim-scripts/genutils'
