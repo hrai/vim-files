@@ -30,8 +30,6 @@ Plug 'dkarter/bullets.vim'
 
 Plug 'dzeban/vim-log-syntax', { 'for': ['log'] }
 
-Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
-
 Plug 'tpope/vim-dispatch'
 
 Plug 'tpope/vim-repeat'
@@ -87,13 +85,9 @@ Plug 'jlanzarotta/bufexplorer'
 
 Plug 'amix/open_file_under_cursor.vim'
 
-Plug 'w0rp/ale', { 'for': ['javascript'] }
-
 Plug 'godlygeek/tabular'
 
 Plug 'ervandew/supertab'
-
-Plug 'elzr/vim-json', { 'for': ['javascript', 'json'] }
 
 Plug 'ludovicchabant/vim-gutentags'
 
@@ -144,6 +138,15 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'chrisbra/vim-diff-enhanced'
 
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
+
+" Javascript plugins
+Plug 'w0rp/ale', { 'for': ['javascript'] }
+
+Plug 'elzr/vim-json', { 'for': ['javascript', 'json'] }
+
+Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
+
+Plug 'mxw/vim-jsx'
 
 " Vim debug
 Plug 'vim-scripts/genutils'
