@@ -57,7 +57,7 @@ Plug '907th/vim-auto-save'
 
 Plug 'tpope/vim-abolish'
 
-Plug 'tpope/vim-markdown', { 'for': ['md'] }
+Plug 'tpope/vim-markdown', { 'for': ['markdown'] }
 
 Plug 'tpope/vim-fugitive'
 
