@@ -13,8 +13,8 @@ function! ChangeInsideBrackets()
     let curr_line=getline('.')
     let cursor_pos=col('.')
 
-	let brackets = ["[", "]", "(", ")", "{", "}"]
-	let str_till_cursor_pos=strpart(curr_line,0,cursor_pos)
+    let brackets = ["[", "]", "(", ")", "{", "}", "\"", "'"]
+    let str_till_cursor_pos=strpart(curr_line,0,cursor_pos)
     let reversed_str=join(reverse(split(str_till_cursor_pos, '.\zs')), '')
 
     for char in split(reversed_str, '\zs')
