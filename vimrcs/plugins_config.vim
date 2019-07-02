@@ -283,7 +283,7 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 " Don't show YCM's preview window [ I find it really annoying ]
 set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
-
+let g:ycm_min_num_of_chars_for_completion = 3
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-diff-enhanced settings
