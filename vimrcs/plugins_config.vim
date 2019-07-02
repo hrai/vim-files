@@ -194,6 +194,7 @@ let g:indentLine_color_gui = '#562365'
 let g:indentLine_leadingSpaceEnabled=1
 let g:indentLine_leadingSpaceChar='·'
 
+let g:indentLine_concealcursor=""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-javacomplete2 settings
@@ -304,7 +305,7 @@ autocmd BufEnter *Tagbar* setlocal relativenumber
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => json settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:vim_json_syntax_conceal = 0
+" let g:vim_json_syntax_conceal = 0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
