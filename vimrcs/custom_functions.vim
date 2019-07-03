@@ -9,7 +9,7 @@ endfunction
 command! -nargs=1 Gap call GitCommitPush(<f-args>)
 
 
-function! ChangeInsideBrackets()
+function! ModifyInsideBrackets()
     let curr_line=getline('.')
     let cursor_pos=col('.')
 
@@ -29,4 +29,5 @@ function! ChangeInsideBrackets()
 
 endfunction
 
-command! ChangeInsideBrackets call ChangeInsideBrackets()
+command! ModifyInsideBrackets call ModifyInsideBrackets()
+nmap dib :call ModifyInsideBrackets()<CR>
