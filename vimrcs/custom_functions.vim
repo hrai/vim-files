@@ -28,6 +28,7 @@ function ModifyInsideBrackets(commandType)
               :startinsert
             " elseif(a:commandType=="delete")
             endif
+
             break
         endif
     endfor
