@@ -9,7 +9,7 @@ endfunction
 command! -nargs=1 Gap call GitCommitPush(<f-args>)
 
 
-function! ModifyInsideBrackets()
+function ModifyInsideBrackets(commandType)
     let curr_line=getline('.')
     let cursor_pos=col('.')
 
@@ -22,12 +22,18 @@ function! ModifyInsideBrackets()
 
         if(value_found_at >= 0)
             execute "normal! ci".char
-            " :startinsert
+
+            echom a:commandType
+            if(a:commandType ==? "change")
+              :startinsert
+            " elseif(a:commandType=="delete")
+            endif
             break
         endif
     endfor
 
 endfunction
 
-command! ModifyInsideBrackets call ModifyInsideBrackets()
-nmap dib :call ModifyInsideBrackets()<CR>
+" command! ModifyInsideBrackets call ModifyInsideBrackets()
+nmap dib :call ModifyInsideBrackets("")<CR>
+nmap cib :call ModifyInsideBrackets("change")<CR>
