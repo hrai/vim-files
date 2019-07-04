@@ -23,8 +23,8 @@ function ModifyInsideBrackets(commandType)
         if(value_found_at >= 0)
             execute "normal! ci".char
 
-            echom a:commandType
             if(a:commandType ==? 'change')
+              :normal! l
               :startinsert
             " elseif(a:commandType=="delete")
             endif
@@ -37,4 +37,4 @@ endfunction
 
 " command! ModifyInsideBrackets call ModifyInsideBrackets()
 nmap dib :call ModifyInsideBrackets('')<CR>
-nmap cib :call ModifyInsideBrackets('change')<CR>
+nmap cib :call ModifyInsideBrackets("change")<CR>
