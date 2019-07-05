@@ -338,6 +338,9 @@ if has("mac") || has("macunix")
   vmap <D-k> <M-k>
 endif
 
+
+nmap clr :%s///<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Add linebreak without entering insert mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
