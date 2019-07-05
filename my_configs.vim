@@ -125,8 +125,6 @@ Plug 'chrisbra/Colorizer'
 
 Plug 'blueyed/vim-diminactive'
 
-Plug 'dodie/vim-disapprove-deep-indentation'
-
 Plug 'bimlas/vim-high'
 
 Plug 'tpope/vim-endwise'
