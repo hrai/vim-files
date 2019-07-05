@@ -313,7 +313,3 @@ autocmd BufEnter *Tagbar* setlocal relativenumber
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tags=./tags,tags;$HOME
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" =>  vim-disapprove-deep-indentation tags settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:LookOfDisapprovalNoStyle=1
