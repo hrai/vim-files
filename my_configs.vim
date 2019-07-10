@@ -76,7 +76,7 @@ Plug 'airblade/vim-gitgutter', { 'on': ['GitGutterToggle'] }
 
 Plug 'vim-scripts/mru.vim'
 
-Plug 'junegunn/goyo.vim'
+" Plug 'junegunn/goyo.vim'
 
 Plug 'jlanzarotta/bufexplorer'
 
