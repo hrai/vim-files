@@ -48,9 +48,6 @@ Plug 'groenewege/vim-less'
 
 Plug 'artur-shaik/vim-javacomplete2', { 'for': ['java'] }
 
-Plug 'vim-scripts/genutils', { 'for': ['vim'] }
-Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
-
 Plug '907th/vim-auto-save'
 
 Plug 'tpope/vim-abolish'
@@ -152,8 +149,8 @@ Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
 " Vim debug
-Plug 'vim-scripts/genutils'
-Plug 'albfan/vim-breakpts'
+Plug 'vim-scripts/genutils', { 'for': ['vim'] }
+Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
 
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
@@ -172,8 +169,6 @@ call plug#end()
 let g:solarized_termcolors=256
 
 colorscheme solarized
-
-
 
 
 
