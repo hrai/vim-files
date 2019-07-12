@@ -279,7 +279,7 @@ xmap <leader>l :call ListTrans_toggle_format('visual')<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:ycm_key_list_previous_completion = ['<C-o>', '<Up>']
 let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " Don't show YCM's preview window [ I find it really annoying ]
