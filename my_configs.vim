@@ -135,7 +135,7 @@ Plug 'chrisbra/vim-diff-enhanced'
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
 " Javascript plugins
-Plug 'w0rp/ale', { 'for': ['javascript'] }
+Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
 Plug 'elzr/vim-json', { 'for': ['javascript', 'json'] }
 
