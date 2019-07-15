@@ -68,7 +68,7 @@ Plug 'mileszs/ack.vim'
 
 Plug 'kien/ctrlp.vim'
 
-Plug 'scrooloose/nerdtree', { 'on': ['NerdTreeToggle', 'NerdTreeFind'] }
+Plug 'scrooloose/nerdtree' ", { 'on': ['NerdTreeToggle', 'NerdTreeFind'] }
 
 Plug 'altercation/vim-colors-solarized'
 
