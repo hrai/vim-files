@@ -142,11 +142,14 @@ map <leader>n :cn<cr>
 " => keyboard mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Yanking to system and tmux clipboard
-vnoremap <C-C> "+y <bar> <ESC>:Tyank<CR>
+if has("gui_running")
+  vnoremap <C-C> "+y
+else
+  vnoremap <C-C> "+y <bar> <ESC>:Tyank<CR>
+endif
 
 "Yanking the file contents to clipboard
 nnoremap <F6> gg"+yG
-
 
 "Putting from clipboard
 noremap <C-P> "+p
