@@ -146,7 +146,7 @@ Plug 'mxw/vim-jsx'
 
 " Typescript plugins
 Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+Plug 'peitalin/vim-jsx-typescript', { 'for': ['typescript.tsx'] }
 
 " Vim debug
 Plug 'vim-scripts/genutils', { 'for': ['vim'] }
