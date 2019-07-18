@@ -305,6 +305,8 @@ map <leader>ch :cd ~<cr>
 
 nmap <leader>r :setlocal relativenumber!<cr>
 
+map <leader>so :so%<cr>
+
 " Specify the behavior when switching between buffers
 try
   set switchbuf=useopen,usetab,newtab
