@@ -21,12 +21,15 @@ function ModifyInsideBrackets(commandType)
         let value_found_at = index(brackets, char)
 
         if(value_found_at >= 0)
-            execute "normal! ci".char
-
             if(a:commandType ==? 'change')
+              execute "normal! ci".char
+
               :normal! l
               :startinsert
-            " elseif(a:commandType=="delete")
+            elseif(a:commandType==?'delete')
+              execute "normal! ci".char
+            elseif(a:commandType==? 'select')
+              execute "normal! vi".char
             endif
 
             break
@@ -36,5 +39,6 @@ function ModifyInsideBrackets(commandType)
 endfunction
 
 " command! ModifyInsideBrackets call ModifyInsideBrackets()
-nmap dib :call ModifyInsideBrackets('')<CR>
+nmap dib :call ModifyInsideBrackets("delete")<CR>
 nmap cib :call ModifyInsideBrackets("change")<CR>
+nmap vib :call ModifyInsideBrackets("select")<CR>
