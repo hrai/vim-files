@@ -19,8 +19,13 @@ if has("win32")
         py3file ~/.vim_runtime/python_functions/open_gitextensions_commit.py
     endfunc
 
+    function! PrettifyJson()
+        %!python -m json.tool
+    endfunc
+
     command! OpenGitBash call OpenGitBash()
     command! OpenGitExtensions call OpenGitExtensions()
     command! OpenGitExtensionsCommit call OpenGitExtensionsCommit()
     command! Gec call OpenGitExtensionsCommit()
+    command! PrettifyJson call PrettifyJson()
 endif
