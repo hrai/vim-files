@@ -12,10 +12,10 @@ source ~/.vim_runtime/vimrcs/extended.vim
 source ~/.vim_runtime/vimrcs/custom_functions.vim
 
 try
-if has('python3')
+if has('python3_dynamic')
 	source ~/.vim_runtime/vimrcs/python_functions.vim
 else
-	echo ('Please install python 3.5')
+	echo ('Please install python 3.x to load python_functions.vim')
 	finish
 endif
 
