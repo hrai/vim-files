@@ -132,6 +132,8 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 
 Plug 'chrisbra/vim-diff-enhanced'
 
+Plug 'lifepillar/vim-solarized8'
+
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
 " Javascript plugins
@@ -166,9 +168,9 @@ call plug#end()
 " => colourscheme settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Enable this for console application
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 
-colorscheme solarized
+colorscheme solarized8
 
 
 
