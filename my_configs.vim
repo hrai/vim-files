@@ -70,6 +70,8 @@ Plug 'kien/ctrlp.vim'
 
 Plug 'scrooloose/nerdtree' ", { 'on': ['NerdTreeToggle', 'NerdTreeFind'] }
 
+Plug 'altercation/vim-colors-solarized'
+
 Plug 'airblade/vim-gitgutter', { 'on': ['GitGutterToggle'] }
 
 Plug 'vim-scripts/mru.vim'
@@ -130,8 +132,6 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 
 Plug 'chrisbra/vim-diff-enhanced'
 
-Plug 'lifepillar/vim-solarized8'
-
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
 " Javascript plugins
@@ -168,7 +168,7 @@ call plug#end()
 "Enable this for console application
 let g:solarized_termcolors=256
 
-colorscheme solarized8
+colorscheme solarized
 
 
 
