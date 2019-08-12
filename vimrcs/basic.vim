@@ -98,6 +98,8 @@ set wildmenu
 set wildignore=*.o,*~,*.pyc
 if has("win16") || has("win32")
     set wildignore+=.git\*,.hg\*,.svn\*
+
+    autocmd GUIEnter * colorscheme solarized8  "fixes the issue with conflicting bg colour on gvim startup
 else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
