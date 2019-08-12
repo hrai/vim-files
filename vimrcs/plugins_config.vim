@@ -261,6 +261,7 @@ nnoremap gpf :Gpush --force<CR>
 nnoremap gr :Gread<CR>
 nnoremap gw :Gwrite<CR>
 nnoremap gcm :Gcommit --m ""
+nnoremap gco :Gcommit<CR>
 nnoremap gca :Gwrite<CR>:Gcommit --amend<CR>
 nnoremap gbl :Gblame<CR>
 nnoremap gd :Gvdiff<CR>
