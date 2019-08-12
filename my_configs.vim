@@ -70,8 +70,6 @@ Plug 'kien/ctrlp.vim'
 
 Plug 'scrooloose/nerdtree' ", { 'on': ['NerdTreeToggle', 'NerdTreeFind'] }
 
-Plug 'altercation/vim-colors-solarized'
-
 Plug 'airblade/vim-gitgutter', { 'on': ['GitGutterToggle'] }
 
 Plug 'vim-scripts/mru.vim'
