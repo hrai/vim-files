@@ -30,6 +30,8 @@ function ModifyInsideBrackets(commandType)
               execute "normal! ci".char
             elseif(a:commandType==? 'select')
               execute "normal! vi".char
+            elseif(a:commandType==? 'yank')
+              execute "normal! yi".char
             endif
 
             break
@@ -42,3 +44,4 @@ endfunction
 nmap dib :call ModifyInsideBrackets("delete")<CR>
 nmap cib :call ModifyInsideBrackets("change")<CR>
 nmap vib :call ModifyInsideBrackets("select")<CR>
+nmap yib :call ModifyInsideBrackets("yank")<CR>
