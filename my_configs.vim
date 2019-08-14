@@ -142,7 +142,7 @@ Plug 'elzr/vim-json', { 'for': ['javascript', 'json'] }
 Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
 
 " React plugins
-Plug 'mxw/vim-jsx'
+Plug 'mxw/vim-jsx', { 'for': ['typescript.tsx'] }
 
 " Typescript plugins
 Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'typescript.tsx'] }
