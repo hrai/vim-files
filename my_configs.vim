@@ -145,7 +145,7 @@ Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
 Plug 'mxw/vim-jsx'
 
 " Typescript plugins
-Plug 'leafgarland/typescript-vim'
+Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'typescript.tsx'] }
 Plug 'peitalin/vim-jsx-typescript', { 'for': ['typescript.tsx'] }
 
 " Vim debug
@@ -171,4 +171,4 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 
-
+set completeopt+=noinsert
