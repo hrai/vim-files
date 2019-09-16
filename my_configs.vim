@@ -142,6 +142,11 @@ Plug 'elzr/vim-json', { 'for': ['javascript', 'json'] }
 
 Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
 
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+
+o
 " React plugins
 Plug 'mxw/vim-jsx', { 'for': ['typescript.tsx'] }
 
