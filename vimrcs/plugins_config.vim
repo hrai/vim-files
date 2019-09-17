@@ -265,8 +265,6 @@ nnoremap gco :Gcommit<CR>
 nnoremap gca :Gwrite<CR>:Gcommit --amend<CR>
 nnoremap gbl :Gblame<CR>
 nnoremap gd :Gvdiff<CR>
-nnoremap gap :Gap<space>
-nnoremap gal :Gap cleanup<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

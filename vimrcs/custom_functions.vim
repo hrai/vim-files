@@ -8,6 +8,9 @@ endfunction
 
 command! -nargs=1 Gap call GitCommitPush(<f-args>)
 
+nnoremap gap :Gap<space>
+nnoremap gcl :Gap cleanup<CR>
+
 
 function ModifyInsideBrackets(commandType)
     let curr_line=getline('.')
