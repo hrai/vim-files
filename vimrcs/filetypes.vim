@@ -42,7 +42,7 @@ au BufRead,BufNewFile *.sh setlocal ffs=unix,dos
 """"""""""""""""""""""""""""""
 
 autocmd FileType notes :setlocal spell
-autocmd FileType notes call LoadNotesConfig()
+autocmd FileType notes,txt,md call LoadNotesConfig()
 
 " automatically uppercase the first letter of the sentence
 function! LoadNotesConfig()
