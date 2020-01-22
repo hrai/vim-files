@@ -85,7 +85,7 @@ Plug 'amix/open_file_under_cursor.vim'
 
 Plug 'godlygeek/tabular'
 
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 
 Plug 'ludovicchabant/vim-gutentags'
 
@@ -111,7 +111,7 @@ Plug 'michaeljsmith/vim-indent-object'
 
 Plug 'OrangeT/vim-csharp'
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
 
 Plug 'justinmk/vim-gtfo'
 
@@ -177,3 +177,8 @@ colorscheme solarized
 
 
 set completeopt+=noinsert
+
+
+" prevent slow tag scan
+" https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
+set complete-=i
