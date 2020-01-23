@@ -85,7 +85,7 @@ Plug 'amix/open_file_under_cursor.vim'
 
 Plug 'godlygeek/tabular'
 
-" Plug 'ervandew/supertab'
+Plug 'ervandew/supertab'
 
 Plug 'ludovicchabant/vim-gutentags'
 
@@ -182,3 +182,10 @@ set completeopt+=noinsert
 " prevent slow tag scan
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
 set complete-=i
+
+" inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+"             \ "\<lt>C-n>" :
+"             \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+"             \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+"             \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+" imap <C-@> <C-Space>
