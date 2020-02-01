@@ -111,7 +111,7 @@ Plug 'michaeljsmith/vim-indent-object'
 
 Plug 'OrangeT/vim-csharp'
 
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
 
 Plug 'justinmk/vim-gtfo'
 
