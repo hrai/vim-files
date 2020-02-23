@@ -160,6 +160,8 @@ Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
+Plug 'ryanoasis/vim-devicons'
+
 " Initialize plugin system
 call plug#end()
 
