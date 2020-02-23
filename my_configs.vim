@@ -135,6 +135,8 @@ Plug 'chrisbra/vim-diff-enhanced'
 
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
+Plug 'ryanoasis/vim-devicons'
+
 " Javascript plugins
 Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
@@ -159,8 +161,6 @@ Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
 
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
-
-Plug 'ryanoasis/vim-devicons'
 
 " Initialize plugin system
 call plug#end()
