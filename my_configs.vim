@@ -79,7 +79,7 @@ Plug 'vim-scripts/mru.vim'
 
 " Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 
-Plug 'jlanzarotta/bufexplorer'
+" Plug 'jlanzarotta/bufexplorer'
 
 Plug 'amix/open_file_under_cursor.vim'
 
@@ -136,6 +136,8 @@ Plug 'chrisbra/vim-diff-enhanced'
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
 Plug 'ryanoasis/vim-devicons'
+
+Plug 'RRethy/vim-illuminate'
 
 " Javascript plugins
 Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
