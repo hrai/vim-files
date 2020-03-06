@@ -56,7 +56,7 @@ Plug 'tpope/vim-markdown', { 'for': ['markdown'] }
 
 Plug 'tpope/vim-fugitive'
 
-Plug 'majutsushi/tagbar'
+" Plug 'majutsushi/tagbar'
 
 Plug 'tpope/vim-surround'
 
