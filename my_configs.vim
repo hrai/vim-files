@@ -121,7 +121,7 @@ Plug 'editorconfig/editorconfig-vim'
 
 Plug 'chrisbra/Colorizer'
 
-Plug 'blueyed/vim-diminactive'
+" Plug 'blueyed/vim-diminactive'
 
 " Plug 'bimlas/vim-high'
 
