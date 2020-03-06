@@ -137,8 +137,6 @@ Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
 Plug 'ryanoasis/vim-devicons'
 
-Plug 'RRethy/vim-illuminate'
-
 " Javascript plugins
 Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
