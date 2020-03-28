@@ -312,7 +312,8 @@ autocmd BufEnter *Tagbar* setlocal relativenumber
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ctags/universal tags settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set tags=./tags,tags;$HOME
+set tags=./tags,tags
+" set tags=./tags,tags;$HOME
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
