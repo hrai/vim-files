@@ -7,11 +7,11 @@
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
 """"""""""""""""""""""""""""""
-let g:bufExplorerDefaultHelp=0
-let g:bufExplorerShowRelativePath=1
-let g:bufExplorerFindActive=1
-let g:bufExplorerSortBy='name'
-map <leader>be :BufExplorer<cr>
+" let g:bufExplorerDefaultHelp=0
+" let g:bufExplorerShowRelativePath=1
+" let g:bufExplorerFindActive=1
+" let g:bufExplorerSortBy='name'
+" map <leader>be :BufExplorer<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -19,15 +19,6 @@ map <leader>be :BufExplorer<cr>
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
 map <leader>f :MRU<CR>
-
-
-""""""""""""""""""""""""""""""
-" => YankStack
-""""""""""""""""""""""""""""""
-" let g:yankstack_yank_keys = ['y', 'd']
-
-" nmap <c-o> <Plug>yankstack_substitute_older_paste
-" nmap <c-n> <Plug>yankstack_substitute_newer_paste
 
 
 """"""""""""""""""""""""""""""
@@ -45,13 +36,6 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 map <leader>j :CtrlP<cr>
-
-
-""""""""""""""""""""""""""""""
-" => ZenCoding
-""""""""""""""""""""""""""""""
-" Enable all functions in all modes
-let g:user_zen_mode='a'
 
 
 """"""""""""""""""""""""""""""
@@ -163,15 +147,6 @@ let g:bullets_enabled_file_types = [
     \]
 
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-operator-hightlight
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Setting the colour of the highlighter to yellow
-" let g:ophigh_color_gui = "#c4cc00"
-
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => indentLine settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -276,6 +251,7 @@ let g:ycm_key_list_previous_completion = ['<C-o>', '<Up>']
 set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_min_num_of_chars_for_completion = 3
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-diff-enhanced settings
