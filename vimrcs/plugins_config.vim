@@ -314,3 +314,12 @@ autocmd BufEnter *Tagbar* setlocal relativenumber
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tags=./tags,tags;$HOME
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => gutentags settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:gutentags_file_list_command = {
+      \ 'markers': {
+          \ '.git': 'git ls-files',
+      \ },
+  \ }
