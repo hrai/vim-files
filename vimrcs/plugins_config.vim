@@ -298,8 +298,8 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => tagbar settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nmap <F4> :TagbarToggle<CR>
-autocmd BufEnter *Tagbar* setlocal relativenumber
+" nmap <F4> :TagbarToggle<CR>
+" autocmd BufEnter *Tagbar* setlocal relativenumber
 
 
 
