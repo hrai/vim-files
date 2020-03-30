@@ -178,7 +178,7 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 
-set completeopt+=noinsert
+" set completeopt+=noinsert
 
 
 " prevent slow tag scan
