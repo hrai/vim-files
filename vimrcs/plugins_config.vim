@@ -236,8 +236,8 @@ nnoremap gd :Gvdiff<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => listtrans settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" nmap <leader>l :call ListTrans_toggle_format()<CR>
-" xmap <leader>l :call ListTrans_toggle_format('visual')<CR>
+nmap <leader>l :call ListTrans_toggle_format()<CR>
+xmap <leader>l :call ListTrans_toggle_format('visual')<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => YCM settings

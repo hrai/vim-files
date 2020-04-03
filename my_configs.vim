@@ -105,7 +105,7 @@ Plug 'vim-scripts/vis'
 
 Plug 'christoomey/vim-tmux-navigator'
 
-" Plug 'soulston/vim-listtrans'
+Plug 'soulston/vim-listtrans'
 
 Plug 'michaeljsmith/vim-indent-object'
 
