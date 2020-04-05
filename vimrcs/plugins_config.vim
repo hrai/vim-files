@@ -1,8 +1,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Important:
-"       This requries that you install https://github.com/amix/vimrc !
+" Configs for 3rd party plugins
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""
+" => vim-plug
+""""""""""""""""""""""""""""""
+map <leader>pu :PlugUpdate<cr>
 
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
