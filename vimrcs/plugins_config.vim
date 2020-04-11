@@ -294,3 +294,9 @@ let g:gutentags_file_list_command = {
           \ '.git': 'git ls-files',
       \ },
   \ }
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => spelunker settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nospell
+nmap <leader>z ZL<cr>

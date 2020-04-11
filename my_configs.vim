@@ -137,6 +137,8 @@ Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
 Plug 'ryanoasis/vim-devicons'
 
+Plug 'kamykn/spelunker.vim'
+
 " Javascript plugins
 Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
@@ -181,4 +183,3 @@ colorscheme solarized
 " prevent slow tag scan
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
 " set complete-=i
-
