@@ -153,7 +153,7 @@ nnoremap <F6> gg"+yG
 
 "Putting from clipboard
 noremap <C-P> "+p
-inoremap <C-P> <C-R>+<space>
+inoremap <C-P> <C-R>+
 cnoremap <C-P> <C-R>+<space>
 
 "Copying the word under cursor to clipboard
