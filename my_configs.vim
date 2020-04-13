@@ -139,6 +139,8 @@ Plug 'ryanoasis/vim-devicons'
 
 Plug 'kamykn/spelunker.vim'
 
+Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
+
 " Javascript plugins
 Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
