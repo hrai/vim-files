@@ -73,7 +73,7 @@ Plug 'scrooloose/nerdtree'
 
 Plug 'altercation/vim-colors-solarized'
 
-Plug 'airblade/vim-gitgutter', { 'on': ['GitGutterToggle'] }
+" Plug 'airblade/vim-gitgutter', { 'on': ['GitGutterToggle'] }
 
 Plug 'vim-scripts/mru.vim'
 
