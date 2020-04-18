@@ -10,8 +10,12 @@ set nocompatible
 
 " Specify a directory for plugins (x)Avoid using standard Vim directory names like 'plugin')
 call plug#begin('~/.vim/plugged')
-
 " Make sure you use single quotes
+
+if has('nvim')
+    Plug 'iCyMind/NeoSolarized'
+endif
+
 Plug 'junegunn/vim-easy-align'
 
 Plug 'tomtom/enabler_vim'
@@ -181,6 +185,9 @@ let g:solarized_termcolors=256
 
 colorscheme solarized
 
+if has('nvim')
+    colorscheme NeoSolarized
+endif
 
 " prevent slow tag scan
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
