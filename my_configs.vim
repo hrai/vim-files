@@ -188,6 +188,7 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 if has('nvim')
+    set termguicolors
     colorscheme NeoSolarized
 endif
 
