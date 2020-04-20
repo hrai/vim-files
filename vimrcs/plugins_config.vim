@@ -254,7 +254,7 @@ let g:ycm_key_list_previous_completion = ['<C-o>', '<Up>']
 " Don't show YCM's preview window [ I find it really annoying ]
 set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_min_num_of_chars_for_completion = 3
+let g:ycm_min_num_of_chars_for_completion = 2
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
