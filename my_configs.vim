@@ -9,7 +9,7 @@ set nocompatible
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Specify a directory for plugins (x)Avoid using standard Vim directory names like 'plugin')
-call plug#begin()
+call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 
 if has('nvim')
