@@ -51,7 +51,8 @@ Plug 'Valloric/vim-operator-highlight'
 " Plug 'groenewege/vim-less'
 
 " Plug 'artur-shaik/vim-javacomplete2', { 'for': ['java'] }
-
+"
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug '907th/vim-auto-save'
