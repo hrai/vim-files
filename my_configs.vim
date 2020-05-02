@@ -16,6 +16,9 @@ if has('nvim')
     Plug 'iCyMind/NeoSolarized'
 endif
 
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' , 'for': ['cs', 'js'] }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'junegunn/vim-easy-align'
 
 Plug 'tomtom/enabler_vim'
@@ -110,9 +113,6 @@ Plug 'michaeljsmith/vim-indent-object'
 
 Plug 'OrangeT/vim-csharp'
 
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' , 'for': ['cs', 'js'] }
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'justinmk/vim-gtfo'
 
 Plug 'tpope/vim-eunuch'
@@ -178,6 +178,7 @@ else
     colorscheme solarized
 endif
 
+" autocmd VimEnter * inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " prevent slow tag scan
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
