@@ -65,8 +65,6 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'tpope/vim-surround'
 
-" Plug 'maxbrunsfeld/vim-yankstack'
-
 Plug 'itchyny/lightline.vim'
 
 " Plug 'mileszs/ack.vim'
