@@ -277,6 +277,13 @@ let g:coc_global_extensions = [
       \'coc-git'
       \]
 
+" Mapping up/down keys to select the completion option
+if &wildoptions =~ "pum"
+    cnoremap <expr> <up> pumvisible() ? "<Tab>" : "\\<up>"
+    cnoremap <expr> <down> pumvisible() ? "<S-Tab>" : "\\<down>"
+endif
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-diff-enhanced settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
