@@ -7,7 +7,7 @@ cp -R .vimrc ~/.vimrc
 # Removing vim plug
 rm -rf ~/.vim/autoload/plug.vim
 
-# Cloning vim plug
+echo 'Cloning vim plug...'
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -15,8 +15,9 @@ echo 'Setting up neovim config...'
 NVIM_CONFIG=~/.config/nvim/
 mkdir -p $NVIM_CONFIG
 cp -R init.vim $NVIM_CONFIG/
+cp -R coc-settings.json $NVIM_CONFIG/
 
-# Cloning vim plug
+echo 'Cloning vim plug...'
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 

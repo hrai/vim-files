@@ -57,7 +57,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
     /* }, */
     "bash": {
       "command": "bash-language-server",
-      "filetypes": ["sh"],
+      "filetypes": ["sh","zsh"],
       "args": ["start"],
       "ignoredRootPaths": ["~"]
     }
