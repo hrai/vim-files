@@ -148,17 +148,9 @@ Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 " Javascript plugins
 Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
-
 Plug 'prettier/vim-prettier', {
 \ 'do': 'yarn install',
 \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
-
-" React plugins
-" Plug 'mxw/vim-jsx', { 'for': ['typescript.tsx'] }
-
-" Typescript plugins
-" Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'typescript.tsx'] }
-" Plug 'peitalin/vim-jsx-typescript', { 'for': ['typescript.tsx'] }
 
 " Vim debug
 Plug 'vim-scripts/genutils', { 'for': ['vim'] }
