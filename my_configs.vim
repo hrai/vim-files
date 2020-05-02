@@ -50,7 +50,9 @@ Plug 'Valloric/vim-operator-highlight'
 
 " Plug 'groenewege/vim-less'
 
-Plug 'artur-shaik/vim-javacomplete2', { 'for': ['java'] }
+" Plug 'artur-shaik/vim-javacomplete2', { 'for': ['java'] }
+
+Plug 'junegunn/fzf.vim'
 
 Plug '907th/vim-auto-save'
 
@@ -151,20 +153,20 @@ Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 " Javascript plugins
 Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
-Plug 'elzr/vim-json', { 'for': ['javascript', 'json'] }
+" Plug 'elzr/vim-json', { 'for': ['javascript', 'json'] }
 
-Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
+" Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
 
 Plug 'prettier/vim-prettier', {
 \ 'do': 'yarn install',
 \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 " React plugins
-Plug 'mxw/vim-jsx', { 'for': ['typescript.tsx'] }
+" Plug 'mxw/vim-jsx', { 'for': ['typescript.tsx'] }
 
 " Typescript plugins
-Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'typescript.tsx'] }
-Plug 'peitalin/vim-jsx-typescript', { 'for': ['typescript.tsx'] }
+" Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'typescript.tsx'] }
+" Plug 'peitalin/vim-jsx-typescript', { 'for': ['typescript.tsx'] }
 
 " Vim debug
 Plug 'vim-scripts/genutils', { 'for': ['vim'] }
