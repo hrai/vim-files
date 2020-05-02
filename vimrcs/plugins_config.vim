@@ -339,7 +339,7 @@ let g:gutentags_file_list_command = {
 " => spelunker settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nospell
-nmap <leader>z ZL<cr>
+nmap <leader>z ZL
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
