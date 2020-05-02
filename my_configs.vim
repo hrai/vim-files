@@ -178,9 +178,6 @@ else
     colorscheme solarized
 endif
 
-" Unmapping s that's mapped by vim-sneak
-unmap s
-unmap S
 
 " prevent slow tag scan
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
