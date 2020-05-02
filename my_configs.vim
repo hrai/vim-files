@@ -148,9 +148,6 @@ Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 " Javascript plugins
 Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
-" Plug 'elzr/vim-json', { 'for': ['javascript', 'json'] }
-
-" Plug 'pangloss/vim-javascript', { 'for': ['javascript'] }
 
 Plug 'prettier/vim-prettier', {
 \ 'do': 'yarn install',
