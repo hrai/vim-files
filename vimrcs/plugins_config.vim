@@ -277,10 +277,22 @@ let g:coc_global_extensions = [
       \'coc-git'
       \]
 
-" Mapping up/down keys to select the completion option
+" use <up/down> for trigger completion and navigate to the next complete item
 if &wildoptions =~ "pum"
-    cnoremap <expr> <up> pumvisible() ? "<Tab>" : "\\<up>"
-    cnoremap <expr> <down> pumvisible() ? "<S-Tab>" : "\\<down>"
+  function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+  endfunction
+
+  inoremap <silent><expr> <down>
+        \ pumvisible() ? "\<C-n>" :
+        \ <SID>check_back_space() ? "\<down>" :
+        \ coc#refresh()
+
+  inoremap <silent><expr> <up>
+        \ pumvisible() ? "\<C-p>" :
+        \ <SID>check_back_space() ? "\<up>" :
+        \ coc#refresh()
 endif
 
 
