@@ -123,8 +123,6 @@ Plug 'editorconfig/editorconfig-vim'
 
 Plug 'chrisbra/Colorizer'
 
-" Plug 'blueyed/vim-diminactive'
-
 " Plug 'bimlas/vim-high'
 
 Plug 'tpope/vim-endwise'
