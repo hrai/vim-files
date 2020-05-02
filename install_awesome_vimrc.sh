@@ -2,7 +2,7 @@
 set -e
 
 cd ~/.vim_runtime
-cp -R .vimrc ~/.vimrc
+cp -R .vimrc ~/
 
 # Removing vim plug
 rm -rf ~/.vim/autoload/plug.vim
