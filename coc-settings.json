@@ -10,6 +10,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "prettier.singleQuote": true,
   "prettier.eslintIntegration": true,
   "codeLens.enable": true,
+  "codeLens.guifg": "darkgreen",
   "git.addGBlameToVirtualText": true,
   "signature.target": "echo",
   "diagnostic.format": "%message [%source]",
@@ -18,6 +19,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "diagnostic.separateRelatedInformationAsDiagnostics": true,
   "suggest.timeout": 5000,
   "suggest.asciiCharactersOnly": true,
+  "suggest.triggerAfterInsertEnter": true,
   "suggest.noselect": false,
   "snippets.extends": {
     "javascriptreact": ["javascript"],
