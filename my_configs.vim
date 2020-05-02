@@ -69,7 +69,7 @@ Plug 'tpope/vim-surround'
 
 Plug 'itchyny/lightline.vim'
 
-Plug 'mileszs/ack.vim'
+" Plug 'mileszs/ack.vim'
 
 Plug 'kien/ctrlp.vim'
 
