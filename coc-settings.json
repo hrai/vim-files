@@ -18,6 +18,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "diagnostic.separateRelatedInformationAsDiagnostics": true,
   "suggest.timeout": 5000,
   "suggest.asciiCharactersOnly": true,
+  "suggest.noselect": false,
   "snippets.extends": {
     "javascriptreact": ["javascript"],
     "typescript": ["javascript"]
@@ -57,7 +58,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
     /* }, */
     "bash": {
       "command": "bash-language-server",
-      "filetypes": ["sh","zsh"],
+      "filetypes": ["sh"],
       "args": ["start"],
       "ignoredRootPaths": ["~"]
     }
