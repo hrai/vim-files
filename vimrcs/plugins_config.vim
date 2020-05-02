@@ -244,19 +244,36 @@ nnoremap gd :Gvdiff<CR>
 nmap <leader>l :call ListTrans_toggle_format()<CR>
 xmap <leader>l :call ListTrans_toggle_format('visual')<CR>
 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => YCM settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-o>', '<Up>']
+" let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+" let g:ycm_key_list_previous_completion = ['<C-o>', '<Up>']
 " let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " Don't show YCM's preview window [ I find it really annoying ]
-set completeopt-=preview
-let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_min_num_of_chars_for_completion = 2
+" set completeopt-=preview
+" let g:ycm_add_preview_to_completeopt = 0
+" let g:ycm_min_num_of_chars_for_completion = 2
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => coc settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:coc_global_extensions = [
+      \'coc-markdownlint',
+      \'coc-highlight',
+      \'coc-css',
+      \'coc-explorer',
+      \'coc-python',
+      \'coc-omnisharp',
+      \'coc-powershell',
+      \'coc-tsserver',
+      \'coc-snippets',
+      \'coc-git'
+      \]
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-diff-enhanced settings
@@ -311,4 +328,4 @@ map f <Plug>Sneak_f
 map F <Plug>Sneak_F
 map t <Plug>Sneak_t
 map T <Plug>Sneak_T
-unmap s
+" unmap s
