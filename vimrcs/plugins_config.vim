@@ -19,10 +19,9 @@ map <leader>pu :PlugUpdate<cr>
 
 
 """"""""""""""""""""""""""""""
-" => MRU plugin
+" => fzf-vim plugin
 """"""""""""""""""""""""""""""
-let MRU_Max_Entries = 400
-map <leader>f :MRU<CR>
+map <leader>f :History<CR>
 
 
 """"""""""""""""""""""""""""""
