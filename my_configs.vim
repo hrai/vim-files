@@ -168,12 +168,17 @@ call plug#end()
 "Enable this for console application
 let g:solarized_termcolors=256
 
-colorscheme solarized
-
 if has('nvim')
     set termguicolors
     colorscheme NeoSolarized
+
+    " changing codelens colour
+    hi CocCodeLens guifg=darkgreen
+else
+    colorscheme solarized
 endif
+
+" unmap s
 
 " prevent slow tag scan
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
