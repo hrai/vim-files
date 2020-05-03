@@ -3,6 +3,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 
+let text_files=['notes', 'txt']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-plug plugins
@@ -101,7 +102,9 @@ Plug 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plug 'honza/vim-snippets'
 
-Plug 'Ben201310/online-thesaurus-vim', { 'for': ['notes', 'txt'] }
+Plug 'Ben201310/online-thesaurus-vim', { 'for': text_files }
+
+Plug 'kamykn/spelunker.vim', { 'for': text_files }
 
 Plug 'vim-scripts/vis'
 
@@ -134,8 +137,6 @@ Plug 'chrisbra/vim-diff-enhanced'
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
 Plug 'ryanoasis/vim-devicons'
-
-Plug 'kamykn/spelunker.vim'
 
 Plug 'justinmk/vim-sneak'
 
