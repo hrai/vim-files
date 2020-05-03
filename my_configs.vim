@@ -179,9 +179,9 @@ endif
 
 " using wsl in gvim
 if has("win16") || has("win32")
-    set shell=wsl.exe
-    set shellpipe=|
-    set shellredir=>
+    " set shell='wsl.exe'
+    " set shellpipe=|
+    " set shellredir=>
 endif
 
 " prevent slow tag scan
