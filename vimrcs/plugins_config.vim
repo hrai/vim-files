@@ -351,3 +351,9 @@ map t <Plug>Sneak_t
 map T <Plug>Sneak_T
 map <leader>o <Plug>Sneak_s
 map <leader>O <Plug>Sneak_S
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => auto-pairs settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:AutoPairsMapCR=0
