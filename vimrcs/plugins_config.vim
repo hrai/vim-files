@@ -170,7 +170,7 @@ let g:indentLine_concealcursor=""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-javacomplete2 settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
+" autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
