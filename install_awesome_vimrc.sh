@@ -22,3 +22,4 @@ cp -R coc-settings.json $NVIM_CONFIG/
 #     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
+
