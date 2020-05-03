@@ -123,7 +123,7 @@ Plug 'chrisbra/Colorizer'
 
 " Plug 'bimlas/vim-high'
 
-Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-endwise'
 
 Plug 'tpope/vim-unimpaired'
 
