@@ -179,7 +179,12 @@ else
     colorscheme solarized
 endif
 
-" autocmd VimEnter * inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+" using wsl in gvim
+if has("win16") || has("win32")
+    set shell=wsl.exe
+    set shellpipe=|
+    set shellredir=>
+endif
 
 " prevent slow tag scan
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
