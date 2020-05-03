@@ -274,6 +274,7 @@ let g:coc_global_extensions = [
       \'coc-tsserver',
       \'coc-snippets',
       \'coc-browser',
+      \'coc-fzf',
       \'coc-git'
       \]
 
