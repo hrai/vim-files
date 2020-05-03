@@ -114,7 +114,7 @@ Plug 'soulston/vim-listtrans'
 
 Plug 'michaeljsmith/vim-indent-object'
 
-Plug 'OrangeT/vim-csharp'
+Plug 'OrangeT/vim-csharp', { 'for': ['cs'] }
 
 Plug 'justinmk/vim-gtfo'
 
