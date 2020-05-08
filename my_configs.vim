@@ -3,7 +3,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 
-let text_files=['notes', 'txt']
+let text_files=['notes', 'txt', 'markdown', 'md']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-plug plugins
@@ -138,6 +138,8 @@ Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 Plug 'ryanoasis/vim-devicons'
 
 Plug 'justinmk/vim-sneak'
+
+Plug 'reedes/vim-litecorrect', {'for': text_files }
 
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
