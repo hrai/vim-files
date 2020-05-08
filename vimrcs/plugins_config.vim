@@ -365,6 +365,13 @@ let g:AutoPairsMapCR=0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 augroup litecorrect
   autocmd!
-  autocmd FileType markdown,md call litecorrect#init()
-  autocmd FileType notes,txt call litecorrect#init()
+  " autocmd FileType markdown,md call litecorrect#init()
+  " autocmd FileType notes,txt call litecorrect#init()
 augroup END
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => online-thesaurus-vim settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:use_default_key_map = 0
+noremap <c-t> :call Thesaurus_LookCurrentWord()<CR>
