@@ -15,6 +15,9 @@ call plug#begin('~/.vim/plugged')
 
 if has('nvim')
     Plug 'iCyMind/NeoSolarized'
+    Plug "mg979/vim-visual-multi", {'branch': 'master'}
+else
+    Plug 'terryma/vim-multiple-cursors'
 endif
 
 " Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' , 'for': ['cs', 'js'] }
@@ -47,8 +50,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-tbone'
 
 Plug 'terryma/vim-expand-region'
-
-Plug 'terryma/vim-multiple-cursors'
 
 Plug 'Valloric/vim-operator-highlight'
 
