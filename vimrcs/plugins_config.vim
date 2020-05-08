@@ -358,3 +358,13 @@ map <leader>O <Plug>Sneak_S
 " => auto-pairs settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:AutoPairsMapCR=0
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-litecorrect settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup litecorrect
+  autocmd!
+  autocmd FileType markdown,md call litecorrect#init()
+  autocmd FileType notes,txt call litecorrect#init()
+augroup END
