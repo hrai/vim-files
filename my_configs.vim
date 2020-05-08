@@ -15,7 +15,7 @@ call plug#begin('~/.vim/plugged')
 
 if has('nvim')
     Plug 'iCyMind/NeoSolarized'
-    Plug "mg979/vim-visual-multi", {'branch': 'master'}
+    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 else
     Plug 'terryma/vim-multiple-cursors'
 endif
