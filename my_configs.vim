@@ -180,13 +180,6 @@ else
     colorscheme solarized
 endif
 
-" using wsl in gvim
-if has("win16") || has("win32")
-    " set shell='wsl.exe'
-    " set shellpipe=|
-    " set shellredir=>
-endif
-
 " prevent slow tag scan
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
 " set complete-=i
