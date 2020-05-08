@@ -103,7 +103,7 @@ Plug 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 Plug 'honza/vim-snippets'
 
-Plug 'Ben201310/online-thesaurus-vim', { 'for': text_files }
+Plug 'benshuailyu/online-thesaurus-vim', { 'for': text_files }
 
 Plug 'kamykn/spelunker.vim', { 'for': text_files }
 
