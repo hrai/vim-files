@@ -100,26 +100,26 @@ endif
 
 
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': add([ ['mode', 'paste'] ], s:status_items),
-      \   'right': [ [ 'lineinfo' ],
-      \              ['percent'],
-      \              [ 'fileformat', 'filetype' ] ]
-      \ },
-      \ 'component': {
-      \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
-      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-      \   'fugitive': '%{exists("*FugitiveHead")?FugitiveHead():""}'
-      \ },
-      \ 'component_visible_condition': {
-      \   'readonly': '(&filetype!="help"&& &readonly)',
-      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-      \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
-      \ },
-      \ 'separator': { 'left': ' ', 'right': ' ' },
-      \ 'subseparator': { 'left': ' ', 'right': ' ' }
-      \ }
+            \ 'colorscheme': 'wombat',
+            \ 'active': {
+            \   'left': add([ ['mode', 'paste'] ], s:status_items),
+            \   'right': [ [ 'lineinfo' ],
+            \              ['percent'],
+            \              [ 'fileformat', 'filetype' ] ]
+            \ },
+            \ 'component': {
+            \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
+            \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+            \   'fugitive': '%{exists("*FugitiveHead")?FugitiveHead():""}'
+            \ },
+            \ 'component_visible_condition': {
+            \   'readonly': '(&filetype!="help"&& &readonly)',
+            \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+            \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
+            \ },
+            \ 'separator': { 'left': ' ', 'right': ' ' },
+            \ 'subseparator': { 'left': ' ', 'right': ' ' }
+            \ }
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -144,12 +144,12 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 " => Bullets.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:bullets_enabled_file_types = [
-    \ 'markdown',
-    \ 'text',
-    \ 'gitcommit',
-    \ 'scratch',
-    \ 'notes'
-    \]
+            \ 'markdown',
+            \ 'text',
+            \ 'gitcommit',
+            \ 'scratch',
+            \ 'notes'
+            \]
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -263,44 +263,42 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-      " \'coc-explorer',
+" \'coc-explorer',
 let g:coc_global_extensions = [
-      \'coc-markdownlint',
-      \'coc-highlight',
-      \'coc-css',
-      \'coc-sh',
-      \'coc-python',
-      \'coc-omnisharp',
-      \'coc-powershell',
-      \'coc-tsserver',
-      \'coc-snippets',
-      \'coc-browser',
-      \'coc-json',
-      \'coc-pairs',
-      \'coc-yank',
-      \'coc-dictionary',
-      \'coc-word',
-      \'coc-actions',
-      \'coc-git'
-      \]
+            \'coc-markdownlint',
+            \'coc-highlight',
+            \'coc-css',
+            \'coc-sh',
+            \'coc-python',
+            \'coc-omnisharp',
+            \'coc-powershell',
+            \'coc-tsserver',
+            \'coc-snippets',
+            \'coc-browser',
+            \'coc-json',
+            \'coc-pairs',
+            \'coc-yank',
+            \'coc-dictionary',
+            \'coc-word',
+            \'coc-actions',
+            \'coc-git'
+            \]
 
 " use <up/down> for trigger completion and navigate to the next complete item
-if &wildoptions =~ "pum"
-  function! s:check_back_space() abort
+function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~ '\s'
-  endfunction
+endfunction
 
-  inoremap <silent><expr> <down>
-        \ pumvisible() ? "\<C-n>" :
-        \ <SID>check_back_space() ? "\<down>" :
-        \ coc#refresh()
+inoremap <silent><expr> <down>
+            \ pumvisible() ? "\<C-n>" :
+            \ <SID>check_back_space() ? "\<down>" :
+            \ coc#refresh()
 
-  inoremap <silent><expr> <up>
-        \ pumvisible() ? "\<C-p>" :
-        \ <SID>check_back_space() ? "\<up>" :
-        \ coc#refresh()
-endif
+inoremap <silent><expr> <up>
+            \ pumvisible() ? "\<C-p>" :
+            \ <SID>check_back_space() ? "\<up>" :
+            \ coc#refresh()
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -330,7 +328,7 @@ nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap for do codeAction of selected region
 function! s:cocActionsOpenFromSelected(type) abort
-  execute 'CocCommand actions.open ' . a:type
+    execute 'CocCommand actions.open ' . a:type
 endfunction
 xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
 nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
@@ -346,10 +344,10 @@ set tags=./tags,tags
 " => gutentags settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gutentags_file_list_command = {
-      \ 'markers': {
-          \ '.git': 'git ls-files',
-      \ },
-  \ }
+            \ 'markers': {
+            \ '.git': 'git ls-files',
+            \ },
+            \ }
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -380,9 +378,9 @@ map <leader>O <Plug>Sneak_S
 " => vim-litecorrect settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 augroup litecorrect
-  autocmd!
-  " autocmd FileType markdown,md call litecorrect#init()
-  " autocmd FileType notes,txt call litecorrect#init()
+    autocmd!
+    " autocmd FileType markdown,md call litecorrect#init()
+    " autocmd FileType notes,txt call litecorrect#init()
 augroup END
 
 
