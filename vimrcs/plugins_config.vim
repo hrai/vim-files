@@ -280,6 +280,7 @@ let g:coc_global_extensions = [
       \'coc-yank',
       \'coc-dictionary',
       \'coc-word',
+      \'coc-actions',
       \'coc-git'
       \]
 
