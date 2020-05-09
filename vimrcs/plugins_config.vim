@@ -275,6 +275,7 @@ let g:coc_global_extensions = [
       \'coc-snippets',
       \'coc-browser',
       \'coc-json',
+      \'coc-pairs',
       \'coc-git'
       \]
 
