@@ -37,7 +37,7 @@ Plug 'tpope/vim-sleuth'
 
 Plug 'easymotion/vim-easymotion'
 
-Plug 'dkarter/bullets.vim'
+" Plug 'dkarter/bullets.vim'
 
 Plug 'dzeban/vim-log-syntax', { 'for': ['log'] }
 
@@ -108,6 +108,8 @@ Plug 'benshuailyu/online-thesaurus-vim', { 'for': text_files }
 Plug 'kamykn/spelunker.vim', { 'for': text_files }
 
 Plug 'reedes/vim-litecorrect', {'for': text_files }
+
+Plug 'xolox/vim-notes', {'for': text_files }
 
 Plug 'vim-scripts/vis'
 
