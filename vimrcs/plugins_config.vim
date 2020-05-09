@@ -263,11 +263,11 @@ let g:SuperTabDefaultCompletionType = '<C-n>'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+      " \'coc-explorer',
 let g:coc_global_extensions = [
       \'coc-markdownlint',
       \'coc-highlight',
       \'coc-css',
-      \'coc-explorer',
       \'coc-python',
       \'coc-omnisharp',
       \'coc-powershell',
