@@ -374,4 +374,4 @@ augroup END
 " => online-thesaurus-vim settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:use_default_key_map = 0
-noremap <c-t> :call Thesaurus_LookCurrentWord()<CR>
+nnoremap <c-t> :call thesaurusPy2Vim#Thesaurus_LookCurrentWord()<CR>
