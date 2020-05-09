@@ -27,7 +27,7 @@ Plug 'junegunn/vim-easy-align'
 
 Plug 'tomtom/enabler_vim'
 
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 
 Plug 'ntpeters/vim-better-whitespace'
 
