@@ -268,6 +268,7 @@ let g:coc_global_extensions = [
       \'coc-markdownlint',
       \'coc-highlight',
       \'coc-css',
+      \'coc-sh',
       \'coc-python',
       \'coc-omnisharp',
       \'coc-powershell',
