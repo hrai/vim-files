@@ -276,6 +276,7 @@ let g:coc_global_extensions = [
       \'coc-browser',
       \'coc-json',
       \'coc-pairs',
+      \'coc-yank',
       \'coc-git'
       \]
 
@@ -358,7 +359,7 @@ map <leader>O <Plug>Sneak_S
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => auto-pairs settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:AutoPairsMapCR=0
+" let g:AutoPairsMapCR=0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
