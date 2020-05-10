@@ -374,15 +374,6 @@ map <leader>O <Plug>Sneak_S
 " let g:AutoPairsMapCR=0
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-litecorrect settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-augroup litecorrect
-    autocmd!
-    " autocmd FileType markdown,md call litecorrect#init()
-    " autocmd FileType notes,txt call litecorrect#init()
-augroup END
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => online-thesaurus-vim settings
@@ -395,3 +386,4 @@ nnoremap <c-t> :call thesaurusPy2Vim#Thesaurus_LookCurrentWord()<CR>
 " => vim-notes settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 :let g:notes_directories = ['~/Notes']
+" :let g:notes_suffix = '.txt'

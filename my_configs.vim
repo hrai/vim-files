@@ -37,7 +37,7 @@ Plug 'tpope/vim-sleuth'
 
 Plug 'easymotion/vim-easymotion'
 
-" Plug 'dkarter/bullets.vim'
+Plug 'dkarter/bullets.vim'
 
 Plug 'dzeban/vim-log-syntax', { 'for': ['log'] }
 
@@ -161,8 +161,16 @@ Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugin Settings
+" => PLUGIN SETTINGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-litecorrect settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup litecorrect
+    autocmd!
+    autocmd FileType markdown,md call litecorrect#init()
+    autocmd FileType notes,txt call litecorrect#init()
+augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => colourscheme settings
@@ -183,9 +191,3 @@ endif
 " prevent slow tag scan
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
 " set complete-=i
-
-augroup litecorrect
-    autocmd!
-    autocmd FileType markdown,md call litecorrect#init()
-    autocmd FileType notes,txt call litecorrect#init()
-augroup END
