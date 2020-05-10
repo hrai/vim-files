@@ -280,6 +280,7 @@ let g:coc_global_extensions = [
             \'coc-yank',
             \'coc-dictionary',
             \'coc-word',
+            \'coc-spell-checker',
             \'coc-actions',
             \'coc-git'
             \]
@@ -332,6 +333,14 @@ function! s:cocActionsOpenFromSelected(type) abort
 endfunction
 xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
 nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => coc-spell-checker settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+vmap <leader>a <Plug>(coc-codeaction-selected)
+nmap <leader>a <Plug>(coc-codeaction-selected)
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ctags/universal tags settings
