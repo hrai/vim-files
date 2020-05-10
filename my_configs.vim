@@ -103,8 +103,6 @@ Plug 'honza/vim-snippets'
 
 Plug 'benshuailyu/online-thesaurus-vim', { 'for': text_files }
 
-Plug 'kamykn/spelunker.vim', { 'for': text_files }
-
 Plug 'reedes/vim-litecorrect', {'for': text_files }
 
 " Plug 'xolox/vim-notes', {'for': text_files }
