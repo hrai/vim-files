@@ -4,7 +4,14 @@
 https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   */
   "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes": ["cs", "markdown", "javascript", "typescript", "json", "jsonc"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "cs",
+    "markdown",
+    "javascript",
+    "typescript",
+    "json",
+    "jsonc"
+  ],
   "coc.source.file.ignoreHidden": false,
   "prettier.printWidth": 160,
   "prettier.singleQuote": true,
@@ -17,13 +24,18 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "diagnostic.virtualText": true,
   "diagnostic.checkCurrentLine": true,
   "diagnostic.separateRelatedInformationAsDiagnostics": true,
+  "cSpell.language": "en-GB",
   "suggest.timeout": 5000,
   "suggest.asciiCharactersOnly": true,
   "suggest.triggerAfterInsertEnter": true,
   "suggest.noselect": false,
   "snippets.extends": {
-    "javascriptreact": ["javascript"],
-    "typescript": ["javascript"]
+    "javascriptreact": [
+      "javascript"
+    ],
+    "typescript": [
+      "javascript"
+    ]
   },
   "list.normalMappings": {
     "<C-c>": "do:exit"
@@ -33,7 +45,11 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   },
   "eslint.enable": false,
   "eslint.autoFixOnSave": true,
-  "eslint.filetypes": ["javascript", "typescript", "javascriptreact"],
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "javascriptreact"
+  ],
   "calc.replaceOriginalExpression": false,
   "markdownlint.config": {
     "default": true,
@@ -60,9 +76,15 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
     /* }, */
     "bash": {
       "command": "bash-language-server",
-      "filetypes": ["sh"],
-      "args": ["start"],
-      "ignoredRootPaths": ["~"]
+      "filetypes": [
+        "sh"
+      ],
+      "args": [
+        "start"
+      ],
+      "ignoredRootPaths": [
+        "~"
+      ]
     }
   }
 }
