@@ -25,6 +25,19 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "diagnostic.checkCurrentLine": true,
   "diagnostic.separateRelatedInformationAsDiagnostics": true,
   "cSpell.language": "en-GB",
+  "cSpell.diagnosticLevel": "Hint",
+  // Specify file types to spell check.
+  "cSpell.enabledLanguageIds": [
+    "csharp",
+    "javascript",
+    "javascriptreact",
+    "markdown",
+    "plaintext",
+    "notes",
+    "typescript",
+    "typescriptreact",
+    "yml"
+  ],
   "suggest.timeout": 5000,
   "suggest.asciiCharactersOnly": true,
   "suggest.triggerAfterInsertEnter": true,
