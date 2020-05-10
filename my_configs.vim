@@ -53,8 +53,6 @@ Plug 'terryma/vim-expand-region'
 
 Plug 'Valloric/vim-operator-highlight'
 
-" Plug 'artur-shaik/vim-javacomplete2', { 'for': ['java'] }
-"
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
@@ -109,7 +107,7 @@ Plug 'kamykn/spelunker.vim', { 'for': text_files }
 
 Plug 'reedes/vim-litecorrect', {'for': text_files }
 
-Plug 'xolox/vim-notes', {'for': text_files }
+" Plug 'xolox/vim-notes', {'for': text_files }
 
 Plug 'vim-scripts/vis'
 
@@ -185,3 +183,9 @@ endif
 " prevent slow tag scan
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
 " set complete-=i
+
+augroup litecorrect
+    autocmd!
+    autocmd FileType markdown,md call litecorrect#init()
+    autocmd FileType notes,txt call litecorrect#init()
+augroup END
