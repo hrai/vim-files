@@ -20,6 +20,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "codeLens.guifg": "darkgreen",
   "git.addGBlameToVirtualText": true,
   "signature.target": "echo",
+  "diagnostic.messageTarget": "echo",
   "diagnostic.format": "%message [%source]",
   "diagnostic.virtualText": true,
   "diagnostic.checkCurrentLine": true,
@@ -41,6 +42,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "suggest.timeout": 5000,
   "suggest.asciiCharactersOnly": true,
   "suggest.triggerAfterInsertEnter": true,
+  "suggest.floatEnable": false,
   "suggest.noselect": false,
   "snippets.extends": {
     "javascriptreact": [
