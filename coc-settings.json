@@ -39,6 +39,11 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
     "typescriptreact",
     "yml"
   ],
+  "diagnostic.errorSign": "✘",
+  "diagnostic.warningSign": "",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": "ﯦ",
+  "coc.preferences.messageLevel": "warning",
   "suggest.timeout": 5000,
   "suggest.asciiCharactersOnly": true,
   "suggest.triggerAfterInsertEnter": true,
@@ -58,6 +63,11 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "list.insertMappings": {
     "<C-c>": "do:exit"
   },
+  "list.source.files.command": "fd",
+  "list.source.files.args": [
+    "--type",
+    "f"
+  ],
   "eslint.enable": false,
   "eslint.autoFixOnSave": true,
   "eslint.filetypes": [
