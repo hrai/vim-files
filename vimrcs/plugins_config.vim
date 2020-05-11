@@ -93,11 +93,14 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if has("gui_running")
-    let s:status_items=['fugitive', 'readonly', 'absolutepath', 'modified']
+    let s:status_items=['cocstatus', 'currentfunction', 'fugitive', 'readonly', 'absolutepath', 'modified']
 else
-    let s:status_items=['fugitive', 'readonly', 'filename', 'modified']
+    let s:status_items=['cocstatus', 'currentfunction', 'fugitive', 'readonly', 'filename', 'modified']
 endif
 
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
 
 let g:lightline = {
             \ 'colorscheme': 'wombat',
@@ -116,6 +119,10 @@ let g:lightline = {
             \   'readonly': '(&filetype!="help"&& &readonly)',
             \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
             \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
+            \ },
+            \ 'component_function': {
+            \   'cocstatus': 'coc#status',
+            \   'currentfunction': 'CocCurrentFunction'
             \ },
             \ 'separator': { 'left': ' ', 'right': ' ' },
             \ 'subseparator': { 'left': ' ', 'right': ' ' }
