@@ -78,6 +78,9 @@ set nofoldenable            " don't fold by default
 nnoremap <Tab> :bprevious<CR>
 nnoremap <S-Tab> :bnext<CR>
 
+vnoremap <tab> >gv
+vnoremap <s-tab> <gv
+
 " Mapping deletes
 inoremap <C-BS> <C-W>
 inoremap <C-Del> <C-o>dw

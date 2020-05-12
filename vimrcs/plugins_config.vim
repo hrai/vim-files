@@ -289,6 +289,7 @@ let g:coc_global_extensions = [
             \'coc-word',
             \'coc-spell-checker',
             \'coc-actions',
+            \'coc-lists',
             \'coc-git'
             \]
 
