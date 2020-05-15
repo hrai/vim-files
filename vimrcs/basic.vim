@@ -161,6 +161,10 @@ endif
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+set hidden
+set termguicolors
+set mouse+=a
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
