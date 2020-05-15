@@ -39,6 +39,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
     "typescriptreact",
     "yml"
   ],
+  "explorer.icon.enableNerdfont": true,
   "diagnostic.errorSign": "✘",
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "",
