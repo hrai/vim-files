@@ -119,6 +119,8 @@ Plug 'michaeljsmith/vim-indent-object'
 
 Plug 'OrangeT/vim-csharp', { 'for': ['cs'] }
 
+Plug 'hrai/vim-csharp-snippets', { 'for': ['cs'], 'do': 'cp -f ./UltiSnips/* ~/.config/coc/ultisnips/' }
+
 Plug 'justinmk/vim-gtfo'
 
 Plug 'tpope/vim-eunuch'
