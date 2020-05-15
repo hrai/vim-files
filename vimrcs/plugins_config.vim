@@ -285,6 +285,7 @@ let g:coc_global_extensions = [
             \'coc-json',
             \'coc-pairs',
             \'coc-yank',
+            \'coc-explorer',
             \'coc-dictionary',
             \'coc-word',
             \'coc-spell-checker',
