@@ -351,6 +351,11 @@ vmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => coc-explorer settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType coc-explorer setlocal relativenumber
+nnoremap <space>e :CocCommand explorer<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc-snippets settings

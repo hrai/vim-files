@@ -37,7 +37,7 @@ Plug 'tpope/vim-sleuth'
 
 Plug 'easymotion/vim-easymotion'
 
-Plug 'dkarter/bullets.vim'
+" Plug 'dkarter/bullets.vim'
 
 Plug 'dzeban/vim-log-syntax', { 'for': ['log'] }
 
