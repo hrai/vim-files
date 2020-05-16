@@ -254,12 +254,16 @@ xmap <leader>l :call ListTrans_toggle_format('visual')<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => supertab settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => YCM settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " make YCM compatible with UltiSnips (using supertab)
 " let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 " let g:ycm_key_list_previous_completion = ['<C-o>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " Don't show YCM's preview window [ I find it really annoying ]
 " set completeopt-=preview
@@ -308,13 +312,6 @@ map t <Plug>Sneak_t
 map T <Plug>Sneak_T
 map <leader>o <Plug>Sneak_s
 map <leader>O <Plug>Sneak_S
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => auto-pairs settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:AutoPairsMapCR=0
-
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

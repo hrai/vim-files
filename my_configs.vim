@@ -27,8 +27,6 @@ Plug 'junegunn/vim-easy-align'
 
 Plug 'tomtom/enabler_vim'
 
-" Plug 'jiangmiao/auto-pairs'
-
 Plug 'ntpeters/vim-better-whitespace'
 
 Plug 'Yggdroot/indentLine'
@@ -144,8 +142,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'justinmk/vim-sneak'
 
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
-
-" Plug 'jiangmiao/auto-pairs'
 
 " Javascript plugins
 Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
