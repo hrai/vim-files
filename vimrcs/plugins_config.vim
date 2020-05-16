@@ -220,24 +220,6 @@ xmap <leader>l :call ListTrans_toggle_format('visual')<CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => supertab settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:SuperTabDefaultCompletionType = '<C-n>'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => YCM settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" make YCM compatible with UltiSnips (using supertab)
-" let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-" let g:ycm_key_list_previous_completion = ['<C-o>', '<Up>']
-
-" Don't show YCM's preview window [ I find it really annoying ]
-" set completeopt-=preview
-" let g:ycm_add_preview_to_completeopt = 0
-" let g:ycm_min_num_of_chars_for_completion = 2
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-diff-enhanced settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("patch-8.1.0360")
