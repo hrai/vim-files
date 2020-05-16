@@ -22,9 +22,9 @@ map <leader>pu :PlugUpdate<cr>
 " => fzf-vim plugin
 """"""""""""""""""""""""""""""
 map <leader>f :History<CR>
-
 map <leader>j :Files<cr>
-
+map <leader>bu :Buffers<cr>
+map <leader>g :Rg<Space>
 
 """"""""""""""""""""""""""""""
 " => Vim grep
