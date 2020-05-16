@@ -130,16 +130,6 @@ let g:lightline = {
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Syntastic (syntax checker)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Python
-let g:syntastic_python_checkers=['pyflakes']
-
-" Javascript
-let g:syntastic_javascript_checkers = ['jshint']
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=1
