@@ -268,9 +268,3 @@ map <leader>O <Plug>Sneak_S
 let g:use_default_key_map = 0
 nnoremap <c-t> :call thesaurusPy2Vim#Thesaurus_LookCurrentWord()<CR>
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-notes settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:let g:notes_directories = ['~/Notes']
-" :let g:notes_suffix = '.txt'

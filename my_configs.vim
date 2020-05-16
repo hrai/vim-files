@@ -105,8 +105,6 @@ Plug 'benshuailyu/online-thesaurus-vim', { 'for': text_files }
 
 Plug 'reedes/vim-litecorrect', {'for': text_files }
 
-" Plug 'xolox/vim-notes', {'for': text_files }
-
 Plug 'vim-scripts/vis'
 
 Plug 'christoomey/vim-tmux-navigator'
