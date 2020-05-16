@@ -27,23 +27,6 @@ map <leader>j :Files<cr>
 
 
 """"""""""""""""""""""""""""""
-" => CTRL-P
-""""""""""""""""""""""""""""""
-" Unmapping ctrlp's default mapping
-" let g:ctrlp_map = ''
-" let g:ctrlp_working_path_mode = 0
-" let g:ctrlp_show_hidden = 1
-" let g:ctrlp_max_height = 20
-
-" let g:ctrlp_custom_ignore = {
-"   \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.nuget$\|\.vim$\|\.vscode\|node_modules$',
-"   \ 'file': '\.exe$\|\.dll$\|tags$'
-"   \ }
-
-" map <leader>j :CtrlP<cr>
-
-
-""""""""""""""""""""""""""""""
 " => Vim grep
 """"""""""""""""""""""""""""""
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
