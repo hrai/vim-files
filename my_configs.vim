@@ -70,18 +70,12 @@ Plug 'tpope/vim-obsession'
 
 Plug 'itchyny/lightline.vim'
 
-" Plug 'mileszs/ack.vim'
-
-" Plug 'kien/ctrlp.vim'
-
 " Plug 'scrooloose/nerdtree' ", { 'on': ['NerdTreeToggle', 'NerdTreeFind'] }
 Plug 'scrooloose/nerdtree'
 
 Plug 'altercation/vim-colors-solarized'
 
 " Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
-
-" Plug 'jlanzarotta/bufexplorer'
 
 Plug 'amix/open_file_under_cursor.vim'
 
