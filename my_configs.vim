@@ -20,7 +20,6 @@ else
     Plug 'terryma/vim-multiple-cursors'
 endif
 
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' , 'for': ['cs', 'js'] }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'junegunn/vim-easy-align'
@@ -89,10 +88,6 @@ Plug 'schickling/vim-bufonly'
 
 Plug 'mattn/emmet-vim'
 
-" Track the engine.
-" Plug 'SirVer/ultisnips'
-
-" Snippets are separated from the engine. Add this if you want them:
 Plug 'honza/vim-snippets'
 
 Plug 'benshuailyu/online-thesaurus-vim', { 'for': text_files }
