@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Important:
-"       This requries that you install python 3.5 which is the version
+"       This requires that you install python 3.5 which is the version
 "       gvim was compiled with!
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
