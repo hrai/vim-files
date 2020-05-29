@@ -133,6 +133,9 @@ let g:coc_explorer_global_presets = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 imap <C-space> <Plug>(coc-snippets-expand)
 
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
+                                           \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc-list settings
