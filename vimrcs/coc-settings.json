@@ -111,6 +111,18 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
       "ignoredRootPaths": [
         "~"
       ]
+    },
+    "sql": {
+      "command": "sql-language-server",
+      "args": [
+        "up",
+        "--method",
+        "stdio"
+      ],
+      "filetypes": [
+        "sql",
+        "mysql"
+      ]
     }
   }
 }
