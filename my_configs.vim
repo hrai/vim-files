@@ -179,3 +179,4 @@ endif
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
 " set complete-=i
 "
+elif [ "$(expr substr $(uname -s) 1 7)" = "MSYS_NT" ]; then
