@@ -50,6 +50,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "suggest.triggerAfterInsertEnter": true,
   "suggest.floatEnable": false,
   "suggest.noselect": false,
+  "suggest.maxCompleteItemCount": 10,
   "snippets.extends": {
     "javascriptreact": [
       "javascript"
