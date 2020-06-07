@@ -10,7 +10,8 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
     "javascript",
     "typescript",
     "json",
-    "jsonc"
+    "jsonc",
+    "css"
   ],
   "coc.source.file.ignoreHidden": false,
   "prettier.printWidth": 160,

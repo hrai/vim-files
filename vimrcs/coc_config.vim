@@ -32,6 +32,7 @@ let g:coc_global_extensions = [
             \'coc-spell-checker',
             \'coc-actions',
             \'coc-lists',
+            \'coc-prettier',
             \'coc-git'
             \]
 
@@ -151,3 +152,9 @@ endfunction
 
 " Keymapping for grep word under cursor with interactive mode
 nnoremap <silent> <Leader>cf :exe 'CocList -I --input='.expand('<cword>').' grep'<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => coc-prettier settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
