@@ -30,6 +30,7 @@ let g:coc_global_extensions = [
             \'coc-python',
             \'coc-sh',
             \'coc-snippets',
+            \'coc-go',
             \'coc-spell-checker',
             \'coc-tsserver',
             \'coc-vimlsp',
