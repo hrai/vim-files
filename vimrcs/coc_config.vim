@@ -139,7 +139,6 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" grep word under cursor
 command! -nargs=+ -complete=custom,s:GrepArgs Rg exe 'CocList grep '.<q-args>
-command
 
 function! s:GrepArgs(...)
   let list = ['-S', '-smartcase', '-i', '-ignorecase', '-w', '-word',
