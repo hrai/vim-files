@@ -93,6 +93,9 @@ execute "nmap <space>r :CocCommand explorer --reveal=".expand('<sfile>:h')."/pac
 nmap <space>v  :CocCommand explorer --preset .vim_runtime<CR>
 nmap <space>ff :CocCommand explorer --preset floating<CR>
 
+" When the only window opened is explorer, close it
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+
 let g:coc_explorer_global_presets = {
 \   '.vim': {
 \     'root-uri': '~/.vim',
