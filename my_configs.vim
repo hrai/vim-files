@@ -174,6 +174,8 @@ if has('nvim')
 
     " changing codelens colour
     hi CocCodeLens guifg=darkgreen
+
+    Plug 'danilamihailov/beacon.nvim'
 else
     colorscheme solarized
 endif
