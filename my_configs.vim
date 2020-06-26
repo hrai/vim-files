@@ -183,4 +183,9 @@ endif
 " prevent slow tag scan
 " https://stackoverflow.com/questions/2169645/vims-autocomplete-is-excruciatingly-slow/2460593
 " set complete-=i
-"
+
+let g:firenvim_config = {
+	\ "globalSettings": {
+		\ "server": "persistent"
+	\}
+\}
