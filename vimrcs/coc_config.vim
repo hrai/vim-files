@@ -171,3 +171,8 @@ nnoremap <silent> <Leader>cf :exe 'CocList -I --input='.expand('<cword>').' grep
 " => coc-prettier settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => coc-dictionary settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+setl dictionary+=/usr/share/dict/words
