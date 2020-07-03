@@ -245,9 +245,9 @@ set si "Smart indent
 set wrap "Wrap lines
 
 set number
-
 set relativenumber
 
+set inccommand=nosplit "Live Substitution
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
