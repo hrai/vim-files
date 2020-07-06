@@ -129,8 +129,6 @@ Plug 'ryanoasis/vim-devicons'
 
 Plug 'justinmk/vim-sneak'
 
-Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
-
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
 " Javascript plugins
@@ -176,6 +174,8 @@ if has('nvim')
     hi CocCodeLens guifg=darkgreen
 
     Plug 'danilamihailov/beacon.nvim'
+
+    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 else
     colorscheme solarized
 endif
