@@ -129,6 +129,8 @@ Plug 'ryanoasis/vim-devicons'
 
 Plug 'justinmk/vim-sneak'
 
+Plug 'luochen1990/rainbow'
+
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
 " Javascript plugins
@@ -180,3 +182,4 @@ else
     colorscheme solarized
 endif
 
+let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
