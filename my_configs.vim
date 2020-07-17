@@ -131,6 +131,8 @@ Plug 'justinmk/vim-sneak'
 
 Plug 'luochen1990/rainbow'
 
+Plug 'tmhedberg/matchit'
+
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
 " Javascript plugins
