@@ -133,6 +133,8 @@ Plug 'luochen1990/rainbow'
 
 Plug 'tmhedberg/matchit'
 
+Plug 'mbbill/undotree'
+
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
 " Javascript plugins
