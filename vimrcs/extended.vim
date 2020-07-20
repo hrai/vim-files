@@ -183,6 +183,10 @@ nmap \ @:
 "Delete all the content of the file/buffer
 nnoremap daf :%d<CR>
 
+" Increase/decrease numbers
+nnoremap <A-a> <C-a>
+nnoremap <A-x> <C-x>
+
 " add useful stuff to title bar (file name, flags, cwd)
 " based on @factorylabs
 if has('title') && (has('gui_running') || &title)
