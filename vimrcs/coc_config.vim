@@ -32,6 +32,7 @@ let g:coc_global_extensions = [
             \'coc-snippets',
             \'coc-go',
             \'coc-spell-checker',
+            \'coc-tabnine',
             \'coc-tsserver',
             \'coc-tag',
             \'coc-vimlsp',
