@@ -19,6 +19,9 @@ map <leader>j :Files<cr>
 map <leader>bu :Buffers<cr>
 map <leader>g :Rg<Space>
 
+" [Buffers] Jump to the existing window if possible
+let g:fzf_buffers_jump = 1
+
 """"""""""""""""""""""""""""""
 " => Vim grep
 """"""""""""""""""""""""""""""
