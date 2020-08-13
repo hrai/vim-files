@@ -14,5 +14,7 @@ rm -rf ~/.vim/autoload/plug.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+python3 -m pip install --user --upgrade pynvim
+
 echo "Installed the Ultimate Vim configuration successfully for neovim! Enjoy
 :-)"
