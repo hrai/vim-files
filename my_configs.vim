@@ -137,6 +137,8 @@ Plug 'luochen1990/rainbow'
 
 Plug 'tmhedberg/matchit'
 
+Plug 'wellle/context.vim'
+
 Plug 'mbbill/undotree'
 
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
