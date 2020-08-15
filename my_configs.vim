@@ -93,8 +93,6 @@ Plug 'honza/vim-snippets'
 
 Plug 'papanikge/vim-voogle'
 
-Plug 'mutewinter/vim-autoreadwatch'
-
 Plug 'benshuailyu/online-thesaurus-vim', { 'for': text_files }
 
 Plug 'reedes/vim-litecorrect', {'for': text_files }
