@@ -17,7 +17,7 @@ map <leader>pc :PlugClean<cr>
 map <leader>f :History<CR>
 map <leader>j :Files<cr>
 map <leader>bu :Buffers<cr>
-map <leader>g :Rg<Space>
+map <leader>g :Rg --ignore-case<Space>
 
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
