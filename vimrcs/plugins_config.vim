@@ -7,7 +7,7 @@
 " => vim-plug
 """"""""""""""""""""""""""""""
 map <leader>pi :PlugInstall<cr>
-map <leader>pu :PlugUpdate<cr>
+map <leader>pu :PlugClean <bar> :PlugUpdate<cr>
 map <leader>pc :PlugClean<cr>
 
 
