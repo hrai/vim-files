@@ -184,8 +184,6 @@ if has('nvim')
     hi CocCodeLens guifg=darkgreen
 
     Plug 'danilamihailov/beacon.nvim'
-
-    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 else
     colorscheme solarized
 endif
