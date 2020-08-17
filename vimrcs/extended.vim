@@ -15,7 +15,9 @@ set guioptions-=l
 set guioptions-=L
 
 "Open vim in fullscreen mode (Use ~x on an English Windows version or ~n for French.)
-au GUIEnter * simalt ~x
+if !has("gui_macvim")
+    au GUIEnter * simalt ~x
+endif
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
