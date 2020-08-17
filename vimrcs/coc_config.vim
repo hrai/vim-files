@@ -11,7 +11,6 @@ let &runtimepath .= ',' . expand('<sfile>:h:h')
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" \'coc-explorer',
 let g:coc_global_extensions = [
             \'coc-actions',
             \'coc-browser',
