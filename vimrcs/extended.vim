@@ -132,27 +132,6 @@ map <leader>n :cn<cr>
 
 map <leader>d :g/^\s*$/d<cr>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => keyboard mappings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"Yanking to system and tmux clipboard
-if has("gui_running")
-  vnoremap <C-C> "+y
-else
-  vnoremap <C-C> "+y <bar> <ESC>:Tyank<CR>
-endif
-
-"Yanking the file contents to clipboard
-nnoremap <F6> gg"+yG
-
-"Putting from clipboard
-noremap <C-P> "+p
-inoremap <C-P> <C-R>+
-cnoremap <C-P> <C-R>+<space>
-
-"Copying the word under cursor to clipboard
-nnoremap <C-C> viw"+y
-
 "Select all
 nnoremap <C-A> ggVG
 
@@ -191,6 +170,52 @@ if has('title') && (has('gui_running') || &title)
     set titlestring+=%h%m%r%w
     set titlestring+=\ -\ %{v:progname}
     set titlestring+=\ -\ %{substitute(getcwd(),\ $HOME,\ '~',\ '')}
+endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Yanking to system and tmux clipboard
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("gui_running")
+  vnoremap <C-C> "+y
+else
+  vnoremap <C-C> "+y <bar> <ESC>:Tyank<CR>
+endif
+
+"Copying the word under cursor to clipboard
+nnoremap <C-C> viw"+y
+
+"Yanking the file contents to clipboard
+nnoremap <F6> gg"+yG
+
+"Putting from clipboard
+noremap <C-P> "+p
+inoremap <C-P> <C-R>+
+cnoremap <C-P> <C-R>+<space>
+
+if has('nvim') && system('uname -r') =~ "Microsoft"
+    echo "This is wsl"
+
+    " let s:clip = '/mnt/c/Windows/System32/clip.exe'
+    " if executable(s:clip)
+    "     augroup WSLYank
+    "         autocmd!
+    "         autocmd TextYankPost * call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
+    "     augroup END
+    " end
+
+    " let g:clipboard = {
+    "   \ 'name': 'win32yank',
+    "   \ 'copy': {
+    "   \    '+': 'win32yank.exe -i --crlf',
+    "   \    '*': 'win32yank.exe -i --crlf',
+    "   \  },
+    "   \ 'paste': {
+    "   \    '+': 'win32yank.exe -o --lf',
+    "   \    '*': 'win32yank.exe -o --lf',
+    "   \ },
+    "   \ 'cache_enabled': 0,
+    " \ }
+    " set clipboard=unnamedplus
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

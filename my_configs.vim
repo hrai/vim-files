@@ -187,3 +187,4 @@ if has('nvim')
 else
     colorscheme solarized
 endif
+
