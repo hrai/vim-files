@@ -16,7 +16,7 @@ set guioptions-=L
 
 "Open vim in fullscreen mode (Use ~x on an English Windows version or ~n for French.)
 if !has("gui_macvim")
-    au GUIEnter * simalt ~x
+  au GUIEnter * simalt ~x
 endif
 
 
@@ -38,8 +38,8 @@ autocmd! BufWritePost ~/.vim_runtime/my_configs.vim source ~/.vim_runtime/my_con
 "    means that you can undo even when you close a buffer/VIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 try
-    set undodir=~/.vim_runtime/temp_dirs/undodir
-    set undofile
+  set undodir=~/.vim_runtime/temp_dirs/undodir
+  set undofile
 catch
 endtry
 
@@ -165,11 +165,11 @@ nnoremap <A-x> <C-x>
 " add useful stuff to title bar (file name, flags, cwd)
 " based on @factorylabs
 if has('title') && (has('gui_running') || &title)
-    set titlestring=
-    set titlestring+=%f
-    set titlestring+=%h%m%r%w
-    set titlestring+=\ -\ %{v:progname}
-    set titlestring+=\ -\ %{substitute(getcwd(),\ $HOME,\ '~',\ '')}
+  set titlestring=
+  set titlestring+=%f
+  set titlestring+=%h%m%r%w
+  set titlestring+=\ -\ %{v:progname}
+  set titlestring+=\ -\ %{substitute(getcwd(),\ $HOME,\ '~',\ '')}
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -192,7 +192,10 @@ noremap <C-P> "+p
 inoremap <C-P> <C-R>+
 cnoremap <C-P> <C-R>+<space>
 
-if has('nvim') && system('uname -r') =~ "Microsoft"
+if has('nvim')
+  set clipboard+=unnamedplus
+
+  if system('uname -r') =~ "Microsoft"
     echo "This is wsl"
 
     " let s:clip = '/mnt/c/Windows/System32/clip.exe'
@@ -215,32 +218,32 @@ if has('nvim') && system('uname -r') =~ "Microsoft"
     "   \ },
     "   \ 'cache_enabled': 0,
     " \ }
-    " set clipboard=unnamedplus
+  endif
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 func! DeleteTillSlash()
-    let g:cmd = getcmdline()
+  let g:cmd = getcmdline()
 
+  if has("win16") || has("win32")
+    let g:cmd_edited = substitute(g:cmd, "\\(.*\[\\\\]\\).*", "\\1", "")
+  else
+    let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*", "\\1", "")
+  endif
+
+  if g:cmd == g:cmd_edited
     if has("win16") || has("win32")
-        let g:cmd_edited = substitute(g:cmd, "\\(.*\[\\\\]\\).*", "\\1", "")
+      let g:cmd_edited = substitute(g:cmd, "\\(.*\[\\\\\]\\).*\[\\\\\]", "\\1", "")
     else
-        let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*", "\\1", "")
+      let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*/", "\\1", "")
     endif
+  endif
 
-    if g:cmd == g:cmd_edited
-        if has("win16") || has("win32")
-            let g:cmd_edited = substitute(g:cmd, "\\(.*\[\\\\\]\\).*\[\\\\\]", "\\1", "")
-        else
-            let g:cmd_edited = substitute(g:cmd, "\\(.*\[/\]\\).*/", "\\1", "")
-        endif
-    endif
-
-    return g:cmd_edited
+  return g:cmd_edited
 endfunc
 
 func! CurrentFileDir(cmd)
-    return a:cmd . " " . expand("%:p:h") . "/"
+  return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
