@@ -196,7 +196,7 @@ if has('nvim')
   set clipboard+=unnamedplus
 
   if system('uname -r') =~ "Microsoft"
-    echo "This is wsl"
+    echo "This is wsl.\r"
 
     " let s:clip = '/mnt/c/Windows/System32/clip.exe'
     " if executable(s:clip)
