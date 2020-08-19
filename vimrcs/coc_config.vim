@@ -5,7 +5,7 @@
 
 " let g:coc_node_args = ['--nolazy', '--async-stack-traces']
 let g:coc_config_home = expand('<sfile>:h')
-let g:coc_data_home = '~/.vim/plugged/coc_data_home'
+let g:coc_data_home = '~/.vim/coc_data_home'
 let &runtimepath .= ',' . expand('<sfile>:h:h')
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
