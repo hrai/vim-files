@@ -91,7 +91,7 @@ Plug 'mattn/emmet-vim'
 
 Plug 'honza/vim-snippets'
 
-Plug 'papanikge/vim-voogle'
+" Plug 'papanikge/vim-voogle' "searching word in google
 
 Plug 'benshuailyu/online-thesaurus-vim', { 'for': text_files }
 
