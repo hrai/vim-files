@@ -386,7 +386,7 @@ onoremap p i(
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Toggle paste mode on and off
-map <leader>pt :setlocal paste!<cr>
+nnoremap <leader>pt :setlocal paste!<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
