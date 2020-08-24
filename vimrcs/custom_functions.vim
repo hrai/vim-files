@@ -83,3 +83,19 @@ nmap dab :call ModifyAroundBrackets("delete")<CR>
 nmap cab :call ModifyAroundBrackets("change")<CR>
 nmap vab :call ModifyAroundBrackets("select")<CR>
 nmap yab :call ModifyAroundBrackets("yank")<CR>
+
+
+
+function! CocToggle()
+    if get(g:, 'coc_enabled', 0) == 1
+        echo 'Disabling coc...'
+        execute 'CocDisable'
+    else
+        echo 'Enabling coc...'
+        execute 'CocEnable'
+    endif
+
+    execute 'AutoSaveToggle'
+endfunction
+
+nnoremap <leader>tp :call CocToggle()<cr>
