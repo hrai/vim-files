@@ -12,7 +12,6 @@ let &runtimepath .= ',' . expand('<sfile>:h:h')
 " => coc settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:coc_global_extensions = [
-            \'coc-actions',
             \'coc-browser',
             \'coc-css',
             \'coc-dictionary',
@@ -38,6 +37,24 @@ let g:coc_global_extensions = [
             \'coc-word',
             \'coc-yank',
             \]
+
+if has('nvim')
+    let g:coc_global_extensions += [
+                \'coc-actions',
+            \]
+
+    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " => coc-actions settings
+    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    " Remap for do codeAction of selected region
+    function! s:cocActionsOpenFromSelected(type) abort
+        execute 'CocCommand actions.open ' . a:type
+    endfunction
+    xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+    nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+
+
+endif
 
 " use <up/down> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
@@ -71,17 +88,6 @@ nmap <leader>do <Plug>(coc-codeaction)
 " => coc-yank settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => coc-actions settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Remap for do codeAction of selected region
-function! s:cocActionsOpenFromSelected(type) abort
-    execute 'CocCommand actions.open ' . a:type
-endfunction
-xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
-nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
