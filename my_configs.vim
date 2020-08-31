@@ -139,6 +139,8 @@ Plug 'wellle/context.vim'
 
 Plug 'mbbill/undotree'
 
+Plug 'axelf4/vim-strip-trailing-whitespace'
+
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
 " Javascript plugins
