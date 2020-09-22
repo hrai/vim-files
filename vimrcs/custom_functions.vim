@@ -12,7 +12,7 @@ nnoremap gap :Gap<space>
 nnoremap gcl :Gap cleanup<CR>
 
 
-function ModifyInsideBrackets(commandType)
+function ModifyInsideBrackets(commandType) abort
     let curr_line=getline('.')
     let cursor_pos=col('.')
 
@@ -49,7 +49,7 @@ nmap vib :call ModifyInsideBrackets("select")<CR>
 nmap yib :call ModifyInsideBrackets("yank")<CR>
 
 
-function ModifyAroundBrackets(commandType)
+function ModifyAroundBrackets(commandType) abort
     let curr_line=getline('.')
     let cursor_pos=col('.')
 
@@ -85,8 +85,7 @@ nmap vab :call ModifyAroundBrackets("select")<CR>
 nmap yab :call ModifyAroundBrackets("yank")<CR>
 
 
-
-function! CocToggle()
+function! CocToggle() abort
     if get(g:, 'coc_enabled', 0) == 1
         echo 'Disabling coc...'
         execute 'CocDisable'
