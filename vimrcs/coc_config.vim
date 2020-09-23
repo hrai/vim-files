@@ -93,8 +93,8 @@ nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc-spell-checker settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vmap <leader>a <Plug>(coc-codeaction-selected)
-nmap <leader>a <Plug>(coc-codeaction-selected)
+" vmap <leader>a <Plug>(coc-codeaction-selected)
+" nmap <leader>a <Plug>(coc-codeaction-selected)
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
