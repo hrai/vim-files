@@ -72,7 +72,7 @@ inoremap <silent><expr> <up>
             \ <SID>check_back_space() ? "\<up>" :
             \ coc#refresh()
 
-nmap <leader>rn <Plug>(coc-rename)
+nmap <f2> <Plug>(coc-rename)
 " nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 " nmap <silent> gr <Plug>(coc-references)
