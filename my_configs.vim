@@ -97,6 +97,8 @@ Plug 'benshuailyu/online-thesaurus-vim', { 'for': text_files }
 
 Plug 'reedes/vim-litecorrect', {'for': text_files }
 
+Plug 'panozzaj/vim-autocorrect', {'for': text_files }
+
 Plug 'vim-scripts/vis'
 
 Plug 'christoomey/vim-tmux-navigator'
@@ -166,17 +168,19 @@ call plug#end()
 " => PLUGIN SETTINGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-litecorrect settings
+" => autocorrect settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let user_dict = {
   \ 'API': ['api','Api'],
   \ 'then': ['hten'],
   \ }
 
-augroup litecorrect
+augroup autocorrect
     autocmd!
     autocmd FileType markdown,md call litecorrect#init(user_dict)
     autocmd FileType notes,txt call litecorrect#init(user_dict)
+
+    autocmd filetype notes,txt,markdown,md call AutoCorrect()
 augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
