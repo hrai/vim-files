@@ -107,7 +107,7 @@ hi CocExplorerNormalFloat guibg=#272B34
 
 nmap ge :CocCommand explorer<CR>
 nmap gE :CocCommand explorer --position=right<CR>
-execute "nmap <space>r :CocCommand explorer --reveal=".expand('<sfile>:h')."/package.json<CR>"
+" execute "nmap <space>r :CocCommand explorer --reveal=".expand('<sfile>:h')."/package.json<CR>"
 " nmap <space>t :CocCommand explorer --position=tab<CR>
 nmap <space>v  :CocCommand explorer --preset .vim_runtime<CR>
 nmap <space>ff :CocCommand explorer --preset floating<CR>
