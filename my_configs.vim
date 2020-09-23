@@ -168,10 +168,15 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-litecorrect settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let user_dict = {
+  \ 'API': ['api','Api'],
+  \ 'then': ['hten'],
+  \ }
+
 augroup litecorrect
     autocmd!
-    autocmd FileType markdown,md call litecorrect#init()
-    autocmd FileType notes,txt call litecorrect#init()
+    autocmd FileType markdown,md call litecorrect#init(user_dict)
+    autocmd FileType notes,txt call litecorrect#init(user_dict)
 augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
