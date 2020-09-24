@@ -71,7 +71,7 @@ Plug 'tpope/vim-obsession'
 Plug 'itchyny/lightline.vim'
 
 " Plug 'scrooloose/nerdtree' ", { 'on': ['NerdTreeToggle', 'NerdTreeFind'] }
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree', { 'on': ['NerdTreeToggle', 'NerdTreeFind'] }
 
 Plug 'altercation/vim-colors-solarized'
 
