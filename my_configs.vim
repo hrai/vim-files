@@ -70,8 +70,9 @@ Plug 'tpope/vim-obsession'
 
 Plug 'itchyny/lightline.vim'
 
-" Plug 'scrooloose/nerdtree' ", { 'on': ['NerdTreeToggle', 'NerdTreeFind'] }
-Plug 'preservim/nerdtree', { 'on': ['NerdTreeToggle', 'NerdTreeFind'] }
+Plug 'preservim/nerdtree', { 'on': ['NerdTreeToggle', 'NerdTreeFind'] } |
+    \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+    \ Plug 'ryanoasis/vim-devicons'
 
 Plug 'altercation/vim-colors-solarized'
 
@@ -128,8 +129,6 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'chrisbra/vim-diff-enhanced'
 
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
-
-Plug 'ryanoasis/vim-devicons'
 
 Plug 'justinmk/vim-sneak'
 
