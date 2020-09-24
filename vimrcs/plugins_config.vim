@@ -278,3 +278,9 @@ nnoremap <c-t> :call thesaurusPy2Vim#Thesaurus_LookCurrentWord()<CR>
 " => rainbow settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => nerdtree-git-plugin settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:NERDTreeGitStatusUseNerdFonts = 1
