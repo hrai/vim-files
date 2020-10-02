@@ -103,6 +103,8 @@ Plug 'panozzaj/vim-autocorrect', {'for': text_files }
 
 Plug 'vim-scripts/vis'
 
+Plug 'ap/vim-buftabline'
+
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'soulston/vim-listtrans'
