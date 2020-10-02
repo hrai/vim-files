@@ -145,6 +145,8 @@ Plug 'bagrat/vim-buffet'
 
 Plug 'axelf4/vim-strip-trailing-whitespace'
 
+Plug 'mhinz/vim-startify'
+
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
 " Javascript plugins
