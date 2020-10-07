@@ -139,7 +139,7 @@ Plug 'luochen1990/rainbow'
 
 Plug 'tmhedberg/matchit'
 
-Plug 'wellle/context.vim'
+" Plug 'wellle/context.vim'
 
 Plug 'mbbill/undotree'
 
