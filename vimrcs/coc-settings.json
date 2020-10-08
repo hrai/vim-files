@@ -57,6 +57,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
     "default": true,
     "line-length": false
   },
+  "powershell.integratedConsole.showOnStartup": false,
   "clangd.semanticHighlighting": true,
   "languageserver": {
     /* "ccls": { */
