@@ -101,7 +101,7 @@ Plug 'reedes/vim-litecorrect', {'for': text_files }
 
 Plug 'panozzaj/vim-autocorrect', {'for': text_files }
 
-Plug 'vim-scripts/vis'
+" Plug 'vim-scripts/vis'
 
 Plug 'ap/vim-buftabline'
 
