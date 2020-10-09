@@ -82,6 +82,9 @@ function! CocCurrentFunction()
 endfunction
 
 let g:lightline = {
+            \ 'enable': {
+            \   'tabline':0     "this setting is for 'bagrat/vim-buffet'
+            \ },
             \ 'colorscheme': 'wombat',
             \ 'active': {
             \   'left': add([ ['mode', 'paste'] ], s:status_items),
@@ -284,3 +287,14 @@ let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowTo
 " => nerdtree-git-plugin settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeGitStatusUseNerdFonts = 1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => bagrat/vim-buffet
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:buffet_use_devicons=1
+let g:buffet_powerline_separators = 1
+let g:buffet_tab_icon = "\uf00a"
+let g:buffet_left_trunc_icon = "\uf0a8"
+let g:buffet_right_trunc_icon = "\uf0a9"
+

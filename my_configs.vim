@@ -141,9 +141,9 @@ Plug 'tmhedberg/matchit'
 
 Plug 'mbbill/undotree'
 
-Plug 'ap/vim-buftabline'
+" Plug 'ap/vim-buftabline'
 
-Plug 'bagrat/vim-buffet'
+Plug 'bagrat/vim-buffet' "show tabs and buffers on tabline
 
 Plug 'axelf4/vim-strip-trailing-whitespace'
 
@@ -205,9 +205,3 @@ else
     colorscheme solarized
 endif
 
-" let g:buffet_use_devicons=1
-" let g:buffet_powerline_separators = 1
-" let g:buffet_tab_icon = "\uf00a"
-" let g:buffet_left_trunc_icon = "\uf0a8"
-" let g:buffet_right_trunc_icon = "\uf0a9"
-" let g:lightline.enable.tabline = 0
