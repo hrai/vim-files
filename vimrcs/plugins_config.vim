@@ -81,9 +81,10 @@ function! CocCurrentFunction()
     return get(b:, 'coc_current_function', '')
 endfunction
 
+"'tabline': 0 is for 'bagrat/vim-buffet'
 let g:lightline = {
             \ 'enable': {
-            \   'tabline':0     "this setting is for 'bagrat/vim-buffet'
+            \   'tabline':0
             \ },
             \ 'colorscheme': 'wombat',
             \ 'active': {
