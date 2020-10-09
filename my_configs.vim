@@ -103,8 +103,6 @@ Plug 'panozzaj/vim-autocorrect', {'for': text_files }
 
 " Plug 'vim-scripts/vis'
 
-Plug 'ap/vim-buftabline'
-
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'soulston/vim-listtrans'
@@ -143,6 +141,8 @@ Plug 'tmhedberg/matchit'
 
 Plug 'mbbill/undotree'
 
+Plug 'ap/vim-buftabline'
+
 Plug 'bagrat/vim-buffet'
 
 Plug 'axelf4/vim-strip-trailing-whitespace'
@@ -159,8 +159,8 @@ Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 " \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 " Vim debug
-Plug 'vim-scripts/genutils', { 'for': ['vim'] }
-Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
+" Plug 'vim-scripts/genutils', { 'for': ['vim'] }
+" Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
 
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
@@ -205,3 +205,9 @@ else
     colorscheme solarized
 endif
 
+" let g:buffet_use_devicons=1
+" let g:buffet_powerline_separators = 1
+" let g:buffet_tab_icon = "\uf00a"
+" let g:buffet_left_trunc_icon = "\uf0a8"
+" let g:buffet_right_trunc_icon = "\uf0a9"
+" let g:lightline.enable.tabline = 0
