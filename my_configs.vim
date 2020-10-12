@@ -15,9 +15,9 @@ call plug#begin('~/.vim/plugged')
 
 if has('nvim')
     Plug 'iCyMind/NeoSolarized'
-endif
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+endif
 
 Plug 'terryma/vim-multiple-cursors'
 
