@@ -34,7 +34,7 @@ set grepprg=/bin/grep\ -nH
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+let NERDTreeIgnore = ['\.pyc$', '__pycache__','^node_modules$']
 let g:NERDTreeWinSize=35
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
@@ -58,7 +58,6 @@ autocmd FileType nerdtree setlocal relativenumber
 
 " Disabling Indentline on Nerdtree as it is breaking indentation
 autocmd BufEnter NERD_tree* :LeadingSpaceDisable
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => surround.vim
