@@ -194,20 +194,18 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 "GUI Font settings
-if has("gui_running")
-    " if has("gui_macvim")
-    "     set guifont=Menlo\ Regular:h14
-    " else
-        set guifont=Cascadia\ Mono:h12:cANSI
-    " endif
+if has("gui_running") 
+    set guifont=Cascadia\ Mono:h12:cANSI
+" elseif exists('g:GuiLoaded')
+"     GuiFont! Cascadia\ Mono:h12
 else
     " Added default font setting for terminal
     set guifont=FiraCode\ NF:h12
 endif
 
-if has('win32')
-    set guifont=Cascadia\ Mono:h12:cANSI
-endif
+" if has("gui_macvim")
+"     set guifont=Menlo\ Regular:h14
+" endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
