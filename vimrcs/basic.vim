@@ -195,7 +195,7 @@ set ffs=unix,dos,mac
 
 "GUI Font settings
 if has("gui_running") 
-    set guifont=Cascadia\ Mono:h12:cANSI
+    set guifont=CaskaydiaCove\ NF:h12:cANSI "windows
 " elseif exists('g:GuiLoaded')
 "     GuiFont! Cascadia\ Mono:h12
 else
