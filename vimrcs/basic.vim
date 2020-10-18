@@ -306,7 +306,7 @@ map <leader>cd :cd %:p:h<cr>:pwd<cr>
 " Switch to home directory
 map <leader>ch :cd ~<cr>
 
-nmap <leader>ro :e ~/rough.notes<cr>
+nmap <leader>ro :e ~/rough/rough.notes<cr>
 
 map <leader>so :so%<cr>
 
