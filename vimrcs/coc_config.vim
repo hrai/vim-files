@@ -3,7 +3,7 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if get(g:, 'coc_enabled', 0) == 1
+" if get(g:, 'coc_enabled', 0) != 1
     " let g:coc_node_args = ['--nolazy', '--async-stack-traces']
     let g:coc_config_home = expand('<sfile>:h')
     let g:coc_data_home = '~/.vim/coc_data_home'
@@ -189,4 +189,4 @@ if get(g:, 'coc_enabled', 0) == 1
     """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     command! -nargs=0 GitBrowserOpen :CocCommand git.browserOpen
 
-endif
+" endif
