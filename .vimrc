@@ -7,7 +7,6 @@ set runtimepath+=~/.vim_runtime/sources_non_forked
 source ~/.vim_runtime/vimrcs/basic.vim
 
 source ~/.vim_runtime/vimrcs/filetypes.vim
-source ~/.vim_runtime/vimrcs/plugins_config.vim
 source ~/.vim_runtime/vimrcs/extended.vim
 source ~/.vim_runtime/vimrcs/custom_functions.vim
 
