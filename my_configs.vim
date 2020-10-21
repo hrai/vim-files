@@ -172,6 +172,8 @@ Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 " Local plugins
 Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+
 " Initialize plugin system
 call plug#end()
 
