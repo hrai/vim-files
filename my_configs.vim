@@ -14,11 +14,15 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 
 if has('nvim')
-    Plug 'iCyMind/NeoSolarized'
+    " Plug 'iCyMind/NeoSolarized'
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     source ~/.vim_runtime/vimrcs/coc_config.vim
 endif
+
+"""" Themes """"
+" Plug 'altercation/vim-colors-solarized'
+Plug 'NLKNguyen/papercolor-theme'
 
 Plug 'terryma/vim-multiple-cursors'
 
@@ -81,8 +85,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree' |
     \ Plug 'Xuyuanp/nerdtree-git-plugin' |
     \ Plug 'ryanoasis/vim-devicons'
-
-Plug 'altercation/vim-colors-solarized'
 
 " Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 
@@ -204,13 +206,12 @@ let g:solarized_termcolors=256
 
 if has('nvim')
     set termguicolors
-    colorscheme NeoSolarized
+    " colorscheme NeoSolarized
 
     " changing codelens colour
     hi CocCodeLens guifg=darkgreen
 
     Plug 'danilamihailov/beacon.nvim'
-else
-    colorscheme solarized
 endif
 
+colorscheme PaperColor
