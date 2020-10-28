@@ -48,10 +48,10 @@ endfunction
 " autocmd BufWritePost * if (IsNerdTreeTabOpen()) | NERDTreeFocus | execute 'normal R' | wincmd p | endif
 
 " Sync open file to nerdtree
-autocmd BufEnter * if (IsNerdTreeTabOpen()) | NERDTreeFind | execute 'normal R' | wincmd p | endif
+autocmd BufWinEnter * if (IsNerdTreeTabOpen()) | NERDTreeFind | execute 'normal R' | wincmd p | endif
 
 " Automatically quit vim if NERDTree is last and only buffer
-autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd BufEnter * if (winnr("$") == 1 && &ft=='nerdtree') | q | endif
 
 " Enable line numbers
 let NERDTreeShowLineNumbers=1
@@ -60,7 +60,7 @@ let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 
 " Disabling Indentline on Nerdtree as it is breaking indentation
-autocmd BufEnter NERD_tree* :LeadingSpaceDisable
+autocmd BufEnter *.nerdtree :LeadingSpaceDisable
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => surround.vim
