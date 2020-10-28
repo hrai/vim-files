@@ -84,8 +84,7 @@ Plug 'itchyny/lightline.vim'
 " Plug 'preservim/nerdtree', { 'on': ['NerdTreeToggle', 'NerdTreeFind'] } |
 Plug 'preservim/nerdtree' |
     \ Plug 'Xuyuanp/nerdtree-git-plugin' |
-    \ Plug 'ryanoasis/vim-devicons' |
-    \ Plug 'unkiwii/vim-nerdtree-sync'
+    \ Plug 'ryanoasis/vim-devicons'
 
 " Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 
