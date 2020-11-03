@@ -161,7 +161,7 @@ Plug 'mhinz/vim-startify'
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
 " Javascript plugins
-Plug 'w0rp/ale', { 'for': ['javascript', 'typescript', 'typescript.tsx', 'jsx'] }
+Plug 'w0rp/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
 " Plug 'prettier/vim-prettier', {
 " \ 'do': 'yarn install',

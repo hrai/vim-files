@@ -169,7 +169,7 @@ let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 let g:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using :ALEFix
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
-
+let g:ale_disable_lsp = 1 " Disabled when using coc
 
 " let g:ale_linters = {
 "     \ 'cs': ['OmniSharp']

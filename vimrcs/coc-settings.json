@@ -59,6 +59,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   },
   "powershell.integratedConsole.showOnStartup": false,
   "clangd.semanticHighlighting": true,
+  "diagnostic.displayByAle": true,
   "languageserver": {
     /* "ccls": { */
     /*   "command": "ccls", */
