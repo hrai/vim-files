@@ -148,6 +148,8 @@ Plug 'tmhedberg/matchit'
 
 " Plug 'wellle/context.vim'
 
+Plug 'wellle/targets.vim'
+
 Plug 'mbbill/undotree'
 
 " Plug 'ap/vim-buftabline'
