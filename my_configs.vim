@@ -132,6 +132,8 @@ Plug 'chrisbra/Colorizer'
 
 Plug 'rhysd/git-messenger.vim'
 
+Plug 'flwyd/vim-conjoin'
+
 " Plug 'tpope/vim-endwise'
 
 Plug 'tpope/vim-unimpaired'
