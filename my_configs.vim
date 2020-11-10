@@ -130,6 +130,8 @@ Plug 'editorconfig/editorconfig-vim'
 
 Plug 'chrisbra/Colorizer'
 
+Plug 'rhysd/git-messenger.vim'
+
 " Plug 'tpope/vim-endwise'
 
 Plug 'tpope/vim-unimpaired'

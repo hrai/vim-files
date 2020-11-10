@@ -301,3 +301,18 @@ let g:buffet_tab_icon = "\uf00a"
 let g:buffet_left_trunc_icon = "\uf0a8"
 let g:buffet_right_trunc_icon = "\uf0a9"
 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => rhysd/git-messenger.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Normal color in popup window with 'CursorLine'
+hi link gitmessengerPopupNormal CursorLine
+
+" Header such as 'Commit:', 'Author:' with 'Statement' highlight group
+hi link gitmessengerHeader Statement
+
+" Commit hash at 'Commit:' header with 'Special' highlight group
+hi link gitmessengerHash Special
+
+" History number at 'History:' header with 'Title' highlight group
+hi link gitmessengerHistory Title
