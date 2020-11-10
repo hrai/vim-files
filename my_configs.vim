@@ -132,7 +132,7 @@ Plug 'chrisbra/Colorizer'
 
 Plug 'rhysd/git-messenger.vim'
 
-Plug 'flwyd/vim-conjoin'
+Plug 'flwyd/vim-conjoin' "handles line joining in the presence of line continuation characters
 
 " Plug 'tpope/vim-endwise'
 
