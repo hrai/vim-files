@@ -16,7 +16,7 @@ call plug#begin('~/.vim/plugged')
 if has('nvim')
     " Plug 'iCyMind/NeoSolarized'
 
-    Plug 'neoclide/coc.nvim', {'branch': 'release', 'do' : 'yarn install --frozen-lockfile' }
+    Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
     source ~/.vim_runtime/vimrcs/coc_config.vim
 endif
 
