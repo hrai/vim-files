@@ -221,3 +221,6 @@ if has('nvim')
 endif
 
 colorscheme PaperColor
+
+"Setting the file history count to 200
+set shada=!,'200,<50,s10,h
