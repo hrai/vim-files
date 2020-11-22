@@ -130,6 +130,8 @@ Plug 'editorconfig/editorconfig-vim'
 
 Plug 'chrisbra/Colorizer'
 
+Plug 'chrisbra/csv.vim', { 'for':['csv']}
+
 Plug 'rhysd/git-messenger.vim'
 
 Plug 'flwyd/vim-conjoin' "handles line joining in the presence of line continuation characters
