@@ -168,6 +168,8 @@ Plug 'mhinz/vim-startify'
 
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
+Plug 'strboul/urlview.vim'
+
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
