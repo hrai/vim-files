@@ -48,7 +48,7 @@ endfunction
 " autocmd BufWritePost * if (IsNerdTreeTabOpen()) | NERDTreeFocus | execute 'normal R' | wincmd p | endif
 
 " Sync open file to nerdtree
-autocmd BufWinEnter * if (IsNerdTreeTabOpen()) | NERDTreeFind | execute 'normal R' | wincmd p | endif
+" autocmd BufWinEnter * if (IsNerdTreeTabOpen()) | NERDTreeFind | execute 'normal R' | wincmd p | endif
 
 " Automatically quit vim if NERDTree is last and only buffer
 autocmd BufEnter * if (winnr("$") == 1 && &ft=='nerdtree') | q | endif
