@@ -171,6 +171,9 @@ let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_disable_lsp = 1 " Disabled when using coc
 
+" Disable linting for all minified JS files.
+let g:ale_pattern_options = {'\.min.js$': {'ale_enabled': 0}}
+
 " let g:ale_linters = {
 "     \ 'cs': ['OmniSharp']
 "     \}
