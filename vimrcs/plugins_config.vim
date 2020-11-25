@@ -14,8 +14,8 @@ map <leader>pc :PlugClean<cr>
 """"""""""""""""""""""""""""""
 " => fzf-vim plugin
 """"""""""""""""""""""""""""""
-map <leader>f :History<CR>
-map <leader>j :Files<cr>
+map <leader>t :History<CR>
+map <leader>n :Files<cr>
 map <leader>bu :Buffers<cr>
 map <leader>g :Rg --ignore-case<Space>
 
