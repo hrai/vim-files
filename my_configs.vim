@@ -58,9 +58,9 @@ Plug 'tpope/vim-commentary'
 
 Plug 'tpope/vim-tbone'
 
-Plug 'terryma/vim-expand-region'
+Plug 'terryma/vim-expand-region' "allows you to visually select increasingly larger regions of text using the same key combination
 
-Plug 'Valloric/vim-operator-highlight'
+Plug 'Valloric/vim-operator-highlight' "highlights operator characters for every language
 
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
@@ -105,7 +105,7 @@ Plug 'ludovicchabant/vim-gutentags'
 
 Plug 'schickling/vim-bufonly'
 
-Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim', { 'for': ['html'] }
 
 Plug 'honza/vim-snippets'
 
@@ -121,7 +121,7 @@ Plug 'panozzaj/vim-autocorrect', {'for': text_files }
 
 Plug 'christoomey/vim-tmux-navigator'
 
-Plug 'soulston/vim-listtrans'
+Plug 'soulston/vim-listtrans' "transform a sentence to a list
 
 Plug 'michaeljsmith/vim-indent-object'
 
@@ -129,7 +129,7 @@ Plug 'OrangeT/vim-csharp', { 'for': ['cs'] }
 
 Plug 'hrai/vim-csharp-snippets', { 'for': ['cs'], 'do': 'cp -f ./UltiSnips/* ~/.config/coc/ultisnips/' }
 
-Plug 'justinmk/vim-gtfo'
+Plug 'justinmk/vim-gtfo' "Go to Terminal or File manager
 
 Plug 'tpope/vim-eunuch'
 
@@ -153,11 +153,11 @@ Plug 'chrisbra/vim-diff-enhanced'
 
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
-Plug 'justinmk/vim-sneak'
+Plug 'justinmk/vim-sneak' "Jump to any location specified by two characters.
 
-Plug 'luochen1990/rainbow'
+Plug 'luochen1990/rainbow' "read complex code by showing diff level of parentheses in diff color !
 
-Plug 'tmhedberg/matchit'
+Plug 'tmhedberg/matchit' "extended % matching for HTML, LaTeX, and many other languages
 
 " Plug 'wellle/context.vim'
 
@@ -175,11 +175,11 @@ Plug 'mhinz/vim-startify'
 
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
-Plug 'strboul/urlview.vim'
+Plug 'strboul/urlview.vim' "List and open URLs easily
 
 Plug 'Jorengarenar/vim-SQL-UPPER', { 'for': ['sql']}
 
-Plug 't9md/vim-quickhl'
+Plug 't9md/vim-quickhl' "quickly highlight <cword> or visually selected word; <M-m>,<M-M>
 
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
