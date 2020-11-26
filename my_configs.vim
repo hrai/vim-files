@@ -42,7 +42,7 @@ Plug 'easymotion/vim-easymotion'
 "
 Plug 'sheerun/vim-polyglot'
 
-" cx - On the first use, define the first {motion} to exchange. On the second use, define the second {motion} and perform the exchange.
+" cx - On the first use, define the first {motion} to exchange/swap. On the second use, define the second {motion} and perform the exchange.
 " cxx - Like cx, but use the current line.
 " X - Like cx, but for Visual mode.
 " cxc - Clear any {motion} pending for exchange.
