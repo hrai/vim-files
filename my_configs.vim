@@ -156,7 +156,7 @@ Plug 'tmhedberg/matchit'
 
 Plug 'wellle/targets.vim'
 
-Plug 'mbbill/undotree'
+Plug 'mbbill/undotree' "history
 
 " Plug 'ap/vim-buftabline'
 
