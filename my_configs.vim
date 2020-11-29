@@ -170,7 +170,9 @@ Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
 Plug 'strboul/urlview.vim'
 
-" Javascript plugins
+Plug 'Jorengarenar/vim-SQL-UPPER', { 'for': ['sql']}
+
+Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
 " Plug 'prettier/vim-prettier', {
