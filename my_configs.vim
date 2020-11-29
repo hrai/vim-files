@@ -172,7 +172,7 @@ Plug 'strboul/urlview.vim'
 
 Plug 'Jorengarenar/vim-SQL-UPPER', { 'for': ['sql']}
 
-Javascript plugins
+" Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
 " Plug 'prettier/vim-prettier', {
