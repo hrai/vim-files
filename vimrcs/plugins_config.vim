@@ -319,3 +319,13 @@ hi link gitmessengerHash Special
 
 " History number at 'History:' header with 'Title' highlight group
 hi link gitmessengerHistory Title
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => t9md/vim-quickhl
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <M-m> <Plug>(quickhl-manual-this)
+xmap <M-m> <Plug>(quickhl-manual-this)
+
+nmap <M-M> <Plug>(quickhl-manual-reset)
+xmap <M-M> <Plug>(quickhl-manual-reset)

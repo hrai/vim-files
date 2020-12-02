@@ -172,6 +172,8 @@ Plug 'strboul/urlview.vim'
 
 Plug 'Jorengarenar/vim-SQL-UPPER', { 'for': ['sql']}
 
+Plug 't9md/vim-quickhl'
+
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
