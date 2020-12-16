@@ -232,10 +232,10 @@ if has('nvim')
     " changing codelens colour
     hi CocCodeLens guifg=darkgreen
 
+    "Setting the file history count to 200
+    set shada=!,'200,<50,s10,h
+
     Plug 'danilamihailov/beacon.nvim'
 endif
 
 colorscheme PaperColor
-
-"Setting the file history count to 200
-set shada=!,'200,<50,s10,h
