@@ -18,6 +18,10 @@ if has('nvim')
 
     Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
     source ~/.vim_runtime/vimrcs/coc_config.vim
+
+    Plug 'danilamihailov/beacon.nvim'
+
+    Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 endif
 
 """" Themes """"
@@ -235,7 +239,6 @@ if has('nvim')
     "Setting the file history count to 200
     set shada=!,'200,<50,s10,h
 
-    Plug 'danilamihailov/beacon.nvim'
 endif
 
 colorscheme PaperColor

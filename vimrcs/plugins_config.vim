@@ -330,3 +330,9 @@ xmap <M-m> <Plug>(quickhl-manual-this)
 
 nmap <M-M> <Plug>(quickhl-manual-reset)
 xmap <M-M> <Plug>(quickhl-manual-reset)
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ms-jpq/chadtree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>v <cmd>CHADopen<cr>
