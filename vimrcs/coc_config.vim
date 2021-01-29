@@ -153,8 +153,9 @@ let g:coc_explorer_global_presets = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 imap <C-space> <Plug>(coc-snippets-expand)
 
-" inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
-"                                            \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
+                                           \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? coc#_select_confirm() :
       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
