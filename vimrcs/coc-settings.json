@@ -22,7 +22,10 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "cSpell.diagnosticLevel": "Hint",
   // Specify file types to spell check.
   "cSpell.enabledLanguageIds": ["csharp", "javascript", "javascriptreact", "markdown", "plaintext", "notes", "typescript", "typescriptreact", "yml"],
+  "explorer.icon.enableVimDevicons": true,
   "explorer.icon.enableNerdfont": true,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.previewAction.onHover": false,
   "diagnostic.errorSign": "✘",
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "",
