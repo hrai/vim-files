@@ -117,7 +117,7 @@ Plug 'honza/vim-snippets'
 
 Plug 'benshuailyu/online-thesaurus-vim'
 
-Plug 'reedes/vim-litecorrect'
+" Plug 'reedes/vim-litecorrect' "autocorrection
 
 Plug 'panozzaj/vim-autocorrect'
 
@@ -210,15 +210,15 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => autocorrect settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let user_dict = {
-  \ 'API': ['api','Api'],
-  \ 'then': ['hten'],
-  \ }
+" let user_dict = {
+"   \ 'API': ['api','Api'],
+  " \ 'then': ['hten'],
+  " \ }
 
 augroup autocorrect
     autocmd!
-    autocmd FileType markdown,md call litecorrect#init(user_dict)
-    autocmd FileType notes,txt call litecorrect#init(user_dict)
+    " autocmd FileType markdown,md call litecorrect#init(user_dict)
+    " autocmd FileType notes,txt call litecorrect#init(user_dict)
 
     autocmd filetype * call AutoCorrect()
 augroup END
