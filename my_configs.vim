@@ -220,7 +220,7 @@ augroup autocorrect
     autocmd FileType markdown,md call litecorrect#init(user_dict)
     autocmd FileType notes,txt call litecorrect#init(user_dict)
 
-    autocmd filetype notes,txt,markdown,md call AutoCorrect()
+    autocmd filetype * call AutoCorrect()
 augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -242,3 +242,4 @@ if has('nvim')
 endif
 
 colorscheme PaperColor
+
