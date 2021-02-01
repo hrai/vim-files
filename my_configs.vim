@@ -115,11 +115,11 @@ Plug 'honza/vim-snippets'
 
 " Plug 'papanikge/vim-voogle' "searching word in google
 
-Plug 'benshuailyu/online-thesaurus-vim', { 'for': text_files }
+Plug 'benshuailyu/online-thesaurus-vim'
 
-Plug 'reedes/vim-litecorrect', {'for': text_files }
+Plug 'reedes/vim-litecorrect'
 
-Plug 'panozzaj/vim-autocorrect', {'for': text_files }
+Plug 'panozzaj/vim-autocorrect'
 
 " Plug 'vim-scripts/vis'
 
