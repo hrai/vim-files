@@ -210,11 +210,6 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => autocorrect settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let user_dict = {
-"   \ 'API': ['api','Api'],
-  " \ 'then': ['hten'],
-  " \ }
-
 augroup autocorrect
     autocmd!
     " autocmd FileType markdown,md call litecorrect#init(user_dict)
