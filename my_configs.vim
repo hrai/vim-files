@@ -197,7 +197,7 @@ Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 " Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
 
 " Local plugins
-Plug '~/.vim_runtime/sources_non_forked/damian_conway'
+" Plug '~/.vim_runtime/sources_non_forked/damian_conway'
 
 source ~/.vim_runtime/vimrcs/plugins_config.vim
 
