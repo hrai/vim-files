@@ -9,6 +9,7 @@ source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
 source ~/.vim_runtime/vimrcs/extended.vim
 source ~/.vim_runtime/vimrcs/custom_functions.vim
+source ~/.vim_runtime/vimrcs/abbreviations.vim
 
 " load this file at the end
 source ~/.vim_runtime/my_configs.vim

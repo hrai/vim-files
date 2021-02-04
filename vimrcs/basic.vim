@@ -171,7 +171,7 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 "GUI Font settings
-if has("gui_running") 
+if has("gui_running")
     set guifont=FiraCode\ NF:h12:cANSI "windows
     " set guifont=CaskaydiaCove\ NF:h12:cANSI "windows
 " elseif exists('g:GuiLoaded')
