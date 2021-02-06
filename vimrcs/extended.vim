@@ -147,7 +147,8 @@ nnoremap > >>
 nnoremap < <<
 
 "Repeat last Ex mode command
-nmap \ @:
+nnomap \ @:
+vnomap \ @:
 
 "Delete all the content of the file/buffer
 nnoremap daf :%d<CR>
