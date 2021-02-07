@@ -4,6 +4,7 @@
 iabbrev api API
 iabbrev apis APIs
 iabbrev artifactory Artifactory
+iabbrev aws AWS
 iabbrev baidu Baidu
 iabbrev bigquery BigQuery
 iabbrev bittorrent BitTorrent
