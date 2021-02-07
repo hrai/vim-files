@@ -105,8 +105,8 @@ autocmd FileType coc-explorer setlocal relativenumber
 hi CocExplorerNormalFloatBorder guifg=#414347 guibg=#272B34
 hi CocExplorerNormalFloat guibg=#272B34
 
-nmap ge :CocCommand explorer<CR>
-nmap gE :CocCommand explorer --position=right<CR>
+nmap ex :CocCommand explorer<CR>
+nmap exr :CocCommand explorer --position=right<CR>
 " execute "nmap <space>r :CocCommand explorer --reveal=".expand('<sfile>:h')."/package.json<CR>"
 nmap <space>t :CocCommand explorer --position=tab<CR>
 nmap <space>v  :CocCommand explorer --preset .vim_runtime<CR>
