@@ -9,6 +9,7 @@ iabbrev baidu Baidu
 iabbrev bigquery BigQuery
 iabbrev bittorrent BitTorrent
 iabbrev bluetooth Bluetooth
+iabbrev cre CRE
 iabbrev cli CLI
 iabbrev css CSS
 iabbrev compaq Compaq
