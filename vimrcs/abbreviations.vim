@@ -68,3 +68,16 @@ iabbrev ipad iPad
 iabbrev iphone iPhone
 iabbrev ipod iPod
 iabbrev itunes iTunes
+
+
+
+iabbrev january January
+iabbrev february February
+iabbrev april April
+iabbrev june June
+iabbrev july July
+iabbrev august August
+iabbrev september September
+iabbrev october October
+iabbrev november November
+iabbrev december December
