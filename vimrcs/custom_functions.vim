@@ -3,7 +3,7 @@
 function! GitCommitPush(commit_message)
   Gw
   exec "Git commit -m \"". a:commit_message. "\""
-  Gpush
+  Git push
 endfunction
 
 command! -nargs=1 Gap call GitCommitPush(<f-args>)

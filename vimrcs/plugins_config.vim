@@ -214,8 +214,8 @@ nmap <leader>bf :Bufonly!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap   gs    :Gstatus<CR>
 nnoremap   gp    :Gpull<CR>
-nnoremap   gps   :Gpush<CR>
-nnoremap   gpf   :Gpush --force<CR>
+nnoremap   gps   :Git push<CR>
+nnoremap   gpf   :Git push --force<CR>
 nnoremap   gr    :Gread<CR>
 nnoremap   gw    :Gwrite<CR>
 nnoremap   gcm   :Git commit --m ""
