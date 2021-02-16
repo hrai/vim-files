@@ -2,7 +2,7 @@
 
 function! GitCommitPush(commit_message)
   Gw
-  exec "Gcommit -m \"". a:commit_message. "\""
+  exec "Git commit -m \"". a:commit_message. "\""
   Gpush
 endfunction
 

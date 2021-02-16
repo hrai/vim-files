@@ -218,9 +218,9 @@ nnoremap   gps   :Gpush<CR>
 nnoremap   gpf   :Gpush --force<CR>
 nnoremap   gr    :Gread<CR>
 nnoremap   gw    :Gwrite<CR>
-nnoremap   gcm   :Gcommit --m ""
-nnoremap   gco   :Gcommit<CR>
-nnoremap   gca   :Gwrite<CR>:Gcommit --amend<CR>
+nnoremap   gcm   :Git commit --m ""
+nnoremap   gco   :Git commit<CR>
+nnoremap   gca   :Gwrite<CR>:Git commit --amend<CR>
 nnoremap   gbl   :Gblame<CR>
 nnoremap   gd    :Gvdiff<CR>
 
