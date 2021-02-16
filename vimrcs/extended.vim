@@ -242,3 +242,36 @@ endfunc
 func! CurrentFileDir(cmd)
   return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
+
+"------------------------------
+"mapping to automatically add an abbreviation
+"------------------------------
+
+" @return the text currently selected
+"https://github.com/LucHermitte/lh-vim-lib/blob/master/autoload/lh/visual.vim
+function! VisualSelection() abort
+  try
+    let a_save = @a
+    silent! normal! gv"ay
+    return @a
+  finally
+    let @a = a_save
+  endtry
+endfunction
+
+function! AddAbbr()
+  normal byw
+  let StringChar = VisualSelection()
+  let val = input("Enter the abbreviation you wish to use for '" . StringChar . "' :")
+  exec "ia" val StringChar
+  silent call SaveAbbr(StringChar, val)
+endfunction
+
+function! SaveAbbr(val, abbr)
+  redir >>~/.vim_runtime/vimrcs/abbreviations.vim
+  echo "iabbrev" a:abbr a:val
+  redir END
+endfunction
+
+vmap <C-F2> <ESC>:call AddAbbr()<CR>
+"Replace S-F2 by any other shortcut you wish
