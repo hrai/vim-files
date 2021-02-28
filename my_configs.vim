@@ -46,6 +46,7 @@ Plug 'easymotion/vim-easymotion'
 "
 Plug 'sheerun/vim-polyglot'
 
+" Copy/exchange
 " cx - On the first use, define the first {motion} to exchange/swap. On the second use, define the second {motion} and perform the exchange.
 " cxx - Like cx, but use the current line.
 " X - Like cx, but for Visual mode.
