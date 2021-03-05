@@ -51,8 +51,6 @@ if has('nvim')
     endfunction
     xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
     nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
-
-
 endif
 
 " use <up/down> for trigger completion and navigate to the next complete item
