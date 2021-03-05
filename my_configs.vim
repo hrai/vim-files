@@ -186,6 +186,8 @@ Plug 'Jorengarenar/vim-SQL-UPPER', { 'for': ['sql']}
 
 Plug 't9md/vim-quickhl' "quickly highlight <cword> or visually selected word; <M-m>,<M-M>
 
+Plug 'RRethy/vim-illuminate' "automatically highlighting other uses of the word under the cursor
+
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
