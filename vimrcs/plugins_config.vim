@@ -333,6 +333,7 @@ xmap <M-M> <Plug>(quickhl-manual-reset)
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => ms-jpq/chadtree
+" => rmagatti/alternate-toggler
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" nnoremap <leader>v <cmd>CHADopen<cr>
+let g:at_custom_alternates = {'Yes': 'No'}
+nnoremap <leader>ta :ToggleAlternate<CR>
