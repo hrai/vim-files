@@ -20,8 +20,6 @@ if has('nvim')
     source ~/.vim_runtime/vimrcs/coc_config.vim
 
     Plug 'danilamihailov/beacon.nvim'
-
-    " Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 endif
 
 """" Themes """"
