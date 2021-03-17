@@ -37,6 +37,11 @@ let g:coc_global_extensions = [
             \'coc-yank',
             \]
 
+
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
 if has('nvim')
     let g:coc_global_extensions += [
                 \'coc-actions',
@@ -51,6 +56,14 @@ if has('nvim')
     endfunction
     xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
     nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+
+    augroup mygroup
+      autocmd!
+      " Setup formatexpr specified filetype(s).
+      autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+      " Update signature help on jump placeholder.
+      autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+    augroup end
 endif
 
 " use <up/down> for trigger completion and navigate to the next complete item
@@ -154,6 +167,16 @@ endfunction
 " Keymapping for grep word under cursor with interactive mode
 nnoremap <silent> <Leader>cf :exe 'CocList -I --input='.expand('<cword>').' grep'<CR>
 
+" Show all diagnostics.
+nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+" Manage extensions.
+nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+" Show commands.
+nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+" Find symbol of current document.
+nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+" Search workspace symbols.
+nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc-prettier settings
@@ -168,3 +191,9 @@ setl dictionary+=/usr/share/dict/words
 " => coc-git settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 command! -nargs=0 GitBrowserOpen :CocCommand git.browserOpen
+
+
+" => coc-highlight settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
