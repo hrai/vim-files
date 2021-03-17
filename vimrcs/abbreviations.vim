@@ -68,6 +68,7 @@ iabbrev iphone iPhone
 iabbrev ipod iPod
 iabbrev itunes iTunes
 iabbrev i I
+iabbrev ive I've
 
 
 
