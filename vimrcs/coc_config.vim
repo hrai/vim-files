@@ -18,6 +18,7 @@ let g:coc_global_extensions = [
             \'coc-explorer',
             \'coc-git',
             \'coc-highlight',
+            \'coc-html',
             \'coc-json',
             \'coc-lists',
             \'coc-markdownlint',
