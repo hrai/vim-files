@@ -212,8 +212,8 @@ nmap <leader>bf :Bufonly!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Fugitive
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap   gs    :Gstatus<CR>
-nnoremap   gp    :Gpull<CR>
+nnoremap   gs    :Git status<CR>
+nnoremap   gp    :Git pull<CR>
 nnoremap   gps   :Git push<CR>
 nnoremap   gpf   :Git push --force<CR>
 nnoremap   gr    :Gread<CR>
