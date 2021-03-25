@@ -346,5 +346,5 @@ augroup illuminate_augroup
     autocmd!
 
     " autocmd VimEnter * hi link illuminatedWord CursorLine ctermbg=brown
-    autocmd VimEnter * hi illuminatedWord ctermbg=yellow guibg=brown
+    autocmd VimEnter * hi illuminatedWord guibg=darkgreen
 augroup END
