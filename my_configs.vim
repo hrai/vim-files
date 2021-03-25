@@ -138,7 +138,9 @@ Plug 'tpope/vim-eunuch'
 
 Plug 'editorconfig/editorconfig-vim'
 
-Plug 'chrisbra/Colorizer'
+" These plugins are superseded by coc-highlight
+" Plug 'chrisbra/Colorizer'
+" Plug 'RRethy/vim-illuminate' "automatically highlighting other uses of the word under the cursor
 
 Plug 'chrisbra/csv.vim', { 'for':['csv']}
 
@@ -183,8 +185,6 @@ Plug 'strboul/urlview.vim' "List and open URLs easily
 Plug 'Jorengarenar/vim-SQL-UPPER', { 'for': ['sql']}
 
 Plug 't9md/vim-quickhl' "quickly highlight <cword> or visually selected word; <M-m>,<M-M>
-
-Plug 'RRethy/vim-illuminate' "automatically highlighting other uses of the word under the cursor
 
 Plug 'rmagatti/alternate-toggler' "toggle boolean values
 
