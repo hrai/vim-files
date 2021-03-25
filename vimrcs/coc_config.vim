@@ -185,7 +185,7 @@ setl dictionary+=/usr/share/dict/words
 
 " => coc-git settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-command! -nargs=0 GitBrowserOpen :CocCommand git.browserOpen
+command! -nargs=0 GitBroserOpen :CocCommand git.browserOpen
 
 
 " => coc-highlight settings
@@ -193,5 +193,6 @@ command! -nargs=0 GitBrowserOpen :CocCommand git.browserOpen
 " Highlight the symbol and its references when holding the cursor.
 augroup mygroup
   autocmd!
-  autocmd CursorHold * silent call CocAction('highlight')
+  autocmd CursorHold * silent call CocActionAsync('highlight')
+  autocmd ColorScheme * highlight CocHighlightText     ctermfg=LightMagenta    guifg=LightMagenta
 augroup end
