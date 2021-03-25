@@ -344,5 +344,5 @@ nnoremap <leader>ta :ToggleAlternate<CR>
 let g:Illuminate_ftblacklist = ['nerdtree']
 augroup illuminate_augroup
     autocmd!
-    autocmd BufEnter * hi illuminatedWord cterm=underline gui=underline ctermbg=242 guibg=#9c313f
+    autocmd VimEnter * hi illuminatedWord cterm=underline gui=underline ctermbg=brown guibg=brown
 augroup END
