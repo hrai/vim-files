@@ -352,10 +352,10 @@ augroup END
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => spinks/vim-leader-guide
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:lmap = {}
-let g:lmap.t = 'test'
-let g:lmap.l = {'name' : 'language'}
-let g:lmap.l.p = 'prettier'
-call leaderGuide#register_prefix_descriptions(",", "g:lmap")
-nnoremap <localleader> :<c-u>LeaderGuide  ','<CR>
-vnoremap <localleader> :<c-u>LeaderGuideVisual  ','<CR>
+let g:map = {}
+let g:map.l = {'name' : 'language'}
+let g:map.l.s = 'coc symbols'
+
+call leaderGuide#register_prefix_descriptions(",", "g:map")
+nnoremap <leader> :<c-u>LeaderGuide  ','<CR>
+vnoremap <leader> :<c-u>LeaderGuideVisual  ','<CR>
