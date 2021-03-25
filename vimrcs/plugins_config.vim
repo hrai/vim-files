@@ -352,10 +352,16 @@ augroup END
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => spinks/vim-leader-guide
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:lmap = {}
+" let g:lmap = {}
 " let g:lmap.l = {'name' : 'language'}
 " let g:lmap.l.s = 'coc symbols'
 
-call leaderGuide#register_prefix_descriptions(",", "g:lmap")
+" call leaderGuide#register_prefix_descriptions(",", "g:lmap")
 nnoremap <leader> :<c-u>LeaderGuide  ','<CR>
 vnoremap <leader> :<c-u>LeaderGuideVisual  ','<CR>
+
+" Display mappings without prefix
+autocmd FileType gitcommit  noremap <buffer> <leader> <Plug>leaderguide-buffer
+" for fugitive
+autocmd BufEnter __Tagbar__  noremap <buffer> <leader> <Plug>leaderguide-buffer
+" for tagbar
