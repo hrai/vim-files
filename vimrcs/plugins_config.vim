@@ -348,3 +348,14 @@ augroup illuminate_augroup
     " autocmd VimEnter * hi link illuminatedWord CursorLine ctermbg=brown
     autocmd VimEnter * hi illuminatedWord guibg=darkgreen
 augroup END
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => spinks/vim-leader-guide
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:lmap = {}
+let g:lmap.t = 'test'
+let g:lmap.l = {'name' : 'language'}
+let g:lmap.l.p = 'prettier'
+call leaderGuide#register_prefix_descriptions(",", "g:lmap")
+nnoremap <localleader> :<c-u>LeaderGuide  ','<CR>
+vnoremap <localleader> :<c-u>LeaderGuideVisual  ','<CR>

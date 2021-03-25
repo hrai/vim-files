@@ -172,6 +172,8 @@ Plug 'mbbill/undotree' "history
 
 Plug 'bagrat/vim-buffet' "show tabs and buffers on tabline
 
+Plug 'spinks/vim-leader-guide'
+
 Plug 'axelf4/vim-strip-trailing-whitespace'
 
 Plug 'mhinz/vim-startify'
