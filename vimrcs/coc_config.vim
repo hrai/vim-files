@@ -43,29 +43,23 @@ let g:coc_global_extensions = [
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
-if has('nvim')
-    let g:coc_global_extensions += [
-                \'coc-actions',
-            \]
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => coc-actions settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Remap for do codeAction of selected region
+function! s:cocActionsOpenFromSelected(type) abort
+    execute 'CocCommand actions.open ' . a:type
+endfunction
+xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
+nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
 
-    """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " => coc-actions settings
-    """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    " Remap for do codeAction of selected region
-    function! s:cocActionsOpenFromSelected(type) abort
-        execute 'CocCommand actions.open ' . a:type
-    endfunction
-    xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
-    nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
-
-    augroup mygroup
-      autocmd!
-      " Setup formatexpr specified filetype(s).
-      autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-      " Update signature help on jump placeholder.
-      autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-    augroup end
-endif
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder.
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
 
 " use <up/down> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
@@ -197,4 +191,7 @@ command! -nargs=0 GitBrowserOpen :CocCommand git.browserOpen
 " => coc-highlight settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
+augroup mygroup
+  autocmd!
+  autocmd CursorHold * silent call CocAction('highlight')
+augroup end
