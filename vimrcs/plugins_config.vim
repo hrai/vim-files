@@ -337,3 +337,12 @@ xmap <M-M> <Plug>(quickhl-manual-reset)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:at_custom_alternates = {'Yes': 'No'}
 nnoremap <leader>ta :ToggleAlternate<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => RRethy/vim-illuminate
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:Illuminate_ftblacklist = ['nerdtree']
+augroup illuminate_augroup
+    autocmd!
+    autocmd BufEnter * hi illuminatedWord cterm=underline gui=underline ctermbg=242 guibg=#9c313f
+augroup END
