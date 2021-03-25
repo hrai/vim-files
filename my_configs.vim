@@ -170,8 +170,6 @@ Plug 'wellle/targets.vim'
 
 Plug 'mbbill/undotree' "history
 
-" Plug 'ap/vim-buftabline'
-
 Plug 'bagrat/vim-buffet' "show tabs and buffers on tabline
 
 Plug 'axelf4/vim-strip-trailing-whitespace'
