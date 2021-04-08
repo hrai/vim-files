@@ -198,6 +198,8 @@ Plug 'junegunn/vim-peekaboo'
 " Plugin to help you stop repeating the basic movement keys
 Plug 'takac/vim-hardtime'
 
+Plug 'kana/vim-textobj-indent'
+
 " gs2j => Sort down two lines (current + 2 below)
 " gsip => Sort the current paragraph
 " gsii => Sort the current indentation level (requires text-obj-indent plugin)
