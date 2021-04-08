@@ -205,6 +205,10 @@ Plug 'kana/vim-textobj-indent'
 " gsii => Sort the current indentation level (requires text-obj-indent plugin)
 Plug 'christoomey/vim-sort-motion'
 
+" Reorder delimited items eg function parameters/arguments testMe(a1,a2,a3) to testMe(a2,a1,a3)
+" Mappings - g<, g>, gs
+Plug 'machakann/vim-swap'
+
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
