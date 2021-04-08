@@ -192,6 +192,12 @@ Plug 'rmagatti/alternate-toggler' "toggle boolean values
 " gJ (with the cursor on the first line of a block) to join a block into a single-line statement.
 Plug 'AndrewRadev/splitjoin.vim'
 
+" Peekaboo extends  and @ in normal mode and <"CTRL-R> in insert mode so you can see the contents of the registers
+Plug 'junegunn/vim-peekaboo'
+
+" Plugin to help you stop repeating the basic movement keys
+Plug 'takac/vim-hardtime'
+
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
