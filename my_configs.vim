@@ -198,6 +198,11 @@ Plug 'junegunn/vim-peekaboo'
 " Plugin to help you stop repeating the basic movement keys
 Plug 'takac/vim-hardtime'
 
+" gs2j => Sort down two lines (current + 2 below)
+" gsip => Sort the current paragraph
+" gsii => Sort the current indentation level (requires text-obj-indent plugin)
+Plug 'christoomey/vim-sort-motion'
+
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
