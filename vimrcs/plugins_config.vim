@@ -365,3 +365,8 @@ autocmd FileType gitcommit  noremap <buffer> <leader> <Plug>leaderguide-buffer
 " for fugitive
 autocmd BufEnter __Tagbar__  noremap <buffer> <leader> <Plug>leaderguide-buffer
 " for tagbar
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => takac/vim-hardtime
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:hardtime_default_on = 1
