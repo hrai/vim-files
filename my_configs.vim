@@ -209,6 +209,8 @@ Plug 'christoomey/vim-sort-motion'
 " Mappings - g<, g>, gs
 Plug 'machakann/vim-swap'
 
+Plug 'tyru/open-browser.vim' "mapping - gx
+
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
