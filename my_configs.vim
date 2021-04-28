@@ -188,7 +188,7 @@ Plug 't9md/vim-quickhl' "quickly highlight <cword> or visually selected word; <M
 
 Plug 'rmagatti/alternate-toggler' "toggle boolean values; <leader>ta
 
-Plug 'psliwka/vim-smoothie'
+Plug 'psliwka/vim-smoothie' "Smooth scrolling
 
 " gS to split a one-liner into multiple lines
 " gJ (with the cursor on the first line of a block) to join a block into a single-line statement.
