@@ -370,8 +370,3 @@ autocmd BufEnter __Tagbar__  noremap <buffer> <leader> <Plug>leaderguide-buffer
 " => takac/vim-hardtime
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:hardtime_default_on = 1
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => strboul/urlview.vim
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <silent> <leader>uo :Urlview<CR>
