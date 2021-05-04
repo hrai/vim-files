@@ -180,7 +180,7 @@ Plug 'mhinz/vim-startify'
 
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
-Plug 'strboul/urlview.vim' "List and open URLs easily
+Plug 'strboul/urlview.vim' "List and open URLs easily; <leader>uo
 
 Plug 'Jorengarenar/vim-SQL-UPPER', { 'for': ['sql']}
 
