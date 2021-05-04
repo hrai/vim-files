@@ -180,8 +180,6 @@ Plug 'mhinz/vim-startify'
 
 Plug 'Vimjas/vim-python-pep8-indent', { 'for': ['py'] }
 
-Plug 'strboul/urlview.vim' "List and open URLs easily
-
 Plug 'Jorengarenar/vim-SQL-UPPER', { 'for': ['sql']}
 
 Plug 't9md/vim-quickhl' "quickly highlight <cword> or visually selected word; <M-m>,<M-M>
@@ -211,7 +209,7 @@ Plug 'christoomey/vim-sort-motion'
 " Mappings - g<, g>, gs
 Plug 'machakann/vim-swap'
 
-Plug 'tyru/open-browser.vim' "mapping - gx
+Plug 'tyru/open-browser.vim' "Open URLs; gx
 
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
