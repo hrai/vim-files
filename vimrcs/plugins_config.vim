@@ -375,3 +375,8 @@ autocmd BufEnter __Tagbar__  noremap <buffer> <leader> <Plug>leaderguide-buffer
 " => takac/vim-hardtime
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:hardtime_default_on = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => nanotee/zoxide.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:zoxide_prefix = 'j'

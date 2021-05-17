@@ -211,6 +211,8 @@ Plug 'machakann/vim-swap'
 
 Plug 'tyru/open-browser.vim' "Open URLs; gx
 
+Plug 'nanotee/zoxide.vim'
+
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
