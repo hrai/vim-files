@@ -10,6 +10,7 @@ iabbrev bigquery BigQuery
 iabbrev bittorrent BitTorrent
 iabbrev bluetooth Bluetooth
 iabbrev cli CLI
+iabbrev cre CRE
 iabbrev css CSS
 iabbrev compaq Compaq
 iabbrev compuserve CompuServe
