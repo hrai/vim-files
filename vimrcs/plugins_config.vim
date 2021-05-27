@@ -17,7 +17,7 @@ map <leader>pc :PlugClean<cr>
 map <leader>t :History<CR>
 map <leader>n :Files<cr>
 map <leader>bu :Buffers<cr>
-map <leader>g :Rg --ignore-case<Space>
+map <leader>g :Rg<Space>
 
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
@@ -25,7 +25,7 @@ let g:fzf_buffers_jump = 1
 " Rg from git root directory
 " https://github.com/junegunn/fzf.vim/issues/837
 command! -bang -nargs=* Rg
-  \ call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'dir': system('git rev-parse --show-toplevel 2> /dev/null')[:-2]}, <bang>0)
+  \ call fzf#vim#grep("rg --column --line-number --no-heading --color=always --ignore-case ".shellescape(<q-args>), 1, {'dir': system('git rev-parse --show-toplevel 2> /dev/null')[:-2]}, <bang>0)
 
 """"""""""""""""""""""""""""""
 " => Vim grep
