@@ -185,7 +185,7 @@ setl dictionary+=/usr/share/dict/words
 
 " => coc-git settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-command! -nargs=0 GitBroserOpen :CocCommand git.browserOpen
+command! -nargs=0 GitBrowserOpen :CocCommand git.browserOpen
 
 
 " => coc-highlight settings
