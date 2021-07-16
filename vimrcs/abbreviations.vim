@@ -22,6 +22,7 @@ iabbrev drupal Drupal
 iabbrev dynamodb DynamoDB
 iabbrev ecmascript ECMAScript
 iabbrev emacs Emacs
+iabbrev github GitHub
 iabbrev hbase HBase
 iabbrev instagram Instagram
 iabbrev javascript JavaScript
