@@ -15,9 +15,17 @@ map <leader>pc :PlugClean<cr>
 " => fzf-vim plugin
 """"""""""""""""""""""""""""""
 map <leader>t :History<CR>
-map <leader>n :Files<cr>
+map <leader>n :call OpenFiles()<cr>
 map <leader>bu :Buffers<cr>
 map <leader>g :Rg<Space>
+
+silent! !git rev-parse --is-inside-work-tree
+if v:shell_error == 0
+  noremap <C-n> :GFiles --cached --others --exclude-standard<CR>
+  " noremap <C-o> :GFiles?<CR>
+else
+  noremap <C-n> :Files<CR>
+endif
 
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
