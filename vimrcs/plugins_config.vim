@@ -15,7 +15,6 @@ map <leader>pc :PlugClean<cr>
 " => fzf-vim plugin
 """"""""""""""""""""""""""""""
 map <leader>t :History<CR>
-map <leader>n :call OpenFiles()<cr>
 map <leader>bu :Buffers<cr>
 map <leader>g :Rg<Space>
 
@@ -59,7 +58,7 @@ function! IsNerdTreeTabOpen()
 endfunction
 
 " Sync open file to nerdtree
-" autocmd BufWinEnter * if (IsNerdTreeTabOpen()) | NERDTreeFind | execute 'normal R' | wincmd p | endif
+autocmd BufWinEnter * if (IsNerdTreeTabOpen()) | NERDTreeFind | execute 'normal R' | wincmd p | endif
 
 " Automatically quit vim if NERDTree is last and only buffer
 autocmd BufEnter * if (winnr("$") == 1 && &ft=='nerdtree') | q | endif
