@@ -58,8 +58,6 @@ function! IsNerdTreeTabOpen()
     return exists('t:NERDTreeBufName') && bufwinnr(t:NERDTreeBufName) != -1
 endfunction
 
-" autocmd BufWritePost * if (IsNerdTreeTabOpen()) | NERDTreeFocus | execute 'normal R' | wincmd p | endif
-
 " Sync open file to nerdtree
 " autocmd BufWinEnter * if (IsNerdTreeTabOpen()) | NERDTreeFind | execute 'normal R' | wincmd p | endif
 
