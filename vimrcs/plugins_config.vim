@@ -20,10 +20,10 @@ map <leader>g :Rg<Space>
 
 silent! !git rev-parse --is-inside-work-tree
 if v:shell_error == 0
-  noremap <C-n> :GFiles --cached --others --exclude-standard<CR>
+  noremap <leader>n :GFiles --cached --others --exclude-standard<CR>
   " noremap <C-o> :GFiles?<CR>
 else
-  noremap <C-n> :Files<CR>
+  noremap <leader>n :Files<CR>
 endif
 
 " [Buffers] Jump to the existing window if possible
