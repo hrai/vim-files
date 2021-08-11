@@ -4,7 +4,7 @@
 https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   */
   "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes": ["cs", "markdown", "javascript", "typescript", "json", "jsonc", "css", "html"],
+  "coc.preferences.formatOnSaveFiletypes": ["cs", "markdown", "javascript", "typescript", "json", "jsonc", "css", "html", "graphql"],
   "coc.source.file.ignoreHidden": false,
   "prettier.printWidth": 160,
   "prettier.tabWidth": 2,
