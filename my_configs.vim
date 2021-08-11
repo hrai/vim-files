@@ -265,4 +265,3 @@ if has('nvim')
 endif
 
 colorscheme PaperColor
-
