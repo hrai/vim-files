@@ -12,6 +12,7 @@ iabbrev bluetooth Bluetooth
 iabbrev bu BU
 iabbrev cli CLI
 iabbrev cre CRE
+iabbrev Cre CRE
 iabbrev css CSS
 iabbrev compaq Compaq
 iabbrev compuserve CompuServe
