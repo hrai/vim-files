@@ -95,29 +95,29 @@ endfunction
 
 "'tabline': 0 is for 'bagrat/vim-buffet'
 let g:lightline = {
-      \ 'enable': {
-        \   'tabline':0
-        \ },
-        \ 'colorscheme': 'wombat',
-        \ 'active': {
-          \   'left': add([ ['mode', 'paste'] ], s:status_items),
-          \   'right': [ [ 'lineinfo' ],
-          \              ['percent'],
-          \              [ 'fileformat', 'filetype' ] ]
-          \ },
-          \ 'component': {
-            \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
-            \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-            \   'fugitive': '%{exists("*FugitiveHead")?FugitiveHead():""}'
-            \ },
-            \ 'component_visible_condition': {
-              \   'readonly': '(&filetype!="help"&& &readonly)',
-              \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-              \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
-              \ },
-              \ 'component_function': {
-                \   'cocstatus': 'coc#status',
-                \   'currentfunction': 'CocCurrentFunction'
+                \ 'enable': {
+                \ 'tabline':0
+                \ },
+                \ 'colorscheme': 'wombat',
+                \ 'active': {
+                \ 'left': add([ ['mode', 'paste'] ], s:status_items),
+                \ 'right': [ [ 'lineinfo' ],
+                \ ['percent'],
+                \ [ 'fileformat', 'filetype' ] ]
+                \ },
+                \ 'component': {
+                \ 'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
+                \ 'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+                \ 'fugitive': '%{exists("*FugitiveHead")?FugitiveHead():""}'
+                \ },
+                \ 'component_visible_condition': {
+                \ 'readonly': '(&filetype!="help"&& &readonly)',
+                \ 'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+                \ 'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
+                \ },
+                \ 'component_function': {
+                \ 'cocstatus': 'coc#status',
+                \ 'currentfunction': 'CocCurrentFunction'
                 \ },
                 \ 'separator': { 'left': ' ', 'right': ' ' },
                 \ 'subseparator': { 'left': ' ', 'right': ' ' }
