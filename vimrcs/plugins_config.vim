@@ -32,7 +32,7 @@ let g:fzf_buffers_jump = 1
 " Rg from git root directory
 " https://github.com/junegunn/fzf.vim/issues/837
 command! -bang -nargs=* Rg
-  \ call fzf#vim#grep("rg --column --line-number --no-heading --color=always --ignore-case ".shellescape(<q-args>), 1, {'dir': system('git rev-parse --show-toplevel 2> /dev/null')[:-2]}, <bang>0)
+      \ call fzf#vim#grep("rg --column --line-number --no-heading --color=always --ignore-case ".shellescape(<q-args>), 1, {'dir': system('git rev-parse --show-toplevel 2> /dev/null')[:-2]}, <bang>0)
 
 """"""""""""""""""""""""""""""
 " => Vim grep
@@ -54,7 +54,7 @@ map <leader>nf :NERDTreeFind<cr>
 
 " auto refresh NERDTree when folders change
 function! IsNerdTreeTabOpen()
-    return exists('t:NERDTreeBufName') && bufwinnr(t:NERDTreeBufName) != -1
+  return exists('t:NERDTreeBufName') && bufwinnr(t:NERDTreeBufName) != -1
 endfunction
 
 " Sync open file to nerdtree
@@ -84,44 +84,44 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if has("gui_running")
-    let s:status_items=['cocstatus', 'currentfunction', 'fugitive', 'readonly', 'absolutepath', 'modified']
+  let s:status_items=['cocstatus', 'currentfunction', 'fugitive', 'readonly', 'absolutepath', 'modified']
 else
-    let s:status_items=['cocstatus', 'currentfunction', 'fugitive', 'readonly', 'filename', 'modified']
+  let s:status_items=['cocstatus', 'currentfunction', 'fugitive', 'readonly', 'filename', 'modified']
 endif
 
 function! CocCurrentFunction()
-    return get(b:, 'coc_current_function', '')
+  return get(b:, 'coc_current_function', '')
 endfunction
 
 "'tabline': 0 is for 'bagrat/vim-buffet'
 let g:lightline = {
-            \ 'enable': {
-            \   'tabline':0
-            \ },
-            \ 'colorscheme': 'wombat',
-            \ 'active': {
-            \   'left': add([ ['mode', 'paste'] ], s:status_items),
-            \   'right': [ [ 'lineinfo' ],
-            \              ['percent'],
-            \              [ 'fileformat', 'filetype' ] ]
-            \ },
-            \ 'component': {
+      \ 'enable': {
+        \   'tabline':0
+        \ },
+        \ 'colorscheme': 'wombat',
+        \ 'active': {
+          \   'left': add([ ['mode', 'paste'] ], s:status_items),
+          \   'right': [ [ 'lineinfo' ],
+          \              ['percent'],
+          \              [ 'fileformat', 'filetype' ] ]
+          \ },
+          \ 'component': {
             \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
             \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
             \   'fugitive': '%{exists("*FugitiveHead")?FugitiveHead():""}'
             \ },
             \ 'component_visible_condition': {
-            \   'readonly': '(&filetype!="help"&& &readonly)',
-            \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-            \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
-            \ },
-            \ 'component_function': {
-            \   'cocstatus': 'coc#status',
-            \   'currentfunction': 'CocCurrentFunction'
-            \ },
-            \ 'separator': { 'left': ' ', 'right': ' ' },
-            \ 'subseparator': { 'left': ' ', 'right': ' ' }
-            \ }
+              \   'readonly': '(&filetype!="help"&& &readonly)',
+              \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+              \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
+              \ },
+              \ 'component_function': {
+                \   'cocstatus': 'coc#status',
+                \   'currentfunction': 'CocCurrentFunction'
+                \ },
+                \ 'separator': { 'left': ' ', 'right': ' ' },
+                \ 'subseparator': { 'left': ' ', 'right': ' ' }
+                \ }
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -136,12 +136,12 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 " => Bullets.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:bullets_enabled_file_types = [
-            \ 'markdown',
-            \ 'text',
-            \ 'gitcommit',
-            \ 'scratch',
-            \ 'notes'
-            \]
+      \ 'markdown',
+      \ 'text',
+      \ 'gitcommit',
+      \ 'scratch',
+      \ 'notes'
+      \]
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -246,7 +246,7 @@ xmap <leader>l :call ListTrans_toggle_format('visual')<CR>
 " => vim-diff-enhanced settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("patch-8.1.0360")
-    set diffopt+=internal,algorithm:patience
+  set diffopt+=internal,algorithm:patience
 endif
 
 
@@ -268,23 +268,23 @@ set tags=./tags,tags
 " => gutentags settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gutentags_file_list_command = {
-            \ 'markers': {
-            \ '.git': 'git ls-files',
-            \ },
-            \ }
+      \ 'markers': {
+        \ '.git': 'git ls-files',
+        \ },
+        \ }
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-sneak settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has('nvim')
-    map f <Plug>Sneak_f
-    map F <Plug>Sneak_F
-    map t <Plug>Sneak_t
-    map T <Plug>Sneak_T
+  map f <Plug>Sneak_f
+  map F <Plug>Sneak_F
+  map t <Plug>Sneak_t
+  map T <Plug>Sneak_T
 
-    map <leader>o <Plug>Sneak_s
-    map <leader>O <Plug>Sneak_S
+  map <leader>o <Plug>Sneak_s
+  map <leader>O <Plug>Sneak_S
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -353,10 +353,10 @@ nnoremap <leader>ta :ToggleAlternate<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:Illuminate_ftblacklist = ['nerdtree']
 augroup illuminate_augroup
-    autocmd!
+  autocmd!
 
-    " autocmd VimEnter * hi link illuminatedWord CursorLine ctermbg=brown
-    autocmd VimEnter * hi illuminatedWord guibg=darkgreen
+  " autocmd VimEnter * hi link illuminatedWord CursorLine ctermbg=brown
+  autocmd VimEnter * hi illuminatedWord guibg=darkgreen
 augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -385,3 +385,9 @@ let g:hardtime_default_on = 1
 " => nanotee/zoxide.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:zoxide_prefix = 'j'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => 'vim-autoformat/vim-autoformat'
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" au BufWrite * :Autoformat
+

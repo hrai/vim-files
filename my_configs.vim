@@ -93,8 +93,8 @@ Plug 'itchyny/lightline.vim'
 
 " Plug 'preservim/nerdtree', { 'on': ['NerdTreeToggle', 'NerdTreeFind'] } |
 Plug 'preservim/nerdtree' |
-    \ Plug 'Xuyuanp/nerdtree-git-plugin' |
-    \ Plug 'ryanoasis/vim-devicons'
+            \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+            \ Plug 'ryanoasis/vim-devicons'
 
 " Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 
@@ -197,6 +197,8 @@ Plug 'junegunn/vim-peekaboo'
 
 " Plugin to help you stop repeating the basic movement keys
 Plug 'takac/vim-hardtime'
+
+" Plug 'vim-autoformat/vim-autoformat'
 
 " Plug 'kana/vim-textobj-indent'
 
