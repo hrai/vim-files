@@ -215,6 +215,8 @@ Plug 'tyru/open-browser.vim' "Open URLs; gx
 
 Plug 'nanotee/zoxide.vim'
 
+Plug 'liuchengxu/vista.vim' "View and search LSP symbols, tags
+
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 
@@ -267,3 +269,5 @@ if has('nvim')
 endif
 
 colorscheme PaperColor
+
+
