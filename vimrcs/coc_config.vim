@@ -113,9 +113,9 @@ hi CocExplorerNormalFloat guibg=#272B34
 nmap ex :CocCommand explorer<CR>
 nmap exr :CocCommand explorer --position=right<CR>
 " execute "nmap <space>r :CocCommand explorer --reveal=".expand('<sfile>:h')."/package.json<CR>"
-nmap <space>t :CocCommand explorer --position=tab<CR>
-nmap <space>v  :CocCommand explorer --preset .vim_runtime<CR>
-nmap <space>ff :CocCommand explorer --preset floating<CR>
+" nmap <space>t :CocCommand explorer --position=tab<CR>
+" nmap <space>v  :CocCommand explorer --preset .vim_runtime<CR>
+nmap <space>f :CocCommand explorer<CR>
 
 " When the only window opened is explorer, close it
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
@@ -165,7 +165,7 @@ nnoremap <silent> <Leader>cf :exe 'CocList -I --input='.expand('<cword>').' grep
 " Show all diagnostics.
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
-nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+" nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 " Show commands.
 nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
