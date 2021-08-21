@@ -9,6 +9,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "prettier.printWidth": 160,
   "prettier.tabWidth": 2,
   "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
   "codeLens.enable": true,
   "git.addGBlameToVirtualText": true,
   "signature.target": "echo",
