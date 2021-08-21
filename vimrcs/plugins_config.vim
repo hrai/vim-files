@@ -355,7 +355,7 @@ xmap <M-M> <Plug>(quickhl-manual-reset)
 " => rmagatti/alternate-toggler
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:at_custom_alternates = {'Yes': 'No'}
-nnoremap <leader>ta :ToggleAlternate<CR>
+nnoremap <leader>tb :ToggleAlternate<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => RRethy/vim-illuminate
