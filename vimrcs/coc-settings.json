@@ -4,12 +4,11 @@
 https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   */
   "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes": ["cs", "markdown", "typescript", "json", "jsonc", "css", "html", "graphql"],
+  "coc.preferences.formatOnSaveFiletypes": ["cs", "markdown", "javascript", "typescript", "json", "jsonc", "css", "html", "graphql"],
   "coc.source.file.ignoreHidden": false,
   "prettier.printWidth": 160,
   "prettier.tabWidth": 2,
   "prettier.singleQuote": true,
-  "prettier.eslintIntegration": true,
   "codeLens.enable": true,
   "git.addGBlameToVirtualText": true,
   "signature.target": "echo",
@@ -52,9 +51,6 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   },
   "list.source.files.command": "fd",
   "list.source.files.args": ["--type", "f"],
-  "eslint.enable": false,
-  "eslint.autoFixOnSave": true,
-  "eslint.filetypes": ["javascript", "typescript", "javascriptreact"],
   "calc.replaceOriginalExpression": false,
   "markdownlint.config": {
     "default": true,
