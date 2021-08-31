@@ -124,7 +124,7 @@ Plug 'panozzaj/vim-autocorrect'
 
 Plug 'christoomey/vim-tmux-navigator'
 
-Plug 'soulston/vim-listtrans' "transform a sentence to a list
+Plug 'soulston/vim-listtrans' "transform a sentence to a list - <leader>l
 
 Plug 'michaeljsmith/vim-indent-object'
 
