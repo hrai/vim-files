@@ -172,10 +172,15 @@ set ffs=unix,dos,mac
 
 "GUI Font settings
 if has("gui_running")
-    set guifont=FiraCode\ NF:h12:cANSI "windows
-    " set guifont=CaskaydiaCove\ NF:h12:cANSI "windows
-" elseif exists('g:GuiLoaded')
-"     GuiFont! Cascadia\ Mono:h12
+    if has("unix")
+        let s:uname = system("uname -s")
+        if s:uname == "Darwin"
+            " Do Mac stuff here
+            set guifont=Fira\ Code\ Retina\ Nerd\ Font\ Complete:h12
+        endif
+    else
+        set guifont=FiraCode\ NF:h12:cANSI "windows
+    endif
 else
     " Added default font setting for terminal
     set guifont=FiraCode\ NF:h12
