@@ -69,13 +69,11 @@ endfunction
 
 inoremap <silent><expr> <down>
             \ pumvisible() ? "\<C-n>" :
-            \ <SID>check_back_space() ? "\<down>" :
-            \ coc#refresh()
+            \ "\<down>"
 
 inoremap <silent><expr> <up>
             \ pumvisible() ? "\<C-p>" :
-            \ <SID>check_back_space() ? "\<up>" :
-            \ coc#refresh()
+            \ "\<up>"
 
 nmap <f2> <Plug>(coc-rename)
 " nmap <silent> gd <Plug>(coc-definition)
