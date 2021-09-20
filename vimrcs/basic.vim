@@ -172,7 +172,7 @@ set ffs=unix,dos,mac
 
 "GUI Font settings
 let s:fontsize = 12
-if has("gui_running")
+if exists('g:GuiLoaded')
     if has("unix")
         let s:uname = system("uname -s")
         if s:uname == "Darwin"
@@ -180,7 +180,8 @@ if has("gui_running")
             set guifont=Fira\ Code\ Retina\ Nerd\ Font\ Complete:h12
         endif
     else
-        set guifont=FiraCode\ NF:h12:cANSI "windows
+        "windows
+        :execute "GuiFont! FiraCode NF:h" . s:fontsize
     endif
 else
     " Added default font setting for terminal
