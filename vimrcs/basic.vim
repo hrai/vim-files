@@ -171,6 +171,7 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 "GUI Font settings
+let s:fontsize = 12
 if has("gui_running")
     if has("unix")
         let s:uname = system("uname -s")
@@ -183,12 +184,8 @@ if has("gui_running")
     endif
 else
     " Added default font setting for terminal
-    set guifont=FiraCode\ NF:h12
+    :execute "GuiFont! FiraCode NF:h" . s:fontsize
 endif
-
-" if has("gui_macvim")
-"     set guifont=Menlo\ Regular:h14
-" endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
