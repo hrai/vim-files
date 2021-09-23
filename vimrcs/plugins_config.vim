@@ -21,7 +21,6 @@ map <leader>g :Rg<Space>
 silent! !git rev-parse --is-inside-work-tree
 if v:shell_error == 0
   noremap <leader>n :GFiles --cached --others --exclude-standard<CR>
-  " noremap <C-o> :GFiles?<CR>
 else
   noremap <leader>n :Files<CR>
 endif

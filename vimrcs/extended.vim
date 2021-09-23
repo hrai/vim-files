@@ -157,16 +157,6 @@ nnoremap daf :%d<CR>
 nnoremap <A-a> <C-a>
 nnoremap <A-x> <C-x>
 
-" add useful stuff to title bar (file name, flags, cwd)
-" based on @factorylabs
-if has('title') && (has('gui_running') || &title)
-  set titlestring=
-  set titlestring+=%f
-  set titlestring+=%h%m%r%w
-  set titlestring+=\ -\ %{v:progname}
-  set titlestring+=\ -\ %{substitute(getcwd(),\ $HOME,\ '~',\ '')}
-endif
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Yanking to system and tmux clipboard
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
