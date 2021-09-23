@@ -81,8 +81,6 @@ set wildmenu
 set wildignore=*.o,*~,*.pyc
 if has("win16") || has("win32")
     set wildignore+=.git\*,.hg\*,.svn\*
-
-    autocmd GUIEnter * colorscheme solarized  "fixes the issue with conflicting bg colour on gvim startup
 else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
@@ -172,20 +170,8 @@ set ffs=unix,dos,mac
 
 "GUI Font settings
 let s:fontsize = 12
-if exists('g:GuiLoaded')
-    if has("unix")
-        let s:uname = system("uname -s")
-        if s:uname == "Darwin"
-            " Do Mac stuff here
-            set guifont=Fira\ Code\ Retina\ Nerd\ Font\ Complete:h12
-        endif
-    else
-        "windows
-        :execute "GuiFont! FiraCode NF:h" . s:fontsize
-    endif
-else
-    " Added default font setting for terminal
-    :execute "GuiFont! FiraCode NF:h" . s:fontsize
+if !exists('g:GuiLoaded')
+    set guifont=FiraCode\ NF:h15
 endif
 
 
@@ -333,7 +319,8 @@ if has("mac") || has("macunix")
 endif
 
 
-nmap clr :%s///<CR>
+nmap clr :%s/
+//<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Add linebreak without entering insert mode
