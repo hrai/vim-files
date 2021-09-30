@@ -265,3 +265,11 @@ endfunction
 
 vmap <C-F2> <ESC>:call AddAbbr()<CR>
 "Replace S-F2 by any other shortcut you wish
+
+
+" Opening files
+command! Zc :e ~/.zshrc
+command! Gconf :e ~/.gitconfig
+command! Gignore :e ~/.gitignore
+command! Bconf :e ~/.bashrc
+command! Tconf :e ~/.tmux.conf
