@@ -44,7 +44,7 @@ Plug 'easymotion/vim-easymotion'
 
 " Plug 'dkarter/bullets.vim'
 "
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 
 " Copy/exchange
 " cx - On the first use, define the first {motion} to exchange/swap. On the second use, define the second {motion} and perform the exchange.
