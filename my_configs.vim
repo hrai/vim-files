@@ -276,5 +276,5 @@ colorscheme PaperColor
 
 " Treesitter config
 " TSInstallSync all "installs every language
-TSInstall [bash,c_sharp,CSS,dockerfile,graphql,html,javascript,json,python,tsx,vim]
+" TSInstall [bash,c_sharp,CSS,dockerfile,graphql,html,javascript,json,python,tsx,vim]
 
