@@ -27,6 +27,7 @@ endif
 Plug 'NLKNguyen/papercolor-theme'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 
 Plug 'mg979/vim-visual-multi'
 
@@ -273,8 +274,3 @@ if has('nvim')
 endif
 
 colorscheme PaperColor
-
-" Treesitter config
-" TSInstallSync all "installs every language
-" TSInstall [bash,c_sharp,CSS,dockerfile,graphql,html,javascript,json,python,tsx,vim]
-
