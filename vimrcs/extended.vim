@@ -268,6 +268,7 @@ vmap <C-F2> <ESC>:call AddAbbr()<CR>
 
 
 " Opening files
+command! Vconf :e ~/.vimrc
 command! Zc :e ~/.zshrc
 command! Gconf :e ~/.gitconfig
 command! Gignore :e ~/.gitignore
