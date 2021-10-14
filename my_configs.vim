@@ -22,14 +22,16 @@ if has('nvim')
     Plug 'danilamihailov/beacon.nvim'
 
     Plug 'lukas-reineke/indent-blankline.nvim'
-endif
 
-"""" Themes """"
-" Plug 'altercation/vim-colors-solarized'
-Plug 'NLKNguyen/papercolor-theme'
+Plug 'Xuyuanp/scrollbar.nvim'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+
+endif
+
+"""" Themes """"
+Plug 'NLKNguyen/papercolor-theme'
 
 Plug 'mg979/vim-visual-multi'
 
@@ -39,15 +41,11 @@ Plug 'tomtom/enabler_vim'
 
 Plug 'ntpeters/vim-better-whitespace'
 
-" Plug 'Yggdroot/indentLine'
-
 Plug 'tpope/vim-sleuth'
 
 Plug 'easymotion/vim-easymotion'
 
 " Plug 'dkarter/bullets.vim'
-"
-" Plug 'sheerun/vim-polyglot'
 
 " Copy/exchange
 " cx - On the first use, define the first {motion} to exchange/swap. On the second use, define the second {motion} and perform the exchange.
@@ -96,7 +94,6 @@ Plug 'tpope/vim-obsession'
 
 Plug 'itchyny/lightline.vim'
 
-" Plug 'preservim/nerdtree', { 'on': ['NerdTreeToggle', 'NerdTreeFind'] } |
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin' |
             \ Plug 'ryanoasis/vim-devicons'
@@ -193,8 +190,6 @@ Plug 'rmagatti/alternate-toggler' "toggle boolean values; <leader>ta
 
 Plug 'psliwka/vim-smoothie' "Smooth scrolling
 
-Plug 'Xuyuanp/scrollbar.nvim'
-
 " gS to split a one-liner into multiple lines
 " gJ (with the cursor on the first line of a block) to join a block into a single-line statement.
 Plug 'AndrewRadev/splitjoin.vim'
@@ -204,10 +199,6 @@ Plug 'junegunn/vim-peekaboo'
 
 " Plugin to help you stop repeating the basic movement keys
 Plug 'takac/vim-hardtime'
-
-" Plug 'vim-autoformat/vim-autoformat'
-
-" Plug 'kana/vim-textobj-indent'
 
 " gs2j => Sort down two lines (current + 2 below)
 " gsip => Sort the current paragraph
@@ -231,13 +222,7 @@ Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
 " \ 'do': 'yarn install',
 " \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
-" Vim debug
-" Plug 'vim-scripts/genutils', { 'for': ['vim'] }
-" Plug 'albfan/vim-breakpts', { 'for': ['vim'] }
-
 " Local plugins
-" Plug '~/.vim_runtime/sources_non_forked/damian_conway'
-
 source ~/.vim_runtime/vimrcs/plugins_config.vim
 
 call plug#end()
