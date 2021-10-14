@@ -14,8 +14,6 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 
 if has('nvim')
-    " Plug 'iCyMind/NeoSolarized'
-
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     source ~/.vim_runtime/vimrcs/coc_config.vim
 
@@ -86,8 +84,6 @@ Plug 'tpope/vim-markdown', { 'for': ['markdown'] }
 
 Plug 'tpope/vim-fugitive'
 
-" Plug 'majutsushi/tagbar'
-
 Plug 'tpope/vim-surround'
 
 Plug 'tpope/vim-obsession'
@@ -134,6 +130,10 @@ Plug 'chrisbra/csv.vim', { 'for':['csv']}
 
 Plug 'rhysd/git-messenger.vim'
 
+" gS to split a one-liner into multiple lines
+" gJ (with the cursor on the first line of a block) to join a block into a single-line statement.
+Plug 'AndrewRadev/splitjoin.vim'
+
 Plug 'flwyd/vim-conjoin' "handles line joining in the presence of line continuation characters
 
 Plug 'tpope/vim-unimpaired'
@@ -172,20 +172,11 @@ Plug 'rmagatti/alternate-toggler' "toggle boolean values; <leader>ta
 
 Plug 'psliwka/vim-smoothie' "Smooth scrolling
 
-" gS to split a one-liner into multiple lines
-" gJ (with the cursor on the first line of a block) to join a block into a single-line statement.
-Plug 'AndrewRadev/splitjoin.vim'
-
 " Peekaboo extends  and @ in normal mode and <"CTRL-R> in insert mode so you can see the contents of the registers
 Plug 'junegunn/vim-peekaboo'
 
 " Plugin to help you stop repeating the basic movement keys
 Plug 'takac/vim-hardtime'
-
-" gs2j => Sort down two lines (current + 2 below)
-" gsip => Sort the current paragraph
-" gsii => Sort the current indentation level (requires text-obj-indent plugin)
-Plug 'christoomey/vim-sort-motion'
 
 " Reorder delimited items eg function parameters/arguments testMe(a1,a2,a3) to testMe(a2,a1,a3)
 " Mappings - g<, g>, gs
@@ -199,10 +190,6 @@ Plug 'liuchengxu/vista.vim' "View and search LSP symbols, tags
 
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript.tsx', 'jsx'] }
-
-" Plug 'prettier/vim-prettier', {
-" \ 'do': 'yarn install',
-" \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 " Local plugins
 source ~/.vim_runtime/vimrcs/plugins_config.vim
