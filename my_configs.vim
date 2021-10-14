@@ -262,7 +262,7 @@ augroup END
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 lua <<EOF
 ---------------------------------------------------------------
-=> Treesitter configs
+--=> Treesitter configs
 ---------------------------------------------------------------
 require'nvim-treesitter.configs'.setup {
     ensure_installed = {
@@ -306,7 +306,7 @@ require'nvim-treesitter.configs'.setup {
 }
 
 ---------------------------------------------------------------
-=> lukas-reineke/indent-blankline.nvim configs
+--=> lukas-reineke/indent-blankline.nvim configs
 ---------------------------------------------------------------
 vim.opt.list = true
 vim.opt.listchars:append("space:⋅")
