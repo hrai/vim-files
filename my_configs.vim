@@ -112,8 +112,6 @@ Plug 'mattn/emmet-vim', { 'for': ['html'] }
 
 Plug 'honza/vim-snippets'
 
-" Plug 'papanikge/vim-voogle' "searching word in google
-
 Plug 'benshuailyu/online-thesaurus-vim'
 
 Plug 'panozzaj/vim-autocorrect'
@@ -121,8 +119,6 @@ Plug 'panozzaj/vim-autocorrect'
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'schoettl/listtrans.vim' "transform a sentence to a list - <leader>l
-
-" Plug 'michaeljsmith/vim-indent-object'
 
 Plug 'OrangeT/vim-csharp', { 'for': ['cs'] }
 
@@ -153,8 +149,6 @@ Plug 'justinmk/vim-sneak' "Jump to any location specified by two characters.
 Plug 'luochen1990/rainbow' "read complex code by showing diff level of parentheses in diff color !
 
 Plug 'tmhedberg/matchit' "extended % matching for HTML, LaTeX, and many other languages
-
-" Plug 'wellle/context.vim'
 
 Plug 'wellle/targets.vim'
 
