@@ -160,7 +160,7 @@ let g:bullets_enabled_file_types = [
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => indentLine settings
+" => Yggdroot/indentLine settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim
 let g:indentLine_color_term = 239
@@ -173,12 +173,6 @@ let g:indentLine_leadingSpaceEnabled=1
 let g:indentLine_leadingSpaceChar='·'
 
 let g:indentLine_concealcursor=""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-javacomplete2 settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" autocmd FileType java setlocal omnifunc=javacomplete#Complete
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-auto-save settings
