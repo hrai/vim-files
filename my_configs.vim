@@ -116,17 +116,13 @@ Plug 'honza/vim-snippets'
 
 Plug 'benshuailyu/online-thesaurus-vim'
 
-" Plug 'reedes/vim-litecorrect' "autocorrection
-
 Plug 'panozzaj/vim-autocorrect'
-
-" Plug 'vim-scripts/vis'
 
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'schoettl/listtrans.vim' "transform a sentence to a list - <leader>l
 
-Plug 'michaeljsmith/vim-indent-object'
+" Plug 'michaeljsmith/vim-indent-object'
 
 Plug 'OrangeT/vim-csharp', { 'for': ['cs'] }
 
@@ -138,17 +134,11 @@ Plug 'tpope/vim-eunuch'
 
 Plug 'editorconfig/editorconfig-vim'
 
-" These plugins are superseded by coc-highlight
-" Plug 'chrisbra/Colorizer'
-" Plug 'RRethy/vim-illuminate' "automatically highlighting other uses of the word under the cursor
-
 Plug 'chrisbra/csv.vim', { 'for':['csv']}
 
 Plug 'rhysd/git-messenger.vim'
 
 Plug 'flwyd/vim-conjoin' "handles line joining in the presence of line continuation characters
-
-" Plug 'tpope/vim-endwise'
 
 Plug 'tpope/vim-unimpaired'
 
