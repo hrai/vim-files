@@ -261,6 +261,9 @@ augroup END
 " => Treesitter configs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 lua <<EOF
+---------------------------------------------------------------
+=> Treesitter configs
+---------------------------------------------------------------
 require'nvim-treesitter.configs'.setup {
     ensure_installed = {
       'bash'; 'css'; 'go'; 'html'; 'javascript'; 'json'; 'c_sharp'; 'tsx'; 'typescript';
@@ -300,6 +303,17 @@ require'nvim-treesitter.configs'.setup {
             }
         }
     }
+}
+
+---------------------------------------------------------------
+=> lukas-reineke/indent-blankline.nvim configs
+---------------------------------------------------------------
+vim.opt.list = true
+vim.opt.listchars:append("space:⋅")
+
+require("indent_blankline").setup {
+    space_char_blankline = " ",
+    show_current_context = true,
 }
 EOF
 
