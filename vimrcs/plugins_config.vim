@@ -159,20 +159,20 @@ let g:bullets_enabled_file_types = [
       \]
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Yggdroot/indentLine settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vim
-let g:indentLine_color_term = 239
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => Yggdroot/indentLine settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Vim
+"let g:indentLine_color_term = 239
 
-" GVim
-let g:indentLine_color_gui = '#562365'
+"" GVim
+"let g:indentLine_color_gui = '#562365'
 
-" Specify a character to show for leading spaces.
-let g:indentLine_leadingSpaceEnabled=1
-let g:indentLine_leadingSpaceChar='·'
+"" Specify a character to show for leading spaces.
+"let g:indentLine_leadingSpaceEnabled=1
+"let g:indentLine_leadingSpaceChar='·'
 
-let g:indentLine_concealcursor=""
+"let g:indentLine_concealcursor=""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-auto-save settings

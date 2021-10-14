@@ -20,6 +20,8 @@ if has('nvim')
     source ~/.vim_runtime/vimrcs/coc_config.vim
 
     Plug 'danilamihailov/beacon.nvim'
+
+    Plug 'lukas-reineke/indent-blankline.nvim'
 endif
 
 """" Themes """"
@@ -37,7 +39,7 @@ Plug 'tomtom/enabler_vim'
 
 Plug 'ntpeters/vim-better-whitespace'
 
-Plug 'Yggdroot/indentLine'
+" Plug 'Yggdroot/indentLine'
 
 Plug 'tpope/vim-sleuth'
 
