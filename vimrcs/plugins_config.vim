@@ -50,33 +50,33 @@ set grepprg=/bin/grep\ -nH
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:NERDTreeWinPos = "right"
-let NERDTreeShowHidden=1
-let NERDTreeIgnore = ['\.pyc$', '__pycache__','^node_modules$']
-let g:NERDTreeWinSize=35
-map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark<Space>
-map <leader>nf :NERDTreeFind<cr>
+" let g:NERDTreeWinPos = "right"
+" let NERDTreeShowHidden=1
+" let NERDTreeIgnore = ['\.pyc$', '__pycache__','^node_modules$']
+" let g:NERDTreeWinSize=35
+" map <leader>nn :NERDTreeToggle<cr>
+" map <leader>nb :NERDTreeFromBookmark<Space>
+" map <leader>nf :NERDTreeFind<cr>
 
-" auto refresh NERDTree when folders change
-function! IsNerdTreeTabOpen()
-  return exists('t:NERDTreeBufName') && bufwinnr(t:NERDTreeBufName) != -1
-endfunction
+" " auto refresh NERDTree when folders change
+" function! IsNerdTreeTabOpen()
+"   return exists('t:NERDTreeBufName') && bufwinnr(t:NERDTreeBufName) != -1
+" endfunction
 
-" Sync open file to nerdtree
-autocmd BufWinEnter * if (IsNerdTreeTabOpen()) | NERDTreeFind | execute 'normal R' | wincmd p | endif
+" " Sync open file to nerdtree
+" autocmd BufWinEnter * if (IsNerdTreeTabOpen()) | NERDTreeFind | execute 'normal R' | wincmd p | endif
 
-" Automatically quit vim if NERDTree is last and only buffer
-autocmd BufEnter * if (winnr("$") == 1 && &ft=='nerdtree') | q | endif
+" " Automatically quit vim if NERDTree is last and only buffer
+" autocmd BufEnter * if (winnr("$") == 1 && &ft=='nerdtree') | q | endif
 
-" Enable line numbers
-let NERDTreeShowLineNumbers=1
+" " Enable line numbers
+" let NERDTreeShowLineNumbers=1
 
-" make sure relative line numbers are used
-autocmd FileType nerdtree setlocal relativenumber
+" " make sure relative line numbers are used
+" autocmd FileType nerdtree setlocal relativenumber
 
-" Disabling Indentline on Nerdtree as it is breaking indentation
-autocmd BufEnter *.nerdtree :LeadingSpaceDisable
+" " Disabling Indentline on Nerdtree as it is breaking indentation
+" autocmd BufEnter *.nerdtree :LeadingSpaceDisable
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => surround.vim

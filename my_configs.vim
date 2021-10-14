@@ -94,11 +94,9 @@ Plug 'tpope/vim-obsession'
 
 Plug 'itchyny/lightline.vim'
 
-Plug 'preservim/nerdtree' |
-            \ Plug 'Xuyuanp/nerdtree-git-plugin' |
-            \ Plug 'ryanoasis/vim-devicons'
-
-" Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
+" Plug 'preservim/nerdtree' |
+"             \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+"             \ Plug 'ryanoasis/vim-devicons'
 
 Plug 'amix/open_file_under_cursor.vim'
 
