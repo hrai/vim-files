@@ -95,10 +95,6 @@ cab ga Gap added
 " => Ack searching and cope displaying
 "    requires ack.vim - it's much better than vimgrep/grep
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use the the_silver_searcher if possible (much faster than Ack)
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep --smart-case'
-endif
 
 " When you press gv you Ack after the selected text
 vnoremap <silent> gv :call VisualSelection('gv', '')<CR>
@@ -239,7 +235,7 @@ endfunc
 
 " @return the text currently selected
 "https://github.com/LucHermitte/lh-vim-lib/blob/master/autoload/lh/visual.vim
-function! VisualSelection() abort
+function! AddAbbrVisualSelection() abort
   try
     let a_save = @a
     silent! normal! gv"ay
@@ -251,7 +247,7 @@ endfunction
 
 function! AddAbbr()
   normal byw
-  let StringChar = VisualSelection()
+  let StringChar = AddAbbrVisualSelection()
   let val = input("Enter the abbreviation you wish to use for '" . StringChar . "' :")
   exec "ia" val StringChar
   silent call SaveAbbr(StringChar, val)
