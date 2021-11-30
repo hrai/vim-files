@@ -111,7 +111,7 @@ nmap exr :CocCommand explorer --position=right<CR>
 nmap <space>f :CocCommand explorer<CR>
 
 " When the only window opened is explorer, close it
-autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+autocmd BufEnter * if (winnr() == winnr('$') && &filetype == 'coc-explorer') | q | endif
 
 let g:coc_explorer_global_presets = {
 \   '.vim': {
