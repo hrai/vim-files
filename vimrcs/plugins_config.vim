@@ -286,15 +286,15 @@ let g:gutentags_file_list_command = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-sneak settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if has('nvim')
-  map f <Plug>Sneak_f
-  map F <Plug>Sneak_F
-  map t <Plug>Sneak_t
-  map T <Plug>Sneak_T
+" if has('nvim')
+"   map f <Plug>Sneak_f
+"   map F <Plug>Sneak_F
+"   map t <Plug>Sneak_t
+"   map T <Plug>Sneak_T
 
-  map <leader>o <Plug>Sneak_s
-  map <leader>O <Plug>Sneak_S
-endif
+"   map <leader>o <Plug>Sneak_s
+"   map <leader>O <Plug>Sneak_S
+" endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => online-thesaurus-vim settings

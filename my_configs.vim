@@ -26,6 +26,8 @@ Plug 'Xuyuanp/scrollbar.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 
+Plug 'ggandor/lightspeed.nvim'
+
 endif
 
 """" Themes """"
