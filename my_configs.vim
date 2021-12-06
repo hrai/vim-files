@@ -41,8 +41,6 @@ Plug 'ntpeters/vim-better-whitespace'
 
 Plug 'tpope/vim-sleuth'
 
-Plug 'easymotion/vim-easymotion'
-
 " Plug 'dkarter/bullets.vim'
 
 " Copy/exchange
@@ -145,7 +143,9 @@ Plug 'chrisbra/vim-diff-enhanced'
 
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
-Plug 'justinmk/vim-sneak' "Jump to any location specified by two characters.
+" Plug 'easymotion/vim-easymotion'
+
+" Plug 'justinmk/vim-sneak' "Jump to any location specified by two characters.
 
 Plug 'luochen1990/rainbow' "read complex code by showing diff level of parentheses in diff color !
 
