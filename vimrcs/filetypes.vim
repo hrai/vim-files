@@ -87,10 +87,6 @@ au FileType javascript inoremap <buffer> $f //--- PH<esc>FP2xi
 " => Shell section
 """"""""""""""""""""""""""""""
 if exists('$TMUX')
-    if has('nvim')
-        set termguicolors
-    else
-        set term=screen-256color
-    endif
+  set termguicolors
 endif
 

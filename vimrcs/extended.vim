@@ -173,33 +173,31 @@ noremap <C-P> "+p
 inoremap <C-P> <C-R>+
 cnoremap <C-P> <C-R>+<space>
 
-if has('nvim')
-  set clipboard+=unnamedplus
+set clipboard+=unnamedplus
 
-  if system('uname -r') =~ "Microsoft"
-    echo "This is wsl.\r"
+if system('uname -r') =~ "Microsoft"
+  echo "This is wsl.\r"
 
-    " let s:clip = '/mnt/c/Windows/System32/clip.exe'
-    " if executable(s:clip)
-    "     augroup WSLYank
-    "         autocmd!
-    "         autocmd TextYankPost * call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
-    "     augroup END
-    " end
+  " let s:clip = '/mnt/c/Windows/System32/clip.exe'
+  " if executable(s:clip)
+  "     augroup WSLYank
+  "         autocmd!
+  "         autocmd TextYankPost * call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
+  "     augroup END
+  " end
 
-    " let g:clipboard = {
-    "   \ 'name': 'win32yank',
-    "   \ 'copy': {
-    "   \    '+': 'win32yank.exe -i --crlf',
-    "   \    '*': 'win32yank.exe -i --crlf',
-    "   \  },
-    "   \ 'paste': {
-    "   \    '+': 'win32yank.exe -o --lf',
-    "   \    '*': 'win32yank.exe -o --lf',
-    "   \ },
-    "   \ 'cache_enabled': 0,
-    " \ }
-  endif
+  " let g:clipboard = {
+  "   \ 'name': 'win32yank',
+  "   \ 'copy': {
+  "   \    '+': 'win32yank.exe -i --crlf',
+  "   \    '*': 'win32yank.exe -i --crlf',
+  "   \  },
+  "   \ 'paste': {
+  "   \    '+': 'win32yank.exe -o --lf',
+  "   \    '*': 'win32yank.exe -o --lf',
+  "   \ },
+  "   \ 'cache_enabled': 0,
+  " \ }
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

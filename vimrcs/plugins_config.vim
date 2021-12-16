@@ -286,7 +286,6 @@ let g:gutentags_file_list_command = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-sneak settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" if has('nvim')
 "   map f <Plug>Sneak_f
 "   map F <Plug>Sneak_F
 "   map t <Plug>Sneak_t
@@ -294,7 +293,6 @@ let g:gutentags_file_list_command = {
 
 "   map <leader>o <Plug>Sneak_s
 "   map <leader>O <Plug>Sneak_S
-" endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => online-thesaurus-vim settings

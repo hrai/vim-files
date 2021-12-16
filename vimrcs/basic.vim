@@ -206,9 +206,7 @@ set wrap "Wrap lines
 set number
 set relativenumber
 
-if has('nvim')
-    set inccommand=nosplit "Live Substitution
-endif
+set inccommand=nosplit "Live Substitution
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
