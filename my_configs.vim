@@ -13,13 +13,12 @@ let text_files=['notes', 'txt', 'markdown', 'md']
 call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 
-if has('nvim')
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    source ~/.vim_runtime/vimrcs/coc_config.vim
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+source ~/.vim_runtime/vimrcs/coc_config.vim
 
-    Plug 'danilamihailov/beacon.nvim'
+Plug 'danilamihailov/beacon.nvim'
 
-    Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 Plug 'Xuyuanp/scrollbar.nvim'
 
@@ -27,8 +26,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend upda
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 
 Plug 'ggandor/lightspeed.nvim'
-
-endif
 
 """" Themes """"
 Plug 'NLKNguyen/papercolor-theme'
