@@ -240,7 +240,7 @@ nnoremap   gw    :Gwrite<CR>
 nnoremap   gcm   :Git commit --m ""
 nnoremap   gco   :Git commit<CR>
 nnoremap   gca   :Gwrite<CR>:Git commit --amend<CR>
-nnoremap   gbl   :Gblame<CR>
+nnoremap   gbl   :Git blame<CR>
 nnoremap   gd    :Gvdiff<CR>
 
 
