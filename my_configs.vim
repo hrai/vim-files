@@ -148,7 +148,7 @@ Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
 
 Plug 'luochen1990/rainbow' "read complex code by showing diff level of parentheses in diff color !
 
-Plug 'andymass/vim-matchup' "extended % matching for HTML, LaTeX, and many other languages
+Plug 'andymass/vim-matchup' "even better % 👊 navigate and highlight matching words 👊
 
 Plug 'wellle/targets.vim'
 
