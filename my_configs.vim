@@ -27,6 +27,9 @@ Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 
 Plug 'ggandor/lightspeed.nvim'
 
+" Plug 'easymotion/vim-easymotion'
+" Plug 'justinmk/vim-sneak' "Jump to any location specified by two characters.
+
 """" Themes """"
 Plug 'NLKNguyen/papercolor-theme'
 
@@ -141,10 +144,6 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'chrisbra/vim-diff-enhanced'
 
 Plug 'tmux-plugins/vim-tmux', { 'for': ['conf'] }
-
-" Plug 'easymotion/vim-easymotion'
-
-" Plug 'justinmk/vim-sneak' "Jump to any location specified by two characters.
 
 Plug 'luochen1990/rainbow' "read complex code by showing diff level of parentheses in diff color !
 
