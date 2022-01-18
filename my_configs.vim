@@ -167,7 +167,7 @@ Plug 'Jorengarenar/vim-SQL-UPPER', { 'for': ['sql']}
 
 Plug 't9md/vim-quickhl' "quickly highlight <cword> or visually selected word; <M-m>,<M-M>
 
-Plug 'rmagatti/alternate-toggler' "toggle boolean values; <leader>ta
+Plug 'rmagatti/alternate-toggler' "toggle boolean values; <leader>bt
 
 Plug 'psliwka/vim-smoothie' "Smooth scrolling
 
