@@ -126,7 +126,7 @@ map <leader>d :g/^\s*$/d<cr>
 nnoremap <C-A> ggVG
 
 "Opening folder explorer in Windows
-noremap <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
+noremap <C-e> :silent !explorer.exe %:p:h:gs?\/?\\\\\\?<CR>
 
 "Closing/saving files
 nnoremap <leader>x :x!<CR>
