@@ -408,3 +408,7 @@ augroup ScrollbarInit
   autocmd WinLeave,BufLeave,BufWinLeave,FocusLost            * silent! lua require('scrollbar').clear()
 augroup end
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => justinmk/vim-gtfo
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:gtfo#terminals = { 'win': 'pwsh.exe -NoLogo -NoExit -Command' }
