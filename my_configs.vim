@@ -43,6 +43,8 @@ Plug 'ntpeters/vim-better-whitespace'
 
 Plug 'tpope/vim-sleuth'
 
+Plug 'kshenoy/vim-signature' "  mx - Toggle mark 'x' and display it in the leftmost column
+
 " Plug 'dkarter/bullets.vim'
 
 " Copy/exchange
