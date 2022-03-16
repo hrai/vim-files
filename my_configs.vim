@@ -237,3 +237,7 @@ if has('nvim')
 endif
 
 colorscheme PaperColor
+
+if has("win16") || has("win32")
+    let g:python3_host_prog="~/scoop/shims/python3.exe"
+endif
