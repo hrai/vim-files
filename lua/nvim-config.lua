@@ -1,6 +1,9 @@
 ---------------------------------------------------------------
 --=> Treesitter configs
 ---------------------------------------------------------------
+
+-- require 'nvim-treesitter.install'.compilers = { "clang", "gcc" }
+
 require'nvim-treesitter.configs'.setup {
     ensure_installed = {
       'bash'; 'css'; 'go'; 'html'; 'javascript'; 'json'; 'c_sharp'; 'tsx'; 'typescript';
