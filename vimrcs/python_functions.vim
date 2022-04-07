@@ -25,8 +25,4 @@ if has("win32")
     command! Gec call OpenGitExtensionsCommit()
 endif
 
-function! PrettifyJson()
-    %!python -m json.tool
-endfunc
-
 command! PrettifyJson call PrettifyJson()
