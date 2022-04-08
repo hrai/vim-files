@@ -55,3 +55,8 @@ require("indent_blankline").setup {
     space_char_blankline = " ",
     show_current_context = true,
 }
+
+---------------------------------------------------------------
+--=> ggandor/leap.nvim
+---------------------------------------------------------------
+-- require('leap').set_default_keymaps()
