@@ -10,6 +10,7 @@ command! -nargs=1 Gap call GitCommitPush(<f-args>)
 
 nnoremap gap :Gap<space>
 nnoremap gcl :Gap cleanup<CR>
+nnoremap gnw :Gap new words<CR>
 
 function! PrettifyJson()
     exec "%!jq ."
