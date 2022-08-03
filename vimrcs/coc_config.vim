@@ -43,6 +43,10 @@ let g:coc_global_extensions = [
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
+" use <up/down> to navigate to the next complete item
+inoremap <expr> <down> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
+inoremap <expr> <up> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc-actions settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -60,10 +64,6 @@ augroup mygroup
   " Update signature help on jump placeholder.
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
-
-" use <up/down> to navigate to the next complete item
-inoremap <expr> <down> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
-inoremap <expr> <up> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 
 nmap <f2> <Plug>(coc-rename)
 " nmap <silent> gd <Plug>(coc-definition)
@@ -119,7 +119,7 @@ let g:coc_explorer_global_presets = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 imap <C-space> <Plug>(coc-snippets-expand)
 
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
+inoremap <silent><expr> <cr> coc#pum#visible() ? coc#_select_confirm() :
                                            \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 function! s:check_back_space() abort
@@ -128,7 +128,7 @@ function! s:check_back_space() abort
 endfunction
 
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#pum#visible() ? coc#_select_confirm() :
       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
