@@ -62,13 +62,8 @@ augroup mygroup
 augroup end
 
 " use <up/down> to navigate to the next complete item
-inoremap <silent><expr> <down>
-            \ pumvisible() ? "\<C-n>" :
-            \ "\<down>"
-
-inoremap <silent><expr> <up>
-            \ pumvisible() ? "\<C-p>" :
-            \ "\<up>"
+inoremap <expr> <down> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
+inoremap <expr> <up> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 
 nmap <f2> <Plug>(coc-rename)
 " nmap <silent> gd <Plug>(coc-definition)
