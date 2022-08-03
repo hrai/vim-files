@@ -178,6 +178,7 @@ Plug 'junegunn/vim-peekaboo'
 " Plugin to help you stop repeating the basic movement keys
 " Plug 'takac/vim-hardtime'
 
+
 " Reorder delimited items eg function parameters/arguments testMe(a1,a2,a3) to testMe(a2,a1,a3)
 " Mappings - g<, g>, gs
 " Plug 'machakann/vim-swap'
