@@ -291,8 +291,8 @@ map F <Plug>Sneak_F
 map t <Plug>Sneak_t
 map T <Plug>Sneak_T
 
-"   map <leader>o <Plug>Sneak_s
-"   map <leader>O <Plug>Sneak_S
+map <leader>o <Plug>Sneak_s
+map <leader>O <Plug>Sneak_S
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => online-thesaurus-vim settings
