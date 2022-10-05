@@ -37,7 +37,7 @@ else
   " Rg from git root directory
   " https://github.com/junegunn/fzf.vim/issues/837
   command! -bang -nargs=* Rg
-        \ call fzf#vim#grep("rg --column --line-number --no-heading --color=always --ignore-case --hidden ".shellescape(<q-args>), 1, {'dir': system('git rev-parse --show-toplevel 2> /dev/null')[:-2]}, <bang>0)
+        \ call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case --hidden ".shellescape(<q-args>), 1, {'dir': system('git rev-parse --show-toplevel 2> /dev/null')[:-2]}, <bang>0)
 endif
 
 """"""""""""""""""""""""""""""
