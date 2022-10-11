@@ -44,8 +44,8 @@ xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 " use <up/down> to navigate to the next complete item
-inoremap <expr> <down> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
-inoremap <expr> <up> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
+inoremap <expr> <down> coc#pum#visible() ? coc#pum#next(1) : "\<down>"
+inoremap <expr> <up> coc#pum#visible() ? coc#pum#prev(1) : "\<up>"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc-actions settings
