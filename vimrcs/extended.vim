@@ -186,18 +186,18 @@ if system('uname -r') =~ "Microsoft"
   "     augroup END
   " end
 
-  " let g:clipboard = {
-  "   \ 'name': 'win32yank',
-  "   \ 'copy': {
-  "   \    '+': 'win32yank.exe -i --crlf',
-  "   \    '*': 'win32yank.exe -i --crlf',
-  "   \  },
-  "   \ 'paste': {
-  "   \    '+': 'win32yank.exe -o --lf',
-  "   \    '*': 'win32yank.exe -o --lf',
-  "   \ },
-  "   \ 'cache_enabled': 0,
-  " \ }
+  let g:clipboard = {
+    \ 'name': 'win32yank',
+    \ 'copy': {
+    \    '+': 'win32yank.exe -i --crlf',
+    \    '*': 'win32yank.exe -i --crlf',
+    \  },
+    \ 'paste': {
+    \    '+': 'win32yank.exe -o --lf',
+    \    '*': 'win32yank.exe -o --lf',
+    \ },
+    \ 'cache_enabled': 0,
+  \ }
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
