@@ -176,7 +176,7 @@ cnoremap <C-P> <C-R>+<space>
 set clipboard+=unnamedplus
 
 if system('uname -r') =~ "Microsoft"
-  echo "This is wsl.\r"
+  echo "This is wsl. Enabling custom yank logic.\r"
 
   " let s:clip = '/mnt/c/Windows/System32/clip.exe'
   " if executable(s:clip)
