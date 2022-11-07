@@ -19,7 +19,7 @@ if (has('python3')) || has('python3_dynamic')
     set runtimepath+=~/.vim_runtime/python_functions
     source ~/.vim_runtime/vimrcs/python_functions.vim
 else
-    echo ('Please install python 3.x to load python_functions.vim')
+    echo ('Please install python 3.x (and pip3 install pynvim)' to load python_functions.vim')
 endif
 
 catch
