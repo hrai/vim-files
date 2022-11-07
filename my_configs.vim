@@ -124,7 +124,8 @@ Plug 'hrai/vim-csharp-snippets', { 'for': ['cs'], 'do': 'cp -f ./UltiSnips/* ~/.
 
 Plug 'justinmk/vim-gtfo' "Go to Terminal or File manager
 
-Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-eunuch' "Vim sugar for the UNIX shell commands
+Plug 'lambdalisue/suda.vim' "An alternative sudo.vim for Vim and Neovim
 
 Plug 'editorconfig/editorconfig-vim'
 
