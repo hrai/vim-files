@@ -189,14 +189,44 @@ let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim ale settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using :ALEFix
+" let g:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using :ALEFix
+let js_fixers = ['prettier', 'eslint']
+
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': js_fixers,
+\   'javascript.jsx': js_fixers,
+\   'typescript': js_fixers,
+\   'typescriptreact': js_fixers,
+\   'css': ['prettier'],
+\   'json': ['prettier'],
+\}
+
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_disable_lsp = 1 " Disabled when using coc
 let g:ale_maximum_file_size=150 " bytes
 
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_python_flake8_options = '--max-line-length 88 --extend-ignore=E203'
+
+let g:ale_completion_autoimport = 1
+let g:ale_sign_error = "🐛"
+let g:ale_sign_warning = "⚠️"
+let g:ale_sign_info = "ℹ"
+
+" For nvim
+let g:ale_virtualtext_cursor = 1
+let g:ale_virtualtext_prefix = "🔥 "
+
 " Disable linting for all minified JS files.
 let g:ale_pattern_options = {'\.min.js$': {'ale_enabled': 0}}
+
+let g:ale_linters = {
+    \   'javascript': ['eslint'],
+    \}
 
 " let g:ale_linters = {
 "     \ 'cs': ['OmniSharp']
