@@ -124,7 +124,7 @@ Plug 'hrai/vim-csharp-snippets', { 'for': ['cs'], 'do': 'cp -f ./UltiSnips/* ~/.
 
 Plug 'justinmk/vim-gtfo' "Go to Terminal or File manager
 
-Plug 'tpope/vim-eunuch' "Vim sugar for the UNIX shell commands
+" Plug 'tpope/vim-eunuch' "Vim sugar for the UNIX shell commands
 Plug 'lambdalisue/suda.vim' "An alternative sudo.vim for Vim and Neovim
 
 Plug 'editorconfig/editorconfig-vim'
@@ -242,5 +242,3 @@ colorscheme PaperColor
 if has("win16") || has("win32")
     let g:python3_host_prog="~/scoop/shims/python3.exe"
 endif
-
-
