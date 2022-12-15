@@ -174,7 +174,7 @@ inoremap <C-P> <C-R>+
 cnoremap <C-P> <C-R>+<space>
 
 " Next two commands make vim use X11 clipboard on wsl with gui support
-set clipboard=unnamed
+set clipboard+=unnamed
 " nnoremap <expr> p (v:register == '"' && &clipboard =~ 'unnamed' ? '"*p' : '"' . v:register . 'p')
 
 if system('uname -r') =~ "Microsoft"
