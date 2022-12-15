@@ -173,18 +173,20 @@ noremap <C-P> "+p
 inoremap <C-P> <C-R>+
 cnoremap <C-P> <C-R>+<space>
 
-set clipboard+=unnamedplus
+" Next two commands make vim use X11 clipboard on wsl with gui support
+set clipboard=unnamed
+nnoremap <expr> p (v:register == '"' && &clipboard =~ 'unnamed' ? '"*p' : '"' . v:register . 'p')
 
 if system('uname -r') =~ "Microsoft"
   echo "This is wsl. Enabling custom yank logic.\r"
 
-  let s:clip = '/mnt/c/Windows/System32/clip.exe'
-  if executable(s:clip)
-      augroup WSLYank
-          autocmd!
-          autocmd TextYankPost * call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
-      augroup END
-  end
+  " let s:clip = '/mnt/c/Windows/System32/clip.exe'
+  " if executable(s:clip)
+  "     augroup WSLYank
+  "         autocmd!
+  "         autocmd TextYankPost * call system('echo '.shellescape(join(v:event.regcontents, "\<CR>")).' | '.s:clip)
+  "     augroup END
+  " end
 
   " let g:clipboard = {
   "   \ 'name': 'win32yank',
