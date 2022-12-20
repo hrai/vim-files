@@ -24,6 +24,7 @@ Plug 'Xuyuanp/scrollbar.nvim'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+Plug 'RRethy/nvim-treesitter-textsubjects'
 
 " Plug 'ggandor/leap.nvim'
 " Plug 'easymotion/vim-easymotion'
