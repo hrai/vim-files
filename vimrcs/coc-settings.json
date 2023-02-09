@@ -12,6 +12,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "prettier.trailingComma": "es5",
   "codeLens.enable": true,
   "git.addGBlameToVirtualText": true,
+  "git.enableGutters": true,
   "signature.target": "echo",
   "diagnostic.messageTarget": "echo",
   "diagnostic.format": "%message [%source]",

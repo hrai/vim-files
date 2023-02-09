@@ -119,8 +119,9 @@ let g:coc_explorer_global_presets = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 imap <C-space> <Plug>(coc-snippets-expand)
 
-inoremap <silent><expr> <cr> coc#pum#visible() ? coc#_select_confirm() :
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
                                            \"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 
 function! s:check_back_space() abort
     let col = col('.') - 1
