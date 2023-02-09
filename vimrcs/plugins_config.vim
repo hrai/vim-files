@@ -146,8 +146,8 @@ let g:lightline = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:gitgutter_enabled=1
-nnoremap <silent> <leader>d :GitGutterToggle<cr>
+" let g:gitgutter_enabled=1
+" nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
 
 
@@ -192,8 +192,8 @@ let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 " let g:ale_fixers = {'javascript': ['prettier', 'eslint']} "Can be executed using :ALEFix
 let js_fixers = ['prettier', 'eslint']
 
+" \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': js_fixers,
 \   'javascript.jsx': js_fixers,
 \   'typescript': js_fixers,
@@ -202,10 +202,21 @@ let g:ale_fixers = {
 \   'json': ['prettier'],
 \}
 
+let g:ale_linters = {
+    \   'javascript': ['eslint'],
+    \   'typescript': ['eslint'],
+    \}
+
+" let g:ale_linters = {
+"     \ 'cs': ['OmniSharp']
+"     \}
+
+
+let g:ale_linters_explicit = 1
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_disable_lsp = 1 " Disabled when using coc
-let g:ale_maximum_file_size=150 " bytes
+" let g:ale_maximum_file_size=150 " bytes // it will break Ale if enabled
 
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
@@ -216,6 +227,9 @@ let g:ale_completion_autoimport = 1
 let g:ale_sign_error = "🐛"
 let g:ale_sign_warning = "⚠️"
 let g:ale_sign_info = "ℹ"
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+let g:ale_sign_column_always = 1
 
 " For nvim
 let g:ale_virtualtext_cursor = 1
@@ -223,14 +237,6 @@ let g:ale_virtualtext_prefix = "🔥 "
 
 " Disable linting for all minified JS files.
 let g:ale_pattern_options = {'\.min.js$': {'ale_enabled': 0}}
-
-let g:ale_linters = {
-    \   'javascript': ['eslint'],
-    \}
-
-" let g:ale_linters = {
-"     \ 'cs': ['OmniSharp']
-"     \}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-bufonly settings
