@@ -31,7 +31,9 @@ Plug 'RRethy/nvim-treesitter-textsubjects'
 Plug 'justinmk/vim-sneak' "Jump to any location specified by two characters.
 
 """" Themes """"
-Plug 'NLKNguyen/papercolor-theme'
+" Plug 'NLKNguyen/papercolor-theme'
+" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'fenetikm/falcon'
 
 Plug 'mg979/vim-visual-multi'
 
@@ -238,7 +240,9 @@ if has('nvim')
 
 endif
 
-colorscheme PaperColor
+" colorscheme PaperColor
+" colorscheme tokyonight-night
+colorscheme falcon
 
 if has("win16") || has("win32")
     let g:python3_host_prog="~/scoop/shims/python3.exe"
