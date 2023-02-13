@@ -233,10 +233,9 @@ let g:solarized_termcolors=256
 
 if has('nvim')
     set termguicolors
-    " colorscheme NeoSolarized
 
     " changing codelens colour
-    hi CocCodeLens guifg=darkgreen
+    " hi CocCodeLens guifg=darkgreen
 
     "Setting the file history count to 200
     set shada=!,'200,<50,s10,h
@@ -245,6 +244,8 @@ endif
 
 " colorscheme PaperColor
 " colorscheme tokyonight-night
+let g:falcon_background = 0
+let g:falcon_inactive = 1
 colorscheme falcon
 
 if has("win16") || has("win32")
