@@ -33,7 +33,7 @@ Plug 'justinmk/vim-sneak' "Jump to any location specified by two characters.
 """" Themes """"
 " Plug 'NLKNguyen/papercolor-theme'
 " Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-Plug 'fenetikm/falcon'
+Plug 'marko-cerovac/material.nvim'
 
 Plug 'mg979/vim-visual-multi'
 
@@ -242,9 +242,7 @@ if has('nvim')
 
     " colorscheme PaperColor
     " colorscheme tokyonight-night
-    let g:falcon_background = 0
-    let g:falcon_inactive = 1
-    colorscheme falcon
+    colorscheme material
 endif
 
 if has("win16") || has("win32")
