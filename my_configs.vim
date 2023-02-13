@@ -240,13 +240,12 @@ if has('nvim')
     "Setting the file history count to 200
     set shada=!,'200,<50,s10,h
 
+    " colorscheme PaperColor
+    " colorscheme tokyonight-night
+    let g:falcon_background = 0
+    let g:falcon_inactive = 1
+    colorscheme falcon
 endif
-
-" colorscheme PaperColor
-" colorscheme tokyonight-night
-let g:falcon_background = 0
-let g:falcon_inactive = 1
-colorscheme falcon
 
 if has("win16") || has("win32")
     let g:python3_host_prog="~/scoop/shims/python3.exe"
