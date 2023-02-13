@@ -1,5 +1,3 @@
-vim.g.material_style = "deep ocean"
-
 ---------------------------------------------------------------
 --=> Treesitter configs
 ---------------------------------------------------------------
@@ -70,4 +68,5 @@ require("indent_blankline").setup {
 ---------------------------------------------------------------
 --=> ggandor/leap.nvim
 ---------------------------------------------------------------
--- require('leap').set_default_keymaps()
+vim.g.material_style = "deep ocean"
+
