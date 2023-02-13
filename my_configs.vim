@@ -100,7 +100,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 
 Plug 'nvim-tree/nvim-web-devicons'
-Plug 'romgrk/barbar.nvim' "The neovim tabline plugin.
+Plug 'romgrk/barbar.nvim' "The neovim tabline plugin for buffer
 
 Plug 'amix/open_file_under_cursor.vim'
 
@@ -160,8 +160,6 @@ Plug 'andymass/vim-matchup' "even better % 👊 navigate and highlight matching 
 Plug 'wellle/targets.vim'
 
 Plug 'mbbill/undotree' "history
-
-" Plug 'bagrat/vim-buffet' "show tabs and buffers on tabline
 
 Plug 'spinks/vim-leader-guide'
 
