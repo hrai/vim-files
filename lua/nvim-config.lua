@@ -66,7 +66,7 @@ require("indent_blankline").setup {
 }
 
 ---------------------------------------------------------------
---=> ggandor/leap.nvim
+--=> marko-cerovac/material.nvim
 ---------------------------------------------------------------
 vim.g.material_style = "deep ocean"
 
