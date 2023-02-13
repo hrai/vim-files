@@ -52,8 +52,8 @@ set foldnestmax=3           " deepest fold is 3 levels
 set nofoldenable            " don't fold by default
 
 " Tab and Shift-Tab in normal mode to navigate buffers
-nnoremap <Tab> :bprevious<CR>
-nnoremap <S-Tab> :bnext<CR>
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 
 vnoremap <tab> >gv
 vnoremap <s-tab> <gv
