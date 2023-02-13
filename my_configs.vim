@@ -197,7 +197,7 @@ Plug 'nanotee/zoxide.vim'
 Plug 'liuchengxu/vista.vim' "View and search LSP symbols, tags
 
 " Javascript plugins
-Plug 'dense-analysis/ale' ", { 'for': ['javascript', 'typescript.tsx', 'jsx','tsx'] }
+Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript', 'typescript.tsx', 'jsx','tsx'] }
 
 " Local plugins
 source ~/.vim_runtime/vimrcs/plugins_config.vim
