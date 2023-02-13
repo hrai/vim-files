@@ -70,3 +70,16 @@ require("indent_blankline").setup {
 ---------------------------------------------------------------
 vim.g.material_style = "deep ocean"
 
+
+---------------------------------------------------------------
+--=> romgrk/barbar.nvim
+---------------------------------------------------------------
+vim.api.nvim_create_autocmd('Colorscheme', {
+  group = vim.api.nvim_create_augroup('config_custom_highlights', {}),
+  callback = function()
+    -- Current tab colour adjustments for barbar.nvim
+    vim.api.nvim_set_hl(0, 'BufferCurrent', {bg = '#44475A'})
+    vim.api.nvim_set_hl(0, 'BufferCurrentSign', {bg = '#44475A'})
+    vim.api.nvim_set_hl(0, 'BufferCurrentMod', {bg = '#44475A'})
+  end,
+})
