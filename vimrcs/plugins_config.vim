@@ -104,6 +104,8 @@ function! CocCurrentFunction()
   return get(b:, 'coc_current_function', '')
 endfunction
 
+autocmd BufReadPost * if (&ft=='typescript') | Vista | endif
+
 " => Vista config
 function! NearestMethodOrFunction() abort
   return get(b:, 'vista_nearest_method_or_function', '')

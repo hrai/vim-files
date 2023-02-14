@@ -27,6 +27,7 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
   "explorer.icon.enableNerdfont": true,
   "explorer.file.showHiddenFiles": true,
   "explorer.previewAction.onHover": false,
+  "explorer.file.reveal.auto": true,
   "diagnostic.errorSign": "✘",
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "",
