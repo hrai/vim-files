@@ -192,7 +192,7 @@ Plug 'tyru/open-browser.vim' "Open URLs; gx
 
 Plug 'nanotee/zoxide.vim'
 
-Plug 'liuchengxu/vista.vim' "View and search LSP symbols, tags
+Plug 'liuchengxu/vista.vim' "View and search LSP symbols, tags -> :Vista
 
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript', 'typescript.tsx', 'jsx','tsx'] }
