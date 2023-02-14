@@ -105,8 +105,19 @@ nmap exr :CocCommand explorer --position=right<CR>
 " nmap <space>v  :CocCommand explorer --preset .vim_runtime<CR>
 nmap <space>f :CocCommand explorer<CR>
 
-" When the only window opened is explorer, close it
-autocmd BufEnter * if (winnr() == winnr('$') && &filetype == 'coc-explorer') | q | endif
+function! ExitCoc()
+    " echo winnr("$")
+    if (winnr("$") < 3 && &filetype == 'coc-explorer')
+        exe ':quit'
+    " else
+        " echo 'test'
+    endif
+endfunction
+
+"" if only one buffer named 'coc-explorer' is shown, then exit
+autocmd BufEnter * call ExitCoc()
+"" if only one buffer is shown and it's name is not 'coc-explorer', then show coc-explorer
+autocmd BufEnter * if (winnr("$") == 1 && &filetype != 'coc-explorer') | exe ':CocCommand explorer --no-focus' | endif
 
 let g:coc_explorer_global_presets = {
 \   '.vim': {
