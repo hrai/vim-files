@@ -20,7 +20,7 @@ Plug 'danilamihailov/beacon.nvim'
 
 Plug 'lukas-reineke/indent-blankline.nvim'
 
-Plug 'Xuyuanp/scrollbar.nvim'
+" Plug 'Xuyuanp/scrollbar.nvim'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
@@ -193,6 +193,9 @@ Plug 'tyru/open-browser.vim' "Open URLs; gx
 Plug 'nanotee/zoxide.vim'
 
 Plug 'liuchengxu/vista.vim' "View and search LSP symbols, tags -> :Vista
+
+"Dependent on https://github.com/wfxr/code-minimap
+Plug 'wfxr/minimap.vim' "minimap / scrollbar
 
 " Javascript plugins
 Plug 'dense-analysis/ale', { 'for': ['javascript', 'typescript', 'typescript.tsx', 'jsx','tsx'] }
