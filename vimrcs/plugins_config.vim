@@ -451,6 +451,6 @@ augroup ScrollbarInit
 augroup end
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => justinmk/vim-gtfo
+" => wfxr/minimap.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:gtfo#terminals = { 'win': 'pwsh.exe -NoLogo -NoExit -Command' }
+autocmd BufEnter * if index(['typescript', 'javascript', 'notes'], &ft) >=0 | exec 'Minimap' | endif
