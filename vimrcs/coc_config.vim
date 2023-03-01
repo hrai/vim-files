@@ -103,7 +103,7 @@ function! ExitCoc()
     if (winnr("$") < 3 && &filetype == 'coc-explorer')
         exe ':quit'
     " else
-        " echo 'test'
+        " echo winnr('$')
     endif
 endfunction
 
