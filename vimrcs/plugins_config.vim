@@ -454,4 +454,4 @@ augroup end
 " => wfxr/minimap.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufEnter * if index(['typescript', 'javascript', 'notes', 'lua', 'vim', 'json'], &ft) >= 0 | exec 'Minimap' | endif
-autocmd BufEnter * if index(['typescript', 'javascript', 'notes', 'lua', 'vim', 'json'], &ft) < 0 | silent exec 'MinimapClose' | endif
+" autocmd BufEnter * if index(['typescript', 'javascript', 'notes', 'lua', 'vim', 'json'], &ft) < 0 && bufwinnr('-MINIMAP-') != -1 | exec 'MinimapClose' | endif
