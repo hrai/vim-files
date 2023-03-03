@@ -110,7 +110,7 @@ endfunction
 "" if only one buffer named 'coc-explorer' is shown, then exit
 autocmd WinClosed * call ExitCoc()
 "" if only one buffer is shown and the file is in a git repo and it's name is not 'coc-explorer', then show coc-explorer
-autocmd BufEnter * if (winnr("$") == 1 && fugitive#Head() != '' && &filetype != 'coc-explorer') | exe ':CocCommand explorer --no-focus' | endif
+autocmd BufEnter * if (winnr("$") == 1 && fugitive#Head() != '' && &filetype != 'coc-explorer') | exe ':CocCommand explorer --no-focus' && echo winnr("$")  | endif
 
 let g:coc_explorer_global_presets = {
 \   '.vim': {
