@@ -454,4 +454,15 @@ augroup end
 " => wfxr/minimap.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufEnter * if index(['typescript', 'javascript', 'notes', 'lua', 'vim', 'json'], &ft) >= 0 | exec 'Minimap' | endif
-" autocmd BufEnter * if index(['typescript', 'javascript', 'notes', 'lua', 'vim', 'json'], &ft) < 0 && bufwinnr('-MINIMAP-') != -1 | exec 'MinimapClose' | endif
+
+function! ExitMinimap()
+    " echo winnr("$")
+    if (winnr("$") < 3 && &filetype == 'minimap')
+        exe ':quit'
+    elseif bufwinnr('-MINIMAP-') != -1 "if the minimap buffer is open
+        " echo winnr('$')
+        exe 'MinimapClose'
+    endif
+endfunction
+
+autocmd BufEnter * if index(['typescript', 'javascript', 'notes', 'lua', 'vim', 'json'], &ft) < 0 | call ExitMinimap() | endif
