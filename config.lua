@@ -33,7 +33,6 @@ lvim.keys.normal_mode["<S-Tab>"] = ":BufferLineCyclePrev<CR>"
 lvim.builtin.which_key.mappings["n"] = { "<cmd>Telescope find_files<cr>", "Find File" }
 lvim.builtin.which_key.mappings["t"] = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" }
 lvim.builtin.which_key.mappings["g"] = { "<cmd>Telescope live_grep<cr>", "Text" }
-lvim.builtin.which_key.mappings["c"] = { ":e ~/.config/lvim/config.lua<cr>", "Open config" }
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 -- -- Change theme settings
@@ -135,6 +134,9 @@ autocmd BufReadPost *
 vim.cmd([[
 nnoremap <space> :
 
+nnoremap <leader>cl :Telescope neoclip<cr>
+nnoremap <leader>c :e ~/.config/lvim/config.lua<cr>
+
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -200,7 +202,33 @@ command! Tconf :e ~/.tmux.conf
 ]])
 
 vim.cmd([[
+""""""Plugins""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap   gs    :Git status<CR>
+nnoremap   gp    :Git pull<CR>
+nnoremap   gps   :Git push<CR>
+nnoremap   gpf   :Git push --force<CR>
+nnoremap   gr    :Gread<CR>
+nnoremap   gw    :Gwrite<CR>
+nnoremap   gcm   :Git commit --m ""
+nnoremap   gco   :Git commit<CR>
+nnoremap   gca   :Gwrite<CR>:Git commit --amend<CR>
+nnoremap   gbl   :Git blame<CR>
+nnoremap   gd    :Gvdiff<CR>
+
+]])
+
+vim.cmd([[
 " This section contains custom methods
+
+function! Sync_Config()
+  exec ":! source ~/.bashrc; sync_lvim_config"
+endfunction
+
+nmap sy :call Sync_Config()<CR>
 
 function! GitCommitPush(commit_message)
   Gw
@@ -311,14 +339,15 @@ lvim.plugins = {
   { "ggandor/lightspeed.nvim" },
   { "mg979/vim-visual-multi" },
   { "elzr/vim-json",                 ft = 'json' },
-  { "justinmk/vim-gtfo" },       --Go to Terminal or File manager
+  { "justinmk/vim-gtfo" },     --Go to Terminal or File manager
   { "chrisbra/csv.vim",              ft = 'csv' },
-  { "psliwka/vim-smoothie" },    --Smooth scrolling
-  { "tyru/open-browser.vim" },   --Open URLs; gx
+  { "psliwka/vim-smoothie" },  --Smooth scrolling
+  { "tyru/open-browser.vim" }, --Open URLs; gx
   { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
+  { "tpope/vim-fugitive" },
 
   {
-    "AckslD/nvim-neoclip.lua",     --Clipboard manager neovim plugin with telescope integration
+    "AckslD/nvim-neoclip.lua", --Clipboard manager neovim plugin with telescope integration
     dependencies = {
       { 'kkharji/sqlite.lua',           module = 'sqlite' },
       { 'nvim-telescope/telescope.nvim' },
