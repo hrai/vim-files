@@ -99,5 +99,6 @@ https://raw.githubusercontent.com/fannheyward/init.vim/master/coc-settings.json
         "usePlaceholders": true
       }
     }
-  }
+  },
+  "snippets.ultisnips.pythonPrompt": false
 }
