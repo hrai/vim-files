@@ -324,13 +324,13 @@ nmap yab :call ModifyAroundBrackets("yank")<CR>
 
 ]])
 
-
 -- -- Additional Plugins <https://www.lunarvim.org/docs/plugins#user-plugins>
 lvim.plugins = {
   {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
+  { "marko-cerovac/material.nvim" }, --colorscheme
   { "Pocco81/auto-save.nvim", },
 
   { "tpope/vim-abolish" },
@@ -365,6 +365,8 @@ lvim.plugins = {
   },
 }
 
+vim.cmd 'colorscheme material'
+vim.g.material_style = "deep ocean"
 
 -- cmp.mapping.confirm({
 --   behavior = cmp.ConfirmBehavior.Replace,
