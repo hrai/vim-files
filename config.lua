@@ -100,6 +100,11 @@ linters.setup {
 
 vim.opt.relativenumber = true
 vim.cmd([[
+" disable folding of sections like JS functions
+set foldmethod=indent       " manual fold
+set foldnestmax=3           " deepest fold is 3 levels
+set nofoldenable            " don't fold by default
+
 let g:clipboard = {
   \   'name': 'WslClipboard',
   \   'copy': {
