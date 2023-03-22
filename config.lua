@@ -351,6 +351,11 @@ lvim.plugins = {
   { "psliwka/vim-smoothie" },  --Smooth scrolling
   { "tyru/open-browser.vim" }, --Open URLs; gx
   { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
+  {
+    'tzachar/cmp-tabnine',
+    build = './install.sh',
+    dependencies = 'hrsh7th/nvim-cmp',
+  },
   { "tpope/vim-fugitive" },
 
   {
