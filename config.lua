@@ -29,7 +29,7 @@ lvim.builtin.which_key.mappings["n"] = { "<cmd>Telescope find_files<cr>", "Find 
 lvim.builtin.which_key.mappings["t"] = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" }
 lvim.builtin.which_key.mappings["g"] = { "<cmd>Telescope live_grep<cr>", "Text" }
 
-lvim.builtin.which_key.mappings['c'] = {}
+-- lvim.builtin.which_key.mappings['c'] = {}
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 -- -- Change theme settings
@@ -252,15 +252,24 @@ nnoremap   gd    :Gvdiff<CR>
 vim.cmd([[
 " This section contains custom methods
 
-function! Sync_Config()
+function! Push_Config()
   if has("win32")
-    exec ":! sync_lvim_config"
+    exec ":! push_lvim_config"
   else
-    exec ":! source ~/.bashrc; sync_lvim_config"
+    exec ":! source ~/.bashrc; push_lvim_config"
   endif
 endfunction
 
-nmap sy :call Sync_Config()<CR>
+function! Pull_Config()
+  if has("win32")
+    exec ":! pull_lvim_config"
+  else
+    exec ":! source ~/.bashrc; pull_lvim_config"
+  endif
+endfunction
+
+nmap pl :call Pull_Config()<CR>
+nmap ps :call Push_Config()<CR>
 
 function! GitCommitPush(commit_message)
   Gw
