@@ -7,11 +7,16 @@ then
   -- Enable powershell as your default shell
   vim.opt.shell = "pwsh.exe -NoLogo"
   vim.opt.shellcmdflag =
-  "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
+  "-NoLogo -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
   vim.cmd [[
 		  let &shellredir = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'
 		  let &shellpipe = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'
 		  set shellquote= shellxquote=
+      nnoremap <leader>c :e ~/AppData/Local/lvim/config.lua<cr>
+    ]]
+else
+  vim.cmd [[
+      nnoremap <leader>c :e ~/.config/lvim/config.lua<cr>
     ]]
 end
 
@@ -155,7 +160,6 @@ vim.cmd([[
 nnoremap <space> :
 
 nnoremap <leader>cl :Telescope neoclip<cr>
-nnoremap <leader>c :e ~/.config/lvim/config.lua<cr>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -196,6 +200,10 @@ nnoremap daf :%d<CR>
 " Increase/decrease numbers
 nnoremap <A-a> <C-a>
 nnoremap <A-x> <C-x>
+
+"Indentation
+nnoremap > >>
+nnoremap < <<
 
 "Copying the word under cursor to clipboard
 nnoremap <C-C> viw"+y
@@ -245,7 +253,11 @@ vim.cmd([[
 " This section contains custom methods
 
 function! Sync_Config()
-  exec ":! source ~/.bashrc; sync_lvim_config"
+  if has("win32")
+    exec ":! sync_lvim_config"
+  else
+    exec ":! source ~/.bashrc; sync_lvim_config"
+  endif
 endfunction
 
 nmap sy :call Sync_Config()<CR>
@@ -351,9 +363,8 @@ lvim.plugins = {
   { "tpope/vim-surround",            keys = { "c", "d", "y" } },
 
   { "godlygeek/tabular" },
-  { "preservim/vim-markdown",        name = "vim-markdown" },
-  { "tpope/vim-markdown",            name = "tpope-markdown" },
-
+  { "preservim/vim-markdown",        name = "vim-markdown",                ft = 'md' },
+  { "tpope/vim-markdown",            name = "tpope-markdown",              ft = 'md' },
   { "christoomey/vim-tmux-navigator" },
   { "editorconfig/editorconfig-vim" },
   { "ggandor/lightspeed.nvim" },
