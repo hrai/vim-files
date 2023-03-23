@@ -268,8 +268,8 @@ function! Pull_Config()
   endif
 endfunction
 
-nmap <leader>pl :call Pull_Config()<CR>
-nmap <leader>ps :call Push_Config()<CR>
+nmap <leader>cpl :call Pull_Config()<CR>
+nmap <leader>cps :call Push_Config()<CR>
 
 function! GitCommitPush(commit_message)
   Gw
@@ -350,13 +350,6 @@ function! ModifyAroundBrackets(commandType) abort
         endif
     endfor
 endfunction
-function! InstallTabNine() abort
-  if has("win32")
-    exec ":! push_lvim_config"
-  else
-    exec ":! source ~/.bashrc; push_lvim_config"
-  endif
-endfunction
 
 nmap dab :call ModifyAroundBrackets("delete")<CR>
 nmap cab :call ModifyAroundBrackets("change")<CR>
@@ -393,7 +386,7 @@ lvim.plugins = {
   { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
   {
     'tzachar/cmp-tabnine',
-    run = './install.sh',
+    build = 'if jit.os == "Linux" then ./install.sh else pwsh ./install.ps1 end',
     dependencies = 'hrsh7th/nvim-cmp',
   },
   { "tpope/vim-fugitive" },
@@ -413,6 +406,9 @@ lvim.plugins = {
 vim.cmd 'colorscheme material'
 vim.g.material_style = "deep ocean"
 
+vim.cmd([[
+let g:gtfo#terminals = { 'win': 'powershell -NoLogo -NoExit -Command' }
+]])
 -- cmp.mapping.confirm({
 --   behavior = cmp.ConfirmBehavior.Replace,
 --   select = true,
