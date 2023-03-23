@@ -173,6 +173,8 @@ noremap <C-P> "+p
 inoremap <C-P> <C-R>+
 cnoremap <C-P> <C-R>+<space>
 
+set clipboard=unnamedplus
+
 if system('uname -r') =~ "microsoft"
 
   echo "This is wsl. Enabling custom yank logic.\r"
