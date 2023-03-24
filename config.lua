@@ -384,28 +384,29 @@ lvim.plugins = {
   { "psliwka/vim-smoothie" },    --Smooth scrolling
   { "tyru/open-browser.vim" },   --Open URLs; gx
   { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
-  {
-    'tzachar/cmp-tabnine',
-    build = './install.sh',
-    cond = jit.os == "Linux",
-  },
+  -- {
+  --   'tzachar/cmp-tabnine',
+  --   build = './install.sh',
+  --   cond = jit.os == "Linux",
+  -- },
   {
     'tzachar/cmp-tabnine',
     after = "nvim-cmp",
-    build = 'powershell ./install.ps1',
-    cond = jit.os ~= "Linux",
-    -- run = function()
-    --   if jit.os == "Linux" then
-    --     os.execute("./install.sh")
-    --     vim.cmd [[execute ":! ./install.sh"]]
-    --   else
-    --     print("Executing install.ps1...")
-    --     -- os.execute("echo 'test'; ./install.ps1")
-    --     vim.cmd [[execute ":! pwsh -File $HOME\\AppData\\Roaming\\lunarvim\\site\\pack\\packer\\start\\cmp-tabnine\\install.ps1"]]
-    --     -- vim.cmd [[execute ":! pwsh -Command pwd"]]
-    --     print("Executed install.ps1...")
-    --   end
-    -- end,
+    -- build = 'powershell ./install.ps1',
+    -- cond = jit.os ~= "Linux",
+    build = function()
+      if jit.os == "Linux" then
+        print("Executing install.sh...")
+        -- os.execute("./install.sh")
+        vim.cmd [[execute ":! ~/.local/share/lunarvim/site/pack/lazy/opt/cmp-tabnine/install.sh"]]
+      else
+        print("Executing install.ps1...")
+        -- os.execute("echo 'test'; ./install.ps1")
+        vim.cmd [[execute ":! pwsh -File $HOME\\AppData\\Roaming\\lunarvim\\site\\pack\\packer\\start\\cmp-tabnine\\install.ps1"]]
+        -- vim.cmd [[execute ":! pwsh -Command pwd"]]
+        print("Executed install.ps1...")
+      end
+    end,
     dependencies = 'hrsh7th/nvim-cmp',
   },
 
