@@ -393,7 +393,7 @@ lvim.plugins = {
   { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
   {
     'tzachar/cmp-tabnine',
-    run = './install.sh;./install.ps1',
+    run = './install.sh',
     dependencies = 'hrsh7th/nvim-cmp',
   },
   { "tpope/vim-fugitive" },
