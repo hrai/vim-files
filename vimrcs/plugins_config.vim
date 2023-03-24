@@ -453,24 +453,24 @@ augroup end
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => wfxr/minimap.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-function! OpenMinimap()
-    " echo winnr("$")
-    if bufwinnr('-MINIMAP-') == -1 "if the minimap buffer is not open
-        " echo 'entering minimap...'
-        exe 'Minimap'
-    endif
-endfunction
+" function! OpenMinimap()
+"     " echo winnr("$")
+"     if bufwinnr('-MINIMAP-') == -1 "if the minimap buffer is not open
+"         " echo 'entering minimap...'
+"         exe 'Minimap'
+"     endif
+" endfunction
 
-function! ExitMinimap()
-    " echo winnr("$")
-    if (winnr("$") < 3 && &filetype == 'minimap')
-        " echo 'exiting minimap...'
-        exe ':quit'
-    elseif bufwinnr('-MINIMAP-') != -1 "if the minimap buffer is open
-        " echo winnr('$')
-        exe 'MinimapClose'
-    endif
-endfunction
+" function! ExitMinimap()
+"     " echo winnr("$")
+"     if (winnr("$") < 3 && &filetype == 'minimap')
+"         " echo 'exiting minimap...'
+"         exe ':quit'
+"     elseif bufwinnr('-MINIMAP-') != -1 "if the minimap buffer is open
+"         " echo winnr('$')
+"         exe 'MinimapClose'
+"     endif
+" endfunction
 
-autocmd BufEnter * if index(['typescript', 'javascript', 'notes', 'lua', 'vim', 'json'], &ft) >= 0 | call OpenMinimap() | endif
-autocmd BufEnter * if index(['typescript', 'javascript', 'notes', 'lua', 'vim', 'json'], &ft) < 0 | call ExitMinimap() | endif
+" autocmd BufEnter * if index(['typescript', 'javascript', 'notes', 'lua', 'vim', 'json'], &ft) >= 0 | call OpenMinimap() | endif
+" autocmd BufEnter * if index(['typescript', 'javascript', 'notes', 'lua', 'vim', 'json'], &ft) < 0 | call ExitMinimap() | endif
