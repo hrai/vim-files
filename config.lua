@@ -386,10 +386,17 @@ lvim.plugins = {
   { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
   {
     'tzachar/cmp-tabnine',
-    run =
-    'function a() if jit.os == "Linux" then os.execute("./install.sh") else os.execute("pwsh ./install.ps1") end end',
+    run = function()
+      if jit.os == "Linux" then
+        os.execute("./install.sh")
+      else
+        print("Executing install.ps1...")
+        os.execute("./install.ps1")
+      end
+    end,
     dependencies = 'hrsh7th/nvim-cmp',
   },
+
   { "tpope/vim-fugitive" },
 
   {
