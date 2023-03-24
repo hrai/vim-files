@@ -268,8 +268,8 @@ function! Pull_Config()
   endif
 endfunction
 
-nmap pl :call Pull_Config()<CR>
-nmap ps :call Push_Config()<CR>
+nmap <leader>pl :call Pull_Config()<CR>
+nmap <leader>ps :call Push_Config()<CR>
 
 function! GitCommitPush(commit_message)
   Gw
@@ -350,6 +350,13 @@ function! ModifyAroundBrackets(commandType) abort
         endif
     endfor
 endfunction
+function! InstallTabNine() abort
+  if has("win32")
+    exec ":! push_lvim_config"
+  else
+    exec ":! source ~/.bashrc; push_lvim_config"
+  endif
+endfunction
 
 nmap dab :call ModifyAroundBrackets("delete")<CR>
 nmap cab :call ModifyAroundBrackets("change")<CR>
@@ -386,7 +393,7 @@ lvim.plugins = {
   { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
   {
     'tzachar/cmp-tabnine',
-    build = './install.sh',
+    run = './install.sh;./install.ps1',
     dependencies = 'hrsh7th/nvim-cmp',
   },
   { "tpope/vim-fugitive" },
