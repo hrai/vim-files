@@ -364,7 +364,7 @@ lvim.plugins = {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
-  { "marko-cerovac/material.nvim" }, --colorscheme
+  { "marko-cerovac/material.nvim" },   --colorscheme
   { "Pocco81/auto-save.nvim", },
 
   { "tpope/vim-abolish" },
@@ -379,21 +379,20 @@ lvim.plugins = {
   { "ggandor/lightspeed.nvim" },
   { "mg979/vim-visual-multi" },
   { "elzr/vim-json",                 ft = 'json' },
-  { "justinmk/vim-gtfo" },     --Go to Terminal or File manager
+  { "justinmk/vim-gtfo" },       --Go to Terminal or File manager
   { "chrisbra/csv.vim",              ft = 'csv' },
-  { "psliwka/vim-smoothie" },  --Smooth scrolling
-  { "tyru/open-browser.vim" }, --Open URLs; gx
+  { "psliwka/vim-smoothie" },    --Smooth scrolling
+  { "tyru/open-browser.vim" },   --Open URLs; gx
   { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
   {
     'tzachar/cmp-tabnine',
-    after = "nvim-cmp",
-    run = './install.sh',
+    build = './install.sh',
     cond = jit.os == "Linux",
   },
   {
     'tzachar/cmp-tabnine',
     after = "nvim-cmp",
-    run = 'powershell ./install.ps1',
+    build = 'powershell ./install.ps1',
     cond = jit.os ~= "Linux",
     -- run = function()
     --   if jit.os == "Linux" then
@@ -413,7 +412,7 @@ lvim.plugins = {
   { "tpope/vim-fugitive" },
 
   {
-    "AckslD/nvim-neoclip.lua", --Clipboard manager neovim plugin with telescope integration
+    "AckslD/nvim-neoclip.lua",     --Clipboard manager neovim plugin with telescope integration
     dependencies = {
       { 'kkharji/sqlite.lua',           module = 'sqlite' },
       { 'nvim-telescope/telescope.nvim' },
