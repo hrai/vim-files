@@ -363,7 +363,7 @@ nmap yib :call ModifyInsideBrackets("yank")<CR>
 local function get_tabnine_build_string()
     if (vim.fn.has('win32') == 1) then
         -- use special windows path
-        return "pwsh.exe -file .\install.ps1"
+        return "pwsh.exe -file .\\install.ps1"
     else
         -- unix path
         return "./install.sh"
