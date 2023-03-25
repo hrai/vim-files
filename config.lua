@@ -359,6 +359,17 @@ nmap yib :call ModifyInsideBrackets("yank")<CR>
 ]])
 
 -- -- Additional Plugins <https://www.lunarvim.org/docs/plugins#user-plugins>
+--
+local function get_tabnine_build_string()
+    if (vim.fn.has('win32') == 1) then
+        -- use special windows path
+        return "pwsh.exe -file .\install.ps1"
+    else
+        -- unix path
+        return "./install.sh"
+    end
+end
+
 lvim.plugins = {
     {
         "folke/trouble.nvim",
@@ -387,17 +398,18 @@ lvim.plugins = {
     {
         'tzachar/cmp-tabnine',
         after = "nvim-cmp",
-        build = function()
-            if jit.os == "Linux" then
-                print("Executing install.sh...")
-                vim.cmd [[execute ":! ~/.local/share/lunarvim/site/pack/lazy/opt/cmp-tabnine/install.sh"]]
-            else
-                print("Executing install.ps1...")
-                vim.cmd [[execute ":! pwsh -File $HOME\\AppData\\Roaming\\lunarvim\\site\\pack\\packer\\start\\cmp-tabnine\\install.ps1"]]
-                -- vim.cmd [[execute ":! pwsh -Command pwd"]]
-                print("Executed install.ps1...")
-            end
-        end,
+        -- build = function()
+        --     if jit.os == "Linux" then
+        --         print("Executing install.sh...")
+        --         vim.cmd [[execute ":! ~/.local/share/lunarvim/site/pack/lazy/opt/cmp-tabnine/install.sh"]]
+        --     else
+        --         print("Executing install.ps1...")
+        --         vim.cmd [[execute ":! pwsh -File $HOME\\AppData\\Roaming\\lunarvim\\site\\pack\\packer\\start\\cmp-tabnine\\install.ps1"]]
+        --         -- vim.cmd [[execute ":! pwsh -Command pwd"]]
+        --         print("Executed install.ps1...")
+        --     end
+        -- end,
+        build = get_tabnine_build_string(),
         dependencies = 'hrsh7th/nvim-cmp',
     },
 
