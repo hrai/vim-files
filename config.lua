@@ -378,7 +378,7 @@ lvim.plugins = {
   },
   { "marko-cerovac/material.nvim" }, --colorscheme
   { "Pocco81/auto-save.nvim", },
-
+  { "panozzaj/vim-autocorrect",      keys = { "i" },                       ft = { "md", "notes", "json", "log" } },
   { "tpope/vim-abolish" },
   { "tpope/vim-repeat" },
   { "tpope/vim-surround",            keys = { "c", "d", "y" } },
@@ -386,6 +386,7 @@ lvim.plugins = {
   { "godlygeek/tabular" },
   { "preservim/vim-markdown",        name = "vim-markdown",                ft = 'md' },
   { "tpope/vim-markdown",            name = "tpope-markdown",              ft = 'md' },
+  { "tpope/vim-fugitive" },
   { "christoomey/vim-tmux-navigator" },
   { "editorconfig/editorconfig-vim" },
   { "ggandor/lightspeed.nvim" },
@@ -414,8 +415,6 @@ lvim.plugins = {
     dependencies = 'hrsh7th/nvim-cmp',
   },
 
-  { "tpope/vim-fugitive" },
-
   {
     "AckslD/nvim-neoclip.lua", --Clipboard manager neovim plugin with telescope integration
     dependencies = {
@@ -434,13 +433,19 @@ lvim.plugins = {
   },
 }
 
+-- Plugin config
 vim.cmd 'colorscheme material'
 vim.g.material_style = "deep ocean"
 
--- Plugin config
 vim.cmd([[
 let g:gtfo#terminals = { 'win': 'powershell -NoLogo -NoExit -Command' }
 ]])
+
+require 'lspconfig'.lua_ls.setup {
+  settings = {
+    workspace = { checkThirdParty = false }
+  }
+}
 
 require 'nvim-treesitter.configs'.setup {
   textobjects = {
@@ -493,5 +498,12 @@ vim.api.nvim_create_autocmd("FileType", {
   callback = function()
     -- let treesitter use bash highlight for zsh files as well
     require("nvim-treesitter.highlight").attach(0, "bash")
+  end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "*.md", "*.notes", "*.json", "*.log" },
+  callback = function()
+    vim.cmd('call AutoCorrect()')
   end,
 })
