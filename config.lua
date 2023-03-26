@@ -160,6 +160,7 @@ vim.cmd([[
 nnoremap <space> :
 
 nnoremap <leader>cl :Telescope neoclip<cr>
+nnoremap <leader>cf :lua require'telescope.builtin'.grep_string()<CR>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -390,9 +391,9 @@ lvim.plugins = {
     { "ggandor/lightspeed.nvim" },
     { "mg979/vim-visual-multi" },
     { "elzr/vim-json",                 ft = 'json' },
-    { "justinmk/vim-gtfo" },     --Go to Terminal or File manager
+    { "justinmk/vim-gtfo" },   --Go to Terminal or File manager
     { "chrisbra/csv.vim",              ft = 'csv' },
-    { "psliwka/vim-smoothie" },  --Smooth scrolling
+    { "psliwka/vim-smoothie" }, --Smooth scrolling
     { "tyru/open-browser.vim" }, --Open URLs; gx
     { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
     {
@@ -467,7 +468,7 @@ require 'nvim-treesitter.configs'.setup {
             -- mapping query_strings to modes.
             selection_modes = {
                 ['@parameter.outer'] = 'v', -- charwise
-                ['@function.outer'] = 'V',  -- linewise
+                ['@function.outer'] = 'V', -- linewise
                 ['@class.outer'] = '<c-v>', -- blockwise
             },
             -- If you set this to `true` (default is `false`) then any textobject is
