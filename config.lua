@@ -378,7 +378,7 @@ lvim.plugins = {
   },
   { "marko-cerovac/material.nvim" }, --colorscheme
   { "Pocco81/auto-save.nvim", },
-  { "panozzaj/vim-autocorrect",      keys = { "i" },                       ft = { "md", "notes", "json", "log" } },
+  { "panozzaj/vim-autocorrect",      keys = { "i" } },
   { "tpope/vim-abolish" },
   { "tpope/vim-repeat" },
   { "tpope/vim-surround",            keys = { "c", "d", "y" } },
