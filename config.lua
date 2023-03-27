@@ -391,9 +391,9 @@ lvim.plugins = {
     { "ggandor/lightspeed.nvim" },
     { "mg979/vim-visual-multi" },
     { "elzr/vim-json",                 ft = 'json' },
-    { "justinmk/vim-gtfo" },   --Go to Terminal or File manager
+    { "justinmk/vim-gtfo" },     --Go to Terminal or File manager
     { "chrisbra/csv.vim",              ft = 'csv' },
-    { "psliwka/vim-smoothie" }, --Smooth scrolling
+    { "psliwka/vim-smoothie" },  --Smooth scrolling
     { "tyru/open-browser.vim" }, --Open URLs; gx
     { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
     {
@@ -422,7 +422,7 @@ lvim.plugins = {
         },
         after = "telescope",
         config = function()
-            require('neoclip').setup()
+            require('neoclip').setup({ default_register = { '"', '+', '*' } })
         end,
     },
     {
@@ -445,6 +445,7 @@ require 'lspconfig'.lua_ls.setup {
         workspace = { checkThirdParty = false }
     }
 }
+require('telescope').load_extension('neoclip')
 
 require 'nvim-treesitter.configs'.setup {
     textobjects = {
@@ -474,7 +475,7 @@ require 'nvim-treesitter.configs'.setup {
             -- mapping query_strings to modes.
             selection_modes = {
                 ['@parameter.outer'] = 'v', -- charwise
-                ['@function.outer'] = 'V', -- linewise
+                ['@function.outer'] = 'V',  -- linewise
                 ['@class.outer'] = '<c-v>', -- blockwise
             },
             -- If you set this to `true` (default is `false`) then any textobject is
