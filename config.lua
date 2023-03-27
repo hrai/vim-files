@@ -436,7 +436,7 @@ lvim.colorscheme = "material"
 vim.g.material_style = "deep ocean"
 
 vim.cmd([[
-let g:gtfo#terminals = { 'win': 'powershell -NoLogo -NoExit -Command' }
+let g:gtfo#terminals = { 'win': 'pwsh.exe -NoLogo -NoExit -Command' }
 ]])
 
 require 'lspconfig'.lua_ls.setup {
