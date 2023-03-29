@@ -377,6 +377,13 @@ lvim.plugins = {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
+  {
+    "github/copilot.vim",
+    build = function()
+      vim.cmd 'Copilot setup'
+      vim.cmd 'Copilot run'
+    end
+  },
   { "marko-cerovac/material.nvim" }, --colorscheme
   { "Pocco81/auto-save.nvim", },
   { "tpope/vim-abolish" },
@@ -469,6 +476,10 @@ vim.g.material_style = "deep ocean"
 
 vim.cmd([[
 let g:gtfo#terminals = { 'win': 'pwsh.exe -NoLogo -NoExit -Command' }
+
+" imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+" let g:copilot_no_tab_map = v:true
+
 ]])
 
 require 'lspconfig'.lua_ls.setup {
