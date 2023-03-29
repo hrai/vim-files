@@ -207,6 +207,9 @@ nnoremap < <<
 "Copying the word under cursor to clipboard
 nnoremap <C-C> viw"+y
 
+"Select all
+nnoremap <C-A> ggVG
+
 "Yanking the file contents to clipboard
 nnoremap <F6> gg"+yG
 
