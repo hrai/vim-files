@@ -489,6 +489,17 @@ require 'lspconfig'.lua_ls.setup {
 }
 require('telescope').load_extension('neoclip')
 
+local actions = require("telescope.actions")
+require("telescope").setup({
+  defaults = {
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close,
+      },
+    },
+  },
+})
+
 require 'nvim-treesitter.configs'.setup {
   textobjects = {
     select = {
