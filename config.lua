@@ -482,11 +482,6 @@ let g:gtfo#terminals = { 'win': 'pwsh.exe -NoLogo -NoExit -Command' }
 
 ]])
 
-require 'lspconfig'.lua_ls.setup {
-  settings = {
-    workspace = { checkThirdParty = false }
-  }
-}
 require('telescope').load_extension('neoclip')
 
 local actions = require("telescope.actions")
@@ -543,6 +538,12 @@ require 'nvim-treesitter.configs'.setup {
       include_surrounding_whitespace = true,
     },
   },
+}
+
+require 'lspconfig'.lua_ls.setup {
+  settings = {
+    workspace = { checkThirdParty = false }
+  }
 }
 
 -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
