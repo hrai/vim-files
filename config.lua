@@ -480,8 +480,14 @@ let g:gtfo#terminals = { 'win': 'pwsh.exe -NoLogo -NoExit -Command' }
 " imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
 " let g:copilot_no_tab_map = v:true
 
+let g:vim_json_syntax_conceal = 0
 ]])
 
+require 'lspconfig'.lua_ls.setup {
+  settings = {
+    workspace = { checkThirdParty = false }
+  }
+}
 require('telescope').load_extension('neoclip')
 
 local actions = require("telescope.actions")
@@ -538,12 +544,6 @@ require 'nvim-treesitter.configs'.setup {
       include_surrounding_whitespace = true,
     },
   },
-}
-
-require 'lspconfig'.lua_ls.setup {
-  settings = {
-    workspace = { checkThirdParty = false }
-  }
 }
 
 -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
