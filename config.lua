@@ -5,10 +5,10 @@
 -- general
 lvim.log.level = "info"
 lvim.format_on_save = {
-  enabled = true,
-  -- pattern = "*.lua",
-  pattern = "*",
-  timeout = 1000,
+    enabled = true,
+    -- pattern = "*.lua",
+    pattern = "*",
+    timeout = 1000,
 }
 -- to disable icons and use a minimalist setup, uncomment the following
 -- lvim.use_icons = false
@@ -77,36 +77,36 @@ lvim.builtin.treesitter.auto_install = true
 -- -- linters and formatters <https://www.lunarvim.org/docs/languages#lintingformatting>
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
-  { command = "stylua" },
-  {
-    command = "prettier",
-    extra_args = { "--print-width", "100" },
-    filetypes = { "typescript", "typescriptreact" },
-  },
+    { command = "stylua" },
+    {
+        command = "prettier",
+        extra_args = { "--print-width", "100" },
+        filetypes = { "typescript", "typescriptreact" },
+    },
 }
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup {
-  { command = "flake8", filetypes = { "python" } },
-  {
-    command = "shellcheck",
-    args = { "--severity", "warning" },
-  },
+    { command = "flake8", filetypes = { "python" } },
+    {
+        command = "shellcheck",
+        args = { "--severity", "warning" },
+    },
 }
 
 if (package.config:sub(1, 1) == '\\') --if OS is Windows
 then
-  -- Enable powershell as your default shell
-  vim.opt.shell = "pwsh.exe -NoLogo"
-  vim.opt.shellcmdflag =
-  "-NoLogo -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
-  vim.cmd [[
+    -- Enable powershell as your default shell
+    vim.opt.shell = "pwsh.exe -NoLogo"
+    vim.opt.shellcmdflag =
+    "-NoLogo -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;"
+    vim.cmd [[
 		  let &shellredir = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'
 		  let &shellpipe = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'
 		  set shellquote= shellxquote=
       nnoremap <leader>c :e ~/AppData/Local/lvim/config.lua<cr>
     ]]
 else
-  vim.cmd [[
+    vim.cmd [[
       nnoremap <leader>c :e ~/.config/lvim/config.lua<cr>
     ]]
 end
@@ -363,110 +363,110 @@ nmap yab :call ModifyAroundBrackets("yank")<CR>
 -- -- Additional Plugins <https://www.lunarvim.org/docs/plugins#user-plugins>
 --
 local function get_tabnine_build_string()
-  if (vim.fn.has('win32') == 1) then
-    -- use special windows path
-    return "pwsh.exe -file .\\install.ps1"
-  else
-    -- unix path
-    return "./install.sh"
-  end
+    if (vim.fn.has('win32') == 1) then
+        -- use special windows path
+        return "pwsh.exe -file .\\install.ps1"
+    else
+        -- unix path
+        return "./install.sh"
+    end
 end
 
 lvim.plugins = {
-  {
-    "folke/trouble.nvim",
-    cmd = "TroubleToggle",
-  },
-  {
-    "github/copilot.vim",
-    build = function()
-      vim.cmd 'Copilot setup'
-      vim.cmd 'Copilot run'
-    end
-  },
-  { "marko-cerovac/material.nvim" }, --colorscheme
-  { "Pocco81/auto-save.nvim", },
-  { "tpope/vim-abolish" },
-  { "tpope/vim-repeat" },
-  { "tpope/vim-surround",            keys = { "c", "d", "y" } },
-  { "kshenoy/vim-signature",         keys = { "m" } }, -- mx - Toggle mark 'x' and display it in the leftmost column
-  { "godlygeek/tabular" },
-  { "preservim/vim-markdown",        name = "vim-markdown",                ft = 'md' },
-  { "tpope/vim-markdown",            name = "tpope-markdown",              ft = 'md' },
-  { "tpope/vim-fugitive" },
-  { "christoomey/vim-tmux-navigator" },
-  { "editorconfig/editorconfig-vim" },
-  { "ggandor/lightspeed.nvim" },
-  { "mg979/vim-visual-multi" },
-  { "elzr/vim-json",                 ft = 'json' },
-  { "justinmk/vim-gtfo" },     --Go to Terminal or File manager
-  { "chrisbra/csv.vim",              ft = 'csv' },
-  { "psliwka/vim-smoothie" },  --Smooth scrolling
-  { "tyru/open-browser.vim" }, --Open URLs; gx
-  { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
-  {
-    'tzachar/cmp-tabnine',
-    after = "nvim-cmp",
-    -- build = function()
-    --     if jit.os == "Linux" then
-    --         print("Executing install.sh...")
-    --         vim.cmd [[execute ":! ~/.local/share/lunarvim/site/pack/lazy/opt/cmp-tabnine/install.sh"]]
-    --     else
-    --         print("Executing install.ps1...")
-    --         vim.cmd [[execute ":! pwsh -File $HOME\\AppData\\Roaming\\lunarvim\\site\\pack\\packer\\start\\cmp-tabnine\\install.ps1"]]
-    --         -- vim.cmd [[execute ":! pwsh -Command pwd"]]
-    --         print("Executed install.ps1...")
-    --     end
-    -- end,
-    build = get_tabnine_build_string(),
-    dependencies = 'hrsh7th/nvim-cmp',
-  },
+    {
+        "folke/trouble.nvim",
+        cmd = "TroubleToggle",
+    },
+    {
+        "github/copilot.vim",
+        build = function()
+            vim.cmd 'Copilot setup'
+            vim.cmd 'Copilot run'
+        end
+    },
+    { "marko-cerovac/material.nvim" }, --colorscheme
+    { "Pocco81/auto-save.nvim", },
+    { "tpope/vim-abolish" },
+    { "tpope/vim-repeat" },
+    { "tpope/vim-surround",            keys = { "c", "d", "y" } },
+    { "kshenoy/vim-signature",         keys = { "m" } }, -- mx - Toggle mark 'x' and display it in the leftmost column
+    { "godlygeek/tabular" },
+    { "preservim/vim-markdown",        name = "vim-markdown",                ft = 'md' },
+    { "tpope/vim-markdown",            name = "tpope-markdown",              ft = 'md' },
+    { "tpope/vim-fugitive" },
+    { "christoomey/vim-tmux-navigator" },
+    { "editorconfig/editorconfig-vim" },
+    { "ggandor/lightspeed.nvim" },
+    { "mg979/vim-visual-multi" },
+    { "elzr/vim-json",                 ft = 'json' },
+    { "justinmk/vim-gtfo" },   --Go to Terminal or File manager
+    { "chrisbra/csv.vim",              ft = 'csv' },
+    { "psliwka/vim-smoothie" }, --Smooth scrolling
+    { "tyru/open-browser.vim" }, --Open URLs; gx
+    { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
+    {
+        'tzachar/cmp-tabnine',
+        after = "nvim-cmp",
+        -- build = function()
+        --     if jit.os == "Linux" then
+        --         print("Executing install.sh...")
+        --         vim.cmd [[execute ":! ~/.local/share/lunarvim/site/pack/lazy/opt/cmp-tabnine/install.sh"]]
+        --     else
+        --         print("Executing install.ps1...")
+        --         vim.cmd [[execute ":! pwsh -File $HOME\\AppData\\Roaming\\lunarvim\\site\\pack\\packer\\start\\cmp-tabnine\\install.ps1"]]
+        --         -- vim.cmd [[execute ":! pwsh -Command pwd"]]
+        --         print("Executed install.ps1...")
+        --     end
+        -- end,
+        build = get_tabnine_build_string(),
+        dependencies = 'hrsh7th/nvim-cmp',
+    },
 
-  {
-    "AckslD/nvim-neoclip.lua", --Clipboard manager neovim plugin with telescope integration
-    dependencies = {
-      { 'kkharji/sqlite.lua',           module = 'sqlite' },
-      { 'nvim-telescope/telescope.nvim' },
+    {
+        "AckslD/nvim-neoclip.lua", --Clipboard manager neovim plugin with telescope integration
+        dependencies = {
+            { 'kkharji/sqlite.lua',           module = 'sqlite' },
+            { 'nvim-telescope/telescope.nvim' },
+        },
+        after = "telescope",
+        config = function()
+            require('neoclip').setup({ default_register = { '"', '+', '*' } })
+        end,
     },
-    after = "telescope",
-    config = function()
-      require('neoclip').setup({ default_register = { '"', '+', '*' } })
-    end,
-  },
-  {
-    "nvim-treesitter/nvim-treesitter-textobjects",
-    after = "nvim-treesitter",
-    dependencies = "nvim-treesitter/nvim-treesitter",
-  },
-  {
-    "kiyoon/treesitter-indent-object.nvim",
-    keys = {
-      {
-        "ai",
-        "<Cmd>lua require'treesitter_indent_object.textobj'.select_indent_outer()<CR>",
-        mode = { "x", "o" },
-        desc = "Select context-aware indent (outer)",
-      },
-      {
-        "aI",
-        "<Cmd>lua require'treesitter_indent_object.textobj'.select_indent_outer(true)<CR>",
-        mode = { "x", "o" },
-        desc = "Select context-aware indent (outer, line-wise)",
-      },
-      {
-        "ii",
-        "<Cmd>lua require'treesitter_indent_object.textobj'.select_indent_inner()<CR>",
-        mode = { "x", "o" },
-        desc = "Select context-aware indent (inner, partial range)",
-      },
-      {
-        "iI",
-        "<Cmd>lua require'treesitter_indent_object.textobj'.select_indent_inner(true)<CR>",
-        mode = { "x", "o" },
-        desc = "Select context-aware indent (inner, entire range)",
-      },
+    {
+        "nvim-treesitter/nvim-treesitter-textobjects",
+        after = "nvim-treesitter",
+        dependencies = "nvim-treesitter/nvim-treesitter",
     },
-  },
+    {
+        "kiyoon/treesitter-indent-object.nvim",
+        keys = {
+            {
+                "ai",
+                "<Cmd>lua require'treesitter_indent_object.textobj'.select_indent_outer()<CR>",
+                mode = { "x", "o" },
+                desc = "Select context-aware indent (outer)",
+            },
+            {
+                "aI",
+                "<Cmd>lua require'treesitter_indent_object.textobj'.select_indent_outer(true)<CR>",
+                mode = { "x", "o" },
+                desc = "Select context-aware indent (outer, line-wise)",
+            },
+            {
+                "ii",
+                "<Cmd>lua require'treesitter_indent_object.textobj'.select_indent_inner()<CR>",
+                mode = { "x", "o" },
+                desc = "Select context-aware indent (inner, partial range)",
+            },
+            {
+                "iI",
+                "<Cmd>lua require'treesitter_indent_object.textobj'.select_indent_inner(true)<CR>",
+                mode = { "x", "o" },
+                desc = "Select context-aware indent (inner, entire range)",
+            },
+        },
+    },
 }
 
 -- Plugin config
@@ -487,73 +487,73 @@ nmap <leader>o <Plug>Lightspeed_s
 ]])
 
 require 'lspconfig'.lua_ls.setup {
-  settings = {
-    workspace = { checkThirdParty = false }
-  }
+    settings = {
+        workspace = { checkThirdParty = false }
+    }
 }
 require('telescope').load_extension('neoclip')
 
 local actions = require("telescope.actions")
 require("telescope").setup({
-  defaults = {
-    mappings = {
-      i = {
-        ["<esc>"] = actions.close,
-      },
+    defaults = {
+        mappings = {
+            i = {
+                ["<esc>"] = actions.close,
+            },
+        },
     },
-  },
 })
 
 require 'nvim-treesitter.configs'.setup {
-  textobjects = {
-    select = {
-      enable = true,
-      -- Automatically jump forward to textobj, similar to targets.vim
-      lookahead = true,
-      keymaps = {
-        -- You can use the capture groups defined in textobjects.scm
-        ["af"] = "@function.outer",
-        ["if"] = "@function.inner",
-        ["ac"] = "@class.outer",
-        -- You can optionally set descriptions to the mappings (used in the desc parameter of
-        -- nvim_buf_set_keymap) which plugins like which-key display
-        ["ic"] = { query = "@class.inner", desc = "Select inner part of a class region" },
-        -- ["ab"] = "@block.outer",
-        -- ["ib"] = "@block.inner",
-        -- You can also use captures from other query groups like `locals.scm`
-        ["as"] = { query = "@scope", query_group = "locals", desc = "Select language scope" },
-      },
-      -- You can choose the select mode (default is charwise 'v')
-      --
-      -- Can also be a function which gets passed a table with the keys
-      -- * query_string: eg '@function.inner'
-      -- * method: eg 'v' or 'o'
-      -- and should return the mode ('v', 'V', or '<c-v>') or a table
-      -- mapping query_strings to modes.
-      selection_modes = {
-        ['@parameter.outer'] = 'v', -- charwise
-        ['@function.outer'] = 'V',  -- linewise
-        ['@class.outer'] = '<c-v>', -- blockwise
-      },
-      -- If you set this to `true` (default is `false`) then any textobject is
-      -- extended to include preceding or succeeding whitespace. Succeeding
-      -- whitespace has priority in order to act similarly to eg the built-in
-      -- `ap`.
-      --
-      -- Can also be a function which gets passed a table with the keys
-      -- * query_string: eg '@function.inner'
-      -- * selection_mode: eg 'v'
-      -- and should return true of false
-      include_surrounding_whitespace = true,
+    textobjects = {
+        select = {
+            enable = true,
+            -- Automatically jump forward to textobj, similar to targets.vim
+            lookahead = true,
+            keymaps = {
+                -- You can use the capture groups defined in textobjects.scm
+                ["af"] = "@function.outer",
+                ["if"] = "@function.inner",
+                ["ac"] = "@class.outer",
+                -- You can optionally set descriptions to the mappings (used in the desc parameter of
+                -- nvim_buf_set_keymap) which plugins like which-key display
+                ["ic"] = { query = "@class.inner", desc = "Select inner part of a class region" },
+                -- ["ab"] = "@block.outer",
+                -- ["ib"] = "@block.inner",
+                -- You can also use captures from other query groups like `locals.scm`
+                ["as"] = { query = "@scope", query_group = "locals", desc = "Select language scope" },
+            },
+            -- You can choose the select mode (default is charwise 'v')
+            --
+            -- Can also be a function which gets passed a table with the keys
+            -- * query_string: eg '@function.inner'
+            -- * method: eg 'v' or 'o'
+            -- and should return the mode ('v', 'V', or '<c-v>') or a table
+            -- mapping query_strings to modes.
+            selection_modes = {
+                ['@parameter.outer'] = 'v', -- charwise
+                ['@function.outer'] = 'V', -- linewise
+                ['@class.outer'] = '<c-v>', -- blockwise
+            },
+            -- If you set this to `true` (default is `false`) then any textobject is
+            -- extended to include preceding or succeeding whitespace. Succeeding
+            -- whitespace has priority in order to act similarly to eg the built-in
+            -- `ap`.
+            --
+            -- Can also be a function which gets passed a table with the keys
+            -- * query_string: eg '@function.inner'
+            -- * selection_mode: eg 'v'
+            -- and should return true of false
+            include_surrounding_whitespace = true,
+        },
     },
-  },
 }
 
 -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "zsh",
-  callback = function()
-    -- let treesitter use bash highlight for zsh files as well
-    require("nvim-treesitter.highlight").attach(0, "bash")
-  end,
+    pattern = "zsh",
+    callback = function()
+        -- let treesitter use bash highlight for zsh files as well
+        require("nvim-treesitter.highlight").attach(0, "bash")
+    end,
 })
