@@ -481,6 +481,9 @@ let g:gtfo#terminals = { 'win': 'pwsh.exe -NoLogo -NoExit -Command' }
 " let g:copilot_no_tab_map = v:true
 
 let g:vim_json_syntax_conceal = 0
+
+" => lightspeed settings
+nmap <leader>o <Plug>Lightspeed_s
 ]])
 
 require 'lspconfig'.lua_ls.setup {
