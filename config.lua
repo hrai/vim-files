@@ -24,10 +24,10 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<Tab>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<S-Tab>"] = ":BufferLineCyclePrev<CR>"
 
--- -- Use which-key to add extra bindings with the leader-key prefix
-lvim.builtin.which_key.mappings["n"] = { "<cmd>Telescope find_files<cr>", "Find File" }
-lvim.builtin.which_key.mappings["t"] = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" }
-lvim.builtin.which_key.mappings["g"] = { "<cmd>Telescope live_grep<cr>", "Text" }
+-- Use which-key to add extra bindings with the leader-key prefix
+-- lvim.builtin.which_key.mappings["n"] = { "<cmd>Telescope find_files<cr>", "Find File" }
+-- lvim.builtin.which_key.mappings["t"] = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" }
+-- lvim.builtin.which_key.mappings["g"] = { "<cmd>Telescope live_grep<cr>", "Text" }
 
 lvim.builtin.which_key.mappings['c'] = {}
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
@@ -231,25 +231,6 @@ command! Bconf :e ~/.bashrc
 command! Tconf :e ~/.tmux.conf
 ]])
 
-vim.cmd([[
-""""""Plugins""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Fugitive
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap   gs    :Git status<CR>
-nnoremap   gp    :Git pull<CR>
-nnoremap   gps   :Git push<CR>
-nnoremap   gpf   :Git push --force<CR>
-nnoremap   gr    :Gread<CR>
-nnoremap   gw    :Gwrite<CR>
-nnoremap   gcm   :Git commit --m ""
-nnoremap   gco   :Git commit<CR>
-nnoremap   gca   :Gwrite<CR>:Git commit --amend<CR>
-nnoremap   gbl   :Git blame<CR>
-nnoremap   gd    :Gvdiff<CR>
-
-]])
 
 vim.cmd([[
 " This section contains custom methods
@@ -390,12 +371,12 @@ lvim.plugins = {
       vim.cmd 'Copilot run'
     end
   },
-  { "marko-cerovac/material.nvim" },   --colorscheme
+  { "marko-cerovac/material.nvim" }, --colorscheme
   { "Pocco81/auto-save.nvim", },
   { "tpope/vim-abolish" },
   { "tpope/vim-repeat" },
   { "tpope/vim-surround",            keys = { "c", "d", "y" } },
-  { "kshenoy/vim-signature",         keys = { "m" } },   -- mx - Toggle mark 'x' and display it in the leftmost column
+  { "kshenoy/vim-signature",         keys = { "m" } }, -- mx - Toggle mark 'x' and display it in the leftmost column
   { "godlygeek/tabular" },
   { "preservim/vim-markdown",        name = "vim-markdown",                ft = 'md' },
   { "tpope/vim-markdown",            name = "tpope-markdown",              ft = 'md' },
@@ -405,10 +386,10 @@ lvim.plugins = {
   { "ggandor/lightspeed.nvim" },
   { "mg979/vim-visual-multi" },
   { "elzr/vim-json",                 ft = 'json' },
-  { "justinmk/vim-gtfo" },       --Go to Terminal or File manager
+  { "justinmk/vim-gtfo" },     --Go to Terminal or File manager
   { "chrisbra/csv.vim",              ft = 'csv' },
-  { "psliwka/vim-smoothie" },    --Smooth scrolling
-  { "tyru/open-browser.vim" },   --Open URLs; gx
+  { "psliwka/vim-smoothie" },  --Smooth scrolling
+  { "tyru/open-browser.vim" }, --Open URLs; gx
   { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
   { "monaqa/dial.nvim" },
   {
@@ -430,7 +411,7 @@ lvim.plugins = {
   },
 
   {
-    "AckslD/nvim-neoclip.lua",     --Clipboard manager neovim plugin with telescope integration
+    "AckslD/nvim-neoclip.lua", --Clipboard manager neovim plugin with telescope integration
     dependencies = {
       { 'kkharji/sqlite.lua',           module = 'sqlite' },
       { 'nvim-telescope/telescope.nvim' },
@@ -482,6 +463,23 @@ lvim.colorscheme = "material"
 vim.g.material_style = "deep ocean"
 
 vim.cmd([[
+""""""Plugins""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap   gs    :Git status<CR>
+nnoremap   gp    :Git pull<CR>
+nnoremap   gps   :Git push<CR>
+nnoremap   gpf   :Git push --force<CR>
+nnoremap   gr    :Gread<CR>
+nnoremap   gw    :Gwrite<CR>
+nnoremap   gcm   :Git commit --m ""
+nnoremap   gco   :Git commit<CR>
+nnoremap   gca   :Gwrite<CR>:Git commit --amend<CR>
+nnoremap   gbl   :Git blame<CR>
+nnoremap   gd    :Gvdiff<CR>
+
 let g:gtfo#terminals = { 'win': 'pwsh.exe -NoLogo -NoExit -Command' }
 
 " imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
@@ -502,6 +500,11 @@ vmap  <M-x>  <Plug>(dial-decrement)
 vmap g<M-a> g<Plug>(dial-increment)
 vmap g<M-x> g<Plug>(dial-decrement)
 
+" => telescope settings
+nmap <leader>n :Telescope find_files<cr>
+nmap <leader>t :Telescope oldfiles<cr>
+nmap <leader>g :Telescope live_grep<cr>
+
 ]])
 
 require 'lspconfig'.lua_ls.setup {
@@ -509,18 +512,6 @@ require 'lspconfig'.lua_ls.setup {
     workspace = { checkThirdParty = false }
   }
 }
-require('telescope').load_extension('neoclip')
-
-local actions = require("telescope.actions")
-require("telescope").setup({
-  defaults = {
-    mappings = {
-      i = {
-        ["<esc>"] = actions.close,
-      },
-    },
-  },
-})
 
 require 'nvim-treesitter.configs'.setup {
   textobjects = {
@@ -549,9 +540,9 @@ require 'nvim-treesitter.configs'.setup {
       -- and should return the mode ('v', 'V', or '<c-v>') or a table
       -- mapping query_strings to modes.
       selection_modes = {
-        ['@parameter.outer'] = 'v',         -- charwise
-        ['@function.outer'] = 'V',          -- linewise
-        ['@class.outer'] = '<c-v>',         -- blockwise
+        ['@parameter.outer'] = 'v', -- charwise
+        ['@function.outer'] = 'V',  -- linewise
+        ['@class.outer'] = '<c-v>', -- blockwise
       },
       -- If you set this to `true` (default is `false`) then any textobject is
       -- extended to include preceding or succeeding whitespace. Succeeding
@@ -566,6 +557,19 @@ require 'nvim-treesitter.configs'.setup {
     },
   },
 }
+
+require('telescope').load_extension('neoclip')
+
+local actions = require("telescope.actions")
+require("telescope").setup({
+  defaults = {
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close,
+      },
+    },
+  },
+})
 
 -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
 vim.api.nvim_create_autocmd("FileType", {
