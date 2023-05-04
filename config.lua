@@ -322,6 +322,12 @@ nmap cib :call ModifyInsideBrackets("change")<CR>
 nmap vib :call ModifyInsideBrackets("select")<CR>
 nmap yib :call ModifyInsideBrackets("yank")<CR>
 
+function! JsonFormat()
+    if(&ft=='json')
+        :%!jq .
+    endif
+endfunction
+command! JsonFormat call JsonFormat()
 
 function! ModifyAroundBrackets(commandType) abort
     let curr_line=getline('.')
@@ -384,12 +390,12 @@ lvim.plugins = {
       vim.cmd 'Copilot run'
     end
   },
-  { "marko-cerovac/material.nvim" }, --colorscheme
+  { "marko-cerovac/material.nvim" },   --colorscheme
   { "Pocco81/auto-save.nvim", },
   { "tpope/vim-abolish" },
   { "tpope/vim-repeat" },
   { "tpope/vim-surround",            keys = { "c", "d", "y" } },
-  { "kshenoy/vim-signature",         keys = { "m" } }, -- mx - Toggle mark 'x' and display it in the leftmost column
+  { "kshenoy/vim-signature",         keys = { "m" } },   -- mx - Toggle mark 'x' and display it in the leftmost column
   { "godlygeek/tabular" },
   { "preservim/vim-markdown",        name = "vim-markdown",                ft = 'md' },
   { "tpope/vim-markdown",            name = "tpope-markdown",              ft = 'md' },
@@ -399,10 +405,10 @@ lvim.plugins = {
   { "ggandor/lightspeed.nvim" },
   { "mg979/vim-visual-multi" },
   { "elzr/vim-json",                 ft = 'json' },
-  { "justinmk/vim-gtfo" },     --Go to Terminal or File manager
+  { "justinmk/vim-gtfo" },       --Go to Terminal or File manager
   { "chrisbra/csv.vim",              ft = 'csv' },
-  { "psliwka/vim-smoothie" },  --Smooth scrolling
-  { "tyru/open-browser.vim" }, --Open URLs; gx
+  { "psliwka/vim-smoothie" },    --Smooth scrolling
+  { "tyru/open-browser.vim" },   --Open URLs; gx
   { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
   { "monaqa/dial.nvim" },
   {
@@ -424,7 +430,7 @@ lvim.plugins = {
   },
 
   {
-    "AckslD/nvim-neoclip.lua", --Clipboard manager neovim plugin with telescope integration
+    "AckslD/nvim-neoclip.lua",     --Clipboard manager neovim plugin with telescope integration
     dependencies = {
       { 'kkharji/sqlite.lua',           module = 'sqlite' },
       { 'nvim-telescope/telescope.nvim' },
@@ -543,9 +549,9 @@ require 'nvim-treesitter.configs'.setup {
       -- and should return the mode ('v', 'V', or '<c-v>') or a table
       -- mapping query_strings to modes.
       selection_modes = {
-        ['@parameter.outer'] = 'v', -- charwise
-        ['@function.outer'] = 'V',  -- linewise
-        ['@class.outer'] = '<c-v>', -- blockwise
+        ['@parameter.outer'] = 'v',         -- charwise
+        ['@function.outer'] = 'V',          -- linewise
+        ['@class.outer'] = '<c-v>',         -- blockwise
       },
       -- If you set this to `true` (default is `false`) then any textobject is
       -- extended to include preceding or succeeding whitespace. Succeeding
