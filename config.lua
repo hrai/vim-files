@@ -364,13 +364,13 @@ lvim.plugins = {
     "folke/trouble.nvim",
     cmd = "TroubleToggle",
   },
-  {
-    "github/copilot.vim",
-    build = function()
-      vim.cmd 'Copilot setup'
-      vim.cmd 'Copilot run'
-    end
-  },
+  -- {
+  --   "github/copilot.vim",
+  --   build = function()
+  --     vim.cmd 'Copilot setup'
+  --     vim.cmd 'Copilot run'
+  --   end
+  -- },
   { "marko-cerovac/material.nvim" }, --colorscheme
   { "Pocco81/auto-save.nvim", },
   { "tpope/vim-abolish" },
