@@ -378,8 +378,8 @@ lvim.plugins = {
   { "tpope/vim-surround",            keys = { "c", "d", "y" } },
   { "kshenoy/vim-signature",         keys = { "m" } }, -- mx - Toggle mark 'x' and display it in the leftmost column
   { "godlygeek/tabular" },
-  { "preservim/vim-markdown",        name = "vim-markdown",                ft = 'md' },
-  { "tpope/vim-markdown",            name = "tpope-markdown",              ft = 'md' },
+  { "preservim/vim-markdown",        name = "vim-markdown",   ft = 'md' },
+  { "tpope/vim-markdown",            name = "tpope-markdown", ft = 'md' },
   { "tpope/vim-fugitive" },
   { "christoomey/vim-tmux-navigator" },
   { "editorconfig/editorconfig-vim" },
@@ -390,7 +390,13 @@ lvim.plugins = {
   { "chrisbra/csv.vim",              ft = 'csv' },
   { "psliwka/vim-smoothie" },  --Smooth scrolling
   { "tyru/open-browser.vim" }, --Open URLs; gx
-  { "uga-rosa/cmp-dictionary",       dependencies = { 'hrsh7th/nvim-cmp' } },
+  {
+    "ethanholz/nvim-lastplace",
+    config = function()
+      require 'nvim-lastplace'.setup {}
+    end,
+  },
+  { "uga-rosa/cmp-dictionary", dependencies = { 'hrsh7th/nvim-cmp' } },
   { "monaqa/dial.nvim" },
   {
     'tzachar/cmp-tabnine',
