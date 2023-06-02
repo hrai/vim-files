@@ -149,9 +149,6 @@ augroup END
 
 autocmd VimLeavePre *.notes call GitCommitPush('cleanup')
 
-" Return to last edit position when opening files (You want this!)
-autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
 ]])
 
 vim.cmd([[
@@ -376,7 +373,7 @@ lvim.plugins = {
   { "tpope/vim-abolish" },
   { "tpope/vim-repeat" },
   { "tpope/vim-surround",            keys = { "c", "d", "y" } },
-  { "kshenoy/vim-signature",         keys = { "m" } }, -- mx - Toggle mark 'x' and display it in the leftmost column
+  -- { "kshenoy/vim-signature",         keys = { "m" } }, -- mx - Toggle mark 'x' and display it in the leftmost column
   { "godlygeek/tabular" },
   { "preservim/vim-markdown",        name = "vim-markdown",   ft = 'md' },
   { "tpope/vim-markdown",            name = "tpope-markdown", ft = 'md' },
@@ -386,12 +383,12 @@ lvim.plugins = {
   { "ggandor/lightspeed.nvim" },
   { "mg979/vim-visual-multi" },
   { "elzr/vim-json",                 ft = 'json' },
-  { "justinmk/vim-gtfo" },     --Go to Terminal or File manager
+  { "justinmk/vim-gtfo" },      --Go to Terminal or File manager
   { "chrisbra/csv.vim",              ft = 'csv' },
-  { "psliwka/vim-smoothie" },  --Smooth scrolling
-  { "tyru/open-browser.vim" }, --Open URLs; gx
+  { "psliwka/vim-smoothie" },   --Smooth scrolling
+  { "tyru/open-browser.vim" },  --Open URLs; gx
   {
-    "ethanholz/nvim-lastplace",
+    "ethanholz/nvim-lastplace", --Return to last edit position when opening files (You want this!)
     config = function()
       require 'nvim-lastplace'.setup {}
     end,
