@@ -155,7 +155,7 @@ autocmd VimLeavePre *.notes call GitCommitPush('cleanup')
 vim.cmd([[
 nnoremap <space> :
 
-nnoremap <leader>cl :Telescope neoclip<cr>
+nnoremap pl :Telescope neoclip<cr>
 nnoremap <leader>cf :lua require'telescope.builtin'.grep_string()<CR> "search word under the cursor
 
 " Smart way to move between windows
@@ -249,8 +249,8 @@ function! Pull_Config()
   endif
 endfunction
 
-nmap <leader>cpl :call Pull_Config()<CR>
-nmap <leader>cps :call Push_Config()<CR>
+nmap cpl :call Pull_Config()<CR>
+nmap cps :call Push_Config()<CR>
 
 function! GitCommitPush(commit_message)
   Gw
