@@ -60,6 +60,9 @@ lvim.builtin.treesitter.ensure_installed = { "comment", "markdown_inline", "rege
 -- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "pyright" })
 -- local opts = {} -- check the lspconfig documentation for a list of all possible options
 -- require("lvim.lsp.manager").setup("pyright", opts)
+local opts = {}
+require("lvim.lsp.manager").setup("powershell_es", opts)
+
 
 -- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. IMPORTANT: Requires `:LvimCacheReset` to take effect
 -- ---`:LvimInfo` lists which server(s) are skipped for the current filetype
