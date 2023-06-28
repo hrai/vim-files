@@ -518,6 +518,9 @@ nmap <leader>n :Telescope find_files<cr>
 nmap <leader>t :Telescope oldfiles<cr>
 nmap <leader>g :Telescope live_grep<cr>
 
+" => nvim-tree settings
+nmap <leader>e :NvimTreeToggle<cr>
+
 ]])
 
 require 'lspconfig'.lua_ls.setup {
