@@ -29,10 +29,12 @@ lvim.keys.normal_mode["<S-Tab>"] = ":BufferLineCyclePrev<CR>"
 -- lvim.builtin.which_key.mappings["t"] = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" }
 -- lvim.builtin.which_key.mappings["g"] = { "<cmd>Telescope live_grep<cr>", "Text" }
 
-lvim.builtin.which_key.mappings = {
-  ['p'] = {},
-  ['c'] = {},
-}
+-- lvim.builtin.which_key.mappings = {
+--   ['p'] = {},
+--   ['c'] = {},
+-- }
+lvim.builtin.which_key.mappings['p'] = {}
+lvim.builtin.which_key.mappings['c'] = {}
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 -- -- Change theme settings
@@ -60,9 +62,10 @@ lvim.builtin.treesitter.ensure_installed = { "comment", "markdown_inline", "rege
 -- vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "pyright" })
 -- local opts = {} -- check the lspconfig documentation for a list of all possible options
 -- require("lvim.lsp.manager").setup("pyright", opts)
-local opts = {}
-require("lvim.lsp.manager").setup("powershell_es", opts)
 
+lvim.lsp.installer.setup.ensure_installed = {
+  "powershell_es",
+}
 
 -- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. IMPORTANT: Requires `:LvimCacheReset` to take effect
 -- ---`:LvimInfo` lists which server(s) are skipped for the current filetype
