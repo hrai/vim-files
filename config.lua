@@ -158,6 +158,7 @@ autocmd VimLeavePre *.notes call GitCommitPush('cleanup')
 vim.cmd([[
 nnoremap <space> :
 
+" nnoremap p "0p
 nnoremap pl :Telescope neoclip<cr>
 nnoremap <leader>cf :lua require'telescope.builtin'.grep_string()<CR> "search word under the cursor
 
@@ -387,13 +388,13 @@ lvim.plugins = {
   { "ggandor/lightspeed.nvim" },
   { "mg979/vim-visual-multi" },
   { "elzr/vim-json",                 ft = 'json' },
-  { "justinmk/vim-gtfo" },        --Go to Terminal or File manager
+  { "justinmk/vim-gtfo" },            --Go to Terminal or File manager
   { "chrisbra/csv.vim",              ft = 'csv' },
-  { "psliwka/vim-smoothie" },     --Smooth scrolling
-  { "tyru/open-browser.vim" },    --Open URLs; gx
+  { "psliwka/vim-smoothie" },         --Smooth scrolling
+  { "tyru/open-browser.vim" },        --Open URLs; gx
   { "tyru/open-browser-github.vim" }, --:OpenGithubFile
   {
-    "ethanholz/nvim-lastplace",   --Return to last edit position when opening files (You want this!)
+    "ethanholz/nvim-lastplace",       --Return to last edit position when opening files (You want this!)
     config = function()
       require 'nvim-lastplace'.setup {}
     end,
