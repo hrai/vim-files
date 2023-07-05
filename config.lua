@@ -35,7 +35,7 @@ lvim.keys.normal_mode["<S-Tab>"] = ":BufferLineCyclePrev<CR>"
 -- }
 lvim.builtin.which_key.mappings['p'] = {}
 lvim.builtin.which_key.mappings['c'] = {}
--- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
+-- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope pq:rojects<CR>", "Projects" }
 
 -- -- Change theme settings
 lvim.builtin.alpha.active = true
@@ -606,4 +606,5 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.cmd [[
 " autocmd VimEnter * unmap p
+" unmap p
 ]]
