@@ -400,7 +400,14 @@ lvim.plugins = {
   { "psliwka/vim-smoothie" },         --Smooth scrolling
   { "tyru/open-browser.vim" },        --Open URLs; gx
   { "tyru/open-browser-github.vim" }, --:OpenGithubFile
-  { "panozzaj/vim-autocorrect" },
+  {
+    "panozzaj/vim-autocorrect",
+    config = function()
+      vim.cmd([[
+        autocmd filetype * call AutoCorrect()
+      ]])
+    end
+  },
   {
     "ethanholz/nvim-lastplace", --Return to last edit position when opening files (You want this!)
     config = function()
@@ -526,14 +533,6 @@ nmap <leader>g :Telescope live_grep<cr>
 " => nvim-tree settings
 nmap <leader>e :NvimTreeToggle<cr>
 
-" => autocorrect settings
-augroup autocorrect
-    autocmd!
-    " autocmd FileType markdown,md call litecorrect#init(user_dict)
-    " autocmd FileType notes,txt call litecorrect#init(user_dict)
-
-    autocmd filetype notes,txt,markdown,md call AutoCorrect()
-augroup END
 ]])
 
 require 'lspconfig'.lua_ls.setup {
