@@ -426,9 +426,10 @@ lvim.plugins = {
     --     else
     --         print("Executing install.ps1...")
     --         EXECUTE BELOW...
+    --         cd "$HOME\AppData\Roaming\lunarvim\site\pack\lazy\opt\cmp-tabnine\"
     --         pwsh "$HOME\AppData\Roaming\lunarvim\site\pack\lazy\opt\cmp-tabnine\install.ps1"
-    --         vim.cmd [[execute ":! pwsh -File $HOME\\AppData\\Roaming\\lunarvim\\site\\pack\\packer\\start\\cmp-tabnine\\install.ps1"]]
     --         -- vim.cmd [[execute ":! pwsh -Command pwd"]]
+    --         vim.cmd [[execute ":! pwsh -File $HOME\\AppData\\Roaming\\lunarvim\\site\\pack\\packer\\start\\cmp-tabnine\\install.ps1"]]
     --         print("Executed install.ps1...")
     --     end
     -- end,
