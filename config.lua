@@ -35,6 +35,9 @@ lvim.keys.normal_mode["<S-Tab>"] = ":BufferLineCyclePrev<CR>"
 -- }
 lvim.builtin.which_key.mappings['p'] = {}
 lvim.builtin.which_key.mappings['c'] = {}
+
+lvim.builtin.which_key.setup.triggers_blacklist.n = { "p" }
+
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope pq:rojects<CR>", "Projects" }
 
 -- -- Change theme settings
@@ -426,10 +429,9 @@ lvim.plugins = {
     --     else
     --         print("Executing install.ps1...")
     --         EXECUTE BELOW...
-    --         cd "$HOME\AppData\Roaming\lunarvim\site\pack\lazy\opt\cmp-tabnine\"
     --         pwsh "$HOME\AppData\Roaming\lunarvim\site\pack\lazy\opt\cmp-tabnine\install.ps1"
-    --         -- vim.cmd [[execute ":! pwsh -Command pwd"]]
     --         vim.cmd [[execute ":! pwsh -File $HOME\\AppData\\Roaming\\lunarvim\\site\\pack\\packer\\start\\cmp-tabnine\\install.ps1"]]
+    --         -- vim.cmd [[execute ":! pwsh -Command pwd"]]
     --         print("Executed install.ps1...")
     --     end
     -- end,
@@ -612,8 +614,3 @@ vim.api.nvim_create_autocmd("FileType", {
     require("nvim-treesitter.highlight").attach(0, "bash")
   end,
 })
-
-vim.cmd [[
-" autocmd VimEnter * unmap p
-" unmap p
-]]
