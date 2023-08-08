@@ -132,6 +132,8 @@ vim.opt.relativenumber = true
 
 vim.cmd([[
 
+nmap ,pu :LvimUpdate<cr>
+
 " disable folding of sections like JS functions
 set foldmethod=indent       " manual fold
 set foldnestmax=3           " deepest fold is 3 levels
