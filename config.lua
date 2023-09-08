@@ -68,6 +68,8 @@ lvim.builtin.treesitter.ensure_installed = { "comment", "markdown_inline", "rege
 
 lvim.lsp.installer.setup.ensure_installed = {
   "powershell_es",
+  "lua_ls",
+  "pyright",
 }
 
 -- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. IMPORTANT: Requires `:LvimCacheReset` to take effect
@@ -395,7 +397,7 @@ lvim.plugins = {
   --     vim.cmd 'Copilot run'
   --   end
   -- },
-  { "marko-cerovac/material.nvim" },   --colorscheme
+  { "marko-cerovac/material.nvim" }, --colorscheme
   { "Pocco81/auto-save.nvim", },
   { "tpope/vim-abolish" },
   { "tpope/vim-repeat" },
@@ -410,11 +412,11 @@ lvim.plugins = {
   { "ggandor/lightspeed.nvim" },
   { "mg979/vim-visual-multi" },
   { "elzr/vim-json",                 ft = 'json' },
-  { "justinmk/vim-gtfo" },              --Go to Terminal or File manager
+  { "justinmk/vim-gtfo" },            --Go to Terminal or File manager
   { "chrisbra/csv.vim",              ft = 'csv' },
-  { "psliwka/vim-smoothie" },           --Smooth scrolling
-  { "tyru/open-browser.vim" },          --Open URLs; gx
-  { "tyru/open-browser-github.vim" },   --:OpenGithubFile
+  { "psliwka/vim-smoothie" },         --Smooth scrolling
+  { "tyru/open-browser.vim" },        --Open URLs; gx
+  { "tyru/open-browser-github.vim" }, --:OpenGithubFile
   {
     "panozzaj/vim-autocorrect",
     config = function()
@@ -424,7 +426,7 @@ lvim.plugins = {
     end
   },
   {
-    "ethanholz/nvim-lastplace",     --Return to last edit position when opening files (You want this!)
+    "ethanholz/nvim-lastplace", --Return to last edit position when opening files (You want this!)
     config = function()
       require 'nvim-lastplace'.setup {}
     end,
@@ -451,7 +453,7 @@ lvim.plugins = {
     dependencies = 'hrsh7th/nvim-cmp',
   },
   {
-    "AckslD/nvim-neoclip.lua",     --Clipboard manager neovim plugin with telescope integration
+    "AckslD/nvim-neoclip.lua", --Clipboard manager neovim plugin with telescope integration
     dependencies = {
       { 'kkharji/sqlite.lua',           module = 'sqlite' },
       { 'nvim-telescope/telescope.nvim' },
@@ -620,9 +622,9 @@ require 'nvim-treesitter.configs'.setup {
       -- and should return the mode ('v', 'V', or '<c-v>') or a table
       -- mapping query_strings to modes.
       selection_modes = {
-        ['@parameter.outer'] = 'v',         -- charwise
-        ['@function.outer'] = 'V',          -- linewise
-        ['@class.outer'] = '<c-v>',         -- blockwise
+        ['@parameter.outer'] = 'v', -- charwise
+        ['@function.outer'] = 'V',  -- linewise
+        ['@class.outer'] = '<c-v>', -- blockwise
       },
       -- If you set this to `true` (default is `false`) then any textobject is
       -- extended to include preceding or succeeding whitespace. Succeeding
