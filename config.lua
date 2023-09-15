@@ -404,19 +404,19 @@ lvim.plugins = {
   { "tpope/vim-surround",            keys = { "c", "d", "y" } },
   -- { "kshenoy/vim-signature",         keys = { "m" } }, -- mx - Toggle mark 'x' and display it in the leftmost column
   { "godlygeek/tabular" },
-  { "preservim/vim-markdown",        name = "vim-markdown",   ft = 'md' },
-  { "tpope/vim-markdown",            name = "tpope-markdown", ft = 'md' },
+  { "preservim/vim-markdown",        name = "vim-markdown",                 ft = 'md' },
+  { "tpope/vim-markdown",            name = "tpope-markdown",               ft = 'md' },
   { "tpope/vim-fugitive" },
   { "christoomey/vim-tmux-navigator" },
   { "editorconfig/editorconfig-vim" },
   { "ggandor/lightspeed.nvim" },
   { "mg979/vim-visual-multi" },
   { "elzr/vim-json",                 ft = 'json' },
-  { "justinmk/vim-gtfo" },            --Go to Terminal or File manager
+  { "justinmk/vim-gtfo" },                                                    --Go to Terminal or File manager
   { "chrisbra/csv.vim",              ft = 'csv' },
-  { "psliwka/vim-smoothie" },         --Smooth scrolling
-  { "tyru/open-browser.vim" },        --Open URLs; gx
-  { "tyru/open-browser-github.vim" }, --:OpenGithubFile
+  { "psliwka/vim-smoothie" },                                                 --Smooth scrolling
+  { "tyru/open-browser.vim" },                                                --Open URLs; gx
+  { "tyru/open-browser-github.vim",  dependencies = { 'tyru/open-browser.vim' } }, --:OpenGithubFile
   {
     "panozzaj/vim-autocorrect",
     config = function()
