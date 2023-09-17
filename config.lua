@@ -595,6 +595,8 @@ require 'lspconfig'.lua_ls.setup {
   }
 }
 
+require("nvim-treesitter.install").prefer_git = true
+
 require 'nvim-treesitter.configs'.setup {
   textobjects = {
     select = {
