@@ -119,6 +119,20 @@ then
 		  let &shellpipe = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'
 		  set shellquote= shellxquote=
       nnoremap <leader>c :e ~/AppData/Local/lvim/config.lua<cr>
+
+      let g:clipboard = {
+        \   'name': 'WslClipboard',
+        \   'copy': {
+        \      '+': 'clip.exe',
+        \      '*': 'clip.exe',
+        \    },
+        \   'paste': {
+        \      '+': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+        \      '*': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+        \   },
+        \   'cache_enabled': 0,
+        \ }
+
     ]]
 else
   vim.cmd [[
@@ -149,19 +163,6 @@ nmap ,pu :LvimUpdate<cr>
 set foldmethod=indent       " manual fold
 set foldnestmax=3           " deepest fold is 3 levels
 set nofoldenable            " don't fold by default
-
-let g:clipboard = {
-  \   'name': 'WslClipboard',
-  \   'copy': {
-  \      '+': 'clip.exe',
-  \      '*': 'clip.exe',
-  \    },
-  \   'paste': {
-  \      '+': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-  \      '*': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-  \   },
-  \   'cache_enabled': 0,
-  \ }
 
 """"""""""""""""""""""""""""""
 " => notes section
@@ -404,18 +405,18 @@ lvim.plugins = {
   { "tpope/vim-surround",            keys = { "c", "d", "y" } },
   -- { "kshenoy/vim-signature",         keys = { "m" } }, -- mx - Toggle mark 'x' and display it in the leftmost column
   { "godlygeek/tabular" },
-  { "preservim/vim-markdown",        name = "vim-markdown",                 ft = 'md' },
-  { "tpope/vim-markdown",            name = "tpope-markdown",               ft = 'md' },
+  { "preservim/vim-markdown",        name = "vim-markdown",                     ft = 'md' },
+  { "tpope/vim-markdown",            name = "tpope-markdown",                   ft = 'md' },
   { "tpope/vim-fugitive" },
   { "christoomey/vim-tmux-navigator" },
   { "editorconfig/editorconfig-vim" },
   { "ggandor/lightspeed.nvim" },
   { "mg979/vim-visual-multi" },
   { "elzr/vim-json",                 ft = 'json' },
-  { "justinmk/vim-gtfo" },                                                    --Go to Terminal or File manager
+  { "justinmk/vim-gtfo" },                                                         --Go to Terminal or File manager
   { "chrisbra/csv.vim",              ft = 'csv' },
-  { "psliwka/vim-smoothie" },                                                 --Smooth scrolling
-  { "tyru/open-browser.vim" },                                                --Open URLs; gx
+  { "psliwka/vim-smoothie" },                                                      --Smooth scrolling
+  { "tyru/open-browser.vim" },                                                     --Open URLs; gx
   { "tyru/open-browser-github.vim",  dependencies = { 'tyru/open-browser.vim' } }, --:OpenGithubFile
   {
     "panozzaj/vim-autocorrect",
