@@ -408,6 +408,7 @@ lvim.plugins = {
   { "preservim/vim-markdown",        name = "vim-markdown",                     ft = 'md' },
   { "tpope/vim-markdown",            name = "tpope-markdown",                   ft = 'md' },
   { "tpope/vim-fugitive" },
+  { "tpope/vim-rhubarb" },
   { "christoomey/vim-tmux-navigator" },
   { "editorconfig/editorconfig-vim" },
   { "ggandor/lightspeed.nvim" },
