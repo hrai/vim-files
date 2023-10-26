@@ -546,54 +546,6 @@ lvim.plugins = {
 lvim.colorscheme = "material"
 vim.g.material_style = "deep ocean"
 
-vim.cmd([[
-""""""Plugins""""""
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Fugitive
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap   gs    :Git status<CR>
-nnoremap   gp    :Git pull<CR>
-nnoremap   gps   :Git push<CR>
-nnoremap   gpf   :Git push --force<CR>
-nnoremap   gr    :Gread<CR>
-nnoremap   gw    :Gwrite<CR>
-nnoremap   gcm   :Git commit --m ""
-nnoremap   gco   :Git commit<CR>
-nnoremap   gca   :Gwrite<CR>:Git commit --amend<CR>
-nnoremap   gbl   :Git blame<CR>
-nnoremap   gd    :Gvdiff<CR>
-
-let g:gtfo#terminals = { 'win': 'pwsh.exe -NoLogo -NoExit -Command' }
-
-" imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
-" let g:copilot_no_tab_map = v:true
-
-let g:vim_json_syntax_conceal = 0
-
-" => lightspeed settings
-nmap <leader>o <Plug>Lightspeed_s
-
-" => dial settings
-nmap  <M-a>  <Plug>(dial-increment)
-nmap  <M-x>  <Plug>(dial-decrement)
-nmap g<M-a> g<Plug>(dial-increment)
-nmap g<M-x> g<Plug>(dial-decrement)
-vmap  <M-a>  <Plug>(dial-increment)
-vmap  <M-x>  <Plug>(dial-decrement)
-vmap g<M-a> g<Plug>(dial-increment)
-vmap g<M-x> g<Plug>(dial-decrement)
-
-" => telescope settings
-nmap <leader>n :Telescope find_files<cr>
-nmap <leader>t :Telescope oldfiles<cr>
-nmap <leader>g :Telescope live_grep<cr>
-
-" => nvim-tree settings
-nmap <leader>e :NvimTreeToggle<cr>
-
-]])
-
 require 'lspconfig'.lua_ls.setup {
   settings = {
     workspace = { checkThirdParty = false }
@@ -672,3 +624,51 @@ vim.api.nvim_create_autocmd("FileType", {
     require("nvim-treesitter.highlight").attach(0, "bash")
   end,
 })
+
+vim.cmd([[
+""""""Plugins""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap   gs    :Git status<CR>
+nnoremap   gp    :Git pull<CR>
+nnoremap   gps   :Git push<CR>
+nnoremap   gpf   :Git push --force<CR>
+nnoremap   gr    :Gread<CR>
+nnoremap   gw    :Gwrite<CR>
+nnoremap   gcm   :Git commit --m ""
+nnoremap   gco   :Git commit<CR>
+nnoremap   gca   :Gwrite<CR>:Git commit --amend<CR>
+nnoremap   gbl   :Git blame<CR>
+nnoremap   gd    :Gvdiff<CR>
+
+let g:gtfo#terminals = { 'win': 'pwsh.exe -NoLogo -NoExit -Command' }
+
+" imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+" let g:copilot_no_tab_map = v:true
+
+let g:vim_json_syntax_conceal = 0
+
+" => lightspeed settings
+nmap <leader>o <Plug>Lightspeed_s
+
+" => dial settings
+nmap  <M-a>  <Plug>(dial-increment)
+nmap  <M-x>  <Plug>(dial-decrement)
+nmap g<M-a> g<Plug>(dial-increment)
+nmap g<M-x> g<Plug>(dial-decrement)
+vmap  <M-a>  <Plug>(dial-increment)
+vmap  <M-x>  <Plug>(dial-decrement)
+vmap g<M-a> g<Plug>(dial-increment)
+vmap g<M-x> g<Plug>(dial-decrement)
+
+" => telescope settings
+nmap <leader>n :Telescope find_files<cr>
+nmap <leader>t :Telescope oldfiles<cr>
+nmap <leader>g :Telescope live_grep<cr>
+
+" => nvim-tree settings
+nmap <leader>e :NvimTreeToggle<cr>
+
+]])
