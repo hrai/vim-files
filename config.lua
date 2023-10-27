@@ -625,6 +625,12 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+lvim.lsp.buffer_mappings.normal_mode["gs"] = nil
+lvim.lsp.buffer_mappings.normal_mode["gp"] = nil
+lvim.lsp.buffer_mappings.normal_mode["gr"] = nil
+lvim.lsp.buffer_mappings.normal_mode["gw"] = nil
+lvim.lsp.buffer_mappings.normal_mode["gd"] = nil
+
 vim.cmd([[
 """"""Plugins""""""
 
