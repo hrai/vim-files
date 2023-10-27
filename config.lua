@@ -66,11 +66,14 @@ lvim.builtin.treesitter.ensure_installed = { "comment", "markdown_inline", "rege
 -- local opts = {} -- check the lspconfig documentation for a list of all possible options
 -- require("lvim.lsp.manager").setup("pyright", opts)
 
+-- list of language servers - https://github.com/pwntester/nvim-lsp/blob/master/lua/nvim_lsp/bashls.lua
 lvim.lsp.installer.setup.ensure_installed = {
     "powershell_es",
     "lua_ls",
     "pyright",
-    -- "jsonls", "yamlls", "bashls"
+    "jsonls",
+    "yamlls",
+    "bashls",
 }
 
 -- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. IMPORTANT: Requires `:LvimCacheReset` to take effect
