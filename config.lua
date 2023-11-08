@@ -422,6 +422,7 @@ lvim.plugins = {
     { "justinmk/vim-gtfo" }, --Go to Terminal or File manager
     { "chrisbra/csv.vim", ft = "csv" },
     { "psliwka/vim-smoothie" }, --Smooth scrolling
+    { "lambdalisue/suda.vim" },
     -- { "tyru/open-browser.vim" }, --Open URLs; gx
     -- { "tyru/open-browser-github.vim",  dependencies = { 'tyru/open-browser.vim' } },   --:OpenGithubFile
     { "Almo7aya/openingh.nvim" },
