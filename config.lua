@@ -142,6 +142,8 @@ then
 else
     vim.cmd([[
       nnoremap <leader>c :e ~/.config/lvim/config.lua<cr>
+
+      command! FormatJson :%!jq .
     ]])
 end
 
