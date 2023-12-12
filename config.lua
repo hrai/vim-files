@@ -35,6 +35,7 @@ lvim.keys.normal_mode["<S-Tab>"] = ":BufferLineCyclePrev<CR>"
 -- }
 lvim.builtin.which_key.mappings["p"] = {}
 lvim.builtin.which_key.mappings["c"] = {}
+lvim.builtin.which_key.mappings["b"] = {}
 
 lvim.builtin.which_key.setup.triggers_blacklist.n = { "p" }
 
@@ -208,6 +209,9 @@ nmap <leader>tn :tabnew<cr>
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+command! BufOnly silent! execute "%bd|e#|bd#"
+map <leader>bo BufOnly
 
 " Switch to home directory
 map <leader>ch :cd ~<cr>
