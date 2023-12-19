@@ -194,7 +194,8 @@ nnoremap <space> :
 
 " nnoremap p "0p
 nnoremap pl :Telescope neoclip<cr>
-nnoremap <leader>cf :lua require'telescope.builtin'.grep_string()<CR> "search word under the cursor
+"search word under the cursor
+nnoremap <leader>cf :lua require'telescope.builtin'.grep_string()<CR>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
