@@ -189,13 +189,24 @@ autocmd VimLeavePre *.notes call GitCommitPush('cleanup')
 
 ]])
 
+function live_grep_git_dir()
+    local git_dir = vim.api.nvim_exec("!git rev-parse --show-toplevel", false)
+    local opts = {
+        cwd = git_dir,
+    }
+    -- print(git_dir)
+
+    require("telescope.builtin").grep_string(opts)
+end
+
 vim.cmd([[
+"search word under the cursor
+nnoremap <leader>cf :lua live_grep_git_dir()<CR>
+
 nnoremap <space> :
 
 " nnoremap p "0p
 nnoremap pl :Telescope neoclip<cr>
-"search word under the cursor
-nnoremap <leader>cf :lua require'telescope.builtin'.grep_string()<CR>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
