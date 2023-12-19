@@ -192,24 +192,8 @@ autocmd VimLeavePre *.notes call GitCommitPush('cleanup')
 
 ]])
 
-function live_grep_git_dir()
-    local git_dir = vim.api.nvim_exec("!git rev-parse --show-toplevel", false)
-    local opts = {
-        cwd = git_dir,
-    }
-    -- print(git_dir)
-
-    require("telescope.builtin").grep_string(opts)
-end
-
 vim.cmd([[
-"search word under the cursor
-nnoremap <leader>cf :lua live_grep_git_dir()<CR>
-
 nnoremap <space> :
-
-" nnoremap p "0p
-nnoremap pl :Telescope neoclip<cr>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -707,6 +691,11 @@ vmap g<M-x> g<Plug>(dial-decrement)
 nmap <expr> <leader>n ':Telescope find_files cwd='.FindRootDirectory().'/<cr>'
 nmap <leader>t :Telescope oldfiles<cr>
 nmap <leader>g :Telescope live_grep<cr>
+"search word under the cursor
+nmap <expr> <leader>cf ':Telescope grep_string cwd='.FindRootDirectory().'/<cr>'
+
+" nnoremap p "0p
+nnoremap pl :Telescope neoclip<cr>
 
 " => nvim-tree settings
 nmap <leader>e :NvimTreeToggle<cr>
