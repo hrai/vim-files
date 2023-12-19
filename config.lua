@@ -45,6 +45,8 @@ lvim.builtin.which_key.setup.triggers_blacklist.n = { "p" }
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.terminal.active = true
+
+-- Show the mappings= g?
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.view.relativenumber = true
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
