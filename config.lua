@@ -494,6 +494,15 @@ lvim.plugins = {
         end,
     },
     {
+        "airblade/vim-rooter",
+        after = "telescope",
+        config = function()
+            vim.cmd([[
+              let g:rooter_patterns = ['.git', '.svn', 'package.json', '!node_modules']
+            ]])
+        end,
+    },
+    {
         "nvim-treesitter/nvim-treesitter-textobjects",
         after = "nvim-treesitter",
         dependencies = "nvim-treesitter/nvim-treesitter",
@@ -695,7 +704,7 @@ vmap g<M-a> g<Plug>(dial-increment)
 vmap g<M-x> g<Plug>(dial-decrement)
 
 " => telescope settings
-nmap <leader>n :Telescope find_files<cr>
+nmap <expr> <leader>n ':Telescope find_files cwd='.FindRootDirectory().'/<cr>'
 nmap <leader>t :Telescope oldfiles<cr>
 nmap <leader>g :Telescope live_grep<cr>
 
