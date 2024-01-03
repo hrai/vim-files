@@ -78,6 +78,7 @@ lvim.lsp.installer.setup.ensure_installed = {
     "jsonls",
     "yamlls",
     "bashls",
+    "csharp_ls",
 }
 
 -- ---remove a server from the skipped list, e.g. eslint, or emmet_ls. IMPORTANT: Requires `:LvimCacheReset` to take effect
@@ -175,6 +176,8 @@ set foldnestmax=3           " deepest fold is 3 levels
 set nofoldenable            " don't fold by default
 
 set wrap
+
+set scrolloff=2
 
 """"""""""""""""""""""""""""""
 " => notes section
