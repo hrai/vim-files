@@ -469,6 +469,11 @@ lvim.plugins = {
         build = get_tabnine_build_string(),
         dependencies = "hrsh7th/nvim-cmp",
     },
+  {
+        "lukas-reineke/headlines.nvim",
+        dependencies = "nvim-treesitter/nvim-treesitter",
+        config = true, -- or `opts = {}`
+    },
     {
         "AckslD/nvim-neoclip.lua", --Clipboard manager neovim plugin with telescope integration
         dependencies = {
