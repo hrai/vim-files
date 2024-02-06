@@ -170,7 +170,11 @@ autocmd VimEnter * set autochdir
 autocmd DirChanged * call chansend(v:stderr, printf("\033]7;file://%s\033\\", v:event.cwd))
 autocmd VimLeave * call chansend(v:stderr, "\033]7;\033\\")
 
-nmap ,pu :LvimUpdate<cr>
+function UpdateLvim()
+  :LvimUpdate
+  :Lazy sync
+endfunction
+nmap <leader>pu :call UpdateLvim()<cr>
 
 " disable folding of sections like JS functions
 set foldmethod=indent       " manual fold
