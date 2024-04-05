@@ -170,7 +170,7 @@ autocmd VimEnter * set autochdir
 autocmd DirChanged * call chansend(v:stderr, printf("\033]7;file://%s\033\\", v:event.cwd))
 autocmd VimLeave * call chansend(v:stderr, "\033]7;\033\\")
 
-function UpdateLvim()
+function! UpdateLvim()
   :LvimUpdate
   :Lazy sync
 endfunction
@@ -427,7 +427,7 @@ lvim.plugins = {
   { "preservim/vim-markdown",        name = "vim-markdown",   ft = "md" },
   { "tpope/vim-markdown",            name = "tpope-markdown", ft = "md" },
   { "tpope/vim-fugitive" },
-  { "tpope/vim-rhubarb" },
+  -- { "tpope/vim-rhubarb" },
   { "christoomey/vim-tmux-navigator" },
   { "editorconfig/editorconfig-vim" },
   { "ggandor/lightspeed.nvim" },
@@ -440,6 +440,20 @@ lvim.plugins = {
   -- { "tyru/open-browser.vim" }, --Open URLs; gx
   -- { "tyru/open-browser-github.vim",  dependencies = { 'tyru/open-browser.vim' } },   --:OpenGithubFile
   { "Almo7aya/openingh.nvim" },
+  {
+    "linrongbin16/gitlinker.nvim",
+    cmd = "GitLink",
+    opts = {},
+    keys = {
+      { "<leader>gy", "<cmd>GitLink<cr>",  mode = { "n", "v" }, desc = "Yank git permalink" },
+      { "<leader>gY", "<cmd>GitLink!<cr>", mode = { "n", "v" }, desc = "Open git permalink" },
+    },
+    -- config = function()
+    --   vim.cmd([[
+    --     " command! Gblame :GitLink!<cr>
+    --   ]])
+    -- end,
+  },
   {
     "panozzaj/vim-autocorrect",
     config = function()
@@ -584,6 +598,9 @@ require("lspconfig").lua_ls.setup({
   },
 })
 
+-- require "gitlinker".setup()
+
+
 require("nvim-treesitter.install").prefer_git = true
 
 require("nvim-treesitter.configs").setup({
@@ -714,4 +731,6 @@ nnoremap pl :Telescope neoclip<cr>
 " => nvim-tree settings
 nmap <leader>e :NvimTreeToggle<cr>
 
+" => gitlinker settings
+command! Gblame :GitLink!
 ]])
